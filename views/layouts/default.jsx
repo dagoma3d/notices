@@ -37,6 +37,7 @@ class Layout extends React.Component {
           <script src="/js/navbar.js"></script>
           <script src="/js/scroll.js"></script>
           <script src="/js/interface-cura.js"></script>
+          <script src="/js/moving-top.js"></script>
         </body>
       </html>
     );

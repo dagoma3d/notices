@@ -1,6 +1,7 @@
 const React = require('react');
 const Layout = require('../../../layouts/default');
-const Navbar = require('../../../components/navbars/box');
+const Navbar = require('../../../components/navbar');
+const nav = require('../../../../content/nav/box');
 const SimpleTitle = require('../../../components/simple-title');
 const BasicSection = require('../../../components/basic-section');
 const SimpleSection = require('../../../components/simple-section');
@@ -9,12 +10,12 @@ class Box extends React.Component {
   render() {
     return (
       <Layout>
+        <Navbar active={2} nav={nav} />
         <SimpleTitle
           small={true}
           content={[
             { text: "Temps approximatif : 10 min", classes: "col-vspace" }
           ]} />
-        <Navbar active={2} />
         <BasicSection
           img="NevaMagis/Notice/Addons/Caisson/3-a-intro.jpg"
           content={[

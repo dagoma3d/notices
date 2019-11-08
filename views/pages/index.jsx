@@ -34,39 +34,39 @@ class Home extends React.Component {
           title="Magis"
           articles={[
             { href: "/printer/magis", picto: "neva-magis-svg.svg", alt: "Magis", title: "Premiers pas" },
-            { href: "/box/neva-magis/0", picto: "caisson-neva-magis.svg", alt: "Caisson" },
-            { href: "/cura-by-dagoma?printer=neva-magis", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
+            { href: "/addon/box/neva-magis", picto: "caisson-neva-magis.svg", alt: "Caisson" },
+            { href: "/cura-by-dagoma/magis", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
           ]} />
         <Section
           id="neva"
           title="Neva"
           articles={[
             { href: "/printer/neva", picto: "neva-svg.svg", alt: "Neva", title: "Premiers pas" },
-            { href: "/box/neva-magis/0", picto: "caisson-neva-magis.svg", alt: "Caisson" },
-            { href: "/cura-by-dagoma?printer=neva", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
+            { href: "/addon/box/neva-magis", picto: "caisson-neva-magis.svg", alt: "Caisson" },
+            { href: "/cura-by-dagoma", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
           ]} />
         <Section
           id="discoeasy200"
           title="DiscoEasy200"
           articles={[
-            { href: "/printer/discoeasy200", picto: "discoeasy-svg.svg", alt: "DiscoEasy200", title: "Notice de montage" },
-            { href: "/screen", picto: "accessoires-52.svg", alt: "Ecran" },
-            { href: "/printer/discoeasy200/extrudeur-plus", picto: "accessoires-52.svg", alt: "Extrudeur+" },
-            { href: "/printer/discoeasy200/pack-expert", picto: "accessoires-52.svg", alt: "Pack expert" },
-            { href: "/printer/discoeasy200/bi-couleur", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
-            { href: "/box/disco/0", picto: "caisson-disco.svg", alt: "Caisson de protection" },
-            { href: "/printer/discoeasy200/pack-evo", picto: "picto-pack-evo.svg", alt: "Pack évolution Ultimate" },
-            { href: "/cura-by-dagoma?printer=discoeasy200", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
+            { href: "/printer/de200", picto: "discoeasy-svg.svg", alt: "DiscoEasy200", title: "Notice de montage" },
+            { href: "/addon/screen", picto: "accessoires-52.svg", alt: "Ecran" },
+            { href: "/addon/extrudeur-plus/de200", picto: "accessoires-52.svg", alt: "Extrudeur+" },
+            { href: "/addon/expert/de200", picto: "accessoires-52.svg", alt: "Pack expert" },
+            { href: "/addon/bicolor/de200", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
+            { href: "/addon/box/disco", picto: "caisson-disco.svg", alt: "Caisson de protection" },
+            { href: "/addon/evo/de200", picto: "picto-pack-evo.svg", alt: "Pack évolution Ultimate" },
+            { href: "/cura-by-dagoma/de200", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
           ]} />
         <Section
           id="disco-ultimate"
           title="Disco Ultimate"
           articles={[
-            { href: "/printer/disco-ultimate", picto: "disco-ultimate.svg", alt: "Disco Ultimate", title: "Notice de montage" },
-            { href: "/screen", picto: "accessoires-52.svg", alt: "Ecran" },
-            { href: "/printer/disco-ultimate/bi-couleur?version=ultimate-addon-v1&options=bi-couleur", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
-            { href: "/box/disco/0", picto: "accessoires-49.svg", alt: "Caisson de protection" },
-            { href: "/cura-by-dagoma?printer=disco-ultimate", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
+            { href: "/printer/du", picto: "disco-ultimate.svg", alt: "Disco Ultimate", title: "Notice de montage" },
+            { href: "/addon/screen", picto: "accessoires-52.svg", alt: "Ecran" },
+            { href: "/addon/bicolor/du", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
+            { href: "/addon/box/disco", picto: "accessoires-49.svg", alt: "Caisson de protection" },
+            { href: "/cura-by-dagoma/du", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
           ]} />
         <section className="col-xl-24 col-space row">
           <div className="wrap row">

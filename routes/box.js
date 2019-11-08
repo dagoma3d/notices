@@ -4,5 +4,9 @@ exports.index = function (req, res) {
   };
   const serie = req.params.serie;
   const step = req.params.step;
-  res.render(['pages/box', serie, step].join('/'), options);
+  if (step) {
+    res.render(['pages/box', serie, step].join('/'), options);
+  } else {
+    res.render(['pages/box', serie].join('/'), options);
+  }
 };

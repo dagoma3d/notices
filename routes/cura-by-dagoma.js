@@ -3,18 +3,18 @@ exports.index = function (req, res) {
     title: res.__("Cura by Dagoma")
   };
 
-  switch (req.query.printer) {
+  switch (req.params.printer) {
     case 'magis':
       options.active = 5;
-      options.nav = require('../content/nav-magis');
+      options.nav = require('../content/nav/magis');
       break;
-    case 'ultimate':
+    case 'du':
+      options.active = 12;
+      options.nav = require('../content/nav/du');
+      break;
+    case 'de200':
       options.active = 13;
-      options.nav = require('../content/nav-ultimate');
-      break;
-    case 'easy200':
-      options.active = 5;
-      options.nav = require('../content/nav-easy200');
+      options.nav = require('../content/nav/de200');
       break;
   }
 

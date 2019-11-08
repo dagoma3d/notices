@@ -8,6 +8,7 @@ function SimpleTitle(props) {
       {content.map((p, k) => {
         return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} />
       })}
+      {props.children}
     </section>
   );
 }

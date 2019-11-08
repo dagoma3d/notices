@@ -3,7 +3,7 @@ var Layout = require('../layouts/default');
 var SimpleSection = require('../components/simple-section');
 var BasicSection = require('../components/basic-section');
 var SimpleTitle = require('../components/simple-title');
-const NavBar = require('../components/navbars/magis');
+const NavBar = require('../components/navbar');
 
 class CuraByDagoma extends React.Component {
   render() {

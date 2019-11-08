@@ -2455,8 +2455,8 @@ p.underline.active-underline::after {
 .moving-banner-top article.covered .hover-tap i:after {
     content:'';
     position:absolute;
-    top:-17px;
-    left:-10px;
+    top:-20px;
+    left:-2px;
     width:40px;
     height:40px;
     border-top:4px solid #fff;
@@ -2558,8 +2558,8 @@ p.underline.active-underline::after {
 .moving-banner-top article.covered .hover-tap i:after {
     content:'';
     position:absolute;
-    top:-17px;
-    left:-10px;
+    top:-20px;
+    left:-2px;
     width:40px;
     height:40px;
     border-top:4px solid #fff;
@@ -3500,8 +3500,8 @@ a.lai-dl:hover { display:inline-block; background-position: 0px -133px; height:1
     .moving-banner-top article.covered .hover-tap i:after {
         content:'';
         position:absolute;
-        top:-17px;
-        left:-10px;
+        top:-20px;
+        left:-2px;
         width:40px;
         height:40px;
         border-top:4px solid #fff;
@@ -4073,8 +4073,8 @@ a.lai-dl:hover { display:inline-block; background-position: 0px -133px; height:1
     .menu-icon-top .icon-top-qty-cart { padding:4px 0; font-size: 0.700em; right:17px; }
     .moving-banner-top article.covered .hover-tap i { font-size:40px; }
     .moving-banner-top article.covered .hover-tap i:after {
-        /*top:-12px;*/
-        left:-9px;
+        top:-15px;
+        left:-1px;
         width:30px;
         height:30px;
         border-top:3px solid #fff;

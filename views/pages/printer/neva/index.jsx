@@ -8,7 +8,7 @@ class Printer extends React.Component {
     return (
       <Layout title={title}>
         <GoogleDocument title={title} id="1fOs7uHSiLsyRWO7CqBD_T2zFc1euJbUjEWQF60E0joM">
-          <div className="col-xl-20 col-s-24 margin-bottom-shop">
+          <div className="col-xl-20 col-s-24 margin-bottom-shop tcenter">
             <p>Cette notice de première utilisation vous permettra :&nbsp;</p>
             <ul>
               <li>de calibrer votre imprimante</li>

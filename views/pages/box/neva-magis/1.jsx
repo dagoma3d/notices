@@ -1,6 +1,7 @@
 const React = require('react');
 const Layout = require('../../../layouts/default');
-const Navbar = require('../../../components/navbars/box');
+const Navbar = require('../../../components/navbar');
+const nav = require('../../../../content/nav/box');
 const SimpleTitle = require('../../../components/simple-title');
 const BasicSection = require('../../../components/basic-section');
 const SimpleSection = require('../../../components/simple-section');
@@ -10,12 +11,12 @@ class Box extends React.Component {
   render() {
     return (
       <Layout>
+        <Navbar active={1} nav={nav} />
         <SimpleTitle
           small={true}
           content={[
             { text: "Temps approximatif : 20 min", classes: "col-vspace" }
           ]} />
-        <Navbar active={1} />
         <BasicSection
           img="NevaMagis/Notice/Addons/Caisson/2-a-intro.jpg"
           content={[
@@ -145,7 +146,7 @@ class Box extends React.Component {
           content={[
             { text: "Assemblage du caisson terminé", classes: "big-title" }
           ]}>
-          <Validation step="/box/neva-magis/2" />
+          <Validation step="/addon/box/neva-magis/2" />
         </BasicSection>
       </Layout>
     );

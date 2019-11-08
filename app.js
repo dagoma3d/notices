@@ -30,11 +30,18 @@ app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
 app.get('/', require('./routes/home').index);
-app.get('/cura-by-dagoma', require('./routes/cura-by-dagoma').index);
-app.get('/firmware/:printer', require('./routes/firmware').index);
+app.get('/cura-by-dagoma/:printer?', require('./routes/cura-by-dagoma').index);
+app.get('/firmware/:printer/:addon?', require('./routes/firmware').index);
 app.get('/printer/neva', require('./routes/neva').index);
 app.get('/printer/magis/:step?', require('./routes/magis').index);
-app.get('/box/:serie/:step', require('./routes/box').index);
+app.get('/printer/du/:step?/:addon?', require('./routes/disco-ultimate').index);
+app.get('/printer/de200/:step?/:addon?', require('./routes/discoeasy200').index);
+app.get('/addon/box/:serie/:step?', require('./routes/box').index);
+app.get('/addon/screen/:step?', require('./routes/screen').index);
+app.get('/addon/bicolor/:printer/:step?', require('./routes/bicolor').index);
+app.get('/addon/evo/de200/:step?', require('./routes/evo').index);
+app.get('/addon/expert/de200/:step?', require('./routes/expert').index);
+app.get('/addon/extruder-plus/de200/:step?', require('./routes/extruder-plus').index);
 
 app.listen(port);
 console.log(`Express server listening on port ${port}`);

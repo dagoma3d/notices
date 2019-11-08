@@ -3,7 +3,7 @@ var Layout = require('../layouts/default');
 var SimpleSection = require('../components/simple-section');
 var BasicSection = require('../components/basic-section');
 var SimpleTitle = require('../components/simple-title');
-var NavBar = require('../components/navbars/disco-ultimate');
+const NavBar = require('../components/navbar');
 var Media = require('../components/media');
 var Validation = require('../components/validation');
 
@@ -135,9 +135,9 @@ class Firmware extends React.Component {
         <section className="col-xl-24 block-big-white-space bg-gradient-orange row">
           <section className="col-xl-12 col-xl-offset-6 col-l-18 col-l-offset-3 col-m-24 col-m-offset-0 row">
             <div className="col-xl-24 block-caption row col-vspace">
-              <p className="big-title">Etape 10</p>
+              <p className="big-title">Etape {this.props.active + 1}</p>
               <p>Après une mise à jour, il est nécessaire de recalibrer l’imprimante 3D.</p>
-              <Validation step={`/start/${printerInfo.notice}/calibration.html?version=ultimate-v1`} />
+              <Validation step={`/printer/${printerInfo.notice}/calibration`} />
             </div>
           </section>
         </section>
