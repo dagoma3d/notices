@@ -360,7 +360,7 @@ class Printer extends React.Component {
           <div className="col-xl-12 col-xl-offset-6 col-l-18 col-l-offset-3 col-m-24 col-m-offset-0 row col-vspace">
             <div className="checkbox-classic checkbox-full-width">
               <input id="yo" type="checkbox" />
-              <label className="tnormal valid-step" data-redirect="/start/logiciels/cura-by-dagoma.html?printer=discoeasy200&amp;version=v1"
+              <label className="tnormal valid-step" data-redirect="/cura-by-dagoma/de200"
                 htmlFor="yo">
                 Je valide cette étape !
                 </label>

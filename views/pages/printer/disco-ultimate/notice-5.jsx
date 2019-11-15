@@ -2,298 +2,144 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
+const SimpleTitle = require('../../../components/simple-title');
+const BasicSection = require('../../../components/basic-section');
+const SimpleSection = require('../../../components/simple-section');
+const Validation = require('../../../components/validation');
 
 class Printer extends React.Component {
   render() {
     return (
       <Layout>
         <NavBar active={5} nav={nav} />
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoUltimate/Notice/5-a-intro.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <h1 className="title tleft">Notice de montage DISCO ULTIMATE - assemblage de la base</h1>
-            <h2 className="big-title tleft">Assemblage de la base</h2>
-            <p>Nous allons commencer à assembler l’imprimante 3D. Première étape la base.</p>
-          </section>
-        </section>
-
-        <section className="col-xl-24 block-white-space bg-gradient-orange row">
-        </section>
-
-        <section id="ultimate-1-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <figure>
-              <img src="/medias/DiscoUltimate/Notice/5-b-prerequis.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Les pré-requis</p>
-              <ul className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">A. Plaque de protection avant</li>
-                <li className="tleft col-vbspace">B. Plaque de protection arrière</li>
-                <li className="tleft col-vbspace">C. Face arrière montée</li>
-                <li className="tleft col-vbspace">D. Face avant montée</li>
-                <li className="tleft col-vbspace">E. Lot de cache côtés (4 pièces)</li>
-                <li className="tleft col-vbspace">F. Fixations latérales montées</li>
-                <li className="tleft col-vbspace">G. 4x Barres longues (360mm)</li>
-                <li className="tleft col-vbspace">H. Support de plaques de protection</li>
-                <li className="tleft col-vbspace">I. 4x Roulements linéaires</li>
-              </ul>
-              <p>Visserie :</p>
-              <ul className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">8x vis M3x10 (reste 0)</li>
-              </ul>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-2-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/7-c-barre.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/7-c-barre.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/7-c-barre.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Montage des barres</p>
-              <p>Prenez la face avant et 4 barres.</p>
-              <p>Posez la face avant sur sa partie plate.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-3-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-d-fixe-cote.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-d-fixe-cote.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-d-fixe-cote.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Montage des fixations latérales</p>
-              <p>Introduisez les fixations latérales sur les barres inférieures.</p>
-              <p>Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-4-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-e-roulements-axe.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-e-roulements-axe.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-e-roulements-axe.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Mise en place des roulements</p>
-              <p>Ouvrez les sachets des roulements linéaires (encore couverts d’huile).</p>
-              <p>Placez délicatement les roulements sur les barres supérieures, deux à droite et deux à gauche.</p>
-              <p>Astuce : de légères rotations permettent de rentrer le roulement plus facilement.</p>
-              <p>Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-5-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-f-face-ar.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-f-face-ar.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-f-face-ar.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Montage de la face arrière</p>
-              <p>Récupérez la face arrière montée.</p>
-              <p>Présentez-la, extrudeur vers le haut, et à gauche de la machine.</p>
-              <p>Positionnez les barres en face des trous et enfoncez-les légèrement.</p>
-              <p>Une fois en place, enfoncez fermement l’ensemble.</p>
-              <p>Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-6-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <figure>
-              <img src="/medias/DiscoUltimate/Notice/5-g-controle.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Petit contrôle surprise</p>
-              <p>Si vous avez bien suivi les vidéos, vous devez voir 12 petits trous sur les pièces plastiques.</p>
-              <p>Les fixations latérales sont sur les barres inférieures.</p>
-              <p>Les roulements sur les barres supérieures (2 à droite et 2 à gauche).</p>
-              <p>Si ce n’est pas le cas, démontez et recommencez.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-7-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-h-cache-cote-av-droit.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-h-cache-cote-av-droit.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-h-cache-cote-av-droit.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Installation du cache côté avant droit</p>
-              <p>A partir de maintenant, on désignera la face avec le logo comme l'avant et la face avec l'extrudeur comme l'arrière. La gauche sera votre gauche lorsque vous faites face à la machine.</p>
-              <p>Récupérez le cache côté fournis avec l’extrudeur+.</p>
-              <p>Clipsez-le sur la barre du bas et rapprochez-le de la face avant.</p>
-              <p>Respectez bien le sens de la pièce.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-8-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-i-cache-cote-av-gauche.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-i-cache-cote-av-gauche.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-i-cache-cote-av-gauche.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Installation du cache côté avant gauche</p>
-              <p>Prenez le dernier cache côté long.</p>
-              <p>Clipsez-le sur la barre du bas et rapprochez-le de la face avant.</p>
-              <p>Respectez bien le sens de la pièce.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-9-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-j-cache-cote-ar.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-j-cache-cote-ar.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-j-cache-cote-ar.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Installation des caches côtés arrières</p>
-              <p>Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés.</p>
-              <p>Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-10-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-k-installation-plaques-sup.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-k-installation-plaques-sup.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-k-installation-plaques-sup.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Installation des plaques de protection noires</p>
-              <p>Prenez la partie arrière, elle a deux formes prévu pour entourer les moteurs d’extrudeurs (un seul dans votre cas).</p>
-              <p>Placez la face lisse / brillante vers le bas.</p>
-              <p>Prenez 3 vis M3x10 et vissez la dans les trous prévus dans la face arrière.</p>
-              <p>Prenez le clips de bar (petite pièce imprimée orange). Clipsez la sur la barre et alignez la sur le trou dans la plaque. Vissez le à l’aide d’une autre vis M3x10.</p>
-              <p>Prenez la partie avant, placez la comme la précédente et vissez les 4 vis M3x10.</p>
-              <p>Astuce : Bougez la structure pour alignez les trous de vis si nécessaire.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="ultimate-11-assemblage-base" className="col-xl-18 col-xl-offset-3 col-l-24 col-l-offset-0 block-white-space row">
-          <section className="col-xl-12 col-l-24 row">
-            <video className="video-js" preload="auto" width="100%" height="auto"
-              poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoUltimate/Notice/5-l-serrage-base.mp4" type='video/mp4' />
-              <source src="/medias/DiscoUltimate/Notice/5-l-serrage-base.ogv" type='video/ogv' />
-              <source src="/medias/DiscoUltimate/Notice/5-l-serrage-base.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-          </section>
-          <section className="col-xl-12 col-l-24 row">
-            <div className="block-caption row col-vspace">
-              <p className="big-title">Serrage de la base</p>
-              <p>Suivez la vidéo, vous avez 12 vis à serrer.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoUltimate/Notice/5-m-fin.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <p className="big-title">Assemblage de la base terminé.</p>
-            <p>Mettez la base de côté, nous continuons le montage.</p>
-            <div className="checkbox-classic checkbox-full-width">
-              <input id="yo" type="checkbox" />
-              <label className="tnormal valid-step" data-redirect="/start/disco-ultimate/notice-6.html" htmlFor="yo">
-                Je passe à l'étape suivante
-                </label>
-            </div>
-          </section>
-        </section>
-      </Layout >
+        <BasicSection
+          img="DiscoUltimate/Notice/5-a-intro.jpg"
+          content={[
+            { text: "Notice de montage DISCO ULTIMATE - assemblage de la base", classes: "title tleft", tag: "h1" },
+            { text: "Assemblage de la base", classes: "big-title tleft", tag: "h2" },
+            { text: "Nous allons commencer à assembler l’imprimante 3D. Première étape la base." }
+          ]} />
+        <SimpleTitle content={[]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
+          content={[
+            { text: "Les pré-requis", classes: "big-title" },
+            {
+              list: {
+                items: [
+                  { text: "A. Plaque de protection avant" },
+                  { text: "B. Plaque de protection arrière" },
+                  { text: "C. Face arrière montée" },
+                  { text: "D. Face avant montée" },
+                  { text: "E. Lot de cache côtés (4 pièces)" },
+                  { text: "F. Fixations latérales montées" },
+                  { text: "G. 4x Barres longues (360mm)" },
+                  { text: "H. Support de plaques de protection" },
+                  { text: "I. 4x Roulements linéaires" }
+                ]
+              }
+            },
+            { text: "Visserie :" },
+            {
+              list: {
+                items: [
+                  { text: "8x vis M3x10 (reste 0)" }
+                ]
+              }
+            }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
+          content={[
+            { text: "Montage des barres", classes: "big-title" },
+            { text: "Prenez la face avant et 4 barres." },
+            { text: "Posez la face avant sur sa partie plate." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-d-fixe-cote", type: "video" }}
+          content={[
+            { text: "Montage des fixations latérales", classes: "big-title" },
+            { text: "Introduisez les fixations latérales sur les barres inférieures." },
+            { text: "Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-e-roulements-axe", type: "video" }}
+          content={[
+            { text: "Mise en place des roulements", classes: "big-title" },
+            { text: "Ouvrez les sachets des roulements linéaires (encore couverts d’huile)." },
+            { text: "Placez délicatement les roulements sur les barres supérieures, deux à droite et deux à gauche." },
+            { text: "Astuce : de légères rotations permettent de rentrer le roulement plus facilement." },
+            { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-f-face-ar", type: "video" }}
+          content={[
+            { text: "Montage de la face arrière", classes: "big-title" },
+            { text: "Récupérez la face arrière montée." },
+            { text: "Présentez-la, extrudeur vers le haut, et à gauche de la machine." },
+            { text: "Positionnez les barres en face des trous et enfoncez-les légèrement." },
+            { text: "Une fois en place, enfoncez fermement l’ensemble." },
+            { text: "Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-g-controle.jpg", type: "image" }}
+          content={[
+            { text: "Petit contrôle surprise", classes: "big-title" },
+            { text: "Si vous avez bien suivi les vidéos, vous devez voir 12 petits trous sur les pièces plastiques." },
+            { text: "Les fixations latérales sont sur les barres inférieures." },
+            { text: "Les roulements sur les barres supérieures (2 à droite et 2 à gauche)." },
+            { text: "Si ce n’est pas le cas, démontez et recommencez." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-h-cache-cote-av-droit", type: "video" }}
+          content={[
+            { text: "Installation du cache côté avant droit", classes: "big-title" },
+            { text: "A partir de maintenant, on désignera la face avec le logo comme l'avant et la face avec l'extrudeur comme l'arrière. La gauche sera votre gauche lorsque vous faites face à la machine." },
+            { text: "Récupérez le cache côté fournis avec l’extrudeur+." },
+            { text: "Clipsez-le sur la barre du bas et rapprochez-le de la face avant." },
+            { text: "Respectez bien le sens de la pièce." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-i-cache-cote-av-gauche", type: "video" }}
+          content={[
+            { text: "Installation du cache côté avant gauche", classes: "big-title" },
+            { text: "Prenez le dernier cache côté long." },
+            { text: "Clipsez-le sur la barre du bas et rapprochez-le de la face avant." },
+            { text: "Respectez bien le sens de la pièce." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-j-cache-cote-ar", type: "video" }}
+          content={[
+            { text: "Installation des caches côtés arrières", classes: "big-title" },
+            { text: "Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés." },
+            { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-k-installation-plaques-sup", type: "video" }}
+          content={[
+            { text: "Installation des plaques de protection noires", classes: "big-title" },
+            { text: "Prenez la partie arrière, elle a deux formes prévu pour entourer les moteurs d’extrudeurs (un seul dans votre cas)." },
+            { text: "Placez la face lisse / brillante vers le bas." },
+            { text: "Prenez 3 vis M3x10 et vissez la dans les trous prévus dans la face arrière." },
+            { text: "Prenez le clips de bar (petite pièce imprimée orange). Clipsez la sur la barre et alignez la sur le trou dans la plaque. Vissez le à l’aide d’une autre vis M3x10." },
+            { text: "Prenez la partie avant, placez la comme la précédente et vissez les 4 vis M3x10." },
+            { text: "Astuce : Bougez la structure pour alignez les trous de vis si nécessaire." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoUltimate/Notice/5-l-serrage-base", type: "video" }}
+          content={[
+            { text: "Serrage de la base", classes: "big-title" },
+            { text: "Suivez la vidéo, vous avez 12 vis à serrer." }
+          ]} />
+        <BasicSection
+          img="DiscoUltimate/Notice/5-m-fin.jpg"
+          content={[
+            { text: "Assemblage de la base terminé.", classes: "big-title" },
+            { text: "Mettez la base de côté, nous continuons le montage." }
+          ]}>
+          <Validation step="/printer/du/notice-6" text="Je passe à l'étape suivante" />
+        </BasicSection>
+      </Layout>
     );
   }
 }

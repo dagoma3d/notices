@@ -80,15 +80,19 @@ class Printer extends React.Component {
             { text: "Lancement de l'impression", classes: "big-title" },
             { text: "Insérez la carte SD dans la machine et appuyez sur le bouton. Si le bouton est allumé de manière fixe, tout est ok." },
             { text: "La buse doit être propre.", classes: "text-red" },
-            { text: "Une fois lancée, elle passera par les étapes suivantes :" }
-          ]}>
-          <ul>
-            <li><p className="tleft">Un temps de pré-chauffe</p></li>
-            <li><p className="tleft">Un palpage du plateau</p></li>
-            <li><p className="tleft">Un temps de chauffe</p></li>
-            <li><p className="tleft">Début de l'impression</p></li>
-          </ul>
-        </SimpleSection>
+            { text: "Une fois lancée, elle passera par les étapes suivantes :" },
+            {
+              list: {
+                classes: "",
+                items: [
+                  { text: "Un temps de pré-chauffe", classes: "tleft" },
+                  { text: "Un palpage du plateau", classes: "tleft" },
+                  { text: "Un temps de chauffe", classes: "tleft" },
+                  { text: "Début de l'impression", classes: "tleft" }
+                ]
+              }
+            }
+          ]} />
         <SimpleSection
           media={{ src: "NevaMagis/Notice/1-g-piece-beige", type: "video" }}
           content={[

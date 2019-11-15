@@ -2,217 +2,95 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
+const SimpleTitle = require('../../../components/simple-title');
+const BasicSection = require('../../../components/basic-section');
+const SimpleSection = require('../../../components/simple-section');
+const Validation = require('../../../components/validation');
+const Media = require('../../../components/media');
 
 class Printer extends React.Component {
   render() {
     return (
       <Layout>
         <NavBar active={10} nav={nav} />
-        <section className="col-xl-24 bg-gradient-orange row">
-          <p className=" col-vspace">Temps approximatif : 15 minutes</p>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Notice/11-k-fin.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <h1 className="title tleft">Notice de montage DiscoEasy200 - Page 11 - Contrôle</h1>
-            <h2 className="big-title tleft">Contrôlons le bon fonctionnement des éléments de la machine</h2>
-            <p>Nous allons procéder à des vérifications de l’ensemble des composants à l’aide de fichiers de test.</p>
-          </section>
-        </section>
-
-        <section id="disco-11-1" className="col-xl-24 display-flex height-350 block-video bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/12-b-g28.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/12-b-g28.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/12-b-g28.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace tleft">
-              <p className="title tleft">Étape 1</p>
-              <p className="big-title">Contrôle des butées et des moteurs</p>
-              <p>Le fichier suivant fera quelques déplacements simples. Voyez la vidéo ci-contre.</p>
-              <p>Récupérez l’alimentation et branchez la machine au secteur.</p>
-              <p>Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte sinon la machine ne
-                    démarrera pas.</p>
-              <div className="col-vbspace">
-                <a href="/medias/DiscoEasy/Notice/12-gcode-controle/12-b-g28.zip" className="new-btn btn-valid btn-big btn-wide"
-                  download="12-b-g28.zip">Télécharger</a>
-              </div>
-
-              <p>Mettez la carte SD dans la machine et mettez l’interrupteur sur 1 (elle démarre lorsque l’interrupteur passe de 0 à 1).</p>
-              <p className="color-orange text-white col-space">
-                Si le comportement est différent de celui observé, vérifiez votre câblage
-                    <a href="/start/discoeasy200/notice-cablage.html" className="link-classic">ici</a>.
-                    <br />
-                Si le câblage est bon mais que le problème persiste, rendez-vous
-                    <a href="https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html" target="_blank" className="link-classic">ici</a>.
-                </p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-11-2" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/12-c-deplacement.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/12-c-deplacement.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/12-c-deplacement.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 2</p>
-              <h2 className="big-title">Contrôle des déplacements des axes</h2>
-              <p>Le fichier suivant fera quelques déplacements sur toute la longueur des axes. Voyez la vidéo ci-contre. Lors du déplacement de
-                    l’axe X de haut en bas, huilez les barres et les tiges filetées.</p>
-              <p>Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte.</p>
-              <div className="col-vbspace tleft">
-                <a href="/medias/DiscoEasy/Notice/12-gcode-controle/12-c-deplacement.zip" className="new-btn btn-valid btn-big btn-wide"
-                  download="12-c-deplacement.zip">Télécharger</a>
-              </div>
-              <p>Mettez la carte SD dans la machine et mettez l’interrupteur sur 1.</p>
-              <p>Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0).</p>
-              <p className="color-orange text-white col-space">
-                Si le comportement est différent de celui observé, vérifiez votre câblage
-                    <a href="/start/discoeasy200/notice-cablage.html" className="link-classic">ici</a>.
-                    <br />
-                Si le câblage est bon mais que le problème persiste, rendez-vous
-                    <a href="https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html" target="_blank" className="link-classic">ici</a>.
-                </p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-11-3" className="col-xl-24 display-flex height-350 block-video bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/12-d-ventilateur.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/12-d-ventilateur.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/12-d-ventilateur.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 3</p>
-              <h2 className="big-title">Contrôle des ventilateurs</h2>
-              <p>Le fichier suivant fera tourner les ventilateurs l’un après l’autre. Le ventilateur arrière va s’allumer 5 secondes puis ce sera le
-                    tour de l’avant.</p>
-              <p>Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte.</p>
-              <div className="col-vbspace tleft">
-                <a href="/medias/DiscoEasy/Notice/12-gcode-controle/12-d-ventilateur.zip" className="new-btn btn-valid btn-big btn-wide"
-                  download="12-d-ventilateur.zip">Télécharger</a>
-              </div>
-              <p>Mettez la carte SD dans la machine et mettez l’interrupteur sur 1.</p>
-              <p>Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0).</p>
-
-              <p className="color-orange text-white col-space">
-                Si le comportement est différent de celui observé, vérifiez votre câblage
-                    <a href="/start/discoeasy200/notice-cablage.html" className="link-classic">ici</a>.
-                    <br />
-                Si le câblage est bon mais que le problème persiste, rendez-vous
-                    <a href="https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html" target="_blank" className="link-classic">ici</a>.
-                </p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-11-4" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/12-e-chauffe.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/12-e-chauffe.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/12-e-chauffe.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 4</p>
-              <h2 className="big-title">Contrôle de la chauffe et de l'extrusion</h2>
-              <p>Le fichier suivant fera chauffer la tête à 200°C (ne touchez pas la buse en métal).</p>
-              <p>Elle va se déplacer de gauche à droite le temps de sa chauffe.</p>
-              <p>Une fois à droite, elle sera chaude.</p>
-              <p>Elle se mettra ensuite en pause (elle montera un peu et le plateau avancera).</p>
-              <p>Introduisez du filament dans l'extrudeur jusqu’à la tête. Appuyez sur le bras pour débrider l'extrudeur et introduire le filament.
-                    Quelques torsions peuvent aider à le rentrer. (Après la mise à jour, avec l’extrudeur+, l’insertion sera automatique.)</p>
-              <p>Appuyez ensuite sur la butée. La machine sortira du filament par la buse. Retirez-le en faisant attention, la tête est chaude.</p>
-              <p>Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte.</p>
-              <div className="col-vbspace tleft">
-                <a href="/medias/DiscoEasy/Notice/12-gcode-controle/12-e-chauffe.zip" className="new-btn btn-valid btn-big btn-wide"
-                  download="12-e-chauffe.zip">Télécharger</a>
-              </div>
-              <p>Mettez la carte SD dans la machine et mettez l’interrupteur sur 1.</p>
-              <p>Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0).</p>
-
-              <p className="color-orange text-white col-space">
-                Si le comportement est différent de celui observé, vérifiez votre câblage
-                    <a href="/start/discoeasy200/notice-cablage.html" className="link-classic">ici</a>.
-                    <br />
-                Si le câblage est bon mais que le problème persiste, rendez-vous
-                    <a href="https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html" target="_blank" className="link-classic">ici</a>.
-                </p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Notice/11-k-fin.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <p className="big-title">Contrôle : CHECK !</p>
-            <p>Si vous en êtes là, c’est que votre machine est prête à fonctionner.</p>
-            <p>Nous touchons au but, il nous reste à mettre à jour la machine, à la calibrer et vous serez paré pour votre première impression.</p>
-            <div className="checkbox-classic checkbox-full-width">
-              <input id="yo" type="checkbox" />
-              <label className="tnormal valid-step" data-redirect="/firmware/discoeasy200.html" htmlFor="yo">
-                Je valide cette étape !
-                </label>
-            </div>
-          </section>
-        </section>
+        <SimpleTitle
+          small={true}
+          content={[
+            { text: "Temps approximatif : 15 minutes", classes: "col-vspace" }
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Notice/11-k-fin.jpg"
+          content={[
+            { text: "Notice de montage DiscoEasy200 - Page 11 - Contrôle", classes: "title tleft", tag: "h1" },
+            { text: "Contrôlons le bon fonctionnement des éléments de la machine", classes: "big-title tleft" },
+            { text: "Nous allons procéder à des vérifications de l’ensemble des composants à l’aide de fichiers de test." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/12-b-g28", type: "video" }}
+          content={[
+            { text: "Étape 1", classes: "title tleft", tag: "h2" },
+            { text: "Contrôle des butées et des moteurs", classes: "big-title" },
+            { text: "Le fichier suivant fera quelques déplacements simples. Voyez la vidéo ci-contre." },
+            { text: "Récupérez l’alimentation et branchez la machine au secteur." },
+            { text: "Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte sinon la machine ne démarrera pas." },
+            { link: { href: "/medias/DiscoEasy/Notice/12-gcode-controle/12-b-g28.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "12-b-g28.zip", text: "Télécharger" } },
+            { text: "Mettez la carte SD dans la machine et mettez l’interrupteur sur 1 (elle démarre lorsque l’interrupteur passe de 0 à 1)." },
+            { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
+            { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/12-c-deplacement", type: "video" }}
+          content={[
+            { text: "Étape 2", classes: "title tleft", tag: "h2" },
+            { text: "Contrôle des déplacements des axes", classes: "big-title" },
+            { text: "Le fichier suivant fera quelques déplacements sur toute la longueur des axes. Voyez la vidéo ci-contre. Lors du déplacement de l’axe X de haut en bas, huilez les barres et les tiges filetées." },
+            { text: "Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte." },
+            { link: { href: "/medias/DiscoEasy/Notice/12-gcode-controle/12-c-deplacement.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "12-c-deplacement.zip", text: "Télécharger" } },
+            { text: "Mettez la carte SD dans la machine et mettez l’interrupteur sur 1." },
+            { text: "Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0)." },
+            { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
+            { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/12-d-ventilateur", type: "video" }}
+          content={[
+            { text: "Étape 3", classes: "title tleft", tag: "h2" },
+            { text: "Contrôle des ventilateurs", classes: "big-title" },
+            { text: "Le fichier suivant fera tourner les ventilateurs l’un après l’autre. Le ventilateur arrière va s’allumer 5 secondes puis ce sera le tour de l’avant." },
+            { text: "Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte." },
+            { link: { href: "/medias/DiscoEasy/Notice/12-gcode-controle/12-d-ventilateur.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "12-d-ventilateur.zip", text: "Télécharger" } },
+            { text: "Mettez la carte SD dans la machine et mettez l’interrupteur sur 1." },
+            { text: "Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0)." },
+            { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
+            { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/12-e-chauffe", type: "video" }}
+          content={[
+            { text: "Étape 4", classes: "title tleft", tag: "h2" },
+            { text: "Contrôle de la chauffe et de l'extrusion", classes: "big-title" },
+            { text: "Le fichier suivant fera chauffer la tête à 200°C (ne touchez pas la buse en métal)." },
+            { text: "Elle va se déplacer de gauche à droite le temps de sa chauffe." },
+            { text: "Une fois à droite, elle sera chaude." },
+            { text: "Elle se mettra ensuite en pause (elle montera un peu et le plateau avancera)." },
+            { text: "Introduisez du filament dans l'extrudeur jusqu’à la tête. Appuyez sur le bras pour débrider l'extrudeur et introduire le filament. Quelques torsions peuvent aider à le rentrer. (Après la mise à jour, avec l’extrudeur+, l’insertion sera automatique.)" },
+            { text: "Appuyez ensuite sur la butée. La machine sortira du filament par la buse. Retirez-le en faisant attention, la tête est chaude." },
+            { text: "Téléchargez le fichier ci-dessous et mettez le sur la carte SD. Nommez bien le fichier “dagoma0.g” sur la carte." },
+            { link: { href: "/medias/DiscoEasy/Notice/12-gcode-controle/12-e-chauffe.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "12-e-chauffe.zip", text: "Télécharger" } },
+            { text: "Mettez la carte SD dans la machine et mettez l’interrupteur sur 1." },
+            { text: "Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0)." },
+            { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
+            { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Notice/11-k-fin.jpg"
+          content={[
+            { text: "Contrôle : CHECK !", classes: "big-title" },
+            { text: "Si vous en êtes là, c’est que votre machine est prête à fonctionner." },
+            { text: "Nous touchons au but, il nous reste à mettre à jour la machine, à la calibrer et vous serez paré pour votre première impression." },
+          ]}>
+          <Validation step="/firmware/de200" />
+        </BasicSection>
       </Layout>
     );
   }

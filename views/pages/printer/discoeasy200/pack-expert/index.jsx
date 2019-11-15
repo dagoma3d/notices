@@ -2,294 +2,150 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require("../../../../../content/nav/expert");
+const SimpleTitle = require('../../../../components/simple-title');
+const BasicSection = require('../../../../components/basic-section');
+const SimpleSection = require('../../../../components/simple-section');
+const Validation = require('../../../../components/validation');
+const Media = require('../../../../components/media');
 
 class PackExpert extends React.Component {
   render() {
     return (
       <Layout>
         <NavBar active={0} nav={nav} />
-        <section className="col-xl-24 bg-gradient-orange row">
-          <p className=" col-vspace">Temps approximatif : 15 minutes</p>
-        </section>
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <h1 className="title tleft">Notice de montage pack expert - Préparation et démontage</h1>
-            <p className="big-title tleft">Ça y est, vous avez reçu votre pack expert.</p>
-            <p>Nous allons vous accompagner dans le montage et l’utilisation de cette amélioration pour votre DiscoEasy200.</p>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex bg-light-grey-blue height-350 row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-            <figure>
-              <img src="/medias/DiscoEasy/Add-on/Trapezoidales/1-b-contenu.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="big-title">Dans ces deux cartons vous avez trouvé…</p>
-              <p className="bold">Part 1</p>
-              <ol className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">1 tête d'impression non montée</li>
-                <li className="tleft col-vbspace">2 chariots de X</li>
-                <li className="tleft col-vbspace">6 vis M4x12</li>
-                <li className="tleft col-vbspace">3 colliers de fixation (blancs ou noirs)</li>
-              </ol>
-              <p className="bold">Part 2</p>
-              <ul className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">2 moteurs de Z avec tiges filetées intégrées + écrous anti-backslash</li>
-              </ul>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-            <figure>
-              <img src="/medias/DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="big-title">Les prérequis</p>
-              <ul className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">Une DiscoEasy200 montée et un pack expert</li>
-                <li className="tleft col-vbspace">Un tournevis hexagonal 2.5 mm (fourni avec le kit DiscoEasy200)</li>
-                <li className="tleft col-vbspace">Un tournevis plat</li>
-                <li className="tleft col-vbspace">Un outil imprimé (fourni avec le kit DiscoEasy200)
-                        <a href="/medias/DiscoEasy/Add-on/Trapezoidales/palette-montage-petits-roulements.STL" className="link-classic italic"
-                    download="palette-montage-petits-roulements.STL">Téléchargeable ici</a></li>
-                <li className="tleft col-vbspace">Une pince coupante</li>
-              </ul>
-            </div>
-          </section>
-        </section>
-
-
-
-        <section className="col-xl-24 block-big-white-space bg-gradient-orange row">
-          <p className="big-title">Place au démontage</p>
-          <p>A chaque étape, conservez les vis.</p>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-d-gaine.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-d-gaine.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-d-gaine.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Etape 1</h2>
-              <p className="big-title">Retrait de la gaine torsadée</p>
-              <p>Retirez la gaine de la fixation latérale jusqu’au chariot.</p>
-              <p>Libérez les câbles de moteur et de butée.</p>
-              <p>Déclipsez la gaine du chariot.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Étape 2</h2>
-              <p className="big-title">Débranchez le moteur de X</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-f-debrancher-butee.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-f-debrancher-butee.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-f-debrancher-butee.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Etape 3</h2>
-              <p className="big-title">Débranchement de la butée et des moteurs de Z</p>
-              <p>Retournez la machine.</p>
-              <p>Débranchez la butée de X connectée sur la borne X+.</p>
-              <p>Retirez complètement le câble du dessous de la machine.</p>
-              <p>Débranchez les moteurs de Z.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-g-retirer-top.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-g-retirer-top.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-g-retirer-top.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Étape 4</h2>
-              <p className="big-title">Démontage de la partie supérieure de la machine</p>
-              <p className="italic">S'il vous reste du filament dans la tête d'impression, retirez-le.</p>
-              <p>Débranchez le tube PTFE en appuyant sur le connecteur noir et retirez-le du top.</p>
-              <p>Desserrez les 4 vis latérales.</p>
-              <p>Retirez la partie supérieure de l’imprimante.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Étape 5</h2>
-              <p className="big-title">Retrait de l’axe X</p>
-              <p>Dévissez les vis supérieures des coupleurs.</p>
-              <p>Retirez les tiges filetées des coupleurs.</p>
-              <p>Tirez ensuite l’ensemble vers le haut pour le sortir de la machine.</p>
-              <p>Retirez ensuite les deux tiges filetées.</p>
-              <p className="italic">Attention, elles sont recouvertes d'huile.</p>
-              <p>Retenez les écrous supérieurs pour éviter qu’ils ne partent d’un coup.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-i-retirer-mot-z.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-i-retirer-mot-z.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-i-retirer-mot-z.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Étape 6</h2>
-              <p className="big-title">Démontage des moteurs de Z</p>
-              <p>Dévissez les moteurs de Z. </p>
-              <p>Soulevez la base et retirez-les.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 bg-white block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <h2 className="title tleft">Étape 7</h2>
-              <p className="big-title">Démontage de l’axe X</p>
-              <p>Retirez la courroie de la tête.</p>
-              <p>Séparez tous les éléments.</p>
-              <p>Mettez les barres de côté.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Add-on/Trapezoidales/1-k-fin.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <p className="big-title">Démontage de l’imprimante : CHECK !</p>
-            <div className="checkbox-classic checkbox-full-width">
-              <input id="yo" type="checkbox" />
-              <label className="tnormal valid-step" data-redirect="/start/discoeasy200/pack-expert/notice-2.html" htmlFor="yo">
-                Je valide et je passe à la suite !
-                </label>
-            </div>
-          </section>
-        </section>
-
-
+        <SimpleTitle
+          small={true}
+          content={[
+            { text: "Temps approximatif : 15 minutes", classes: "col-vspace" }
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg"
+          content={[
+            { text: "Notice de montage pack expert - Préparation et démontage", classes: "title tleft", tag: "h1" },
+            { text: "Ça y est, vous avez reçu votre pack expert.", classes: "big-title tleft" },
+            { text: "Nous allons vous accompagner dans le montage et l’utilisation de cette amélioration pour votre DiscoEasy200." }
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-b-contenu.jpg", type: "image" }}
+          content={[
+            { text: "Dans ces deux cartons vous avez trouvé...", classes: "big-title" },
+            { text: "Part 1", classes: "bold" },
+            {
+              list: {
+                tag: "ol",
+                items: [
+                  { text: "1 tête d'impression non montée" },
+                  { text: "2 chariots de X" },
+                  { text: "6 vis M4x12" },
+                  { text: "3 colliers de fixation (blancs ou noirs)" }
+                ]
+              }
+            },
+            { text: "Part 2", classes: "bold" },
+            {
+              list: {
+                items: [
+                  { text: "2 moteurs de Z avec tiges filetées intégrées + écrous anti-backslash" }
+                ]
+              }
+            }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg", type: "image" }}
+          content={[
+            { text: "Les prérequis", classes: "big-title" },
+            {
+              list: {
+                items: [
+                  { text: "Une DiscoEasy200 montée et un pack expert" },
+                  { text: "Un tournevis hexagonal 2.5 mm (fourni avec le kit DiscoEasy200)" },
+                  { text: "Un tournevis plat" },
+                  { text: "Un outil imprimé (fourni avec le kit DiscoEasy200)", link: { href: "/medias/DiscoEasy/Add-on/Trapezoidales/palette-montage-petits-roulements.STL", classes: "link-classic italic", download: "palette-montage-petits-roulements.STL", text: "Téléchargeable ici" } },
+                  { text: "Une pince coupante" },
+                ]
+              }
+            }
+          ]} />
+        <SimpleTitle
+          content={[
+            { text: "Place au démontage", classes: "big-title" },
+            { text: "A chaque étape, conservez les vis." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-d-gaine", type: "video" }}
+          content={[
+            { text: "Etape 1", classes: "title tleft", tag: "h2" },
+            { text: "Retrait de la gaine torsadée", classes: "big-title" },
+            { text: "Retirez la gaine de la fixation latérale jusqu’au chariot." },
+            { text: "Libérez les câbles de moteur et de butée." },
+            { text: "Déclipsez la gaine du chariot." }
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot", type: "video" }}
+          content={[
+            { text: "Étape 2", classes: "title tleft", tag: "h2" },
+            { text: "Débranchez le moteur de X", classes: "big-title" }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-f-debrancher-butee", type: "video" }}
+          content={[
+            { text: "Etape 3", classes: "title tleft", tag: "h2" },
+            { text: "Débranchement de la butée et des moteurs de Z", classes: "big-title" },
+            { text: "Retournez la machine." },
+            { text: "Débranchez la butée de X connectée sur la borne X+." },
+            { text: "Retirez complètement le câble du dessous de la machine." },
+            { text: "Débranchez les moteurs de Z." },
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-g-retirer-top", type: "video" }}
+          content={[
+            { text: "Étape 4", classes: "title tleft", tag: "h2" },
+            { text: "Démontage de la partie supérieure de la machine", classes: "big-title" },
+            { text: "S'il vous reste du filament dans la tête d'impression, retirez-le.", classes: "italic" },
+            { text: "Débranchez le tube PTFE en appuyant sur le connecteur noir et retirez-le du top." },
+            { text: "Desserrez les 4 vis latérales." },
+            { text: "Retirez la partie supérieure de l’imprimante." },
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x", type: "video" }}
+          content={[
+            { text: "Étape 5", classes: "title tleft", tag: "h2" },
+            { text: "Retrait de l’axe X", classes: "big-title" },
+            { text: "Dévissez les vis supérieures des coupleurs." },
+            { text: "Retirez les tiges filetées des coupleurs." },
+            { text: "Tirez ensuite l’ensemble vers le haut pour le sortir de la machine." },
+            { text: "Retirez ensuite les deux tiges filetées." },
+            { text: "Attention, elles sont recouvertes d'huile.", classes: "italic" },
+            { text: "Retenez les écrous supérieurs pour éviter qu’ils ne partent d’un coup." },
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-i-retirer-mot-z", type: "video" }}
+          content={[
+            { text: "Étape 6", classes: "title tleft", tag: "h2" },
+            { text: "Démontage des moteurs de Z", classes: "big-title" },
+            { text: "Dévissez les moteurs de Z." },
+            { text: "Soulevez la base et retirez-les." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x", type: "video" }}
+          content={[
+            { text: "Étape 7", classes: "title tleft", tag: "h2" },
+            { text: "Démontage de l’axe X", classes: "big-title" },
+            { text: "Retirez la courroie de la tête." },
+            { text: "Séparez tous les éléments." },
+            { text: "Mettez les barres de côté." }
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Add-on/Trapezoidales/1-k-fin.jpg"
+          content={[
+            { text: "Démontage de l’imprimante : CHECK !", classes: "big-title" }
+          ]}>
+          <Validation step="/addon/expert/de200/notice-2" text="Je valide et je passe à la suite !" />
+        </BasicSection>
       </Layout>
     );
   }

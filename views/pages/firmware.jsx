@@ -29,27 +29,26 @@ class Firmware extends React.Component {
           media={{ src: "NevaMagis/Software/a-cura.jpg", type: "image" }}
           content={[
             { text: "Nécessaire pour fonctionner", classes: "big-title" },
-            { text: "Avant d’aller plus loin, téléchargez et installez Cura by Dagoma. Lors de l’installation, nous installons des éléments nécessaires au bon fonctionnement de Dagom’app." }
-          ]}>
-          <p className="tleft col-vspace">
-            <a href="https://dist.dagoma3d.com/CuraByDagoma" target="_blank" className="new-btn btn-valid btn-wide">Télécharger Cura by Dagoma</a>
-          </p>
-        </SimpleSection>
+            { text: "Avant d’aller plus loin, téléchargez et installez Cura by Dagoma. Lors de l’installation, nous installons des éléments nécessaires au bon fonctionnement de Dagom’app." },
+            { classes: "tleft col-vspace", link: { href: "https://dist.dagoma3d.com/CuraByDagoma", target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger Cura by Dagoma" } }
+          ]} />
         <SimpleSection
           media={{ src: `DiscoEasy/Calibration/${printerInfo.img}`, type: "image" }}
           content={[
-            { text: "Les pré-requis", classes: "big-title" }
-          ]}>
-          <ul>
-            <li><p className="tleft">Une {printerInfo.name}</p></li>
-            <li><p className="tleft">Un câble USB-B (fournis avec ton imprimante)</p></li>
-            <li><p className="tleft">Un ordinateur et Dagom'app</p></li>
-          </ul>
-          <p className="tleft col-vspace">
-            <a href="https://dist.dagoma3d.com/DagomApp" target="_blank" className="new-btn btn-valid btn-wide">Télécharger Dagom'app</a>
-          </p>
-          <p>Et suivez le tutoriel ci-dessous, étape par étape.</p>
-        </SimpleSection>
+            { text: "Les pré-requis", classes: "big-title" },
+            {
+              list: {
+                classes: "",
+                items: [
+                  { tag: { name: "p", classes: "tleft" }, text: `Une ${printerInfo.name}` },
+                  { tag: { name: "p", classes: "tleft" }, text: "Un câble USB-B (fournis avec ton imprimante)" },
+                  { tag: { name: "p", classes: "tleft" }, text: "Un ordinateur et Dagom'app" }
+                ]
+              }
+            },
+            { classes: "tleft col-vspace", link: { href: "https://dist.dagoma3d.com/DagomApp", target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger Dagom'app" } },
+            { text: "Et suivez le tutoriel ci-dessous, étape par étape." }
+          ]} />
         <SimpleTitle
           content={[
             { text: "Commençons !", classes: "big-title" },
@@ -108,14 +107,11 @@ class Firmware extends React.Component {
           content={[
             { text: "Etape 7", classes: "big-title" },
             { text: "On y est presque !" },
-            { text: `Téléchargez le firmware HEX pour votre ${printerInfo.name} :` }
-          ]}>
-          <p className="tleft col-vbspace">
-            <a href={`https://dist.dagoma3d.com/Marlin-Firmwares/${printerInfo.firmware}`} target="_blank" className="new-btn btn-valid btn-wide">Télécharger le firmware HEX</a>
-          </p>
-          <p className="bg-orange text-white col-space">Choisissez les options dont votre machine est équipée uniquement !</p>
-          <p className="col-vtspace">Cliquez sur “sélectionnez un fichier .hex”</p>
-        </SimpleSection>
+            { text: `Téléchargez le firmware HEX pour votre ${printerInfo.name} :` },
+            { classes: "tleft col-vbspace", link: { href: `https://dist.dagoma3d.com/Marlin-Firmwares/${printerInfo.firmware}`, target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger le firmware HEX" } },
+            { text: "Choisissez les options dont votre machine est équipée uniquement !", classes: "bg-orange text-white col-space" },
+            { text: "Cliquez sur “sélectionnez un fichier .hex”", classes: "col-vtspace" }
+          ]} />
         <SimpleSection
           wrap={true}
           media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e7.jpg", type: "image", classes: "notice-small" }}
@@ -132,15 +128,13 @@ class Firmware extends React.Component {
             { text: `Votre ${printerInfo.name} a été mise à jour. Vous pouvez fermer Dagom'app.` },
             { text: "Encore une dernière étape." }
           ]} />
-        <section className="col-xl-24 block-big-white-space bg-gradient-orange row">
-          <section className="col-xl-12 col-xl-offset-6 col-l-18 col-l-offset-3 col-m-24 col-m-offset-0 row">
-            <div className="col-xl-24 block-caption row col-vspace">
-              <p className="big-title">Etape {this.props.active + 1}</p>
-              <p>Après une mise à jour, il est nécessaire de recalibrer l’imprimante 3D.</p>
-              <Validation step={`/printer/${printerInfo.notice}/calibration`} />
-            </div>
-          </section>
-        </section>
+        <BasicSection
+          content={[
+            { text: `Etape ${this.props.active + 1}`, classes: "big-title" },
+            { text: "Après une mise à jour, il est nécessaire de recalibrer l’imprimante 3D." }
+          ]}>
+          <Validation step={`/printer/${printerInfo.notice}/calibration`} />
+        </BasicSection>
       </Layout>
     );
   }

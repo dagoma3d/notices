@@ -1,6 +1,6 @@
 const React = require('react');
 const Media = require('./media');
-const Text = require('./text-block');
+const TextBlock = require('./text-block');
 
 class SimpleSection extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class SimpleSection extends React.Component {
         <section className={"col col-xl-12 col-m-24 row" + (flip ? " col-xl-pull-12 col-m-pull-0" : "")}>
           <div className="block-caption-classic block-caption-left row col-vspace">
             {content.map((p, k) => {
-              return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} link_text={p.link_text} link_classes={p.link_classes} download={p.download} link_target={p.link_target} />
+              return <TextBlock key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} list={p.list} />
             })}
             {this.props.children}
           </div>

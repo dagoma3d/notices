@@ -2,192 +2,98 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
+const SimpleTitle = require('../../../components/simple-title');
+const BasicSection = require('../../../components/basic-section');
+const SimpleSection = require('../../../components/simple-section');
+const Validation = require('../../../components/validation');
+const Media = require('../../../components/media');
 
 class Printer extends React.Component {
   render() {
     return (
       <Layout>
         <NavBar active={2} nav={nav} />
-        <section className="col-xl-24 bg-gradient-orange row">
-          <p className=" col-vspace">Temps approximatif : 20 minutes</p>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Notice/4-a-intro.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <h1 className="title tleft">Notice de montage DiscoEasy200 - Page 3 - Montage de la face arrière</h1>
-            <h2 className="big-title tleft">Montage de la face arrière</h2>
-            <p>Nous allons monter la deuxième partie de l’imprimante 3D.</p>
-          </section>
-        </section>
-
-        <section id="disco-3-prerequis" className="col-xl-24 display-flex height-350 bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-            <figure>
-              <img src="/medias/DiscoEasy/Notice/4-b-prerequis.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="big-title">Les pré-requis</p>
-              <ul className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">1 face arrière</li>
-                <li className="tleft col-vbspace">1 moteur avec roue dentée</li>
-                <li className="tleft col-vbspace">
-                  1 corps d’extrudeur
-                    </li>
-                <li className="tleft col-vbspace">
-                  1 bras d’extrudeur
-                    </li>
-                <li className="tleft col-vbspace">1 ressort d’extrudeur (il n’y en a qu’un dans le sachet mécanique)</li>
-                <li className="tleft col-vbspace">2 roulements de courroie</li>
-                <li className="tleft col-vbspace">4 écrous M3 (il doit en rester 17)</li>
-                <li className="tleft col-vbspace">3 vis M3x25 (il doit en rester 1)</li>
-                <li className="tleft col-vbspace">5 vis M3x16 (il doit en rester 18)</li>
-
-              </ul>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-3-1" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/4-c-vis-serrage.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/4-c-vis-serrage.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/4-c-vis-serrage.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 1</p>
-              <h2 className="big-title">Mise en place des vis de serrage</h2>
-              <p>Comme tout à l’heure, prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en
-                  place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard
-                    pour maintenir les barres.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-3-2" className="col-xl-24 display-flex height-350 block-video bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/4-d-roulement-courroie.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/4-d-roulement-courroie.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/4-d-roulement-courroie.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 2</p>
-              <h2 className="big-title">Installation des roulements de courroie</h2>
-              <p>Nous allons placer les roulements qui feront le renvoi de courroie du plateau de l’imprimante.</p>
-              <p>Prenez le petit outil imprimé. Il permet de placer et maintenir les roulements facilement. Prenez 1 vis M3x16, placez en une dans
-                    le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-3-3" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/4-e-extrudeur.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/4-e-extrudeur.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/4-e-extrudeur.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 3</p>
-              <h2 className="big-title">Montage de l’extrudeur</h2>
-
-              <p>Prenez le moteur et placez le depuis l’intérieur de la pièce plastique (roue dentée côté lisse de la pièce).</p>
-              <p>Orientez le connecteur du moteur vers les roulements.</p>
-              <p>Placez 2 vis M3x25 dans le corps de l’extrudeur. Laissez le trou où la matière est la plus fine vide.</p>
-              <p>Orientez le comme sur la vidéo (trou vide dans le même sens que le connecteur).</p>
-              <p>Serrez les deux vis.</p>
-              <p>Placez le ressort dans l'empreinte sur le corps de l’extrudeur.</p>
-              <p>Prenez le bras, placez le pour que le ressort soit pris dans la seconde empreinte.</p>
-              <p>Comprimez le ressort pour aligner les trous placez la dernière vis sans serrer.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-3-4" className="col-xl-24 display-flex height-350 block-video bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}" controls>
-              <source src="/medias/DiscoEasy/Notice/4-e-extrudeur-serrage.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/4-e-extrudeur-serrage.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/4-e-extrudeur-serrage.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 4</p>
-              <h2 className="big-title">Serrage du bras d’extrudeur</h2>
-              <p>Le bras ne doit pas être trop serré pour éviter de le bloquer.</p>
-              <p>Serrez jusqu'à voir disparaître le jour entre les deux pièces orange.</p>
-              <p>Desserrez d’un quart de tour pour le faire réapparaître.</p>
-            </div>
-          </section>
-        </section>
-
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Notice/4-f-fin.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <p className="big-title">Montage de la face arrière : CHECK !</p>
-            <p>Mettez-la de côté, elle nous servira plus tard.</p>
-            <div className="checkbox-classic checkbox-full-width">
-              <input id="yo" type="checkbox" />
-              <label className="tnormal valid-step" data-redirect="/start/discoeasy200/notice-montage-fixations-laterales.html" htmlFor="yo">
-                Je valide cette étape !
-                </label>
-            </div>
-          </section>
-        </section>
+        <SimpleTitle
+          small={true}
+          content={[
+            { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Notice/4-a-intro.jpg"
+          content={[
+            { text: "Notice de montage DiscoEasy200 - Page 3 - Montage de la face arrière", classes: "title tleft", tag: "h1" },
+            { text: "Montage de la face arrière", classes: "big-title tleft" },
+            { text: "Nous allons monter la deuxième partie de l’imprimante 3D." }
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Notice/4-b-prerequis.jpg", type: "image" }}
+          content={[
+            { text: "Les pré-requis", classes: "big-title" },
+            {
+              list: {
+                items: [
+                  { text: "1 face arrière" },
+                  { text: "1 moteur avec roue dentée" },
+                  { text: "1 corps d’extrudeur" },
+                  { text: "1 bras d’extrudeur" },
+                  { text: "1 ressort d’extrudeur (il n’y en a qu’un dans le sachet mécanique)" },
+                  { text: "2 roulements de courroie" },
+                  { text: "4 écrous M3 (il doit en rester 17)" },
+                  { text: "3 vis M3x25 (il doit en rester 1)" },
+                  { text: "5 vis M3x16 (il doit en rester 18)" },
+                ]
+              }
+            }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/4-c-vis-serrage", type: "video" }}
+          content={[
+            { text: "Étape 1", classes: "title tleft", tag: "h2" },
+            { text: "Mise en place des vis de serrage", classes: "big-title" },
+            { text: "Comme tout à l’heure, prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Notice/4-d-roulement-courroie", type: "video" }}
+          content={[
+            { text: "Étape 2", classes: "title tleft", tag: "h2" },
+            { text: "Installation des roulements de courroie", classes: "big-title" },
+            { text: "Nous allons placer les roulements qui feront le renvoi de courroie du plateau de l’imprimante." },
+            { text: "Prenez le petit outil imprimé. Il permet de placer et maintenir les roulements facilement. Prenez 1 vis M3x16, placez en une dans le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage." }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/4-e-extrudeur", type: "video" }}
+          content={[
+            { text: "Étape 3", classes: "title tleft", tag: "h2" },
+            { text: "Montage de l’extrudeur", classes: "big-title" },
+            { text: "Prenez le moteur et placez le depuis l’intérieur de la pièce plastique (roue dentée côté lisse de la pièce)." },
+            { text: "Orientez le connecteur du moteur vers les roulements." },
+            { text: "Placez 2 vis M3x25 dans le corps de l’extrudeur. Laissez le trou où la matière est la plus fine vide." },
+            { text: "Orientez le comme sur la vidéo (trou vide dans le même sens que le connecteur)." },
+            { text: "Serrez les deux vis." },
+            { text: "Placez le ressort dans l'empreinte sur le corps de l’extrudeur." },
+            { text: "Prenez le bras, placez le pour que le ressort soit pris dans la seconde empreinte." },
+            { text: "Comprimez le ressort pour aligner les trous placez la dernière vis sans serrer." },
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage", type: "video" }}
+          content={[
+            { text: "Étape 4", classes: "title tleft", tag: "h2" },
+            { text: "Serrage du bras d’extrudeur", classes: "big-title" },
+            { text: "Le bras ne doit pas être trop serré pour éviter de le bloquer." },
+            { text: "Serrez jusqu'à voir disparaître le jour entre les deux pièces orange." },
+            { text: "Desserrez d’un quart de tour pour le faire réapparaître." },
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Notice/4-f-fin.jpg"
+          content={[
+            { text: "Montage de la face arrière : CHECK !", classes: "big-title" },
+            { text: "Mettez-la de côté, elle nous servira plus tard." }
+          ]}>
+          <Validation step="/printer/de200/notice-montage-fixations-laterales" />
+        </BasicSection>
       </Layout>
     );
   }

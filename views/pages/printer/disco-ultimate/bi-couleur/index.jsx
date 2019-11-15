@@ -28,36 +28,39 @@ class BiColor extends React.Component {
         <SimpleSection
           media={{ src: "DiscoEasy/Add-on/Bicouleur/1-b-contenu.jpg", type: "image" }}
           content={[
-            { text: "Dans le pack vous avez trouvé...", classes: "big-title tleft", tag: "h2" }
+            { text: "Dans le pack vous avez trouvé...", classes: "big-title tleft", tag: "h2" },
+            {
+              list: {
+                items: [
+                  { text: "A - Une tête d’impression bi-couleur" },
+                  { text: "B - Un bras d’extrudeur+" },
+                  { text: "C - Un corps d’extrudeur+ E1" },
+                  { text: "D - Un tube PTFE" },
+                  { text: "E - Un moteur d’extrudeur" },
+                  { text: "F - Un ressort d’extrudeur" },
+                  { text: "G - 3x grandes vis (M3x25mm) et 1x petite vis (M3x6mm)" },
+                  { text: "H - 6 roulements linéaire (inutiles si vous avez le pack expert)" },
+                  { text: "I - Câble pour le moteur d’extrudeur E1" }
+                ]
+              }
+            }
           ]}>
-          <ul className="list-classic tnormal row tleft-child">
-            <li className="tleft col-vbspace">A - Une tête d’impression bi-couleur</li>
-            <li className="tleft col-vbspace">B - Un bras d’extrudeur+</li>
-            <li className="tleft col-vbspace">C - Un corps d’extrudeur+ E1</li>
-            <li className="tleft col-vbspace">D - Un tube PTFE</li>
-            <li className="tleft col-vbspace">E - Un moteur d’extrudeur</li>
-            <li className="tleft col-vbspace">F - Un ressort d’extrudeur</li>
-            <li className="tleft col-vbspace">G - 3x grandes vis (M3x25mm) et 1x petite vis (M3x6mm)</li>
-            <li className="tleft col-vbspace">H - 6 roulements linéaire (inutiles si vous avez le pack expert)</li>
-            <li className="tleft col-vbspace">I - Câble pour le moteur d’extrudeur E1</li>
-          </ul>
         </SimpleSection>
         <SimpleSection
           media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg", type: "image" }}
           content={[
-            { text: "Les pré-requis", classes: "big-title tleft", tag: "h2" }
-          ]}>
-          <ul className="list-classic tnormal row tleft-child">
-            <li className="tleft col-vbspace">1. Un tournevis hexagonal 2.5 mm (fourni avec le kit Disco Ultimate)</li>
-            <li className="tleft col-vbspace">2. Un tournevis plat</li>
-            <li className="tleft col-vbspace">3. Un outil imprimé (fourni avec le kit Disco Ultimate)
-                            <a href="/medias/DiscoEasy/Add-on/Trapezoidales/palette-montage-petits-roulements.STL" className="link-classic italic"
-                download="palette-montage-petits-roulements.STL">
-                téléchargeable ici</a>
-            </li>
-            <li className="tleft col-vbspace">4. Une pince coupante</li>
-          </ul>
-        </SimpleSection>
+            { text: "Les pré-requis", classes: "big-title tleft", tag: "h2" },
+            {
+              list: {
+                items: [
+                  { text: "1. Un tournevis hexagonal 2.5 mm (fourni avec le kit Disco Ultimate)" },
+                  { text: "2. Un tournevis plat" },
+                  { text: "3. Un outil imprimé (fourni avec le kit Disco Ultimate)", link: { href: "/medias/DiscoEasy/Add-on/Trapezoidales/palette-montage-petits-roulements.STL", classes: "link-classic italic", download: "palette-montage-petits-roulements.STL", text: "téléchargeable ici" } },
+                  { text: "4. Une pince coupante" },
+                ]
+              }
+            }
+          ]} />
         <SimpleTitle
           content={[
             { text: "Place au démontage", classes: "big-title" }

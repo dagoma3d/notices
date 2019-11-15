@@ -22,7 +22,7 @@ class BiColor extends React.Component {
           content={[
             { text: "Notice de montage pack bi-couleur - préparation d’un gcode bi-couleur", classes: "title tleft", tag: "h1" },
             { text: "Préparer un gcode", classes: "big-title tleft" },
-            { text: "Nous avons ajouté dans notre dernier cura la possibilité de préparer des gcodes pour la double extrusion. Si vous n’êtes pas familiers de Cura, rendez-vous d’abord ", link: "/cura-by-dagoma", link_classes: "link-classic", link_text: "ici." }
+            { text: "Nous avons ajouté dans notre dernier cura la possibilité de préparer des gcodes pour la double extrusion. Si vous n’êtes pas familiers de Cura, rendez-vous d’abord ", link: { href: "/cura-by-dagoma", classes: "link-classic", text: "ici" } }
           ]} />
         <SimpleSection
           flip={true}
@@ -33,14 +33,14 @@ class BiColor extends React.Component {
               text: "Les fichiers pour imprimer en bi-couleurs sont spécifique, ils doivent être au préalable séparés en deux avec la même origine. Cura peut ensuite les rassembler et les slicers en un seul et même gcode."
             },
             { text: "Nous vous avons préparé un pack de 15 objets pour la bi-couleur." },
-            { link_text: "Télécharger les 15 objets", link: "/medias/stl/15STL.zip", link_classes: "new-btn btn-classic btn-grey btn-wide", download: "15STL.zip" }
+            { link: { text: "Télécharger les 15 objets", href: "/medias/stl/15STL.zip", classes: "new-btn btn-classic btn-grey btn-wide", download: "15STL.zip" } }
           ]} />
         <SimpleSection
           media={{ src: "DiscoEasy/Add-on/Bicouleur/8-c-choix-du", type: "video" }}
           content={[
             { text: "Installation de Cura pour la double extrusion", classes: "big-title tleft", tag: "h2" },
             { text: "Si ce n’est pas déjà fait, téléchargez la dernière version de Cura.", classes: "text-red" },
-            { link_text: "Télécharger", link: "https://dist.dagoma3d.com/CuraByDagoma", link_classes: "new-btn btn-classic btn-grey btn-wide", link_target: "_blank" },
+            { link: { text: "Télécharger", href: "https://dist.dagoma3d.com/CuraByDagoma", classes: "new-btn btn-classic btn-grey btn-wide", target: "_blank" } },
             { text: "Une fois installé, sur l’écran de choix d’imprimante, cliquez sur DiscoUltimate, choisissez oui pour la double extrusion, et appuyez sur OK." },
             { text: "Voilà ! Nous vous expliquons la nouvelle interface et son fonctionnement juste après." },
           ]} />
@@ -70,24 +70,18 @@ class BiColor extends React.Component {
             { text: "Choisir le type de support", classes: "big-title tleft", tag: "h2" },
             { text: "Pour notre exemple, nous avons mis du orange dans l’extrudeur 1 et du gris dans l’extrudeur 2." },
             { text: "La bi-extrusion offre la possibilité de gérer les supports de différentes façon (bien-sur il faut au préalable activer les supports) :" },
-          ]}>
-          <ul className="lsn tleft-child">
-            <li className="col-hlspace">
-              <p>A. Les deux : Les deux filaments seront utilisés pour faire le support.</p>
-            </li>
-            <li className="col-hlspace">
-              <p>B. Filament 1 : Seul le filament 1 sera utilisé pour le support, orange ici.</p>
-            </li>
-            <li className="col-hlspace">
-              <p>C. Filament 2 : Seul le filament 2 sera utilisé pour le support, gris ici.</p>
-            </li>
-            <li className="col-hlspace">
-              <p>D. Il est possible d’imprimer une pièce monochrome avec un support d’une autre matière. Ici, nous avons imprimé le “T”
-                  avec le filament 1 et le support avec le filament 2. Pour se faire, il faut choisir “Filament 2” dans type de support.
-                            </p>
-            </li>
-          </ul>
-        </SimpleSection>
+            {
+              list: {
+                classes: "lsn tleft-child",
+                items: [
+                  { text: "A. Les deux : Les deux filaments seront utilisés pour faire le support.", classes: "col-hlspace", tag: { name: "p" } },
+                  { text: "B. Filament 1 : Seul le filament 1 sera utilisé pour le support, orange ici.", classes: "col-hlspace", tag: { name: "p" } },
+                  { text: "C. Filament 2 : Seul le filament 2 sera utilisé pour le support, gris ici.", classes: "col-hlspace", tag: { name: "p" } },
+                  { text: "D. Il est possible d’imprimer une pièce monochrome avec un support d’une autre matière. Ici, nous avons imprimé le “T” avec le filament 1 et le support avec le filament 2. Pour se faire, il faut choisir “Filament 2” dans type de support.", classes: "col-hlspace", tag: { name: "p" } }
+                ]
+              }
+            }
+          ]} />
         <SimpleSection
           media={{ src: "DiscoEasy/Add-on/Bicouleur/8-g-volume-purge.jpg", type: "image" }}
           content={[

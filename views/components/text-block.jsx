@@ -1,9 +1,42 @@
 const React = require('react');
+const i18n = require("i18n");
 
-function Text(props) {
-  const { tag, classes, text, link, link_text, link_classes, download, link_target } = props;
-  const CustomTag = tag ? `${tag}` : `p`;
-  return <CustomTag className={classes}>{text}{(link) ? <a href={link} className={link_classes} download={download} target={link_target}>{link_text}</ a> : ""}</CustomTag>;
+function Link(props) {
+  if (!props.link) return null;
+  const { href, classes, download, target, text } = props.link;
+  return <a href={href} className={classes} download={download} target={target}>{text}</a>;
 }
 
-module.exports = Text;
+function Item(props) {
+  const { classes, text, tag, link } = props;
+  const customClasses = (classes) ? classes : 'tleft col-vbspace';
+  const CustomTag = tag ? `${tag.name}` : null;
+  if (CustomTag) return <li><CustomTag className={tag.classes}>{text}</CustomTag></li>;
+  if (link) return <li className={customClasses}>{text}<Link link={link} /></li>;
+  return <li className={customClasses}>{text}</li>;
+}
+
+function List(props) {
+  const { tag, classes, items } = props.list;
+  const CustomTag = tag ? `${tag}` : `ul`;
+  const customClasses = (classes) ? classes : (classes === '') ? null : 'list-classic tnormal row tleft-child';
+  return (
+    <CustomTag className={customClasses}>
+      {
+        items.map((i, k) => {
+          return <Item key={k} tag={i.tag} classes={i.classes} text={i.text} link={i.link} />
+        })
+      }
+    </CustomTag>
+  );
+}
+
+function TextBlock(props) {
+  const { tag, classes, text, link, list } = props;
+  const CustomTag = tag ? `${tag}` : `p`;
+  if (list) return <List list={list} />;
+  if (link) return <CustomTag className={classes}>{i18n.__(text)} <Link link={link} />{(text ? '.' : '')}</CustomTag>
+  return <CustomTag className={classes}>{i18n.__(text)}</CustomTag>;
+}
+
+module.exports = TextBlock;

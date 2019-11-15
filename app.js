@@ -13,13 +13,11 @@ i18n.configure({
 
 app.use(i18n.init);
 app.use(function (req, res, next) {
-  // mustache helper
   res.locals.__ = function () {
     return function (text, render) {
       return i18n.__.apply(req, arguments);
     };
   };
-
   next();
 });
 

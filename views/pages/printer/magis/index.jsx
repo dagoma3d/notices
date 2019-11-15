@@ -37,30 +37,36 @@ class Printer extends React.Component {
           content={[
             { text: "Les indispensables", classes: "big-title" },
             { text: "Avec votre Magis vous recevrez à part les éléments indispensables pour lancer votre première impression." },
-            { text: "L'échantillon de filament ne vous servira pas dans ce tutoriel." }
-          ]}>
-          <ul className="list-classic tnormal row tleft-child">
-            <li className="tleft col-vbspace">A. Bras aimantés</li>
-            <li className="tleft col-vbspace">B. Alimentation</li>
-            <li className="tleft col-vbspace">C. Échantillon de fil</li>
-            <li className="tleft col-vbspace">D. Carte SD</li>
-          </ul>
-        </SimpleSection>
+            { text: "L'échantillon de filament ne vous servira pas dans ce tutoriel." },
+            {
+              list: {
+                items: [
+                  { text: "A. Bras aimantés" },
+                  { text: "B. Alimentation" },
+                  { text: "C. Échantillon de fil" },
+                  { text: "D. Carte SD" }
+                ]
+              }
+            }
+          ]} />
         <SimpleSection
           flip={true}
           color="color-anthracite"
           media={{ src: "NevaMagis/Notice/0-c-b-gris-contenu.jpg", type: "image", classes: "notice-small-img" }}
           content={[
             { text: "Les accessoires", classes: "big-title" },
-            { text: "Bien sûr, ce n’est pas tout, voilà un petit kit pour prendre soin de votre Magis." }
-          ]}>
-          <ul className="list-classic tnormal row tleft-child">
-            <li className="tleft col-vbspace">E. Adaptateur SD</li>
-            <li className="tleft col-vbspace">F. Lingettes isopropyliques</li>
-            <li className="tleft col-vbspace">G. Cable USB</li>
-            <li className="tleft col-vbspace">H. Spatule</li>
-          </ul>
-        </SimpleSection>
+            { text: "Bien sûr, ce n’est pas tout, voilà un petit kit pour prendre soin de votre Magis." },
+            {
+              list: {
+                items: [
+                  { text: "E. Adaptateur SD" },
+                  { text: "F. Lingettes isopropyliques" },
+                  { text: "G. Cable USB" },
+                  { text: "H. Spatule" }
+                ]
+              }
+            }
+          ]} />
         <SimpleSection
           media={{ src: "NevaMagis/Notice/0-c-c-cales", type: "video" }}
           content={[

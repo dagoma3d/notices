@@ -2,219 +2,125 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
+const SimpleTitle = require('../../../components/simple-title');
+const BasicSection = require('../../../components/basic-section');
+const SimpleSection = require('../../../components/simple-section');
+const Validation = require('../../../components/validation');
+const Media = require('../../../components/media');
 
 class Printer extends React.Component {
   render() {
     return (
       <Layout>
         <NavBar active={7} nav={nav} />
-        <section className="col-xl-24 bg-gradient-orange row">
-          <p className=" col-vspace">Temps approximatif : 25 minutes</p>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Notice/9-a-intro.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <h1 className="title tleft">Notice de montage DiscoEasy200 - Page 8 - Assemblage du plateau</h1>
-            <h2 className="big-title tleft">Assemblage du plateau</h2>
-            <p>Nous allons maintenant assembler la pièce qui viendra accueillir vos impression : le plateau.</p>
-          </section>
-        </section>
-
-        <section id="disco-8-prerequis" className="col-xl-24 display-flex height-350 bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-            <figure>
-              <img src="/medias/DiscoEasy/Notice/9-b-prerequis.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="big-title">Les pré-requis</p>
-              <ul className="list-classic tnormal row tleft-child">
-                <li className="tleft col-vbspace">1 grappe de support plateau</li>
-                <li className="tleft col-vbspace">1 plateau</li>
-                <li className="tleft col-vbspace">1 courroie de 85cm</li>
-                <li className="tleft col-vbspace">4 vis fraisées M3x10 cruciforme (il doit en rester 1)</li>
-                <li className="tleft col-vbspace">4 écrous freins M3 (il doit en rester 1)</li>
-                <li className="tleft col-vbspace">1 tournevis cruciforme PH1 (non fourni)</li>
-              </ul>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-8-1" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Notice/9-c-support-plateau.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-c-support-plateau.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-c-support-plateau.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 1</p>
-              <h2 className="big-title">Montage des supports plateau</h2>
-              <p>Détachez et nettoyez les pièces à l'aide de la spatule.</p>
-              <p>Mettez en place les écrous dans les pièces, <span className="bold">côté caoutchouc de l’écrou vers les logements qui
-                        accueilleront les roulements</span>.</p>
-              <p>Prenez le grand support, positionnez la lettre A vers le côté le plus court du plateau.</p>
-              <p className="bold">Allez à l'étape d’en dessous pour vérifier le sens.</p>
-              <p>Retirez le scotch qui déborde sur les trous de vis.</p>
-              <p>Vissez légèrement uniquement pour maintenir les pièces.</p>
-              <p>Répétez l'opération pour les deux autres pièces (écrous vers l’extérieur).</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-8-2" className="col-xl-24 display-flex height-350 block-video bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-            <figure>
-              <img src="/medias/DiscoEasy/Notice/9-c-controle.jpg" alt="" />
-            </figure>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 2</p>
-              <h2 className="big-title">Vérifions tout ça</h2>
-              <p>Voilà le rendu final. Faites bien attention au sens des éléments.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-8-3" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" controls poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Notice/9-d-clips.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-d-clips.ogv" type='video/ogv' />
-              <source src="/medias/DiscoEasy/Notice/9-d-clips.webm" type='video/webm' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 3</p>
-              <h2 className="big-title">Installation sur l’imprimante</h2>
-              <p>Faites monter l’axe X pour laisser passer le plateau (tourner les deux coupleurs dans le sens des aiguilles d'une montre).</p>
-              <p>Pré-positionnez les roulements sur les barres.</p>
-              <p>Prenez le plateau avec le support long vers la face avant (comme sur la vidéo).</p>
-              <p>Posez le sur les roulements.</p>
-              <p>Sur un côté, <span className="bold">alignez</span> les roulements au milieu des pièces orange.</p>
-              <p>Appuyez sur le plateau pour clipser les roulements.</p>
-              <p>Répétez l’opération de l’autre côté.</p>
-              <p>Faites des aller-retours avec le plateau pour que l’assemblage coulisse bien.</p>
-              <p>Serrez les vis du plateau (sans forcer).</p>
-              <p>Assurez-vous qu’il coulisse toujours après serrage. Si ce n’est pas le cas, desserrez légèrement les vis.</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-8-4" className="col-xl-24 display-flex height-350 block-video bg-light-grey-blue row">
-          <section className="col col-xl-12 col-xl-push-12 col-m-24 col-m-push-0 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Notice/9-e-control-base.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-e-control-base.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-e-control-base.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-xl-pull-12 col-m-24 col-m-pull-0 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 4</p>
-              <h2 className="big-title">Contrôle de la perpendicularité de la base</h2>
-              <p>Maintenant que le plateau est monté, nous pouvons effectuer une vérification importante.</p>
-              <p>Avancez le plateau jusqu'à la face avant.</p>
-              <p>Vérifiez que les deux soient parallèles (quelques mm d’écart sont acceptables).</p>
-              <p>Faites pareil avec la face arrière.</p>
-              <p>Si ce n’est pas le cas, une barre doit être mal enfoncée (voir page 7).</p>
-            </div>
-          </section>
-        </section>
-
-        <section id="disco-8-5" className="col-xl-24 display-flex block-video height-350 row">
-          <section className="col col-xl-12 col-m-24 block-info-cursor row">
-
-            <video className="video-js" preload="auto" width="100%" height="auto" poster="" data-setup="{}">
-              <source src="/medias/DiscoEasy/Notice/9-f-courroie.mp4" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-f-courroie.ogv" type='video/mp4' />
-              <source src="/medias/DiscoEasy/Notice/9-f-courroie.webm" type='video/mp4' />
-              <p className="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-              </p>
-            </video>
-            <div className="show-video">
-              <i className="fa fa-play-circle-o" aria-hidden="true"></i>
-              <span>Video</span>
-            </div>
-          </section>
-          <section className="col col-xl-12 col-m-24 row">
-            <div className="block-caption-classic block-caption-left row col-vspace">
-              <p className="title tleft">Étape 5</p>
-              <h2 className="big-title">Installation de la courroie du plateau</h2>
-              <p className="bold text-red link-classic">Attention, le plateau est encore mobile, faites attention à vos doigts !</p>
-              <p>Prenez la courroie de 85cm.</p>
-              <p>Retournez la Discoeasy200 pour avoir accès au dessous de la machine.</p>
-              <p className="italic bg-light-grey-blue">Dans cette vidéo n’hésitez pas à utiliser le bouton pause.</p>
-              <p>Faites passer le bout de l’inscription A vers B dans le support plateau avant (crans vers le bas de la machine).</p>
-              <p>Laissez-le dépasser du côté B d’environ 2cm.</p>
-              <p>Faites-le coulisser vers le bas pour le verrouiller.</p>
-              <p>Prenez l'autre bout et faites-le passer au dessus du premier roulement en haut de la face avant (crans vers le roulement).</p>
-              <p>Récupérez-le en dessous et tirez pour retirer le mou (faites la même chose à chaque étape). Attention aux vrilles dans la
-                    courroie.</p>
-              <p>Faites passer le bout entre la poulie moteur et le second roulement.</p>
-              <p>Passez la courroie entre la barre transversale et le plateau.</p>
-              <p>Sur la face arrière, faites passer la courroie sous le roulement et poussez pour le récupérer au dessus.</p>
-              <p>Repassez entre la barre et le plateau et faites entrer le bout dans le support plateau avant de B vers A.</p>
-              <p>Tirez sans forcer sur la courroie pour la tendre et pousser vers le bas pour la verrouiller.</p>
-              <p>Repliez le bout et faites-le passer dans le clips pour finir.</p>
-            </div>
-          </section>
-        </section>
-
-        <section className="col-xl-24 notice-mask row">
-          <figure className="row col-xl-24">
-            <img className="col-xl-24" src="/medias/DiscoEasy/Notice/9-g-fin.jpg" alt="" />
-          </figure>
-
-          <section className="block-caption-classic block-caption-right">
-            <p className="big-title">Assemblage du plateau : CHECK !</p>
-            <p>On approche de la fin. Prochaine étape, le câblage.</p>
-            <div className="checkbox-classic checkbox-full-width">
-              <input id="yo" type="checkbox" />
-              <label className="tnormal valid-step" data-redirect="/start/discoeasy200/notice-cablage.html" htmlFor="yo">
-                Je valide cette étape !
-                </label>
-            </div>
-          </section>
-        </section>
+        <SimpleTitle
+          small={true}
+          content={[
+            { text: "Temps approximatif : 25 minutes", classes: "col-vspace" }
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Notice/9-a-intro.jpg"
+          content={[
+            { text: "Notice de montage DiscoEasy200 - Page 8 - Assemblage du plateau", classes: "title tleft", tag: "h1" },
+            { text: "Assemblage du plateau", classes: "big-title tleft" },
+            { text: "Nous allons maintenant assembler la pièce qui viendra accueillir vos impression : le plateau." }
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Notice/9-b-prerequis.jpg", type: "image" }}
+          content={[
+            { text: "Les pré-requis", classes: "big-title" },
+            {
+              list: {
+                items: [
+                  { text: "1 grappe de support plateau" },
+                  { text: "1 plateau" },
+                  { text: "1 courroie de 85cm" },
+                  { text: "4 vis fraisées M3x10 cruciforme (il doit en rester 1)" },
+                  { text: "4 écrous freins M3 (il doit en rester 1)" },
+                  { text: "1 tournevis cruciforme PH1 (non fourni)" },
+                ]
+              }
+            }
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/9-c-support-plateau", type: "video" }}
+          content={[
+            { text: "Étape 1", classes: "title tleft", tag: "h2" },
+            { text: "Montage des supports plateau", classes: "big-title" },
+            { text: "Détachez et nettoyez les pièces à l'aide de la spatule." },
+            { text: "Mettez en place les écrous dans les pièces, côté caoutchouc de l’écrou vers les logements qui accueilleront les roulements" },
+            { text: "Prenez le grand support, positionnez la lettre A vers le côté le plus court du plateau." },
+            { text: "Allez à l'étape d’en dessous pour vérifier le sens.", classes: "bold" },
+            { text: "Retirez le scotch qui déborde sur les trous de vis." },
+            { text: "Vissez légèrement uniquement pour maintenir les pièces." },
+            { text: "Répétez l'opération pour les deux autres pièces (écrous vers l’extérieur)." },
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Notice/9-c-controle.jpg", type: "image" }}
+          content={[
+            { text: "Étape 2", classes: "title tleft", tag: "h2" },
+            { text: "Vérifions tout ça", classes: "big-title" },
+            { text: "Voilà le rendu final. Faites bien attention au sens des éléments." },
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/9-d-clips", type: "video" }}
+          content={[
+            { text: "Étape 3", classes: "title tleft", tag: "h2" },
+            { text: "Installation sur l’imprimante", classes: "big-title" },
+            { text: "Faites monter l’axe X pour laisser passer le plateau (tourner les deux coupleurs dans le sens des aiguilles d'une montre)." },
+            { text: "Pré-positionnez les roulements sur les barres." },
+            { text: "Prenez le plateau avec le support long vers la face avant (comme sur la vidéo)." },
+            { text: "Posez le sur les roulements." },
+            { text: "Sur un côté, alignez les roulements au milieu des pièces orange." },
+            { text: "Appuyez sur le plateau pour clipser les roulements." },
+            { text: "Répétez l’opération de l’autre côté." },
+            { text: "Faites des aller-retours avec le plateau pour que l’assemblage coulisse bien." },
+            { text: "Serrez les vis du plateau (sans forcer)." },
+            { text: "Assurez-vous qu’il coulisse toujours après serrage. Si ce n’est pas le cas, desserrez légèrement les vis." },
+          ]} />
+        <SimpleSection
+          flip={true}
+          media={{ src: "DiscoEasy/Notice/9-e-control-base", type: "video" }}
+          content={[
+            { text: "Étape 4", classes: "title tleft", tag: "h2" },
+            { text: "Contrôle de la perpendicularité de la base", classes: "big-title" },
+            { text: "Maintenant que le plateau est monté, nous pouvons effectuer une vérification importante." },
+            { text: "Avancez le plateau jusqu'à la face avant." },
+            { text: "Vérifiez que les deux soient parallèles (quelques mm d’écart sont acceptables)." },
+            { text: "Faites pareil avec la face arrière." },
+            { text: "Si ce n’est pas le cas, une barre doit être mal enfoncée (voir page 7)." },
+          ]} />
+        <SimpleSection
+          media={{ src: "DiscoEasy/Notice/9-f-courroie", type: "video" }}
+          content={[
+            { text: "Étape 5", classes: "title tleft", tag: "h2" },
+            { text: "Installation de la courroie du plateau", classes: "big-title" },
+            { text: "Attention, le plateau est encore mobile, faites attention à vos doigts !", classes: "bold text-red link-classic" },
+            { text: "Prenez la courroie de 85cm." },
+            { text: "Retournez la Discoeasy200 pour avoir accès au dessous de la machine." },
+            { text: "Dans cette vidéo n’hésitez pas à utiliser le bouton pause.", classes: "italic bg-light-grey-blue" },
+            { text: "Faites passer le bout de l’inscription A vers B dans le support plateau avant (crans vers le bas de la machine)." },
+            { text: "Laissez-le dépasser du côté B d’environ 2cm." },
+            { text: "Faites-le coulisser vers le bas pour le verrouiller." },
+            { text: "Prenez l'autre bout et faites-le passer au dessus du premier roulement en haut de la face avant (crans vers le roulement)." },
+            { text: "Récupérez-le en dessous et tirez pour retirer le mou (faites la même chose à chaque étape). Attention aux vrilles dans la courroie." },
+            { text: "Faites passer le bout entre la poulie moteur et le second roulement." },
+            { text: "Passez la courroie entre la barre transversale et le plateau." },
+            { text: "Sur la face arrière, faites passer la courroie sous le roulement et poussez pour le récupérer au dessus." },
+            { text: "Repassez entre la barre et le plateau et faites entrer le bout dans le support plateau avant de B vers A." },
+            { text: "Tirez sans forcer sur la courroie pour la tendre et pousser vers le bas pour la verrouiller." },
+            { text: "Repliez le bout et faites-le passer dans le clips pour finir." },
+          ]} />
+        <BasicSection
+          img="DiscoEasy/Notice/9-g-fin.jpg"
+          content={[
+            { text: "Assemblage du plateau : CHECK !", classes: "big-title" },
+            { text: "On approche de la fin. Prochaine étape, le câblage." },
+          ]}>
+          <Validation step="/printer/de200/notice-cablage" />
+        </BasicSection>
       </Layout>
     );
   }

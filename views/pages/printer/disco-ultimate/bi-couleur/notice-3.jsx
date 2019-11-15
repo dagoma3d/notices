@@ -67,7 +67,7 @@ class BiColor extends React.Component {
             { text: "Finitions terminées", classes: "big-title" },
             { text: "Nous allons maintenant mettre à jour la machine pour qu’elle intègre sa nouvelle installation." }
           ]}>
-          <Validation step="/firmware/du" />
+          <Validation step="/firmware/du/bicolor" />
         </BasicSection>
       </Layout>
     );

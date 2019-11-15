@@ -51,7 +51,7 @@ class Home extends React.Component {
           articles={[
             { href: "/printer/de200", picto: "discoeasy-svg.svg", alt: "DiscoEasy200", title: "Notice de montage" },
             { href: "/addon/screen", picto: "accessoires-52.svg", alt: "Ecran" },
-            { href: "/addon/extrudeur-plus/de200", picto: "accessoires-52.svg", alt: "Extrudeur+" },
+            { href: "/addon/extruder-plus/de200", picto: "accessoires-52.svg", alt: "Extrudeur+" },
             { href: "/addon/expert/de200", picto: "accessoires-52.svg", alt: "Pack expert" },
             { href: "/addon/bicolor/de200", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
             { href: "/addon/box/disco", picto: "caisson-disco.svg", alt: "Caisson de protection" },
