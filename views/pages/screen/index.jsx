@@ -9,7 +9,7 @@ class Screen extends React.Component {
     return (
       <Layout title={title}>
         <GoogleDocument title={subtitle + " - " + title} id="1D9PiUPmOgiQVTnK-sEzR3mkpcpyyLFintxThjpuJIzg">
-          <p className="tcenter">La suite de la notice <a href="/addon/screen/utilisation-de-l-ecran">ici</a></p>
+          <p className="tcenter">La suite de la notice <a href="/addon/screen/utilisation-de-l-ecran">ici</a>.</p>
         </GoogleDocument>
       </Layout>
     );

@@ -35,29 +35,20 @@ class Printer extends React.Component {
             { text: "Étape 1", classes: "title tleft", tag: "h3" },
             { text: "J'imprime avec ma Magis", classes: "big-title" },
             { text: "Tout d’abord, téléchargez le nouveau fichier que nous vous avons préparé." },
-            { text: "Ce fichier va finaliser votre dernière création. C’est un cache pour la bougie." }
-          ]}>
-          <p className="tleft">
-            <a href="/medias/NevaMagis/Notice/gcodes/chapitre-3/dagoma0.g" className="new-btn btn-classic btn-grey btn-wide" download="dagoma0.g">
-              Téléchargez le fichier ici
-            </a>
-          </p>
-          <p className="bg-orange text-white col-space">
-            Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.<br /><br /> Assurez-vous que le fichier s’appelle bien dagoma0.g une fois copié sur la carte.
-          </p>
-        </SimpleSection>
+            { text: "Ce fichier va finaliser votre dernière création. C’est un cache pour la bougie." },
+            { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/gcodes/chapitre-3/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici" } },
+            { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
+            { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
+          ]} />
         <SimpleTitle
           content={[
             { text: "Étape 2", classes: "title", tag: "h3" },
             { text: "Lancez l'impression", classes: "big-title" },
             { text: "Placez le fichier dagoma0.g sur ta carte SD." },
             { text: "Insérez la carte dans l’imprimante." },
-            { text: "Lancez ensuite l’impression." }
-          ]}>
-          <p className="italic">
-            Pssst ! Rappellez-vous de la <a className="link-classic" href="/printer/magis/notice-1" title="Retourner à la page 1">page 1</a>
-          </p>
-        </SimpleTitle>
+            { text: "Lancez ensuite l’impression." },
+            { text: "Pssst ! Rappellez-vous de la ", classes: "italic", link: { href: "/printer/magis/notice-1", title: "Retourner à la page 1", classes: "link-classic", text: "page 1" } },
+          ]} />
         <SimpleSection
           media={{ src: "NevaMagis/Notice/3-d-pause-auto", type: "video" }}
           content={[
@@ -65,15 +56,10 @@ class Printer extends React.Component {
             { text: "Surprise !", classes: "big-title", tag: "h4" },
             { text: "Votre Magis s’est arrêtée toute seule. Pas de panique, nous avons programmé une pause dans le fichier." },
             { text: "Vous allez découvrir la fonction Tap-Tap." },
-            { text: "Vous n'avez pas de gros sel, riz, quinoa, ... ? Profitez de ces 45 minutes d'impression pour aller en acheter !", classes: "italic" }
-          ]}>
-          <p className="italic">
-            Si vous avez le moindre problème, commencez par <a className="link-classic" href="/firmware/magis" target="_blank" title="Mise à jour firmware">mettre à jour votre firmware</a>.
-          </p>
-          <p className="italic">
-            Si ce n'est pas résolu, nous sommes à votre disposition via <a className="link-classic" href="https://support.dagoma.fr/support/home" title="Le support">le support</a>.
-          </p>
-        </SimpleSection>
+            { text: "Vous n'avez pas de gros sel, riz, quinoa, ... ? Profitez de ces 45 minutes d'impression pour aller en acheter !", classes: "italic" },
+            { text: "Si vous avez le moindre problème, commencez par ", classes: "italic", link: { href: "/firmware/magis", target: "_blank", title: "Mise à jour firmware", classes: "link-classic", text: "mettre à jour votre firmware" } },
+            { text: "Si ce n'est pas résolu, nous sommes à votre disposition via ", classes: "italic", link: { href: "//support.dagoma.fr/support/home", target: "_blank", title: "Le support", classes: "link-classic", text: "le support" } },
+          ]} />
         <SimpleSection
           flip={true}
           media={{ src: "NevaMagis/Notice/3-e-tap-tap-changement-filament", type: "video" }}

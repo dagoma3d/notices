@@ -34,17 +34,11 @@ class Printer extends React.Component {
             { text: "Étape 1", classes: "title tleft", tag: "h3" },
             { text: "J'imprime avec ma Magis", classes: "big-title" },
             { text: "Téléchargez le fichier que nous vous avons sélectionné avec soin." },
-            { text: "Ceci est un dérouleur de bobine." }
-          ]}>
-          <p className="tleft col-vspace">
-            <a href="/medias/NevaMagis/Notice/gcodes/derouleur/dagoma0.g" className="new-btn btn-classic btn-grey btn-wide" download="dagoma0.g">
-              Téléchargez le fichier ici
-                        </a>
-          </p>
-          <p className="bg-orange text-white col-space">
-            Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.<br /><br />Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.
-                    </p>
-        </SimpleSection>
+            { text: "Ceci est un dérouleur de bobine." },
+            { classes: "tleft col-vspace", link: { href: "/medias/NevaMagis/Notice/gcodes/derouleur/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici" } },
+            { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
+            { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
+          ]} />
         <SimpleSection
           media={{ src: "NevaMagis/Notice/c-assemblage-derouleur.jpg", type: "image" }}
           content={[

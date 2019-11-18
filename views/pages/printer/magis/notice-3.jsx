@@ -35,28 +35,20 @@ class Printer extends React.Component {
             { text: "Étape 1", classes: "title tleft", tag: "h3" },
             { text: "J'imprime avec ma Magis", classes: "big-title" },
             { text: "Tout d’abord, téléchargez le nouveau fichier que nous vous avons préparé." },
-            { text: "Ce fichier va compléter votre première création. C’est un socle pour le photophore." }
-          ]}>
-          <p className="tleft">
-            <a href="/medias/NevaMagis/Notice/gcodes/chapitre-2/dagoma0.g" className="new-btn btn-classic btn-grey btn-wide" download="dagoma0.g">
-              Téléchargez le fichier ici
-            </a>
-          </p>
-          <p className="bg-orange text-white col-space">
-            Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.<br /><br /> Assurez-vous que le fichier s’appelle bien dagoma0.g une fois copié sur la carte.
-          </p>
-        </SimpleSection>
+            { text: "Ce fichier va compléter votre première création. C’est un socle pour le photophore." },
+            { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/gcodes/chapitre-2/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici" } },
+            { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
+            { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
+          ]} />
         <SimpleTitle
           content={[
             { text: "Étape 2", classes: "title", tag: "h3" },
             { text: "Lancez l'impression", classes: "big-title" },
             { text: "Placez le fichier dagoma0.g sur ta carte SD." },
             { text: "Insérez la carte dans l’imprimante." },
-            { text: "Lancez ensuite l’impression." }
+            { text: "Lancez ensuite l’impression." },
+            { text: "Pssst ! Rappellez-vous de la ", classes: "italic", link: { href: "/printer/magis/notice-1", title: "Retourner à la page 1", classes: "link-classic", text: "page 1" } },
           ]}>
-          <p className="italic">
-            Pssst ! Rappellez-vous de la <a className="link-classic" href="/printer/magis/notice-1" title="Retourner à la page 1">page 1</a>
-          </p>
         </SimpleTitle>
         <SimpleSection
           media={{ src: "NevaMagis/Notice/2-d-pause-manuelle", type: "video" }}

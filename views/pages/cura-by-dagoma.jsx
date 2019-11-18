@@ -37,24 +37,18 @@ class CuraByDagoma extends React.Component {
           media={{ src: "NevaMagis/Notice/4-c-road.jpg", type: "image" }}
           content={[
             { text: "ROAD", classes: "big-title" },
-            { text: "ROAD est une plateforme de téléchargement de fichiers 3D optimisés pour la NEVA et la Magis (ou des fichiers STL pour la DiscoEasy200). Tous les objets de la plateforme ROAD ont été testés et approuvés par Dagoma. L’endroit idéal pour s’inspirer et débuter." }
-          ]}>
-          <p className="tleft">
-            <a href="https://road.dagoma.fr/" target="_blank" className="new-btn btn-classic btn-grey btn-wide">Visiter ROAD</a>
-          </p>
-        </SimpleSection>
+            { text: "ROAD est une plateforme de téléchargement de fichiers 3D optimisés pour la NEVA et la Magis (ou des fichiers STL pour la DiscoEasy200). Tous les objets de la plateforme ROAD ont été testés et approuvés par Dagoma. L’endroit idéal pour s’inspirer et débuter." },
+            { classes: "tleft", link: { href: "//road.dagoma.fr", target: "_blank", classes: "new-btn btn-classic btn-grey btn-wide", text: "Visiter ROAD" } }
+          ]} />
         <SimpleSection
           id="cura"
           flip={true}
           media={{ src: "NevaMagis/Software/a-cura.jpg", type: "image" }}
           content={[
             { text: "CURA", classes: "big-title" },
-            { text: "CURA by Dagoma est un logiciel qui vous permet de transformer en Gcode les fichiers 3D trouvés sur Internet au format STL (compatible également avec : obj, 3mf, amf, …). Vous pourrez modifier vos paramètres d’impression (taille de la pièce, finition, …). CURA est un logiciel gratuit et open-source, que Dagoma a simplifié pour optimiser l’utilisation de votre imprimante." }
-          ]}>
-          <p className="tleft">
-            <a href="https://dist.dagoma3d.com/CuraByDagoma" target="_blank" className="new-btn btn-valid btn-wide">Télécharger</a>
-          </p>
-        </SimpleSection>
+            { text: "CURA by Dagoma est un logiciel qui vous permet de transformer en Gcode les fichiers 3D trouvés sur Internet au format STL (compatible également avec : obj, 3mf, amf, …). Vous pourrez modifier vos paramètres d’impression (taille de la pièce, finition, …). CURA est un logiciel gratuit et open-source, que Dagoma a simplifié pour optimiser l’utilisation de votre imprimante." },
+            { classes: "tleft", link: { href: "//dist.dagoma3d.com/CuraByDagoma", target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger" } }
+          ]} />
         <SimpleSection
           id="cura-2"
           media={{ src: "Cura/Notice/d-installation.png", type: "image" }}
@@ -177,7 +171,7 @@ class CuraByDagoma extends React.Component {
           ]}>
           <Validation step={this.props.step} />
         </BasicSection>
-      </Layout>
+      </Layout >
     );
   }
 }
