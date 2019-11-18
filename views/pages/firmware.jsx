@@ -4,21 +4,21 @@ var SimpleSection = require('../components/simple-section');
 var BasicSection = require('../components/basic-section');
 var SimpleTitle = require('../components/simple-title');
 const NavBar = require('../components/navbar');
-var Media = require('../components/media');
 var Validation = require('../components/validation');
+var HiddenVideo = require('../components/hidden-video');
 
 class Firmware extends React.Component {
   render() {
-    const { title, printerInfo } = this.props;
+    const { title, active, nav, step, printerInfo } = this.props;
     return (
       <Layout title={title}>
-        <NavBar active={this.props.active} nav={this.props.nav} />
+        <NavBar active={active} nav={nav} />
         <BasicSection
           img="DiscoEasy/Software/a-intro-maj-disco.jpg"
           content={[
             { text: `Mise à jour pour votre ${printerInfo.name}`, classes: "big-title tleft" },
             { text: "Profitez de la mise à jour de votre firmware et bénéficiez de nouvelles fonctionnalités sur votre imprimante." },
-            { text: `Marlin ${printerInfo.abbr} - 16/10/2019`, classes: "small tleft light italic" }
+            { text: `Marlin ${printerInfo.abbr} - ${printerInfo.date}`, classes: "small tleft light italic" }
           ]} />
         <SimpleTitle
           content={[
@@ -83,16 +83,7 @@ class Firmware extends React.Component {
             { text: `Reliez la ${printerInfo.name} à l'ordinateur via le cable USB fournis.` },
             { text: "Pour le passage du câble regarde la vidéo suivante :" }
           ]}>
-          <p className="tleft col-vbspace">
-            <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">Lire la vidéo</button>
-          </p>
-          <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>
-            <Media info={{ src: `DiscoEasy/Calibration/${printerInfo.video}`, type: "video" }}>
-              <div className="close-video">
-                <i className="fa fa-close"></i>
-              </div>
-            </Media>
-          </section>
+          <HiddenVideo src={`DiscoEasy/Calibration/${printerInfo.video}`} />
         </SimpleSection>
         <SimpleSection
           wrap={true}
@@ -133,7 +124,7 @@ class Firmware extends React.Component {
             { text: `Etape ${this.props.active + 1}`, classes: "big-title" },
             { text: "Après une mise à jour, il est nécessaire de recalibrer l’imprimante 3D." }
           ]}>
-          <Validation step={`/printer/${printerInfo.notice}/calibration`} />
+          <Validation step={step} />
         </BasicSection>
       </Layout>
     );

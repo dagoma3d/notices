@@ -1,32 +1,31 @@
 var React = require('react');
-var Layout = require('../../../layouts/default');
-const NavBar = require('../../../components/navbar');
-const nav = require('../../../../content/nav/du');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
-const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
+var Layout = require('../layouts/default');
+const NavBar = require('../components/navbar');
+const SimpleTitle = require('../components/simple-title');
+const BasicSection = require('../components/basic-section');
+const SimpleSection = require('../components/simple-section');
+const Validation = require('../components/validation');
+const HiddenVideo = require('../components/hidden-video');
 
 
 class Printer extends React.Component {
   render() {
+    const { title, active, nav, step, printerInfo } = this.props;
     return (
       <Layout>
-        <NavBar active={this.props.active ? this.props.active : 11} nav={this.props.nav ? this.props.nav : nav} />
+        <NavBar active={active} nav={nav} />
         <BasicSection
           img="DiscoEasy/Software/a-intro-maj-disco.jpg"
           content={[
-            { text: "Calibrez votre Disco Ultimate", classes: "big-title tleft" },
+            { text: `Calibrez votre ${printerInfo.name}`, classes: "big-title tleft" },
             { text: "Votre imprimante 3d a besoin de vous pour retrouver ses repères. Une bonne calibration permet d’obtenir une première couche propre." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/b1-prerequis-du.jpg", type: "image", classes: "notice-small-img-small" }}
+          media={{ src: `DiscoEasy/Calibration/${printerInfo.img}`, type: "image", classes: "notice-small-small" }}
           content={[
             { text: "Les prérequis", classes: "big-title" },
             {
               list: {
-                classes: "",
                 items: [
                   { text: "A. Il vous faut une imprimante 3d Dagoma", classes: "tleft" },
                   { text: "B. Un câble USB-B (fournis avec ton imprimante)", classes: "tleft" },
@@ -39,6 +38,7 @@ class Printer extends React.Component {
             { link: { classes: "new-btn btn-valid btn-wide", href: "https://dist.dagoma3d.com/DagomApp", target: "_blank", text: "Télécharger Dagom'app" } }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoEasy/Calibration/b2-parallelisme", type: "video" }}
           content={[
             { text: "Dernier ajustement", classes: "big-title" },
@@ -53,78 +53,67 @@ class Printer extends React.Component {
             { text: "Lancez Dagom’app et suivez les instructions" }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-e1.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-e1.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 1", classes: "big-title" },
             { text: "Cliquez sur \"Je configure mon imprimante\"." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-e2.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-e2.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 2", classes: "big-title" },
             { text: "Cochez les étapes une fois vérifiées." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-e3.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-e3.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 3", classes: "big-title" },
-            { text: "Cliquez sur Disco Ultimate" }
+            { text: `Cliquez sur Disco ${printerInfo.name}` }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-e4.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-e4.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 4", classes: "big-title" },
             { text: "Reliez votre imprimante 3d à l'ordinateur via le cable USB fournis." },
             { text: "Pour le passage du câble regarde la vidéo suivante :" }
           ]}>
-          <p className="tleft col-vbspace">
-            <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">Lire la vidéo</button>
-          </p>
-          <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>
-            <Media info={{ src: "DiscoEasy/Calibration/c-e3-du", type: "video" }}>
-              <div className="close-video">
-                <i className="fa fa-close"></i>
-              </div>
-            </Media>
-          </section>
+          <HiddenVideo src={`DiscoEasy/Calibration/${printerInfo.video}`} />
         </SimpleSection>
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e5.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e5.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 5", classes: "big-title" },
             { text: "Choisissez “Une impression parfaite” puis cliquez sur la flèche bleue." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e6.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e6.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 6", classes: "big-title" },
             { text: "Cliquez sur \"Réglage de la première couche\"." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e7.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e7.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 7", classes: "big-title" },
             { text: "Pour l’insertion du filament vous avez une petite vidéo d’aide ici :" },
           ]}>
-          <p className="tleft col-vbspace">
-            <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">Lire la vidéo</button>
-          </p>
-          <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>
-            <Media info={{ src: "DiscoEasy/Calibration/c-e5", type: "video" }}>
-              <div className="close-video">
-                <i className="fa fa-close"></i>
-              </div>
-            </Media>
-          </section>
+          <HiddenVideo
+            src="DiscoEasy/Calibration/c-e5"
+            content={[
+              { text: "L'insertion est automatique avec l'add-on \"extrudeur+\"" },
+              { text: "Cochez les étapes une fois vérifiées." },
+              { text: "Si vous avez perdu la cible, une carte de visite fonctionnera tout aussi bien." },
+              { text: "Après cette étape, l’imprimante va commencer à bouger" },
+            ]} />
         </SimpleSection>
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e8.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e8.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 8", classes: "big-title" },
             { text: "Placez la cible (ou toute autre carte) sur la plateau, sous la buse, puis cliquez sur la flèche bleue." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e9.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e9.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 9", classes: "big-title" },
             { text: "Vous allez maintenant régler la hauteur de la tête d’impression." },
@@ -132,21 +121,15 @@ class Printer extends React.Component {
             { text: "Faites bouger la cible d'avant en arrière. Lorsque vous sentez une résistance, arrêtez de la faire descendre." },
             { text: "Vous avez une petite vidéo des réactions de la machine ici :" },
           ]}>
-          <p className="tleft col-vbspace">
-            <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">Lire la vidéo</button>
-          </p>
-          <p>Si la carte ne bouge plus, remontez d'un cran.</p>
-          <p>Une fois réglé, cliquez sur la flèche bleue.</p>
-          <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>
-            <Media info={{ src: "DiscoEasy/Calibration/c-e5", type: "video" }}>
-              <div className="close-video">
-                <i className="fa fa-close"></i>
-              </div>
-            </Media>
-          </section>
+          <HiddenVideo
+            src="DiscoEasy/Calibration/c-e6"
+            content={[
+              { text: "Si la carte ne bouge plus, remontez d'un cran." },
+              { text: "Une fois réglé, cliquez sur la flèche bleue." }
+            ]} />
         </SimpleSection>
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e10.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e10.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 10", classes: "big-title" },
             { text: "C’est bientôt fini ! Après cette étape, votre imprimante 3d va se préparer à imprimer." },
@@ -154,7 +137,7 @@ class Printer extends React.Component {
             { text: "Dans l’étape suivant vous allez ajuster avec précisions la hauteur de la première couche." }
           ]} />
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e11.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e11.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 11", classes: "big-title" },
             { text: "Dans cette interface, vous allez pouvoir monter ou descendre la hauteur de la première couche." },
@@ -163,19 +146,10 @@ class Printer extends React.Component {
             { text: "Elle va imprimer plusieurs petits cercles. Une fois que la hauteur de couche est bonne, cliquez sur “Je suis satisfait” puis sur “enregistrer”." },
             { text: "Vous avez une petite vidéo des réactions de la machine ici :" },
           ]}>
-          <p className="tleft col-vbspace">
-            <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">Lire la vidéo</button>
-          </p>
-          <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>
-            <Media info={{ src: "DiscoEasy/Calibration/c-e8", type: "video" }}>
-              <div className="close-video">
-                <i className="fa fa-close"></i>
-              </div>
-            </Media>
-          </section>
+          <HiddenVideo src="DiscoEasy/Calibration/c-e8" />
         </SimpleSection>
         <SimpleSection
-          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e12.jpg", type: "image", classes: "notice-small-img" }}
+          media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e12.jpg", type: "image", classes: "notice-small" }}
           content={[
             { text: "Etape 12", classes: "big-title" },
             { text: "Votre imprimante 3d est calibrée et prête à imprimer." },
@@ -187,7 +161,7 @@ class Printer extends React.Component {
             { text: "Vous pourrez intervenir manuellement sur votre imprimante pour ajuster la hauteur de la première couche." },
             { text: "Vous pourrez refaire cette calibration de temps en temps si la première couche n’est plus bonne." }
           ]}>
-          <Validation step="/cura-by-dagoma/du" />
+          <Validation step={step} />
         </BasicSection>
       </Layout>
     );

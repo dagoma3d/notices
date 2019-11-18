@@ -48,6 +48,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/7-c-roulement-courroie", type: "video" }}
           content={[
             { text: "Installation de la poulie de X", classes: "big-title" },
@@ -62,6 +63,7 @@ class Printer extends React.Component {
             { text: "Dans l’autre chariot, installez la butée comme sur le vidéo." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/7-e-moteur-x", type: "video" }}
           content={[
             { text: "Installation du moteur de X", classes: "big-title" },
@@ -77,6 +79,7 @@ class Printer extends React.Component {
             { text: "Introduisez-les avec délicatesse dans les roulements (faites quelques rotations pour faciliter leur entrée). Une fois en place, faites quelques allers-retours pour vérifier que tout va bien." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/7-g-courroie-tete", type: "video" }}
           content={[
             { text: "Installation de la courroie de la tête", classes: "big-title" },

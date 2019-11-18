@@ -66,9 +66,9 @@ class PackExpert extends React.Component {
           img="DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg"
           content={[
             { text: "Finitions : CHECK !", classes: "big-title" },
-            { text: "Nous allons maintenant mettre à jour la machine pour qu’elle intègre sa nouvelle installation." }
+            { text: "Nous allons maintenant mettre à jour la machine pour qu’elle intègre sa nouvelle installation." },
+            { link: { classes: "new-btn btn-valid btn-big btn-wide", href: "/firmware/de200/expert", text: "Mettre à jour" } }
           ]}>
-          <a href="/firmware/de200/expert" class="new-btn btn-valid btn-big btn-wide">Mettre à jour</a>
         </BasicSection>
       </Layout>
     );

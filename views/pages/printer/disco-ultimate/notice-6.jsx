@@ -44,6 +44,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/6-c-support-plateau", type: "video" }}
           content={[
             { text: "Installation des supports plateau", classes: "big-title" },
@@ -59,6 +60,7 @@ class Printer extends React.Component {
             { text: "Nous vous conseillons de suivre la vidéo avec attention." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/6-e-installation-plateau", type: "video" }}
           content={[
             { text: "Installation du plateau", classes: "big-title" },

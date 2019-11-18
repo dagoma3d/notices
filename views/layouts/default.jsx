@@ -24,6 +24,12 @@ class Layout extends React.Component {
         </head>
         <body>
           <div id="body" className="container row">
+            <section className="top-lang row">
+              <div className="wrap row">
+                <a href="/" style={{ display: "inline-block", float: "left" }}>Home</a>
+                <a href="//www.dagoma3d.com" target="_blank " style={{ display: "inline-block", float: "right" }}>Dagoma</a>
+              </div>
+            </section>
             {this.props.children}
           </div>
           <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>

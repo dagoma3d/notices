@@ -46,6 +46,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/2-c-vis-serrage", type: "video" }}
           content={[
             { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -59,6 +60,7 @@ class Printer extends React.Component {
             { text: "Prenez le petit outil imprimé pour vous aider à placer les roulements. Prenez 1 vis M3x16, placez la dans le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage. Répétez l'opération pour le deuxième emplacement." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/2-e-butee", type: "video" }}
           content={[
             { text: "Mise en place de la butée de Y", classes: "big-title" },

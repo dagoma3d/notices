@@ -49,6 +49,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
           content={[
             { text: "Montage des barres", classes: "big-title" },
@@ -56,6 +57,7 @@ class Printer extends React.Component {
             { text: "Posez la face avant sur sa partie plate." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/5-d-fixe-cote", type: "video" }}
           content={[
             { text: "Montage des fixations latérales", classes: "big-title" },
@@ -72,6 +74,7 @@ class Printer extends React.Component {
             { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/5-f-face-ar", type: "video" }}
           content={[
             { text: "Montage de la face arrière", classes: "big-title" },
@@ -91,6 +94,7 @@ class Printer extends React.Component {
             { text: "Si ce n’est pas le cas, démontez et recommencez." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/5-h-cache-cote-av-droit", type: "video" }}
           content={[
             { text: "Installation du cache côté avant droit", classes: "big-title" },
@@ -108,6 +112,7 @@ class Printer extends React.Component {
             { text: "Respectez bien le sens de la pièce." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/5-j-cache-cote-ar", type: "video" }}
           content={[
             { text: "Installation des caches côtés arrières", classes: "big-title" },
@@ -126,6 +131,7 @@ class Printer extends React.Component {
             { text: "Astuce : Bougez la structure pour alignez les trous de vis si nécessaire." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/5-l-serrage-base", type: "video" }}
           content={[
             { text: "Serrage de la base", classes: "big-title" },

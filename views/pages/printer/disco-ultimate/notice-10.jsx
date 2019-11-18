@@ -49,6 +49,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/10-c-top-vis-serrage", type: "video" }}
           content={[
             { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -66,6 +67,7 @@ class Printer extends React.Component {
             { text: "Serrez les 4 vis présentes sur les côtés." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/10-e-tension-courroie-tete", type: "video" }}
           content={[
             { text: "Ajustement de la tension de la courroie de la tête", classes: "big-title" },
@@ -82,6 +84,7 @@ class Printer extends React.Component {
             { text: "Serrez les 2 vis restantes en haut puis les 4 vis des fixations latérales." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/10-g-logo-face-avant", type: "video" }}
           content={[
             { text: "Insertion du logo", classes: "big-title" },
@@ -98,6 +101,7 @@ class Printer extends React.Component {
             { text: "Fixez-la ensuite à l’aide d’un collier de serrage au chariot (il y a un passage prévu à cet effet)." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
           content={[
             { text: "Gestion des câbles", classes: "big-title" },
@@ -112,6 +116,7 @@ class Printer extends React.Component {
             { text: "Aucun câble maintenu ne doit dépasser de la machine." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/10-l-plaque-fond", type: "video" }}
           content={[
             { text: "Installation de la plaque protectrice de fond", classes: "big-title" },
@@ -129,6 +134,7 @@ class Printer extends React.Component {
             { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/10-n-bis-film-plateau.jpg", type: "image" }}
           content={[
             { text: "Retirez le film protecteur du plateau", classes: "big-title" },

@@ -11,10 +11,12 @@ exports.index = function (req, res) {
     case 'du':
       options.active = 12;
       options.nav = require('../content/nav/du');
+      options.step = '/printer/du/notice-utilisation';
       break;
     case 'de200':
       options.active = 13;
       options.nav = require('../content/nav/de200');
+      options.step = '/printer/de200/notice-utilisation';
       break;
   }
 

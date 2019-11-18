@@ -5,6 +5,7 @@ var SimpleSection = require('../components/simple-section');
 var BasicSection = require('../components/basic-section');
 var SimpleTitle = require('../components/simple-title');
 const NavBar = require('../components/navbar');
+const Validation = require('../components/validation');
 
 class CuraByDagoma extends React.Component {
   render() {
@@ -173,7 +174,9 @@ class CuraByDagoma extends React.Component {
           content={[
             { text: "Vous savez tout sur Cura by Dagoma", classes: "big-title tleft", tag: "h1" },
             { text: "Merci d’avoir suivi cette notice. Nous mettons tout en oeuvre pour vous simplifier l’expérience de l’impression 3D avec Dagoma. Pour nous aider à améliorer cette notice, pourriez-vous prendre dix secondes (promis pas plus) pour nous donnez votre avis ?" }
-          ]} />
+          ]}>
+          <Validation step={this.props.step} />
+        </BasicSection>
       </Layout>
     );
   }

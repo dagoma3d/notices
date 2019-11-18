@@ -4,6 +4,7 @@ var Article = require('../components/article');
 var BasicSection = require('../components/basic-section');
 var SimpleTitle = require('../components/simple-title');
 var Section = require('../components/section');
+var NevaVersion = require('../components/neva-version');
 
 class Home extends React.Component {
   render() {
@@ -20,15 +21,14 @@ class Home extends React.Component {
           content={[
             { text: "Choisissez votre imprimante 3D pour commencer", classes: "big-title" }
           ]} />
-        <section className="col-xl-24 row">
-          <div className="btn-diag-container container block-white-space wrap row">
-            <Article id="neva-magis" picto="neva-magis-svg.svg" alt="Magis" />
-            <Article id="neva" picto="neva-svg.svg" alt="Neva" />
-            <Article id="discoeasy200" picto="discoeasy-svg.svg" alt="DiscoEasy200" />
-            <Article id="disco-ultimate" picto="disco-ultimate.svg" alt="Disco Ultimate" />
-            <Article href="/cura-by-dagoma" picto="a-logo-cura.svg" alt="Cura by Dagoma" />
-          </div>
-        </section>
+        <Section
+          articles={[
+            { id: "neva-magis", picto: "neva-magis-svg.svg", alt: "Magis" },
+            { id: "neva", picto: "neva-svg.svg", alt: "Neva" },
+            { id: "discoeasy200", picto: "discoeasy-svg.svg", alt: "DiscoEasy200" },
+            { id: "disco-ultimate", picto: "disco-ultimate.svg", alt: "Disco Ultimate" },
+            { href: "/cura-by-dagoma", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" },
+          ]} />
         <Section
           id="neva-magis"
           title="Magis"
@@ -68,21 +68,7 @@ class Home extends React.Component {
             { href: "/addon/box/disco", picto: "accessoires-49.svg", alt: "Caisson de protection" },
             { href: "/cura-by-dagoma/du", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
           ]} />
-        <section className="col-xl-24 col-space row">
-          <div className="wrap row">
-            <p className="tcenter"><a className="link-classic btn-sub-step"
-              data-id="open-neva">Comment vérifier la version de votre Neva ?</a></p>
-          </div>
-          <div id="open-neva" className="block-hidden block-sub row col-xl-24">
-            <div className="col-xl-24 block-white-space">
-              <p className="tcenter bold col-vspace">Magis : Numéro de série &gt; 6000</p>
-              <p className="tcenter bold col-vspace">Neva : Numéro de série &lt; 6000 ou pas de numéro de série</p>
-              <figure className="col-xl-18 col-xl-offset-3 col-l-20 col-l-offset-2 col-m-24 col-m-offset-0 col-space row">
-                <img className="col-xl-24" src="/medias/home/n-serie-neva.jpg" alt="Trouver numéro de série de ma Neva" />
-              </figure>
-            </div>
-          </div>
-        </section>
+        <NevaVersion />
       </Layout>
     );
   }

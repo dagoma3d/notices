@@ -4,71 +4,55 @@ exports.index = function (req, res) {
   };
   const printer = req.params.printer;
   const addon = req.params.addon;
-  props.step = null;
 
   switch (printer) {
     case 'de200':
       props.printerInfo = {
         name: "DiscoEasy200",
         abbr: "DE200",
-        date: "15/11/2019",
-        img: "d-prerequis-maj-de200.jpg",
+        img: "b1-prerequis-de200.jpg",
         video: "c-e3",
         firmware: "E200",
         notice: "de200"
       };
       switch (addon) {
         case 'bicolor':
-          props.active = 5;
+          props.active = 6;
           props.nav = require('../content/nav/bicolor/de200');
-          props.step = '/calibration/de200/bicolor';
+          props.step = '/addon/bicolor/de200/notice-7';
           break;
         case 'expert':
-          props.active = 4;
+          props.active = 5;
           props.nav = require('../content/nav/expert');
-          props.step = '/calibration/de200/expert';
           break;
         default:
-          props.active = 11;
+          props.active = 12;
           props.nav = require('../content/nav/de200');
-          props.step = '/calibration/de200';
+          props.step = '/cura-by-dagoma/de200'
       }
       break;
     case 'du':
       props.printerInfo = {
         name: "Disco Ultimate",
         abbr: "DU",
-        date: "15/11/2019",
-        img: "d-prerequis-du.jpg",
+        img: "b1-prerequis-du.jpg",
         video: "c-e3-du",
         firmware: "Ultimate",
         notice: "du"
       };
       if (addon === "bicolor") {
-        props.active = 3;
+        props.active = 4;
         props.nav = require('../content/nav/bicolor/du');
-        props.step = '/calibration/du/bicolor';
+        props.step = '/addon/bicolor/du/notice-7';
       } else {
-        props.active = 10;
+        props.active = 11;
         props.nav = require('../content/nav/du');
-        props.step = '/calibration/du';
+        props.step = '/cura-by-dagoma/du'
       }
-      break;
-    case 'expert':
-      props.printerInfo = {
-        name: "DiscoEasy200",
-        abbr: "DE200",
-        img: "d-prerequis-maj-de200.jpg",
-        video: "c-e3",
-        firmware: "E200",
-        notice: "de200"
-      };
-      props.active = 4;
-      props.nav = require('../content/nav/expert');
       break;
     default:
       props.printerInfo = {};
   }
 
-  res.render('pages/firmware', props);
+  res.render('pages/calibration', props);
 };

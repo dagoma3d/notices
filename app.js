@@ -30,6 +30,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 app.get('/', require('./routes/home').index);
 app.get('/cura-by-dagoma/:printer?', require('./routes/cura-by-dagoma').index);
 app.get('/firmware/:printer/:addon?', require('./routes/firmware').index);
+app.get('/calibration/:printer/:addon?', require('./routes/calibration').index);
 app.get('/printer/neva', require('./routes/neva').index);
 app.get('/printer/magis/:step?', require('./routes/magis').index);
 app.get('/printer/du/:step?/:addon?', require('./routes/disco-ultimate').index);

@@ -43,6 +43,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-c-noeud-tete", type: "video" }}
           content={[
             { text: "Repérage du câble ventilateur arrière", classes: "big-title" },
@@ -56,6 +57,7 @@ class Printer extends React.Component {
             { text: "Nous vous invitons à suivre la vidéo avec attention et de refaire pareil." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-d-carte", type: "video" }}
           content={[
             { text: "Installation de la carte de contrôle", classes: "big-title" },
@@ -74,6 +76,7 @@ class Printer extends React.Component {
             { text: "Raccordez-le ensuite sur le connecteur X adapté." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-f-butee-x", type: "video" }}
           content={[
             { text: "Câblage de la butée de X", classes: "big-title" },
@@ -90,6 +93,7 @@ class Printer extends React.Component {
             { text: "Passez entre la barre arrière et la tige du moteur de Z." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-h-palpeur", type: "video" }}
           content={[
             { text: "Branchement du palpeur", classes: "big-title" },
@@ -102,6 +106,7 @@ class Printer extends React.Component {
             { text: "Branchez la sonde (câbles noires avec connecteur blanc) sur le connecteur T0." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-j-cable-tete", type: "video" }}
           content={[
             { text: "Branchement des câbles restants", classes: "big-title" },
@@ -118,6 +123,7 @@ class Printer extends React.Component {
             { text: "Raccordez-le ensuite sur le connecteur Y adapté." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-l-mot-y", type: "video" }}
           content={[
             { text: "Câblage du moteur de Y", classes: "big-title" },
@@ -133,6 +139,7 @@ class Printer extends React.Component {
             { text: "Raccordez-le ensuite sur les moteurs de Z en passant entre la barre inférieure et la pièce plastique." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-n-mot-e", type: "video" }}
           content={[
             { text: "Branchement du moteur d’extrudeur", classes: "big-title" },
@@ -147,6 +154,7 @@ class Printer extends React.Component {
             { text: "Raccordez le câble rouge venant du bouton sur le connecteur 3." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-p-interrupteur", type: "video" }}
           content={[
             { text: "Installation de l’interrupteur", classes: "big-title" },
@@ -161,6 +169,7 @@ class Printer extends React.Component {
             { text: "Raccordez-le sur le + du bornier PWR IN." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-r-alim-negatif", type: "video" }}
           content={[
             { text: "Branchement de l’alimentation (négative)", classes: "big-title" },
@@ -173,6 +182,7 @@ class Printer extends React.Component {
             { text: "Astuce : Présentez-le de biais, poussez-le au fond et ensuite poussez vers le bas pour l'enclencher).", classes: "italic" }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/9-s-lecteur-sd", type: "video" }}
           content={[
             { text: "Installation du lecteur SD", classes: "big-title" },

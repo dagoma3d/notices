@@ -44,6 +44,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/4-c-vis-serrage", type: "video" }}
           content={[
             { text: "Mise en place des vis de serrage", classes: "big-title" },

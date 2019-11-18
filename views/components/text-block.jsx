@@ -35,8 +35,8 @@ function TextBlock(props) {
   const { tag, classes, text, link, list } = props;
   const CustomTag = tag ? `${tag}` : `p`;
   if (list) return <List list={list} />;
-  if (link) return <CustomTag className={classes}>{i18n.__(text)} <Link link={link} />{(text ? '.' : '')}</CustomTag>
-  return <CustomTag className={classes}>{i18n.__(text)}</CustomTag>;
+  if (link) return <CustomTag className={classes}>{text} <Link link={link} />{(text ? '.' : '')}</CustomTag>
+  return <CustomTag className={classes}>{text}</CustomTag>;
 }
 
 module.exports = TextBlock;

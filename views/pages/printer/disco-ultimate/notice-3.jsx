@@ -49,6 +49,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/3-c-vis-serrage", type: "video" }}
           content={[
             { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -63,6 +64,7 @@ class Printer extends React.Component {
             { text: "Prenez 1 vis M3x25, placez la dans le trou correspondant et vissez à travers la poulie." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/3-e-extrudeur", type: "video" }}
           content={[
             { text: "Installation du moteur d’extrudeur", classes: "big-title" },
@@ -79,6 +81,7 @@ class Printer extends React.Component {
             { text: "Prenez le bras, placez le pour que le ressort soit pris dans la seconde empreinte." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/3-g-extrudeur-installation", type: "video" }}
           content={[
             { text: "Installation du corps d’extrudeur", classes: "big-title" },

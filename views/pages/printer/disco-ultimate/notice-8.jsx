@@ -44,6 +44,7 @@ class Printer extends React.Component {
             }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/8-c-moteur-z", type: "video" }}
           content={[
             { text: "Montage des moteurs de Z", classes: "big-title" },
@@ -62,6 +63,7 @@ class Printer extends React.Component {
             { text: "Astuce : Un petit coup de maillet en caoutchouc aidera bien.", classes: "italic" }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/8-e-axe-x", type: "video" }}
           content={[
             { text: "Installation de l’axe X", classes: "big-title" },
@@ -76,6 +78,7 @@ class Printer extends React.Component {
             { text: "Normalement voici ce que vous avez obtenu. Vérifiez bien le sens des éléments." }
           ]} />
         <SimpleSection
+          flip={true}
           media={{ src: "DiscoUltimate/Notice/8-g-ecrous", type: "video" }}
           content={[
             { text: "Installation des écrous", classes: "big-title" },

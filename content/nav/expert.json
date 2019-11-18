@@ -18,5 +18,9 @@
   {
     "label": "5 - Mise à jour",
     "href": "/firmware/de200/expert"
+  },
+  {
+    "label": "6 - Calibration",
+    "href": "/calibration/de200/expert"
   }
 ]
