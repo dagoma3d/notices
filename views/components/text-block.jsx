@@ -1,5 +1,4 @@
 const React = require('react');
-const i18n = require("i18n");
 
 function Link(props) {
   if (!props.link) return null;

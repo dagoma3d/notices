@@ -13,7 +13,7 @@ i18n.configure({
 
 app.use(i18n.init);
 app.use(function (req, res, next) {
-  res.locals.__ = function () {
+  res.__ = function () {
     return function (text, render) {
       return i18n.__.apply(req, arguments);
     };
