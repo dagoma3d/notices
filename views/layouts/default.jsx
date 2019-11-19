@@ -41,8 +41,6 @@ function Layout(props) {
         <script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script src="//cdn.plyr.io/3.5.6/plyr.js"></script>
         <script src="/js/dagoma.js"></script>
-        <script src="/js/router.js"></script>
-        <script src="/js/routing_callback.js"></script>
         <script src="/js/plyr.setup.js"></script>
         <script src="/js/navbar.js"></script>
         <script src="/js/scroll.js"></script>
