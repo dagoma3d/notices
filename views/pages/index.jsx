@@ -6,9 +6,11 @@ var Section = require('../components/section');
 var NevaVersion = require('../components/neva-version');
 
 function Home(props) {
+  const t = props.__;
   return (
-    <Layout title="Notices et de montage et d'utilisation">
+    <Layout t={t} title="Notices et de montage et d'utilisation">
       <Block
+        t={t}
         img="FirstStep/premier-pas.jpg"
         content={[
           { text: "Premiers pas", classes: "title big tleft", tag: "h1" },
@@ -16,10 +18,12 @@ function Home(props) {
           { text: "Félicitations ! Si vous êtes ici c'est que vous avez fait un (bon) choix : vous lancer dans l'aventure de l'impression 3D. Nous allons vous accompagner étape par étape, du montage à la première utilisation de votre machine ou de vos nouveaux composants. Vous êtes prêts ?", classes: "tleft light" },
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Choisissez votre imprimante 3D pour commencer", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         articles={[
           { id: "neva-magis", picto: "neva-magis-svg.svg", alt: "Magis" },
           { id: "neva", picto: "neva-svg.svg", alt: "Neva" },
@@ -28,6 +32,7 @@ function Home(props) {
           { href: "/cura-by-dagoma", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" },
         ]} />
       <Section
+        t={t}
         id="neva-magis"
         title="Magis"
         articles={[
@@ -36,6 +41,7 @@ function Home(props) {
           { href: "/cura-by-dagoma/magis", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
         ]} />
       <Section
+        t={t}
         id="neva"
         title="Neva"
         articles={[
@@ -44,6 +50,7 @@ function Home(props) {
           { href: "/cura-by-dagoma", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
         ]} />
       <Section
+        t={t}
         id="discoeasy200"
         title="DiscoEasy200"
         articles={[
@@ -57,6 +64,7 @@ function Home(props) {
           { href: "/cura-by-dagoma/de200", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
         ]} />
       <Section
+        t={t}
         id="disco-ultimate"
         title="Disco Ultimate"
         articles={[
@@ -66,7 +74,7 @@ function Home(props) {
           { href: "/addon/box/disco", picto: "accessoires-49.svg", alt: "Caisson de protection" },
           { href: "/cura-by-dagoma/du", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
         ]} />
-      <NevaVersion />
+      <NevaVersion t={t} />
     </Layout>
   );
 }

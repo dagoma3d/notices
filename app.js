@@ -1,12 +1,15 @@
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const i18n = require("i18n");
 const app = express();
 const port = 5000;
 
+app.use(cookieParser());
+
 i18n.configure({
   locales: ['en', 'fr'],
   directory: __dirname + '/locales',
-  queryParameter: 'lang',
+  cookie: 'user_locale',
   defaultLocale: 'fr',
   autoReload: true
 });

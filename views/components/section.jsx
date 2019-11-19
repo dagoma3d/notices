@@ -29,13 +29,13 @@ function Article(props) {
 }
 
 function Section(props) {
-  const { id, flip, wrap, color, media, content, title, articles } = props;
+  const { id, flip, wrap, color, media, content, title, articles, t } = props;
   if (articles) {
     return (
       <section id={id} className={(title ? "block-sub " : "") + "col-xl-24 " + (title ? "bg-light-grey-blue block-hidden " : "") + "row"}>
         <div className={"btn-diag-container container " + (title ? "no-float " : "") + "block-white-space wrap row"}>
-          <Title title={title} />
-          {articles.map((a, k) => <Article key={k} id={a.id} href={a.href} picto={a.picto} alt={a.alt} title={a.title} />)}
+          <Title title={t(title)} />
+          {articles.map((i, k) => <Article key={k} id={i.id} href={i.href} picto={i.picto} alt={t(i.alt)} title={t(i.title)} />)}
         </div>
       </section>
     );
@@ -47,8 +47,8 @@ function Section(props) {
         </section>
         <section className={"col col-xl-12 col-m-24 row" + (flip ? " col-xl-pull-12 col-m-pull-0" : "")}>
           <div className="block-caption-classic block-caption-left row col-vspace">
-            {content.map((p, k) => {
-              return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} list={p.list} />
+            {content.map((i, k) => {
+              return <Text key={k} tag={i.tag} classes={i.classes} text={t(i.text)} link={i.link} list={i.list} />
             })}
             {props.children}
           </div>

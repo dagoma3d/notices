@@ -1,10 +1,11 @@
 var React = require('react');
 
 function Layout(props) {
+  const { title, children, t } = props;
   return (
     <html>
       <head>
-        <title>{props.title}</title>
+        <title>{title ? t(title) : t("Notices de montage et d'utilisation")}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="theme-color" content="#ff8200" />
@@ -25,11 +26,15 @@ function Layout(props) {
         <div id="body" className="container row">
           <section className="top-lang row">
             <div className="wrap row">
-              <a href="/" style={{ display: "inline-block", float: "left" }}>Home</a>
-              <a href="//www.dagoma3d.com" target="_blank " style={{ display: "inline-block", float: "right" }}>Dagoma</a>
+              <div style={{ display: "inline-block", float: "left" }}>
+                <a href="//www.dagoma3d.com" target="_blank"><img src='/favicon.png' style={{ height: "18px", top: "2px", position: "relative" }} /></a> | <a href="/"><i className="fa fa-home"></i></a>
+              </div>
+              <div style={{ display: "inline-block", float: "right" }}>
+                <a className="user-locale" data-id='en' href='#'>en</a> | <a className="user-locale" data-id='fr' href='#'>fr</a>
+              </div>
             </div>
           </section>
-          {props.children}
+          {children}
         </div>
         <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -43,6 +48,7 @@ function Layout(props) {
         <script src="/js/scroll.js"></script>
         <script src="/js/interface-cura.js"></script>
         <script src="/js/moving-top.js"></script>
+        <script src="/js/cookie.js"></script>
       </body>
     </html>
   );

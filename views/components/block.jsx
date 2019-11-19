@@ -2,7 +2,7 @@ const React = require('react');
 const Text = require('./text');
 
 function Block(props) {
-  const { img, flip, content } = props;
+  const { img, flip, content, t } = props;
   if (img) {
     return (
       <section className="col-xl-24 notice-mask row">
@@ -11,8 +11,8 @@ function Block(props) {
         </figure>
 
         <section className={"block-caption-classic block-caption-" + (flip ? "left" : "right")}>
-          {content.map((p, k) => {
-            return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} />
+          {content.map((i, k) => {
+            return <Text key={k} tag={i.tag} classes={i.classes} text={t(i.text)} link={i.link} />
           })}
           {props.children}
         </section>
@@ -23,8 +23,8 @@ function Block(props) {
       <section className="col-xl-24 block-big-white-space bg-gradient-orange row">
         <section className="col-xl-12 col-xl-offset-6 col-l-18 col-l-offset-3 col-m-24 col-m-offset-0 row">
           <div className="col-xl-24 block-caption row col-vspace">
-            {content.map((p, k) => {
-              return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} />
+            {content.map((i, k) => {
+              return <Text key={k} tag={i.tag} classes={i.classes} text={t(i.text)} link={i.link} />
             })}
             {props.children}
           </div>

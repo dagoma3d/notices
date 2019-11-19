@@ -18,6 +18,10 @@ button:focus {
     outline: none;
 }
 
+.top-lang {
+    font-size: 2em;
+}
+
 .row.no-gutter {
     margin-left: 0;
     margin-right: 0;
