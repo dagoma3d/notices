@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,18 +8,21 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={5} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={5} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/5-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - assemblage de la base", classes: "title tleft", tag: "h1" },
           { text: "Assemblage de la base", classes: "big-title tleft", tag: "h2" },
           { text: "Nous allons commencer à assembler l’imprimante 3D. Première étape la base." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/5-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -48,6 +51,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
         content={[
@@ -56,6 +60,7 @@ function Printer(props) {
           { text: "Posez la face avant sur sa partie plate." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-d-fixe-cote", type: "video" }}
         content={[
@@ -64,6 +69,7 @@ function Printer(props) {
           { text: "Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/5-e-roulements-axe", type: "video" }}
         content={[
           { text: "Mise en place des roulements", classes: "big-title" },
@@ -73,6 +79,7 @@ function Printer(props) {
           { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-f-face-ar", type: "video" }}
         content={[
@@ -84,6 +91,7 @@ function Printer(props) {
           { text: "Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/5-g-controle.jpg", type: "image" }}
         content={[
           { text: "Petit contrôle surprise", classes: "big-title" },
@@ -93,6 +101,7 @@ function Printer(props) {
           { text: "Si ce n’est pas le cas, démontez et recommencez." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-h-cache-cote-av-droit", type: "video" }}
         content={[
@@ -103,6 +112,7 @@ function Printer(props) {
           { text: "Respectez bien le sens de la pièce." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/5-i-cache-cote-av-gauche", type: "video" }}
         content={[
           { text: "Installation du cache côté avant gauche", classes: "big-title" },
@@ -111,6 +121,7 @@ function Printer(props) {
           { text: "Respectez bien le sens de la pièce." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-j-cache-cote-ar", type: "video" }}
         content={[
@@ -119,6 +130,7 @@ function Printer(props) {
           { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/5-k-installation-plaques-sup", type: "video" }}
         content={[
           { text: "Installation des plaques de protection noires", classes: "big-title" },
@@ -130,6 +142,7 @@ function Printer(props) {
           { text: "Astuce : Bougez la structure pour alignez les trous de vis si nécessaire." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-l-serrage-base", type: "video" }}
         content={[
@@ -137,12 +150,13 @@ function Printer(props) {
           { text: "Suivez la vidéo, vous avez 12 vis à serrer." }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/5-m-fin.jpg"
         content={[
           { text: "Assemblage de la base terminé.", classes: "big-title" },
           { text: "Mettez la base de côté, nous continuons le montage." }
         ]}>
-        <Validation step="/printer/du/notice-6" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-6" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

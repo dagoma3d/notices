@@ -1,18 +1,18 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require('../../../../../content/nav/bicolor/de200');
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require('../../../../../content/nav/bicolor/de200');
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
-const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 
 function BiColor(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={8} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={8} nav={nav} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur - préparation d’un gcode bi-couleur", classes: "title tleft", tag: "h1" },
@@ -20,6 +20,7 @@ function BiColor(props) {
           { text: "Nous avons ajouté dans notre dernier cura la possibilité de préparer des gcodes pour la double extrusion. Si vous n’êtes pas familiers de Cura, rendez-vous d’abord", link: { classes: "link-classic", href: "/cura-by-dagoma", text: "ici" } }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-b-stl.jpg", type: "image" }}
         content={[
@@ -29,6 +30,7 @@ function BiColor(props) {
           { link: { classes: "new-btn btn-classic btn-grey btn-wide", href: "/medias/stl/15STL.zip", text: "Télécharger les 15 objets" } }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-c-choix", type: "video" }}
         content={[
           { text: "Installation de Cura pour la double extrusion", classes: "big-title tleft", tag: "h2" },
@@ -38,6 +40,7 @@ function BiColor(props) {
           { text: "Voilà ! Nous vous expliquons la nouvelle interface et son fonctionnement juste après." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-d-nouvelle-interface.jpg", type: "image" }}
         content={[
@@ -47,6 +50,7 @@ function BiColor(props) {
           { text: "C - Le choix du volume de purge. Ce paramètre est très important pour obtenir une pièce propre. Nous vous expliquons tout plus bas." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-e-filament", type: "video" }}
         content={[
           { text: "Associer la couleur de filament", classes: "big-title tleft", tag: "h2" },
@@ -57,6 +61,7 @@ function BiColor(props) {
           { text: "Astuce: Vous pouvez intervertir les couleurs au besoin dans le menu du clic droit.", classes: "italic" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-f-type-support.jpg", type: "image" }}
         content={[
@@ -76,6 +81,7 @@ function BiColor(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-g-volume-purge.jpg", type: "image" }}
         content={[
           { text: "Choisir le volume de purge", classes: "big-title tleft", tag: "h2" },
@@ -87,10 +93,12 @@ function BiColor(props) {
           { text: "Remarque : Pour les mélanges de matière, préférez “Grand (125 mm3)”." }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Il ne vous reste plus qu’à préparer votre fichier et lancer votre impression bi-couleur.", classes: "big-title" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
           { text: "Préparation d’un fichier bi-couleur terminée", classes: "big-title" },

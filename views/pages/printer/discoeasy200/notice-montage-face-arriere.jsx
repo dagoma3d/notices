@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={2} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={2} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/4-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 3 - Montage de la face arrière", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function Printer(props) {
           { text: "Nous allons monter la deuxième partie de l’imprimante 3D." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-b-prerequis.jpg", type: "image" }}
         content={[
@@ -46,6 +49,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/4-c-vis-serrage", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -53,6 +57,7 @@ function Printer(props) {
           { text: "Comme tout à l’heure, prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-d-roulement-courroie", type: "video" }}
         content={[
@@ -62,6 +67,7 @@ function Printer(props) {
           { text: "Prenez le petit outil imprimé. Il permet de placer et maintenir les roulements facilement. Prenez 1 vis M3x16, placez en une dans le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/4-e-extrudeur", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -76,6 +82,7 @@ function Printer(props) {
           { text: "Comprimez le ressort pour aligner les trous placez la dernière vis sans serrer." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage", type: "video" }}
         content={[
@@ -86,12 +93,13 @@ function Printer(props) {
           { text: "Desserrez d’un quart de tour pour le faire réapparaître." },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/4-f-fin.jpg"
         content={[
           { text: "Montage de la face arrière : CHECK !", classes: "big-title" },
           { text: "Mettez-la de côté, elle nous servira plus tard." }
         ]}>
-        <Validation step="/printer/de200/notice-montage-fixations-laterales" />
+        <Validation t={t} step="/printer/de200/notice-montage-fixations-laterales" />
       </Block>
     </Layout>
   );

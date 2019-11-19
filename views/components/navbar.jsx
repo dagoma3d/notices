@@ -25,7 +25,7 @@ function NavBar(props) {
         <p>Navigation</p>
       </div>
       <ul className="col-xl-21 col-xl-offset-3 row notice-step lsn">
-        {props.nav.map((n, k) => <NavItem key={k} href={n.href} label={n.label} img={n.img} active={props.active === k} />)}
+        {props.nav.map((i, k) => <NavItem key={k} href={i.href} label={props.t(i.label)} img={i.img} active={props.active === k} />)}
       </ul>
       <button className="toggle-nav"><i className="fa fa-arrow-right"></i></button>
     </nav>

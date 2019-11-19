@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
 const Title = require('../../../components/title');
@@ -8,16 +8,19 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={3} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={3} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 1 heures 30 minutes", classes: "col-vbspace" }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/2-a-1600x600.jpg"
         content={[
@@ -28,6 +31,7 @@ function Printer(props) {
           { text: "Attention ! Pour ce nouveau tour, vous avez besoin d’un paquet de gros sel, riz, quinoa, ..." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/2-b-photophore-pp-2-copie.jpg", type: "image" }}
         content={[
@@ -40,6 +44,7 @@ function Printer(props) {
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Étape 2", classes: "title", tag: "h3" },
           { text: "Lancez l'impression", classes: "big-title" },
@@ -50,6 +55,7 @@ function Printer(props) {
         ]}>
       </Title>
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/2-d-pause-manuelle", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
@@ -59,6 +65,7 @@ function Printer(props) {
           { text: "Vous n'avez pas de gros sel, riz, quinoa, ... ? Profitez de ces 45 minutes d'impression pour aller en acheter !", classes: "italic" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/2-e-video-remplissage", type: "video" }}
         content={[
@@ -69,6 +76,7 @@ function Printer(props) {
           { text: "Attention ! Utilisez du gros sel et non du sel fin. La Magis utilise un ventilateur pour refroidir le PLA. Le sel fin est trop volatile, votre bureau risque de le regretter. Assurez-vous que rien ne dépasse de la surface de votre pièce avant de continuer.", classes: "bg-orange text-white col-space" }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/2-f-video-relance", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
@@ -76,12 +84,14 @@ function Printer(props) {
           { text: "Appuyez sur le bouton pour relancer l’impression." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/2-g-base", type: "video" }}
         content={[
           { text: "Il reste une demie-heure d’impression", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/2-h-1-copie.jpg", type: "image" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h3" },
@@ -89,12 +99,13 @@ function Printer(props) {
           { text: "Reprenez le photophore, et assemblez-le avec son support. Il se visse comme un couvercle." }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/2-a-1600x600.jpg"
         content={[
           { text: "J’ai réussi à assembler les deux premiers éléments !", classes: "big-title" }
         ]}>
-        <Validation step="/printer/magis/notice-4" />
+        <Validation t={t} step="/printer/magis/notice-4" />
       </Block>
     </Layout>
   );

@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,10 +8,12 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={0} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={0} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/1-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - préparation", classes: "title tleft", tag: "h1" },
@@ -19,8 +21,9 @@ function Printer(props) {
           { text: "Nous allons préparer tous les éléments nécessaires au montage du kit." },
           { text: "Temps approximatif de montage : 3 heures 30 minutes." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/2-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -40,11 +43,12 @@ function Printer(props) {
           }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/1-a-intro.jpg"
         content={[
           { text: "A vos marques … Go !", classes: "big-title" }
         ]}>
-        <Validation step="/printer/du/notice-2" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-2" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

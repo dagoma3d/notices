@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,18 +8,21 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={5} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={5} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/6-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - assemblage du plateau", classes: "title tleft", tag: "h1" },
           { text: "Assemblage du plateau", classes: "big-title tleft", tag: "h2" },
           { text: "Nous allons maintenant assembler la pièce qui viendra accueillir vos impression : le plateau." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/6-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -43,6 +46,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/6-c-support-plateau", type: "video" }}
         content={[
@@ -53,12 +57,14 @@ function Printer(props) {
           { text: "Prenez les deux petits supports et utilisez les mêmes repères pour les aligner convenablement." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/6-d-courroie-y", type: "video" }}
         content={[
           { text: "Installation de la courroie de Y", classes: "big-title" },
           { text: "Nous vous conseillons de suivre la vidéo avec attention." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/6-e-installation-plateau", type: "video" }}
         content={[
@@ -68,12 +74,13 @@ function Printer(props) {
           { text: "Serrez fermement à l’aide de 4 vis fraisée M3x12." }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/6-f-fin.jpg"
         content={[
           { text: "Assemblage du plateau terminé", classes: "big-title" },
           { text: "Et hop, la base est prête." }
         ]}>
-        <Validation step="/printer/du/notice-7" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-7" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

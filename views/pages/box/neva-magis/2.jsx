@@ -7,15 +7,18 @@ const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 
 function Box(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <Navbar active={2} nav={nav} />
+    <Layout t={t}>
+      <Navbar t={t} active={2} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 10 min", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="NevaMagis/Notice/Addons/Caisson/3-a-intro.jpg"
         content={[
           { text: "Notice de montage caisson Magis - installation du caisson", classes: "title tleft", tag: "h1" },
@@ -23,6 +26,7 @@ function Box(props) {
           { text: "Nous allons maintenant installer l’imprimante dans le caisson et terminer son assemblage." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-b-fixation-rail", type: "video" }}
         content={[
@@ -33,6 +37,7 @@ function Box(props) {
           { text: "Alignez le sur la gravure présente sur le socle." }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-c-installation-imprimante", type: "video" }}
         content={[
           { text: "Installation de l’imprimante", classes: "big-title tleft", tag: "h2" },
@@ -44,6 +49,7 @@ function Box(props) {
           { text: "Vous pouvez installer le clips du côté droit en fonction de la longueur entre votre connecteur et la ferrite.", classes: "text-red" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-d-installation-filament", type: "video" }}
         content={[
@@ -53,6 +59,7 @@ function Box(props) {
           { text: "Si votre bobine ne passe pas ou est installée avec un dérouleur vertical, passer le filament dans le clips avant de le présenter dans l’extrudeur (comme sur la vidéo)." }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-e-cloche-serrage", type: "video" }}
         content={[
           { text: "Installation du caisson", classes: "big-title tleft", tag: "h2" },
@@ -63,6 +70,7 @@ function Box(props) {
           { text: "Astuce : faites-le glisser sur le bord d’une table pour accéder à la vis.", classes: "italic" },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-f-butee", type: "video" }}
         content={[
@@ -72,6 +80,7 @@ function Box(props) {
           { text: "Vissez-la sur le rail fermement." }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-g-utilisation", type: "video" }}
         content={[
           { text: "Utilisation", classes: "big-title tleft", tag: "h2" },
@@ -83,6 +92,7 @@ function Box(props) {
           { text: "NB: Pour sortir la machine du caisson, vous devez retirer la butée, retirer le caisson et sortir la machine.", classes: "italic" }
         ]} />
       <Block
+        t={t}
         img="NevaMagis/Notice/Addons/Caisson/1-a-intro.jpg"
         content={[
           { text: "Félicitation ! Le montage du caisson est terminé.", classes: "big-title" }

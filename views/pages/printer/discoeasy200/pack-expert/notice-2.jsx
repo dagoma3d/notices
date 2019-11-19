@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require("../../../../../content/nav/expert");
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require("../../../../../content/nav/expert");
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 
 function PackExpert(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={1} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={1} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 30 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Trapezoidales/2-a-intro.jpg"
         content={[
           { text: "Notice de montage pack expert - Transfert des composants", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function PackExpert(props) {
           { text: "Nous allons transférer certains composants de votre ancienne imprimante dans les nouvelles pièces imprimées." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-b-roulements-xd", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -35,6 +38,7 @@ function PackExpert(props) {
           { text: "Installez les roulements dans la nouvelle pièce en vous aidant de l’outil imprimé." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-c-mot-butee-x", type: "video" }}
         content={[
@@ -48,6 +52,7 @@ function PackExpert(props) {
           { text: "Revissez-le (aidez-vous de l’outil imprimé pour placer la dernière vis)." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-d-deverrouillage-tete", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -58,6 +63,7 @@ function PackExpert(props) {
           { text: "Coupez le collier de fixation qui maintient les câbles." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-e-composant-tete", type: "video" }}
         content={[
@@ -70,6 +76,7 @@ function PackExpert(props) {
           { text: "Retirez le palpeur." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-f-palpeur", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -81,6 +88,7 @@ function PackExpert(props) {
           { text: "Serrez légèrement la vis pour le maintenir en place." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-g-buse", type: "video" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
@@ -91,6 +99,7 @@ function PackExpert(props) {
           { text: "Attention, le bloc de chauffe (la partie carrée) ne doit pas toucher le plastique.", classes: "col-space color-orange" }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-h-ventilo", type: "video" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
@@ -102,6 +111,7 @@ function PackExpert(props) {
           { text: "Faire de même pour le ventilateur arrière et retirez son repérage." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-i-verrouillage-tete", type: "video" }}
         content={[
           { text: "Étape 8", classes: "title tleft", tag: "h2" },
@@ -115,11 +125,12 @@ function PackExpert(props) {
           { text: "Ne serrez pas trop fort pour éviter d'abîmer les câbles.", classes: "italic" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Trapezoidales/2-j-fin.jpg"
         content={[
           { text: "Transfert des composants : CHECK !", classes: "big-title" }
         ]}>
-        <Validation step="/addon/expert/de200/notice-3" text="Je valide et je passe à la suite !" />
+        <Validation t={t} step="/addon/expert/de200/notice-3" text="Je valide et je passe à la suite !" />
       </Block>
     </Layout>
   );

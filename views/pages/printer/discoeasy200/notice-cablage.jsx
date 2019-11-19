@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={8} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={8} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 30 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/10-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 9 - Câblage", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function Printer(props) {
           { text: "Nous allons maintenant mettre en place la carte de contrôle et y raccorder tous les éléments." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-b-prerequis.jpg", type: "image" }}
         content={[
@@ -42,6 +45,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-b-preparation", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -53,6 +57,7 @@ function Printer(props) {
           { text: "Posez-la sur la face arrière pour que nous ayons la même référence." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-c-carte", type: "video" }}
         content={[
@@ -64,6 +69,7 @@ function Printer(props) {
           { text: "Ne serrez pas trop fort pour éviter d’endommager la carte.", classes: "bold text-red" },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-d-mot-x", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -77,6 +83,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur X_MOT." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-e-butee-x", type: "video" }}
         content={[
@@ -87,6 +94,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur X+." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-f-palpeur", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -96,6 +104,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur Y+." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-g-sonde", type: "video" }}
         content={[
@@ -106,6 +115,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur A13." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-h-cable-tete", type: "video" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
@@ -123,6 +133,7 @@ function Printer(props) {
           { text: "Raccordez les deux derniers fils repérés sur le bornier FAN (rouge sur + et noire sur -)." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-i-butee-y", type: "video" }}
         content={[
@@ -132,6 +143,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur X-." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-j-mot-y", type: "video" }}
         content={[
           { text: "Étape 9", classes: "title tleft", tag: "h2" },
@@ -140,6 +152,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le moteur de la face avant puis sur le connecteur Y_MOT." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-k-mot-z", type: "video" }}
         content={[
@@ -150,6 +163,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur Z_MOT." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-l-mot-e", type: "video" }}
         content={[
           { text: "Étape 11", classes: "title tleft", tag: "h2" },
@@ -158,6 +172,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le moteur d’extrudeur (sur la face arrière) puis sur le connecteur E_MOT." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-m-interrupteur", type: "video" }}
         content={[
@@ -166,6 +181,7 @@ function Printer(props) {
           { text: "Clipsez l’interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-n-alim-positif", type: "video" }}
         content={[
           { text: "Étape 13", classes: "title tleft", tag: "h2" },
@@ -177,6 +193,7 @@ function Printer(props) {
           { text: "Si vos câbles d''alimentation sont noirs : branchez le câble avec le liseré blanc sur le pôle + du bornier de la carte.", classes: "bold text-red" },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-o-alim-negatif", type: "video" }}
         content={[
@@ -191,6 +208,7 @@ function Printer(props) {
           { text: "Astuce : Présentez-le de biais, poussez-le au fond et ensuite poussez vers le bas pour l'enclencher).", classes: "italic bg-light-grey-blue" },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/10-p-lecteur-sd", type: "video" }}
         content={[
           { text: "Étape 15", classes: "title tleft", tag: "h2" },
@@ -200,6 +218,7 @@ function Printer(props) {
           { text: "Bridez-le à l'aide d'une vis M3x6." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/10-q-nappe-sd", type: "video" }}
         content={[
@@ -214,12 +233,13 @@ function Printer(props) {
           { text: "Attention, assurez-vous que l'adaptateur est bien centré sur le connecteur de la carte et que toutes les pins sont enclenchées.", classes: "italic bg-light-grey-blue" },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/10-s-fin.jpg"
         content={[
           { text: "Cablâge : CHECK !", classes: "big-title" },
           { text: "Prochaine étape : les finitions." },
         ]}>
-        <Validation step="/printer/de200/notice-finitions" />
+        <Validation t={t} step="/printer/de200/notice-finitions" />
       </Block>
     </Layout>
   );

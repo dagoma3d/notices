@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,18 +8,21 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={7} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={7} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/8-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - montage de l’axe Z", classes: "title tleft", tag: "h1" },
           { text: "Montage de l’axe Z", classes: "big-title tleft", tag: "h2" },
           { text: "Nous allons monter le portique de l’imprimante. On s’approche de la fin." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/7-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -43,6 +46,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/8-c-moteur-z", type: "video" }}
         content={[
@@ -53,6 +57,7 @@ function Printer(props) {
           { text: "Vissez ensuite les moteurs." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/8-d-barres", type: "video" }}
         content={[
           { text: "Montage des barres de l’axe Z", classes: "big-title" },
@@ -62,6 +67,7 @@ function Printer(props) {
           { text: "Astuce : Un petit coup de maillet en caoutchouc aidera bien.", classes: "italic" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/8-e-axe-x", type: "video" }}
         content={[
@@ -71,12 +77,14 @@ function Printer(props) {
           { text: "Faites quelques allers-retours pour que l’ensemble s’ajuste bien." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/8-f-controle.jpg", type: "image" }}
         content={[
           { text: "Deuxième contrôle surprise", classes: "big-title" },
           { text: "Normalement voici ce que vous avez obtenu. Vérifiez bien le sens des éléments." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/8-g-ecrous", type: "video" }}
         content={[
@@ -91,12 +99,13 @@ function Printer(props) {
           { text: "Montez équitablement le chariot pour le garder parallèle au plateau." }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/8-h-fin.jpg"
         content={[
           { text: "Montage de l’axe Z terminé.", classes: "big-title" },
           { text: "Vérifiez que les pièces sont orientées comme sur la photo." }
         ]}>
-        <Validation step="/printer/du/notice-9" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-9" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

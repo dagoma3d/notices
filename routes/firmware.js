@@ -1,6 +1,6 @@
 exports.index = function (req, res) {
   var props = {
-    title: res.__("Firmware"),
+    title: res.__("Firmware")
   };
   const printer = req.params.printer;
   const addon = req.params.addon;
@@ -69,6 +69,5 @@ exports.index = function (req, res) {
     default:
       props.printerInfo = {};
   }
-
   res.render('pages/firmware', props);
 };

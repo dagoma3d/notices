@@ -1,23 +1,24 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require("../../../../../content/nav/expert");
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require("../../../../../content/nav/expert");
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
-const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 
 function PackExpert(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={3} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={3} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 10 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg"
         content={[
           { text: "Notice de montage pack expert - Finitions", classes: "title tleft", tag: "h1" },
@@ -25,6 +26,7 @@ function PackExpert(props) {
           { text: "Nous allons maintenant remonter les derniers éléments de finitions avant de remettre en marche votre machine." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-b-top", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -35,6 +37,7 @@ function PackExpert(props) {
           { text: "Remettez le tube PTFE en place en le passant entre les deux barres du top." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-c-tension-courroie-tete", type: "video" }}
         content={[
@@ -46,6 +49,7 @@ function PackExpert(props) {
           { text: "Forcez pour ajouter 2 crans de tension et re-verrouiller la courroie." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-d-gaine", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -53,6 +57,7 @@ function PackExpert(props) {
           { text: "Remettez la gaine en place en récupérant les câbles de la butée et du moteur." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-e-cable-management", type: "video" }}
         content={[
@@ -62,6 +67,7 @@ function PackExpert(props) {
           { text: "Il est important qu’aucun câble ne se balade au dessus de la carte pour éviter d’être abîmé par le plateau." }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg"
         content={[
           { text: "Finitions : CHECK !", classes: "big-title" },

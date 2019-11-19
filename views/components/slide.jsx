@@ -19,11 +19,11 @@ function Item(props) {
 }
 
 function Slide(props) {
-  const { content } = props;
+  const { content, t } = props;
   return (
     <section className="moving-banner-top row">
       {content.map((i, k) => {
-        return <Item key={k} img={i.img} title={i.title} ok={i.ok} text={i.text} />
+        return <Item key={k} img={i.img} title={t(i.title)} ok={i.ok} text={t(i.text)} />
       })}
     </section>
   );

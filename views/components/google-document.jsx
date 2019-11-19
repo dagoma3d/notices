@@ -6,7 +6,7 @@ function GoogleDocument(props) {
     <div id="content-page" className="custom-page row wrap">
       <div className="row margin-bottom-shop">
         <div className="col-xl-24 capsule-h1 margin-bottom-shop">
-          <h1 className="tcenter">{props.title}</h1>
+          <h1 className="tcenter">{props.t(props.title)}</h1>
         </div>
       </div>
       <div className="row">

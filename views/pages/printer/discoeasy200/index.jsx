@@ -1,18 +1,19 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={0} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={0} nav={nav} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/2-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 1 - Préparation", classes: "title tleft", tag: "h1" },
@@ -21,6 +22,7 @@ function Printer(props) {
           { text: "Temps approximatif de montage : 3 heures 30 minutes.", classes: "col-vspace bold" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/2-b-prerequis.jpg", type: "image" }}
         content={[
@@ -42,6 +44,7 @@ function Printer(props) {
           { link: { href: "https://www.dagoma3d.com/shop/category/accessoires-3", target: "_blank", classes: "new-btn btn-valid btn-big btn-wide", text: "Les accessoires" } }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/2-d-contenu.jpg", type: "image" }}
         content={[
           { text: "Dans le carton du kit vous allez trouver...", classes: "big-title" },
@@ -63,11 +66,12 @@ function Printer(props) {
           { text: "Conseil : Sortez les vis et regroupez-les par type. Utilisez un récipient pour ne pas les perdre. Laissez les roulements dans leur sachet.", classes: "col-vtspace" },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/2-a-intro.jpg"
         content={[
           { text: "Je suis prêt : CHECK !", classes: "big-title" }
         ]}>
-        <Validation step="/printer/de200/notice-montage-face-avant" />
+        <Validation t={t} step="/printer/de200/notice-montage-face-avant" />
       </Block>
     </Layout>
   );

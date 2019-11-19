@@ -1,9 +1,9 @@
-var React = require('react');
-var Layout = require('../layouts/default');
-var Block = require('../components/block');
-var Title = require('../components/title');
-var Section = require('../components/section');
-var NevaVersion = require('../components/neva-version');
+const React = require('react');
+const Layout = require('../layouts/default');
+const Block = require('../components/block');
+const Title = require('../components/title');
+const Section = require('../components/section');
+const NevaVersion = require('../components/neva-version');
 
 function Home(props) {
   const t = props.__;

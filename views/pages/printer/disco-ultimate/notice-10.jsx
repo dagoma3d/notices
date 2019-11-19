@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,10 +8,12 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={9} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={9} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/10-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - finitions", classes: "title tleft", tag: "h1" },
@@ -19,8 +21,9 @@ function Printer(props) {
           { text: "Les dernières finitions" },
           { text: "A la fin de cette page, le montage sera terminé." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -48,6 +51,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-c-top-vis-serrage", type: "video" }}
         content={[
@@ -58,6 +62,7 @@ function Printer(props) {
           { text: "Mettez ensuite deux barres dans les logements prévus à cet effet." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-d-top-installation", type: "video" }}
         content={[
           { text: "Finition du portique", classes: "big-title" },
@@ -66,6 +71,7 @@ function Printer(props) {
           { text: "Serrez les 4 vis présentes sur les côtés." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-e-tension-courroie-tete", type: "video" }}
         content={[
@@ -77,12 +83,14 @@ function Printer(props) {
           { text: "Coupez le bout pour laisser 3 cm de mou." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-f-serrage-axe-z", type: "video" }}
         content={[
           { text: "Serrage de l’axe Z", classes: "big-title" },
           { text: "Serrez les 2 vis restantes en haut puis les 4 vis des fixations latérales." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-g-logo-face-avant", type: "video" }}
         content={[
@@ -91,6 +99,7 @@ function Printer(props) {
           { text: "Clipsez-le dans la face avant pour faire correspondre les formes." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-h-gaine-chariot", type: "video" }}
         content={[
           { text: "Mise en place de la gaine", classes: "big-title" },
@@ -100,6 +109,7 @@ function Printer(props) {
           { text: "Fixez-la ensuite à l’aide d’un collier de serrage au chariot (il y a un passage prévu à cet effet)." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
         content={[
@@ -109,12 +119,14 @@ function Printer(props) {
           { text: "Notre solution n’est pas unique." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-k-cable-management-controle.jpg", type: "image" }}
         content={[
           { text: "Vérification des câbles", classes: "big-title" },
           { text: "Aucun câble maintenu ne doit dépasser de la machine." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-l-plaque-fond", type: "video" }}
         content={[
@@ -125,6 +137,7 @@ function Printer(props) {
           { text: "Appuyez fermement dessus pour les bloquer." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-m-ptfe", type: "video" }}
         content={[
           { text: "Installation du tube PTFE", classes: "big-title" },
@@ -133,6 +146,7 @@ function Printer(props) {
           { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-n-bis-film-plateau.jpg", type: "image" }}
         content={[
@@ -140,17 +154,19 @@ function Printer(props) {
           { text: "Si vous avez un film protecteur, pensez à le retirer." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/10-n-buildgrip.jpg", type: "image" }}
         content={[
           { text: "Installation de la surface d’accroche", classes: "big-title" },
           { text: "Vous trouverez un article complet pour vous expliquer l'installation de la surface d'accroche et sa maintenance.", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000070827-discoeasy200-changer-la-surface-d-accroche", target: "_blank", classes: "new-btn btn-valid btn-wide btn-big", text: "C’est par ici" } }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/10-o-fin.jpg"
         content={[
           { text: "Le montage de votre Disco Ultimate est terminé !", classes: "big-title" }
         ]}>
-        <Validation step="/firmware/du" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/firmware/du" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
 const Title = require('../../../components/title');
@@ -8,15 +8,18 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={0} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={0} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 10 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="NevaMagis/Notice/0-a-magis-bobine.jpg"
         content={[
           { text: "Notice de première utilisation - Introduction", classes: "title tleft", tag: "h1" },
@@ -27,10 +30,12 @@ function Printer(props) {
           { text: "Pour toute cette initiation, vous aurez besoin d'environ 75g de PLA Chromatik. Une bobine de 250g fera donc amplement l'affaire." }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Dans ce carton vous avez trouvé...", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         color="color-anthracite"
         media={{ src: "NevaMagis/Notice/0-c-a-gris-contenu.jpg", type: "image", classes: "notice-small-img" }}
         content={[
@@ -49,6 +54,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         color="color-anthracite"
         media={{ src: "NevaMagis/Notice/0-c-b-gris-contenu.jpg", type: "image", classes: "notice-small-img" }}
@@ -67,16 +73,19 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/0-c-c-cales", type: "video" }}
         content={[
           { text: "Préparation", classes: "big-title" },
           { text: "Avant de commencer, retirez les 3 cales oranges qui se trouvent sous le plateau." }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Place au montage", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/0-d-a-bras", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h3" },
@@ -87,6 +96,7 @@ function Printer(props) {
           { text: "Reliez la tête aux chariots à l'aide des bras aimantés." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/0-d-b-callibration", type: "video" }}
         content={[
@@ -97,6 +107,7 @@ function Printer(props) {
           { text: "Attendez qu'elle ait fini avant de passer à la suite." }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/0-d-c-filament", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
@@ -110,11 +121,12 @@ function Printer(props) {
           { text: "Assurez-vous que le filament soit bien arrivé jusqu'à la tête." }
         ]} />
       <Block
+        t={t}
         img="NevaMagis/Notice/0-a-magis-bobine.jpg"
         content={[
           { text: "Premiers réglages : CHECK !", classes: "big-title" }
         ]}>
-        <Validation step="/printer/magis/notice-1" />
+        <Validation t={t} step="/printer/magis/notice-1" />
       </Block>
     </Layout>
   );

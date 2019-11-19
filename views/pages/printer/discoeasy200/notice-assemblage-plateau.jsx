@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={7} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={7} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 25 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/9-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 8 - Assemblage du plateau", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function Printer(props) {
           { text: "Nous allons maintenant assembler la pièce qui viendra accueillir vos impression : le plateau." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/9-b-prerequis.jpg", type: "image" }}
         content={[
@@ -43,6 +46,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/9-c-support-plateau", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -56,6 +60,7 @@ function Printer(props) {
           { text: "Répétez l'opération pour les deux autres pièces (écrous vers l’extérieur)." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/9-c-controle.jpg", type: "image" }}
         content={[
@@ -64,6 +69,7 @@ function Printer(props) {
           { text: "Voilà le rendu final. Faites bien attention au sens des éléments." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/9-d-clips", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -80,6 +86,7 @@ function Printer(props) {
           { text: "Assurez-vous qu’il coulisse toujours après serrage. Si ce n’est pas le cas, desserrez légèrement les vis." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/9-e-control-base", type: "video" }}
         content={[
@@ -92,6 +99,7 @@ function Printer(props) {
           { text: "Si ce n’est pas le cas, une barre doit être mal enfoncée (voir page 7)." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/9-f-courroie", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -113,12 +121,13 @@ function Printer(props) {
           { text: "Repliez le bout et faites-le passer dans le clips pour finir." },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/9-g-fin.jpg"
         content={[
           { text: "Assemblage du plateau : CHECK !", classes: "big-title" },
           { text: "On approche de la fin. Prochaine étape, le câblage." },
         ]}>
-        <Validation step="/printer/de200/notice-cablage" />
+        <Validation t={t} step="/printer/de200/notice-cablage" />
       </Block>
     </Layout>
   );

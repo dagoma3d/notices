@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require("../../../../../content/nav/expert");
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require("../../../../../content/nav/expert");
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 
 function PackExpert(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={2} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={2} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Trapezoidales/3-a-intro.jpg"
         content={[
           { text: "Notice de montage pack expert - Montage", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function PackExpert(props) {
           { text: "Nous allons maintenant remonter la DiscoEasy200 avec les éléments du pack expert." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-b-assemblage-axe-x", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -33,6 +36,7 @@ function PackExpert(props) {
           { text: "Maintenant faites attention au sens des pièces. Référez-vous à la vidéo pour orienter les pièces. La tête et les deux chariots sont plus haut d’un côté (en haut sur la vidéo). Alignez ce côté. Le chariot avec le moteur sera à gauche, l’autre à droite. Dans l’étape suivante vous pourrez vérifier tout ça." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-c-courroie-tete", type: "video" }}
         content={[
@@ -50,6 +54,7 @@ function PackExpert(props) {
           { text: "Reprenez l’autre bout et tirez dessus pour tendre la courroie. Tendez sans forcer, juste pour que tout tienne en place. Poussez la courroie pour la verrouiller dans les crans de la tête." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-d-mot-z", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -60,6 +65,7 @@ function PackExpert(props) {
           { text: "Vissez ensuite les moteurs (reprenez les vis utilisées pendant le démontage)." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-e-axe-x", type: "video" }}
         content={[
@@ -72,6 +78,7 @@ function PackExpert(props) {
           { text: "Placez une des anciennes pièces plastiques en dessous. Elle protègera votre plateau pour la prochaine étape." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-f-ecrou", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -86,6 +93,7 @@ function PackExpert(props) {
           { text: "Faites ensuite descendre l’ensemble d’environ 5 cm." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-g-recablage", type: "video" }}
         content={[
@@ -97,11 +105,12 @@ function PackExpert(props) {
           { text: "Rebranchez ensuite les deux moteurs de Z en faisant passer le câble entre la barre inférieure et la pièce plastique." },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Trapezoidales/3-h-fin.jpg"
         content={[
           { text: "Montage du pack expert : CHECK !", classes: "big-title" }
         ]}>
-        <Validation step="/addon/expert/de200/notice-4" text="Je valide et je passe à la suite !" />
+        <Validation t={t} step="/addon/expert/de200/notice-4" text="Je valide et je passe à la suite !" />
       </Block>
     </Layout>
   );

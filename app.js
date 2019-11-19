@@ -11,7 +11,7 @@ i18n.configure({
   directory: __dirname + '/locales',
   cookie: 'user_locale',
   defaultLocale: 'fr',
-  autoReload: true
+  //  autoReload: true
 });
 
 app.use(i18n.init);

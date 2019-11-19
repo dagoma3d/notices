@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
 const Title = require('../../../components/title');
@@ -8,16 +8,19 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={4} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={4} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 45 minutes", classes: "col-vbspace" }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/3-a-photophore-pp-3-1600x600.jpg"
         content={[
@@ -28,6 +31,7 @@ function Printer(props) {
           { text: "Il est impératif d’avoir deux couleurs différentes pour aboutir au résultat attendu. Si vous n’en avez qu’une, continuez quand même pour maîtriser toutes les fonctionnalités." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/3-b-copie.jpg", type: "image" }}
         content={[
@@ -40,6 +44,7 @@ function Printer(props) {
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Étape 2", classes: "title", tag: "h3" },
           { text: "Lancez l'impression", classes: "big-title" },
@@ -49,6 +54,7 @@ function Printer(props) {
           { text: "Pssst ! Rappellez-vous de la ", classes: "italic", link: { href: "/printer/magis/notice-1", title: "Retourner à la page 1", classes: "link-classic", text: "page 1" } },
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/3-d-pause-auto", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
@@ -60,6 +66,7 @@ function Printer(props) {
           { text: "Si ce n'est pas résolu, nous sommes à votre disposition via ", classes: "italic", link: { href: "//support.dagoma.fr/support/home", target: "_blank", title: "Le support", classes: "link-classic", text: "le support" } },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/3-e-tap-tap-changement-filament", type: "video" }}
         content={[
@@ -74,6 +81,7 @@ function Printer(props) {
           { text: "Pensez à retirer le PLA qui coule sous la tête." }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/3-f-reprise-manuelle", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
@@ -81,12 +89,14 @@ function Printer(props) {
           { text: "Appuyez sur le bouton pour relancer l'impression." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/3-g-bi-colore", type: "video" }}
         content={[
           { text: "Plus que 10 minutes d’impression", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/3-i-photophore-pp-3-copie.jpg", type: "image" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h3" },
@@ -94,12 +104,13 @@ function Printer(props) {
           { text: "Reprenez le photophore, et assemblez-le avec le reste." }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/3-a-photophore-pp-3-1600x600.jpg"
         content={[
           { text: "Je vois la vie en couleur !", classes: "big-title" }
         ]}>
-        <Validation step="/cura-by-dagoma" />
+        <Validation t={t} step="/cura-by-dagoma" />
       </Block>
     </Layout>
   );

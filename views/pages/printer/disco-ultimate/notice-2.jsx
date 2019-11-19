@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,18 +8,21 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={1} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={1} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/2-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - montage de la face avant", classes: "title tleft", tag: "h1" },
           { text: "Montage de la face avant", classes: "big-title tleft" },
           { text: "Nous allons monter la première partie de l’imprimante 3D." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/2-b-prerequis", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -45,6 +48,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/2-c-vis-serrage", type: "video" }}
         content={[
@@ -52,6 +56,7 @@ function Printer(props) {
           { text: "Prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/2-d-roulement", type: "video" }}
         content={[
           { text: "Installation des 2 roulements de courroie", classes: "big-title" },
@@ -59,6 +64,7 @@ function Printer(props) {
           { text: "Prenez le petit outil imprimé pour vous aider à placer les roulements. Prenez 1 vis M3x16, placez la dans le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage. Répétez l'opération pour le deuxième emplacement." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/2-e-butee", type: "video" }}
         content={[
@@ -68,6 +74,7 @@ function Printer(props) {
           { text: "Pliez les pattes en dessous puis enfoncez la butée. Elle dépasse d’un millimètre par rapport au plastique." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/2-f-moteur", type: "video" }}
         content={[
           { text: "Installation du moteur de Y", classes: "big-title" },
@@ -76,12 +83,13 @@ function Printer(props) {
           { text: "La roue dentée se trouvera en face des roulements." }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/3-g-fin.jpg"
         content={[
           { text: "Montage de la face avant terminé", classes: "big-title" },
           { text: "Mettez-la de côté, elle nous servira plus tard." }
         ]}>
-        <Validation step="/printer/du/notice-3" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-3" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

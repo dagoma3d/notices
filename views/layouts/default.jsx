@@ -1,4 +1,4 @@
-var React = require('react');
+const React = require('react');
 
 function Layout(props) {
   const { title, children, t } = props;

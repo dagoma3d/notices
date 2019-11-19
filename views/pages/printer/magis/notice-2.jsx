@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
 const Title = require('../../../components/title');
@@ -8,16 +8,19 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={2} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={2} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 1 heures 30 minutes", classes: "col-vbspace" }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/a-derouleur.jpg"
         content={[
@@ -27,6 +30,7 @@ function Printer(props) {
           { text: "Vous avez remarqué qu'il manquait un accessoire à votre bobine ? Nous vous proposons ce dérouleur de bobine." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/b-derouleur.jpg", type: "image" }}
         content={[
@@ -39,6 +43,7 @@ function Printer(props) {
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/c-assemblage-derouleur.jpg", type: "image" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h3" },
@@ -46,6 +51,7 @@ function Printer(props) {
           { text: "N'hésitez pas à le faire tourner un peu à la main si vous voyez que l'assemblage ne pivote pas bien." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/d-assemblage-derouleur.jpg", type: "image" }}
         content={[
@@ -54,12 +60,13 @@ function Printer(props) {
           { text: "Déposez la bobine sur votre dérouleur." }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/a-derouleur.jpg"
         content={[
           { text: "Je suis prêt à dérouler !", classes: "big-title" }
         ]}>
-        <Validation step="/printer/magis/notice-3" />
+        <Validation t={t} step="/printer/magis/notice-3" />
       </Block>
     </Layout>
   );

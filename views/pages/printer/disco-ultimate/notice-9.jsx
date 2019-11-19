@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,18 +8,21 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={8} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={8} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/9-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - câblage", classes: "title tleft", tag: "h1" },
           { text: "Câblage", classes: "big-title tleft", tag: "h2" },
           { text: "Et si nous commencions à lui donner vie ?" }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -42,6 +45,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-c-noeud-tete", type: "video" }}
         content={[
@@ -49,6 +53,7 @@ function Printer(props) {
           { text: "Prenez le câble du ventilateur arrière et faites un noeud à 2cm du bout." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-c-bis-gaine-tete", type: "video" }}
         content={[
           { text: "Mise en place de la gaine de tête", classes: "big-title" },
@@ -56,6 +61,7 @@ function Printer(props) {
           { text: "Nous vous invitons à suivre la vidéo avec attention et de refaire pareil." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-d-carte", type: "video" }}
         content={[
@@ -66,6 +72,7 @@ function Printer(props) {
           { text: "Ne serrez pas trop fort pour éviter d’endommager la carte." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-e-mot-x", type: "video" }}
         content={[
           { text: "Câblage du moteur de X", classes: "big-title" },
@@ -75,6 +82,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur X adapté." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-f-butee-x", type: "video" }}
         content={[
@@ -84,6 +92,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur X adapté." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-g-passage-gaine-tete", type: "video" }}
         content={[
           { text: "Passage des câbles de la tête", classes: "big-title" },
@@ -92,6 +101,7 @@ function Printer(props) {
           { text: "Passez entre la barre arrière et la tige du moteur de Z." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-h-palpeur", type: "video" }}
         content={[
@@ -99,12 +109,14 @@ function Printer(props) {
           { text: "Branchez le câble du palpeur (câble gris) sur le connecteur Z." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-i-sonde", type: "video" }}
         content={[
           { text: "Branchement de la sonde", classes: "big-title" },
           { text: "Branchez la sonde (câbles noires avec connecteur blanc) sur le connecteur T0." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-j-cable-tete", type: "video" }}
         content={[
@@ -115,6 +127,7 @@ function Printer(props) {
           { text: "Branchez les câbles du ventilateur restant sur le bornier FAN1." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-k-butee-y", type: "video" }}
         content={[
           { text: "Câblage de la butée de Y", classes: "big-title" },
@@ -122,6 +135,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le connecteur Y adapté." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-l-mot-y", type: "video" }}
         content={[
@@ -130,6 +144,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le moteur de la face avant puis sur le connecteur Y adapté." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-m-mot-z", type: "video" }}
         content={[
           { text: "Branchement des moteurs de Z", classes: "big-title" },
@@ -138,6 +153,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur les moteurs de Z en passant entre la barre inférieure et la pièce plastique." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-n-mot-e", type: "video" }}
         content={[
@@ -146,6 +162,7 @@ function Printer(props) {
           { text: "Raccordez-le ensuite sur le moteur d’extrudeur (sur la face arrière) puis sur le connecteur E0." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-o-ep", type: "video" }}
         content={[
           { text: "Branchement des capteurs de l’extrudeur+", classes: "big-title" },
@@ -153,6 +170,7 @@ function Printer(props) {
           { text: "Raccordez le câble rouge venant du bouton sur le connecteur 3." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-p-interrupteur", type: "video" }}
         content={[
@@ -160,6 +178,7 @@ function Printer(props) {
           { text: "Clipsez l’interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/9-q-alim-positif", type: "video" }}
         content={[
           { text: "Branchement de l’alimentation (positive)", classes: "big-title" },
@@ -168,6 +187,7 @@ function Printer(props) {
           { text: "Raccordez-le sur le + du bornier PWR IN." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-r-alim-negatif", type: "video" }}
         content={[
@@ -181,6 +201,7 @@ function Printer(props) {
           { text: "Astuce : Présentez-le de biais, poussez-le au fond et ensuite poussez vers le bas pour l'enclencher).", classes: "italic" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-s-lecteur-sd", type: "video" }}
         content={[
@@ -191,11 +212,12 @@ function Printer(props) {
           { text: "Bloquez-le avec une vis M3x6." }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/9-v-fin.jpg"
         content={[
           { text: "Le câblage terminé.", classes: "big-title" }
         ]}>
-        <Validation step="/printer/du/notice-10" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-10" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={4} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={4} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/6-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 5 - Montage de l’axe X", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function Printer(props) {
           { text: "Nous allons monter la dernière partie de l’imprimante 3D avant de passer à l’assemblage." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/6-b-prerequis.jpg", type: "image" }}
         content={[
@@ -48,6 +51,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/6-c-roulement-courroie", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -56,6 +60,7 @@ function Printer(props) {
           { text: "Reprenez le petit outil imprimé pour vous aider à placer les roulements. Prenez 1 vis M3x16, placez la dans le trou correspondant et vissez à travers les 2 roulements. Faites passer le tournevis par le trou prévu à cet effet dans la pièce plastique. Vérifiez que les roulements tournent bien après serrage." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/6-d-bute", type: "video" }}
         content={[
@@ -67,6 +72,7 @@ function Printer(props) {
           { text: "Elle dépasse d’un millimètre par rapport au plastique." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/6-e-moteur-x", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -76,6 +82,7 @@ function Printer(props) {
           { text: "Le dernier trou de vis est accessible avec l’outil plastique utilisé pour les roulements. Positionnez la vis en face du trou, passez le tournevis à travers la pièce, retirez l'outil imprimé, et vissez." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/6-g-tete", type: "video" }}
         content={[
@@ -85,6 +92,7 @@ function Printer(props) {
           { text: "Clipsez-les dans les portées prévues à cet effet sur la tête (centrez-les bien avant d’appuyer)." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/6-f-barre", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -94,6 +102,7 @@ function Printer(props) {
           { text: "Maintenant faites attention au sens des pièces. Référez-vous à la vidéo pour orienter les pièces. La tête et les deux chariots sont plus haut d’un côté (en haut sur la vidéo). Alignez ce côté. Le chariot avec le moteur sera à gauche, l’autre à droite. Pas besoin de forcer pour rentrer les barres. Dans l’étape suivante vous pourrez vérifier tout ça.", classes: "italic" },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/6-h-courroie-tete", type: "video" }}
         content={[
@@ -111,13 +120,14 @@ function Printer(props) {
           { text: "Reprenez l’autre bout et tirez dessus pour tendre la courroie. Tendez sans forcer, juste pour que tout tienne en place. Poussez la courroie pour la verrouiller dans les crans de la tête." },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/6-i-fin.jpg"
         content={[
           { text: "Montage de l'axe X : CHECK !", classes: "big-title" },
           { text: "Vérifiez que le sens des pièces correspond à la photo." },
           { text: "Mettez le ensuite de côté, il nous servira plus tard." }
         ]}>
-        <Validation step="/printer/de200/notice-assemblage-base" />
+        <Validation t={t} step="/printer/de200/notice-assemblage-base" />
       </Block>
     </Layout>
   );

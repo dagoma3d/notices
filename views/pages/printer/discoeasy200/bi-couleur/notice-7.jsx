@@ -1,18 +1,18 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require('../../../../../content/nav/bicolor/de200');
-const Title = require('../../../../components/title');
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require('../../../../../content/nav/bicolor/de200');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 
 function BiColor(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={7} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={7} nav={nav} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur - première impression", classes: "title tleft", tag: "h1" },
@@ -20,6 +20,7 @@ function BiColor(props) {
           { text: "Ca y est, votre Discoeasy200 est prête pour imprimer en bi-couleur." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/7-b-chargement-filament", type: "video" }}
         content={[
@@ -34,6 +35,7 @@ function BiColor(props) {
           { text: "Arrêtez le filament à l’extrémité du tube PTFE côté tête d’impression." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/7-c-fichier.jpg", type: "image" }}
         content={[
           { text: "Un gcode déjà tout prêt", classes: "big-title tleft", tag: "h2" },
@@ -43,12 +45,13 @@ function BiColor(props) {
           { text: "Vous connaissez la chanson, c’est un lancement tout à fait normal : téléchargez le fichier, transférez-le sur la carte SD, insérez la carte dans l’imprimante 3D puis allumez-la." }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
           { text: "Première impression terminée", classes: "big-title" },
           { text: "Nous allons maintenant voir comment préparer vous même un gcode bi-couleur à l’aide de notre nouveau cura." }
         ]}>
-        <Validation step="/addon/bicolor/de200/notice-8" />
+        <Validation t={t} step="/addon/bicolor/de200/notice-8" />
       </Block>
     </Layout>
   );

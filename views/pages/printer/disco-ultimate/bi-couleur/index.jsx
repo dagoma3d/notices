@@ -1,30 +1,34 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require('../../../../../content/nav/bicolor/du');
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require('../../../../../content/nav/bicolor/du');
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 
 function BiColor(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={0} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={0} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps total de montage approximatif : 1h30min", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/0-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur Disco Ultimate - préparation et démontage", classes: "title tleft", tag: "h1" },
           { text: "Vous avez reçu votre pack bi-couleur.", classes: "big-title tleft" },
           { text: "Nous allons vous accompagner pour le montage et l’installation de ce 2ème add-on qui vous permettra d’imprimer avec deux couleurs différentes." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-b-contenu.jpg", type: "image" }}
         content={[
           { text: "Dans le pack vous avez trouvé...", classes: "big-title tleft", tag: "h2" },
@@ -43,9 +47,9 @@ function BiColor(props) {
               ]
             }
           }
-        ]}>
-      </Section>
+        ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg", type: "image" }}
         content={[
           { text: "Les pré-requis", classes: "big-title tleft", tag: "h2" },
@@ -61,10 +65,12 @@ function BiColor(props) {
           }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Place au démontage", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-d-ptfe", type: "video" }}
         content={[
           { text: "Retrait du tube ptfe", classes: "big-title tleft", tag: "h2" },
@@ -72,6 +78,7 @@ function BiColor(props) {
           { text: "Débranchez le tube PTFE en appuyant sur le connecteur noir et retirez-le du top." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-e-top", type: "video" }}
         content={[
@@ -80,6 +87,7 @@ function BiColor(props) {
           { text: "Retirez la partie supérieure de l’imprimante." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-f-retrait-axe-x", type: "video" }}
         content={[
           { text: "Retrait de l’axe X", classes: "big-title tleft", tag: "h2" },
@@ -87,6 +95,7 @@ function BiColor(props) {
           { text: "Retirez-le une fois désengagé." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-g-demontage-axe-x", type: "video" }}
         content={[
@@ -96,6 +105,7 @@ function BiColor(props) {
           { text: "Mettez les barres de côté." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-h-plaque-fond", type: "video" }}
         content={[
           { text: "Retrait de la plaque de fond", classes: "big-title tleft", tag: "h2" },
@@ -103,6 +113,7 @@ function BiColor(props) {
           { text: "Gardez le tout de côté et ne les perdez pas." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-i-debrancher-tete", type: "video" }}
         content={[
@@ -113,11 +124,12 @@ function BiColor(props) {
           { text: "Débranchez la sonde sur le connecteur T0." }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Addon/Bicouleur/1-j-fin.jpg"
         content={[
           { text: "Démontage de l’imprimante terminé", classes: "big-title" }
         ]}>
-        <Validation step="/addon/bicolor/du/notice-2" />
+        <Validation t={t} step="/addon/bicolor/du/notice-2" />
       </Block>
     </Layout>
   );

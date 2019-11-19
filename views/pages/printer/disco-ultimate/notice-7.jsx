@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
@@ -8,18 +8,21 @@ const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={6} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={6} nav={nav} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/7-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - montage de l’axe X", classes: "title tleft", tag: "h1" },
           { text: "Montage de l’axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Nous allons monter l’axe qui supporte la tête d’impression." }
         ]} />
-      <Title content={[]} />
+      <Title t={t} content={[]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/7-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -47,6 +50,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/7-c-roulement-courroie", type: "video" }}
         content={[
@@ -56,12 +60,14 @@ function Printer(props) {
           { text: "Prenez 1 vis M3x25, placez la dans le trou correspondant et vissez à travers la poulie." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/7-d-butee", type: "video" }}
         content={[
           { text: "Installation de la butée de X", classes: "big-title" },
           { text: "Dans l’autre chariot, installez la butée comme sur le vidéo." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/7-e-moteur-x", type: "video" }}
         content={[
@@ -71,6 +77,7 @@ function Printer(props) {
           { text: "Le dernier trou de vis est accessible avec l’outil plastique utilisé pour les roulements de la face avant. Positionnez la vis en face du trou, passez le tournevis à travers la pièce, retirez l'outil imprimé, et vissez." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoUltimate/Notice/7-f-barre", type: "video" }}
         content={[
           { text: "Montage des barres de l’axe X", classes: "big-title" },
@@ -78,6 +85,7 @@ function Printer(props) {
           { text: "Introduisez-les avec délicatesse dans les roulements (faites quelques rotations pour faciliter leur entrée). Une fois en place, faites quelques allers-retours pour vérifier que tout va bien." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoUltimate/Notice/7-g-courroie-tete", type: "video" }}
         content={[
@@ -85,13 +93,14 @@ function Printer(props) {
           { text: "Nous vous conseillons de suivre la vidéo avec attention." }
         ]} />
       <Block
+        t={t}
         img="DiscoUltimate/Notice/7-h-fin.jpg"
         content={[
           { text: "Montage de l’axe X terminé", classes: "big-title" },
           { text: "Vérifiez que le sens des pièces correspond à la photo." },
           { text: "Mettez-le ensuite de côté, il nous servira plus tard" }
         ]}>
-        <Validation step="/printer/du/notice-8" text="Je passe à l'étape suivante" />
+        <Validation t={t} step="/printer/du/notice-8" text="Je passe à l'étape suivante" />
       </Block>
     </Layout>
   );

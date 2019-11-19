@@ -13,11 +13,11 @@ function AdditionalInfo(props) {
   }
 }
 function HiddenVideo(props) {
-  const { src, content } = props;
+  const { src, content, t } = props;
   return (
     <section>
       <p className="tleft col-vbspace">
-        <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">Lire la vidéo</button>
+        <button className="new-btn btn-classic btn-grey btn-wide btn-show-video">{t("Lire la vidéo")}</button>
       </p>
       <AdditionalInfo content={content} />
       <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>

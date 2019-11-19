@@ -1,23 +1,25 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={6} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={6} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 25 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/8-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 7 - Assemblage de l’axe Z", classes: "title tleft", tag: "h1" },
@@ -25,6 +27,7 @@ function Printer(props) {
           { text: "Nous allons maintenant assembler l’axe Z de l’imprimante 3D. Elle va commencer à ressembler de plus en plus au produit fini." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-b-prerequis.jpg", type: "image" }}
         content={[
@@ -47,6 +50,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/8-c-moteur-z", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -60,6 +64,7 @@ function Printer(props) {
           { text: "Répétez l’opération sur le second moteur." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-d-barres", type: "video" }}
         content={[
@@ -71,6 +76,7 @@ function Printer(props) {
           { text: "Astuce : Un petit coup de maillet en caoutchouc aidera bien.", classes: "italic bg-light-grey-blue" },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/8-e-axe-x", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -81,6 +87,7 @@ function Printer(props) {
           { text: "Mettez ensuite les ressorts dans leur logement comme sur la vidéo." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-e-controle.jpg", type: "image" }}
         content={[
@@ -89,6 +96,7 @@ function Printer(props) {
           { text: "Normalement voici ce que vous avez obtenu. Vérifiez bien le sens des éléments." },
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/8-f-tiges", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -104,6 +112,7 @@ function Printer(props) {
           { text: "Répétez l’opération sur le deuxième chariot." },
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-g-coupleurs", type: "video" }}
         content={[
@@ -116,12 +125,13 @@ function Printer(props) {
           { text: "Répétez l’opération sur le second coupleur." },
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/8-h-fin.jpg"
         content={[
           { text: "Assemblage de l’axe Z : CHECK !", classes: "big-title" },
           { text: "Vérifiez que les pièces sont orientées comme sur la photo." },
         ]}>
-        <Validation step="/printer/de200/notice-assemblage-plateau" />
+        <Validation t={t} step="/printer/de200/notice-assemblage-plateau" />
       </Block>
     </Layout>
   );

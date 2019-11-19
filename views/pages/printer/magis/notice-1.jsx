@@ -1,5 +1,5 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
 const Title = require('../../../components/title');
@@ -9,16 +9,19 @@ const Slide = require('../../../components/slide');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={1} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={1} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 2 heures", classes: "col-vbspace" }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/1-a-photophore-pp-1-3.jpg"
         content={[
@@ -29,6 +32,7 @@ function Printer(props) {
           { text: "Dans ce parcours, découvrez toutes les fonctionnalités de votre imprimante 3D. À l'arrivée, devenez le maître de la Magis !" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/1-c-photophore-pp-1-copie.jpg", type: "image" }}
         content={[
@@ -40,6 +44,7 @@ function Printer(props) {
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/dagoma0-to-SD.png", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h3" },
@@ -48,10 +53,12 @@ function Printer(props) {
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Pour une impression de qualité, votre buse doit être parfaitement propre.", classes: "big-title" }
         ]} />
       <Slide
+        t={t}
         content={[
           {
             img: "NevaMagis/Notice/1-e-buse-sale.jpg",
@@ -66,6 +73,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/1-f-sd-machine", type: "video" }}
         content={[
@@ -86,11 +94,13 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/1-g-piece-beige", type: "video" }}
         content={[
           { text: "Cette pièce s’imprime en 2 heures environ", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/1-h-plateau", type: "video" }}
         content={[
@@ -99,12 +109,13 @@ function Printer(props) {
           { text: "Pour une excellente adhérence au plateau, nettoyez régulièrement celui-ci à l'aide des lingettes isopropyliques." }
         ]} />
       <Block
+        t={t}
         flip={true}
         img="NevaMagis/Notice/1-a-photophore-pp-1-3.jpg"
         content={[
           { text: "J'ai réussi ma première impression !", classes: "big-title" }
         ]}>
-        <Validation step="/printer/magis/notice-2" />
+        <Validation t={t} step="/printer/magis/notice-2" />
       </Block>
     </Layout>
   );

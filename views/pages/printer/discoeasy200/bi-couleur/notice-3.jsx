@@ -1,19 +1,19 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require('../../../../../content/nav/bicolor/de200');
-const Title = require('../../../../components/title');
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require('../../../../../content/nav/bicolor/de200');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 const HiddenVideo = require('../../../../components/hidden-video');
 
 function BiColor(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={3} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={3} nav={nav} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/2-i-fin.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur", classes: "title tleft", tag: "h1" },
@@ -21,6 +21,7 @@ function BiColor(props) {
           { text: "Nous allons maintenant remonter votre DiscoEasy200 avec les éléments du pack bi-couleur." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-b-montage-face-ar", type: "video" }}
         content={[
@@ -32,9 +33,10 @@ function BiColor(props) {
           { text: "Un fois bien en place, serrez les vis latérale." },
           { text: "Astuce : Utilisez le plateau pour vérifier l'équerrage.", classes: "italic" }
         ]}>
-        <HiddenVideo src="DiscoEasy/Notice/9-e-control-base" />
+        <HiddenVideo t={t} src="DiscoEasy/Notice/9-e-control-base" />
       </Section>
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/9-f-courroie", type: "video" }}
         content={[
           { text: "Installation de la courroie du plateau", classes: "big-title tleft", tag: "h2" },
@@ -55,6 +57,7 @@ function BiColor(props) {
           { text: "Repliez le brin et faites-le passer dans le clips pour finir." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-d-montage-axe-x", type: "video" }}
         content={[
@@ -63,6 +66,7 @@ function BiColor(props) {
           { text: "Maintenant faites attention au sens des pièces. Référez-vous à la vidéo pour orienter les pièces. Le chariot avec le moteur sera à gauche, l’autre à droite. Dans l’étape suivante vous pourrez vérifier tout ça." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-e-courroie-x", type: "video" }}
         content={[
           { text: "Installation de la courroie de la tête", classes: "big-title tleft", tag: "h2" },
@@ -78,6 +82,7 @@ function BiColor(props) {
           { text: "Reprenez l’autre brin et tirez dessus pour tendre la courroie. Tendez sans forcer, juste pour que tout tienne en place. Poussez la courroie pour la verrouiller dans les crans de la tête." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-f-installation-axe-x", type: "video" }}
         content={[
@@ -99,6 +104,7 @@ function BiColor(props) {
           { text: "Répétez l’opération sur le second coupleur." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-g-cablage-chariot-x", type: "video" }}
         content={[
           { text: "Câblage de l’axe X", classes: "big-title tleft", tag: "h2" },
@@ -107,6 +113,7 @@ function BiColor(props) {
           { text: "Rebranchez la butée sur le connecteur X+." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-h-cablage-tete", type: "video" }}
         content={[
@@ -122,9 +129,10 @@ function BiColor(props) {
           { text: "Raccordez les deux derniers fils repérés sur le bornier FAN (rouge sur + et noire sur -)." },
           { text: "NB: Votre connecteur A13 est différent ?", classes: "col-vtspace text-red italic" }
         ]}>
-        <HiddenVideo src="DiscoEasy/Add-on/Bicouleur/3-h-cablage-tete-6-pin" />
+        <HiddenVideo t={t} src="DiscoEasy/Add-on/Bicouleur/3-h-cablage-tete-6-pin" />
       </Section>
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/3-j-cablage-extrudeur", type: "video" }}
         content={[
           { text: "Câblage des extrudeurs", classes: "big-title tleft", tag: "h2" },
@@ -133,11 +141,12 @@ function BiColor(props) {
           { text: "Branchez le fil rouge du capteur de fin de filament de l’extrudeur E1 sur la borne Y-." }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/3-k-fin.jpg"
         content={[
           { text: "Montage du pack bi-couleur terminé", classes: "big-title" }
         ]}>
-        <Validation step="/addon/bicolor/de200/notice-4" />
+        <Validation t={t} step="/addon/bicolor/de200/notice-4" />
       </Block>
     </Layout>
   );

@@ -1,23 +1,24 @@
-var React = require('react');
-var Layout = require('../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
 const Title = require('../../../components/title');
 const Block = require('../../../components/block');
 const Section = require('../../../components/section');
-const Validation = require('../../../components/validation');
-const Media = require('../../../components/media');
 
 function Printer(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={13} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={13} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 30 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Notice de montage Disco Ultimate - Page 14 - Utilisation", classes: "title tleft", tag: "h1" },
@@ -25,6 +26,7 @@ function Printer(props) {
           { text: "Dernière étape avant le grand large. Nous allons vous montrer les bonnes pratiques et les rudiments de l’impression 3D sur la Discoeasy200." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/b-derouleur.jpg", type: "image" }}
         content={[
@@ -34,6 +36,7 @@ function Printer(props) {
           { text: "Téléchargez le fichier ci-dessous. Nous allons ensuite le préparer sur Cura.", link: { href: "/medias/DiscoEasy/Notice/16-support-bobine-stl/support-bobine.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "support-bobine.zip", text: "Télécharger" } }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/16-c-slicer-cura.jpg", type: "image" }}
         content={[
           { text: "Étape 2", classes: "big-title" },
@@ -43,6 +46,7 @@ function Printer(props) {
           { text: "Insérez la carte SD dans l’ordinateur et cliquez sur “préparer l’impression”." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Calibration/c-e5", type: "video" }}
         content={[
@@ -57,6 +61,7 @@ function Printer(props) {
           { text: "Avec l’extrudeur+, c’est automatique." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/16-e-lancement", type: "video" }}
         content={[
           { text: "Étape 4", classes: "title tleft" },
@@ -79,6 +84,7 @@ function Printer(props) {
           }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Notice/16-f-premiere-couche", type: "video" }}
         content={[
@@ -92,6 +98,7 @@ function Printer(props) {
           { text: "Regardez à la fin de la vidéo pour voir les 3 niveaux d’appréciations de hauteur de première couche." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-c-detection-filament", type: "video" }}
         content={[
           { text: "Étape 6", classes: "title tleft" },
@@ -103,6 +110,7 @@ function Printer(props) {
           { text: "Si vous lancez votre imprimante 3D sans filament, aucun soucis, elle vous attendra avant de commencer." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-d-pause-plus", type: "video" }}
         content={[
@@ -115,6 +123,7 @@ function Printer(props) {
           { text: "Si vous appuyez sur le bouton pendant le palpage, cela interrompra totalement le lancement. Vous n'aurez qu'à relancer l'impression.", classes: "bg-orange text-white col-space" }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-e-ejection-filament", type: "video" }}
         content={[
           { text: "Étape 8", classes: "title tleft" },
@@ -126,6 +135,7 @@ function Printer(props) {
           { text: "Fonction accessible depuis l'écran : \"Changement de filament\"", classes: "col-space bg-light-grey-blue italic" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-f-insertion-filament", type: "video" }}
         content={[
@@ -139,6 +149,7 @@ function Printer(props) {
           { text: "Retirez l'excédent de purge en sortie de la buse, attention c'est chaud." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Notice/16-g-arreter", type: "video" }}
         content={[
           { text: "Étape 10", classes: "title tleft" },
@@ -149,6 +160,7 @@ function Printer(props) {
           { text: "Quand le ventilateur avant s’arrête, vous pouvez l’éteindre sans soucis." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/c-assemblage-derouleur.jpg", type: "image" }}
         content={[
@@ -157,6 +169,7 @@ function Printer(props) {
           { text: "N'hésitez pas à le faire tourner un peu à la main si vous voyez que l'assemblage ne pivote pas bien." }
         ]} />
       <Section
+        t={t}
         media={{ src: "NevaMagis/Notice/d-assemblage-derouleur.jpg", type: "image" }}
         content={[
           { text: "Étape 12", classes: "title tleft" },
@@ -165,6 +178,7 @@ function Printer(props) {
           { text: "Nous proposons un modèle plus évolué", link: { href: "/medias/DiscoEasy/Notice/16-support-bobine-stl/support-bobine.zip", classes: "link-classic", text: "ici" } }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Étape 13", classes: "big-title" },

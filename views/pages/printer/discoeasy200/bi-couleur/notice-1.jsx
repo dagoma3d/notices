@@ -1,22 +1,25 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
-var NavBar = require('../../../../components/navbar');
-var nav = require('../../../../../content/nav/bicolor/de200');
+const React = require('react');
+const Layout = require('../../../../layouts/default');
+const NavBar = require('../../../../components/navbar');
+const nav = require('../../../../../content/nav/bicolor/de200');
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 
 function BiColor(props) {
+  const t = props.__;
   return (
-    <Layout>
-      <NavBar active={1} nav={nav} />
+    <Layout t={t}>
+      <NavBar t={t} active={1} nav={nav} />
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps total de montage approximatif : 1h30min", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/0-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur - préparation et démontage", classes: "title tleft", tag: "h1" },
@@ -24,6 +27,7 @@ function BiColor(props) {
           { text: "Nous allons vous accompagner pour le montage et l’installation de ce 4ème add-on qui vous permettra d’imprimer avec deux couleurs différentes." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-b-contenu.jpg", type: "image" }}
         content={[
@@ -46,6 +50,7 @@ function BiColor(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg", type: "image" }}
         content={[
           { text: "Les prérequis", classes: "big-title tleft", tag: "h2" },
@@ -63,11 +68,13 @@ function BiColor(props) {
           }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "PLACE AU DÉMONTAGE", classes: "big-title" },
           { text: "A chaque étape, conservez les vis." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-d-gaine", type: "video" }}
         content={[
@@ -78,11 +85,13 @@ function BiColor(props) {
           { text: "Retirer le reste de la gaine." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot", type: "video" }}
         content={[
           { text: "Débranchez le moteur de X", classes: "big-title tleft", tag: "h2" }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-f-butee", type: "video" }}
         content={[
@@ -92,6 +101,7 @@ function BiColor(props) {
           { text: "Retirez complètement le câble du dessous de la machine." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-g-debrancher-tete", type: "video" }}
         content={[
           { text: "Débranchez la tête d’impression", classes: "big-title tleft", tag: "h2" },
@@ -100,6 +110,7 @@ function BiColor(props) {
           { text: "Retirez ensuite les fils connectés aux borniers E0, E1 et FAN." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-g-debrancher-tete", type: "video" }}
         content={[
@@ -110,6 +121,7 @@ function BiColor(props) {
           { text: "Retirez la partie supérieure de l’imprimante." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x", type: "video" }}
         content={[
           { text: "Retrait de l’axe X", classes: "big-title tleft", tag: "h2" },
@@ -121,6 +133,7 @@ function BiColor(props) {
           { text: "Retenez les écrous supérieurs pour éviter qu’ils ne partent d’un coup." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x", type: "video" }}
         content={[
@@ -130,6 +143,7 @@ function BiColor(props) {
           { text: "Mettez les barres de côté." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-k-debrancher-mot-e", type: "video" }}
         content={[
           { text: "Débranchez le moteur d’extrudeur", classes: "big-title tleft", tag: "h2" },
@@ -138,6 +152,7 @@ function BiColor(props) {
           { text: "Débranchez le câble relié au moteur d’extrudeur." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-l-retirer-courroie-plateau", type: "video" }}
         content={[
@@ -147,6 +162,7 @@ function BiColor(props) {
           { text: "Tirez sur la courroie pour la retirer totalement." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-m-retirer-face-ar", type: "video" }}
         content={[
           { text: "Retrait de la face arrière", classes: "big-title tleft", tag: "h2" },
@@ -155,11 +171,12 @@ function BiColor(props) {
           { text: "Soyez délicat" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/Bicouleur/1-o-fin.jpg"
         content={[
           { text: "Démontage de l’imprimante terminé", classes: "big-title" }
         ]}>
-        <Validation step="/addon/bicolor/de200/notice-2" />
+        <Validation t={t} step="/addon/bicolor/de200/notice-2" />
       </Block>
     </Layout>
   );

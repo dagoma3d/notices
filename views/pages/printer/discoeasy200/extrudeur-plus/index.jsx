@@ -1,20 +1,22 @@
-var React = require('react');
-var Layout = require('../../../../layouts/default');
+const React = require('react');
+const Layout = require('../../../../layouts/default');
 const Title = require('../../../../components/title');
 const Block = require('../../../../components/block');
 const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
-const Media = require('../../../../components/media');
 
 function Extruder(props) {
+  const t = props.__;
   return (
-    <Layout>
+    <Layout t={t}>
       <Title
+        t={t}
         small={true}
         content={[
           { text: "Temps approximatif : 15 minutes", classes: "col-vspace" }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/ExtrudeurPlus/A-a-intro.jpg"
         content={[
           { text: "Notice - Montage", classes: "title tleft", tag: "h1" },
@@ -22,6 +24,7 @@ function Extruder(props) {
           { text: "Nous allons vous accompagner dans le montage et l’utilisation de cette amélioration pour votre DiscoEasy200." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-c-contenu.jpg", type: "image" }}
         content={[
@@ -39,6 +42,7 @@ function Extruder(props) {
           }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-c-prerequis-extru-plus.jpg", type: "image" }}
         content={[
           { text: "Les pré-requis", classes: "big-title tleft", tag: "h2" },
@@ -54,10 +58,12 @@ function Extruder(props) {
           }
         ]} />
       <Title
+        t={t}
         content={[
           { text: "Place au montage", classes: "big-title" }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-e-demontage-extrudeur", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -68,6 +74,7 @@ function Extruder(props) {
           { text: "Conservez le ressort et les vis, ils vont vite reprendre du service." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-f-montage-bras-extrudeur", type: "video" }}
         content={[
@@ -79,6 +86,7 @@ function Extruder(props) {
           { text: "Déplacez le bras pour que le trou de vis soit aligné avec celui du corps." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-g-montage-extrudeur-plus", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -91,6 +99,7 @@ function Extruder(props) {
           { text: "Rebranchez le tube blanc sur le nouvel extrudeur. Enfoncez-le d'environ 15mm." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-h-montage-cache", type: "video" }}
         content={[
@@ -102,6 +111,7 @@ function Extruder(props) {
           { text: "Clipsez-le ensuite sur la barre du bas." }
         ]} />
       <Section
+        t={t}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-j-cablage", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -112,6 +122,7 @@ function Extruder(props) {
           { text: "Branchez le câble du cache côté sur le plot Z-." }
         ]} />
       <Section
+        t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-k-finition", type: "video" }}
         content={[
@@ -121,11 +132,12 @@ function Extruder(props) {
           { text: "Vos anciennes pièces ne serviront plus, pensez au recyclage." }
         ]} />
       <Block
+        t={t}
         img="DiscoEasy/Add-on/ExtrudeurPlus/A-a-intro.jpg"
         content={[
           { text: "Montage de l'extrudeur+ : CHECK !", classes: "big-title" }
         ]}>
-        <Validation step="/addon/extruder-plus/de200/utilisation" text="Je valide et je passe à la suite !" />
+        <Validation t={t} step="/addon/extruder-plus/de200/utilisation" text="Je valide et je passe à la suite !" />
       </Block>
     </Layout>
   );
