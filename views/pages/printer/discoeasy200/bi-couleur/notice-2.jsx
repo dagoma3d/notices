@@ -2,30 +2,30 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require('../../../../../content/nav/bicolor/de200');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 
 function BiColor(props) {
   return (
     <Layout>
       <NavBar active={2} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Bicouleur/2-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur - préparation et démontage", classes: "title tleft", tag: "h1" },
           { text: "Transfert des composants.", classes: "big-title tleft" },
           { text: "Nous allons transférer certains composants de votre ancienne imprimante dans les nouvelles pièces imprimées." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-b-bis-roulement-lineaires", type: "video" }}
         content={[
           { text: "Montage des roulements linéaires", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les 6 roulements LM8UU livrés avec votre pack. Insérez les roulements dans les chariots que vous avez imprimés. Faites bien attention et insérez les bien droit pour éviter de casser votre pièce." },
           { text: "Astuce : Placez vous en bord de table et tapez à l’aide d’un maillet en caoutchouc.", classes: "italic" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-b-roulements-xd", type: "video" }}
         content={[
@@ -35,7 +35,7 @@ function BiColor(props) {
           { text: "Mettez l’ancienne pièce de côté." },
           { text: "Installez les roulements dans la nouvelle pièce." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-c-mot-butee-x", type: "video" }}
         content={[
           { text: "Récupération du moteur de x et de la butée", classes: "big-title tleft", tag: "h2" },
@@ -46,7 +46,7 @@ function BiColor(props) {
           { text: "Mettez le moteur en place dans la nouvelle pièce (respectez la même orientation)." },
           { text: "Revissez-le (aidez-vous de l’outil imprimé pour placer la dernière vis)." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-d-demontage-extrudeur", type: "video" }}
         content={[
@@ -55,7 +55,7 @@ function BiColor(props) {
           { text: "Retirez l’extrudeur une fois libéré." },
           { text: "Retirez le moteur." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-e-roulement-ar", type: "video" }}
         content={[
           { text: "Récupération des roulements de courroie Y", classes: "big-title tleft", tag: "h2" },
@@ -63,7 +63,7 @@ function BiColor(props) {
           { text: "Dévissez la vis qui maintient les 2 roulements de courroie." },
           { text: "Installez les roulements dans la nouvelle face arrière." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-f-ecrou-serrage", type: "video" }}
         content={[
@@ -72,7 +72,7 @@ function BiColor(props) {
           { text: "Récupérez également les écrous." },
           { text: "Décollez les patins de l'ancienne pièce pour les mettres sur la nouvelle." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-g-montage-extrudeur", type: "video" }}
         content={[
           { text: "Remontage des extrudeurs", classes: "big-title tleft", tag: "h2" },
@@ -83,7 +83,7 @@ function BiColor(props) {
           { text: "Suivez les marquages E0 et E1 pour l’emplacement.", classes: "text-red" },
           { text: "Pour plus de détails,", link: { target: "_blank", href: "/addon/extruder-plus/de200", classes: "link-classic", text: "rendez-vous ici" } }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage-2", type: "video" }}
         content={[
@@ -92,13 +92,13 @@ function BiColor(props) {
           { text: "Serrez jusqu'à voir disparaître le jour entre les deux pièces orange." },
           { text: "Desserrez d’un quart de tour pour le faire réapparaître." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Bicouleur/2-i-fin.jpg"
         content={[
           { text: "Transfert des composants terminé", classes: "big-title" }
         ]}>
         <Validation step="/addon/bicolor/de200/notice-3" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

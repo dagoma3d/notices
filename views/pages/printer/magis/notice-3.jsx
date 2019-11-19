@@ -2,22 +2,22 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={3} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 1 heures 30 minutes", classes: "col-vbspace" }
         ]} />
-      <BasicSection
+      <Block
         flip={true}
         img="NevaMagis/Notice/2-a-1600x600.jpg"
         content={[
@@ -27,7 +27,7 @@ function Printer(props) {
           { text: "Dans ce nouveau chapitre du grand livre de la Magis, vous apprenez à vous servir de la fonction Pause. Nous allons vous montrer une de ses utilisations." },
           { text: "Attention ! Pour ce nouveau tour, vous avez besoin d’un paquet de gros sel, riz, quinoa, ..." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/2-b-photophore-pp-2-copie.jpg", type: "image" }}
         content={[
@@ -39,7 +39,7 @@ function Printer(props) {
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Étape 2", classes: "title", tag: "h3" },
           { text: "Lancez l'impression", classes: "big-title" },
@@ -48,8 +48,8 @@ function Printer(props) {
           { text: "Lancez ensuite l’impression." },
           { text: "Pssst ! Rappellez-vous de la ", classes: "italic", link: { href: "/printer/magis/notice-1", title: "Retourner à la page 1", classes: "link-classic", text: "page 1" } },
         ]}>
-      </SimpleTitle>
-      <SimpleSection
+      </Title>
+      <Section
         media={{ src: "NevaMagis/Notice/2-d-pause-manuelle", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
@@ -58,7 +58,7 @@ function Printer(props) {
           { text: "Appuyez ensuite sur le bouton pour la mettre en pause." },
           { text: "Vous n'avez pas de gros sel, riz, quinoa, ... ? Profitez de ces 45 minutes d'impression pour aller en acheter !", classes: "italic" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/2-e-video-remplissage", type: "video" }}
         content={[
@@ -68,34 +68,34 @@ function Printer(props) {
           { text: "Versez le gros sel dans les trous de l’impression." },
           { text: "Attention ! Utilisez du gros sel et non du sel fin. La Magis utilise un ventilateur pour refroidir le PLA. Le sel fin est trop volatile, votre bureau risque de le regretter. Assurez-vous que rien ne dépasse de la surface de votre pièce avant de continuer.", classes: "bg-orange text-white col-space" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/2-f-video-relance", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
           { text: "Et maintenant ?", classes: "big-title" },
           { text: "Appuyez sur le bouton pour relancer l’impression." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/2-g-base", type: "video" }}
         content={[
           { text: "Il reste une demie-heure d’impression", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/2-h-1-copie.jpg", type: "image" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h3" },
           { text: "Assemblage", classes: "big-title" },
           { text: "Reprenez le photophore, et assemblez-le avec son support. Il se visse comme un couvercle." }
         ]} />
-      <BasicSection
+      <Block
         flip={true}
         img="NevaMagis/Notice/2-a-1600x600.jpg"
         content={[
           { text: "J’ai réussi à assembler les deux premiers éléments !", classes: "big-title" }
         ]}>
         <Validation step="/printer/magis/notice-4" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

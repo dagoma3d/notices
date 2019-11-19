@@ -2,24 +2,24 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={2} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/3-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - montage de la face arrière", classes: "title tleft", tag: "h1" },
           { text: "Montage de la face arrière", classes: "big-title tleft" },
           { text: "Nous allons monter la deuxième partie de l’imprimante 3D." }
         ]} />
-      <SimpleTitle content={[]} />
-      <SimpleSection
+      <Title content={[]} />
+      <Section
         media={{ src: "DiscoUltimate/Notice/3-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -47,14 +47,14 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/3-c-vis-serrage", type: "video" }}
         content={[
           { text: "Mise en place des vis de serrage", classes: "big-title" },
           { text: "Comme tout à l’heure, prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/3-d-poulie-courroie-y", type: "video" }}
         content={[
           { text: "Installation de la poulie de Y", classes: "big-title" },
@@ -62,7 +62,7 @@ function Printer(props) {
           { text: "Placez la poulie et alignez la avec le trou de passage de la vis." },
           { text: "Prenez 1 vis M3x25, placez la dans le trou correspondant et vissez à travers la poulie." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/3-e-extrudeur", type: "video" }}
         content={[
@@ -71,7 +71,7 @@ function Printer(props) {
           { text: "Positionnez le connecteur vers l’intérieur." },
           { text: "Prenez une vis M3x6, placez la dans le trou supérieur droit et serrez le moteur." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/3-f-extrudeur-montage", type: "video" }}
         content={[
           { text: "Pré-montage de l’extrudeur", classes: "big-title" },
@@ -79,7 +79,7 @@ function Printer(props) {
           { text: "Placez le ressort dans l'empreinte sur le corps de l’extrudeur." },
           { text: "Prenez le bras, placez le pour que le ressort soit pris dans la seconde empreinte." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/3-g-extrudeur-installation", type: "video" }}
         content={[
@@ -88,14 +88,14 @@ function Printer(props) {
           { text: "Orientez l’extrudeur puis vissez les 3 vis M3x25." },
           { text: "La tête de la vis M3x6 rentre dans un logement prévu dans le corps d’extrudeur." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/3-h-fin.jpg"
         content={[
           { text: "Montage de la face arrière terminé", classes: "big-title" },
           { text: "Mettez-la de côté, elle nous servira plus tard." }
         ]}>
         <Validation step="/printer/du/notice-4" text="Je passe à l'étape suivante" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,19 +12,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={9} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 25 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/11-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 10 - Finition", classes: "title tleft", tag: "h1" },
           { text: "Les dernières finitions", classes: "big-title tleft" },
           { text: "Nous allons maintenant mettre la touche finale avant de commencer à la mettre en marche." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/11-b-prerequis.jpg", type: "image" }}
         content={[
@@ -44,7 +44,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/11-c-top-vis-serrage", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -52,7 +52,7 @@ function Printer(props) {
           { text: "Normalement vous êtes rodé. Prenez 8 écrous et 8 vis. Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." },
           { text: "Faites de même pour la deuxième pièce." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/11-d-top-barres", type: "video" }}
         content={[
@@ -64,7 +64,7 @@ function Printer(props) {
           { text: "Appuyez fort pour que les pièces soient bien enfoncées." },
           { text: "Serrez les 8 vis du haut et les 4 vis présentes sur les côtés des fixations latérales." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/11-e-tension-courroie-tete", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -75,7 +75,7 @@ function Printer(props) {
           { text: "Forcez pour ajouter 2 crans de tension et re-verrouiller la courroie." },
           { text: "Couper le bout pour laisser 3 cm de mou." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/11-f-tension-courroie-plateau", type: "video" }}
         content={[
@@ -88,7 +88,7 @@ function Printer(props) {
           { text: "Forcez pour ajouter 2 crans de tension et re-verrouiller la courroie." },
           { text: "Repliez le bout libre dans l'encoche de départ." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/11-g-gaine", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -105,7 +105,7 @@ function Printer(props) {
           { text: "Egalisez la longueur des câbles en les tirants vers l’intérieur de l’imprimante." },
           { text: "Continuez la gaine jusqu’à l’entrée de la fixation latérale (coupez le surplus si besoin)." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/11-h-cable-management", type: "video" }}
         content={[
@@ -114,14 +114,14 @@ function Printer(props) {
           { text: "Dans cette étape, nous allons faire en sorte de bien maintenir les câbles. Notre solution n’est pas unique mais si vous ne vous sentez pas inspiré, suivez la vidéo." },
           { text: "Il est important qu’aucun câble ne se balade au dessus de la carte pour éviter d’être abîmé par le plateau." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/11-i-patin", type: "video" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des patins antidérapant", classes: "big-title" },
           { text: "Des emplacements sont prévus sous la machine sur la face avant, la face arrière et les fixations latérales, collez-y un patin sur chacun." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/11-j-ptfe", type: "video" }}
         content={[
@@ -131,14 +131,14 @@ function Printer(props) {
           { text: "Il est maintenu par des raccords pneumatique. Poussez-le bien jusqu’au fond à chaque extrémité. Faites-le passer entre les deux barres du haut de l’imprimante pour le guider." },
           { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Finitions : CHECK !", classes: "big-title" },
           { text: "Le montage est terminé. Soufflez, profitez, maintenant on va la mettre en marche." },
         ]}>
         <Validation step="/printer/de200/notice-controle" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

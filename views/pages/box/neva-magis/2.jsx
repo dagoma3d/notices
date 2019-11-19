@@ -2,27 +2,27 @@ const React = require('react');
 const Layout = require('../../../layouts/default');
 const Navbar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/box');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 
 function Box(props) {
   return (
     <Layout>
       <Navbar active={2} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 10 min", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="NevaMagis/Notice/Addons/Caisson/3-a-intro.jpg"
         content={[
           { text: "Notice de montage caisson Magis - installation du caisson", classes: "title tleft", tag: "h1" },
           { text: "Installation du caisson de protection", classes: "big-title tleft" },
           { text: "Nous allons maintenant installer l’imprimante dans le caisson et terminer son assemblage." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-b-fixation-rail", type: "video" }}
         content={[
@@ -32,7 +32,7 @@ function Box(props) {
           { text: "Vissez le rail à la main sans efforts.", classes: "text-red" },
           { text: "Alignez le sur la gravure présente sur le socle." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-c-installation-imprimante", type: "video" }}
         content={[
           { text: "Installation de l’imprimante", classes: "big-title tleft", tag: "h2" },
@@ -43,7 +43,7 @@ function Box(props) {
           { text: "Le câble ne doit surtout pas être contraint.", classes: "text-red" },
           { text: "Vous pouvez installer le clips du côté droit en fonction de la longueur entre votre connecteur et la ferrite.", classes: "text-red" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-d-installation-filament", type: "video" }}
         content={[
@@ -52,7 +52,7 @@ function Box(props) {
           { text: "Si votre bobine passe sous la machine, installez là avec un dérouleur horizontal." },
           { text: "Si votre bobine ne passe pas ou est installée avec un dérouleur vertical, passer le filament dans le clips avant de le présenter dans l’extrudeur (comme sur la vidéo)." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-e-cloche-serrage", type: "video" }}
         content={[
           { text: "Installation du caisson", classes: "big-title tleft", tag: "h2" },
@@ -62,7 +62,7 @@ function Box(props) {
           { text: "Accédez à la vis sous le socle pour serrer fermement le rail." },
           { text: "Astuce : faites-le glisser sur le bord d’une table pour accéder à la vis.", classes: "italic" },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-f-butee", type: "video" }}
         content={[
@@ -71,7 +71,7 @@ function Box(props) {
           { text: "Placez-la les aimants vers le bas." },
           { text: "Vissez-la sur le rail fermement." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/Addons/Caisson/3-g-utilisation", type: "video" }}
         content={[
           { text: "Utilisation", classes: "big-title tleft", tag: "h2" },
@@ -82,7 +82,7 @@ function Box(props) {
           { text: "Tirez sur le cerclage pour le faire redescendre." },
           { text: "NB: Pour sortir la machine du caisson, vous devez retirer la butée, retirer le caisson et sortir la machine.", classes: "italic" }
         ]} />
-      <BasicSection
+      <Block
         img="NevaMagis/Notice/Addons/Caisson/1-a-intro.jpg"
         content={[
           { text: "Félicitation ! Le montage du caisson est terminé.", classes: "big-title" }

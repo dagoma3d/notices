@@ -1,8 +1,8 @@
 var React = require('react');
 var Layout = require('../layouts/default');
-var SimpleSection = require('../components/simple-section');
-var BasicSection = require('../components/basic-section');
-var SimpleTitle = require('../components/simple-title');
+var Section = require('../components/section');
+var Block = require('../components/block');
+var Title = require('../components/title');
 const NavBar = require('../components/navbar');
 var Validation = require('../components/validation');
 var HiddenVideo = require('../components/hidden-video');
@@ -12,18 +12,18 @@ function Firmware(props) {
   return (
     <Layout title={title}>
       <NavBar active={active} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Software/a-intro-maj-disco.jpg"
         content={[
           { text: `Mise à jour pour votre ${printerInfo.name}`, classes: "big-title tleft" },
           { text: "Profitez de la mise à jour de votre firmware et bénéficiez de nouvelles fonctionnalités sur votre imprimante." },
           { text: `Marlin ${printerInfo.abbr} - ${printerInfo.date}`, classes: "small tleft light italic" }
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Comment faire la mise à jour ?", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Software/a-cura.jpg", type: "image" }}
         content={[
@@ -31,7 +31,7 @@ function Firmware(props) {
           { text: "Avant d’aller plus loin, téléchargez et installez Cura by Dagoma. Lors de l’installation, nous installons des éléments nécessaires au bon fonctionnement de Dagom’app." },
           { classes: "tleft col-vspace", link: { href: "https://dist.dagoma3d.com/CuraByDagoma", target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger Cura by Dagoma" } }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: `DiscoEasy/Calibration/${printerInfo.img}`, type: "image" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -48,33 +48,33 @@ function Firmware(props) {
           { classes: "tleft col-vspace", link: { href: "https://dist.dagoma3d.com/DagomApp", target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger Dagom'app" } },
           { text: "Et suivez le tutoriel ci-dessous, étape par étape." }
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Commençons !", classes: "big-title" },
           { text: "Lancez dagom’app et suivez les instructions" }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-e1.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 1", classes: "big-title" },
           { text: "Cliquez sur \"Je configure mon imprimante\"." }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-e2.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 2", classes: "big-title" },
           { text: "Cochez les étapes une fois vérifiées." }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-e3.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 3", classes: "big-title" },
           { text: `Cliquez sur ${printerInfo.name}.` }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-e4.jpg", type: "image", classes: "notice-small" }}
         content={[
@@ -83,15 +83,15 @@ function Firmware(props) {
           { text: "Pour le passage du câble regarde la vidéo suivante :" }
         ]}>
         <HiddenVideo src={`DiscoEasy/Calibration/${printerInfo.video}`} />
-      </SimpleSection>
-      <SimpleSection
+      </Section>
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e5.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 5", classes: "big-title" },
           { text: "Choisissez “Je donne de nouveaux pouvoirs” puis cliquez sur la flèche bleue." }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e6.jpg", type: "image", classes: "notice-small" }}
         content={[
@@ -102,7 +102,7 @@ function Firmware(props) {
           { text: "Choisissez les options dont votre machine est équipée uniquement !", classes: "bg-orange text-white col-space" },
           { text: "Cliquez sur “sélectionnez un fichier .hex”", classes: "col-vtspace" }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e7.jpg", type: "image", classes: "notice-small" }}
         content={[
@@ -110,7 +110,7 @@ function Firmware(props) {
           { text: "Une fois upload, cliquez sur “Flasher”" },
           { text: "Cette action peut durer quelques minutes." }
         ]} />
-      <SimpleSection
+      <Section
         wrap={true}
         media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e8.jpg", type: "image", classes: "notice-small" }}
         content={[
@@ -118,13 +118,13 @@ function Firmware(props) {
           { text: `Votre ${printerInfo.name} a été mise à jour. Vous pouvez fermer Dagom'app.` },
           { text: "Encore une dernière étape." }
         ]} />
-      <BasicSection
+      <Block
         content={[
           { text: `Etape ${props.active + 1}`, classes: "big-title" },
           { text: "Après une mise à jour, il est nécessaire de recalibrer l’imprimante 3D." }
         ]}>
         <Validation step={step} />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

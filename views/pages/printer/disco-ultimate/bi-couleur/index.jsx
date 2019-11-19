@@ -2,29 +2,29 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require('../../../../../content/nav/bicolor/du');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 
 function BiColor(props) {
   return (
     <Layout>
       <NavBar active={0} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps total de montage approximatif : 1h30min", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Bicouleur/0-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur Disco Ultimate - préparation et démontage", classes: "title tleft", tag: "h1" },
           { text: "Vous avez reçu votre pack bi-couleur.", classes: "big-title tleft" },
           { text: "Nous allons vous accompagner pour le montage et l’installation de ce 2ème add-on qui vous permettra d’imprimer avec deux couleurs différentes." }
         ]} />
-      <SimpleTitle content={[]} />
-      <SimpleSection
+      <Title content={[]} />
+      <Section
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-b-contenu.jpg", type: "image" }}
         content={[
           { text: "Dans le pack vous avez trouvé...", classes: "big-title tleft", tag: "h2" },
@@ -44,8 +44,8 @@ function BiColor(props) {
             }
           }
         ]}>
-      </SimpleSection>
-      <SimpleSection
+      </Section>
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg", type: "image" }}
         content={[
           { text: "Les pré-requis", classes: "big-title tleft", tag: "h2" },
@@ -60,18 +60,18 @@ function BiColor(props) {
             }
           }
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Place au démontage", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-d-ptfe", type: "video" }}
         content={[
           { text: "Retrait du tube ptfe", classes: "big-title tleft", tag: "h2" },
           { text: "S'il vous reste du filament dans la tête d'impression, retirez-le." },
           { text: "Débranchez le tube PTFE en appuyant sur le connecteur noir et retirez-le du top." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-e-top", type: "video" }}
         content={[
@@ -79,14 +79,14 @@ function BiColor(props) {
           { text: "Desserrez les 4 vis latérales." },
           { text: "Retirez la partie supérieure de l’imprimante." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-f-retrait-axe-x", type: "video" }}
         content={[
           { text: "Retrait de l’axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Tournez les tiges pour faire monter l’axe X jusqu’en haut." },
           { text: "Retirez-le une fois désengagé." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-g-demontage-axe-x", type: "video" }}
         content={[
@@ -95,14 +95,14 @@ function BiColor(props) {
           { text: "Séparez tous les éléments." },
           { text: "Mettez les barres de côté." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-h-plaque-fond", type: "video" }}
         content={[
           { text: "Retrait de la plaque de fond", classes: "big-title tleft", tag: "h2" },
           { text: "Déclipsez la plaque de fond en retirant les patins." },
           { text: "Gardez le tout de côté et ne les perdez pas." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-i-debrancher-tete", type: "video" }}
         content={[
@@ -112,13 +112,13 @@ function BiColor(props) {
           { text: "Débranchez le palpeur connecté sur le connecteur Z." },
           { text: "Débranchez la sonde sur le connecteur T0." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Addon/Bicouleur/1-j-fin.jpg"
         content={[
           { text: "Démontage de l’imprimante terminé", classes: "big-title" }
         ]}>
         <Validation step="/addon/bicolor/du/notice-2" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

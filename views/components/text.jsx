@@ -30,7 +30,7 @@ function List(props) {
   );
 }
 
-function TextBlock(props) {
+function Text(props) {
   const { tag, classes, text, link, list } = props;
   const CustomTag = tag ? `${tag}` : `p`;
   if (list) return <List list={list} />;
@@ -38,4 +38,4 @@ function TextBlock(props) {
   return <CustomTag className={classes}>{text}</CustomTag>;
 }
 
-module.exports = TextBlock;
+module.exports = Text;

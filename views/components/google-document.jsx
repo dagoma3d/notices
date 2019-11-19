@@ -1,5 +1,5 @@
 const React = require('react');
-const SimpleTitle = require('./simple-title');
+const Title = require('./title');
 
 function GoogleDocument(props) {
   return (

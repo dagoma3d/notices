@@ -2,24 +2,24 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={7} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/8-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - montage de l’axe Z", classes: "title tleft", tag: "h1" },
           { text: "Montage de l’axe Z", classes: "big-title tleft", tag: "h2" },
           { text: "Nous allons monter le portique de l’imprimante. On s’approche de la fin." }
         ]} />
-      <SimpleTitle content={[]} />
-      <SimpleSection
+      <Title content={[]} />
+      <Section
         media={{ src: "DiscoUltimate/Notice/7-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -42,7 +42,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/8-c-moteur-z", type: "video" }}
         content={[
@@ -52,7 +52,7 @@ function Printer(props) {
           { text: "Tournez-les pour aligner le connecteur du moteur vers l’extrudeur." },
           { text: "Vissez ensuite les moteurs." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/8-d-barres", type: "video" }}
         content={[
           { text: "Montage des barres de l’axe Z", classes: "big-title" },
@@ -61,7 +61,7 @@ function Printer(props) {
           { text: "Forcez bien pour que les barres soient au fond de chaque trou." },
           { text: "Astuce : Un petit coup de maillet en caoutchouc aidera bien.", classes: "italic" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/8-e-axe-x", type: "video" }}
         content={[
@@ -70,13 +70,13 @@ function Printer(props) {
           { text: "Insérez les barres dans les roulements sans forcer et faites coulisser l’axe jusqu’en bas." },
           { text: "Faites quelques allers-retours pour que l’ensemble s’ajuste bien." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/8-f-controle.jpg", type: "image" }}
         content={[
           { text: "Deuxième contrôle surprise", classes: "big-title" },
           { text: "Normalement voici ce que vous avez obtenu. Vérifiez bien le sens des éléments." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/8-g-ecrous", type: "video" }}
         content={[
@@ -90,14 +90,14 @@ function Printer(props) {
           { text: "Faites ensuite appel à un ami pour remonter l’axe X jusqu’en haut (5cm avant la fin des tiges)." },
           { text: "Montez équitablement le chariot pour le garder parallèle au plateau." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/8-h-fin.jpg"
         content={[
           { text: "Montage de l’axe Z terminé.", classes: "big-title" },
           { text: "Vérifiez que les pièces sont orientées comme sur la photo." }
         ]}>
         <Validation step="/printer/du/notice-9" text="Je passe à l'étape suivante" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

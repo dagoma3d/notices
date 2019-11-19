@@ -2,22 +2,22 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={2} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 1 heures 30 minutes", classes: "col-vbspace" }
         ]} />
-      <BasicSection
+      <Block
         flip={true}
         img="NevaMagis/Notice/a-derouleur.jpg"
         content={[
@@ -26,7 +26,7 @@ function Printer(props) {
           { text: "ça (dé)roule ma poule !", classes: "col-vtspace big-title tleft" },
           { text: "Vous avez remarqué qu'il manquait un accessoire à votre bobine ? Nous vous proposons ce dérouleur de bobine." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/b-derouleur.jpg", type: "image" }}
         content={[
@@ -38,14 +38,14 @@ function Printer(props) {
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/c-assemblage-derouleur.jpg", type: "image" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h3" },
           { text: "Assemblage", classes: "big-title" },
           { text: "N'hésitez pas à le faire tourner un peu à la main si vous voyez que l'assemblage ne pivote pas bien." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/d-assemblage-derouleur.jpg", type: "image" }}
         content={[
@@ -53,14 +53,14 @@ function Printer(props) {
           { text: "Assemblage - Le retour", classes: "big-title" },
           { text: "Déposez la bobine sur votre dérouleur." }
         ]} />
-      <BasicSection
+      <Block
         flip={true}
         img="NevaMagis/Notice/a-derouleur.jpg"
         content={[
           { text: "Je suis prêt à dérouler !", classes: "big-title" }
         ]}>
         <Validation step="/printer/magis/notice-3" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

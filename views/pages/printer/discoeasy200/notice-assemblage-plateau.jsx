@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,19 +12,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={7} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 25 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/9-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 8 - Assemblage du plateau", classes: "title tleft", tag: "h1" },
           { text: "Assemblage du plateau", classes: "big-title tleft" },
           { text: "Nous allons maintenant assembler la pièce qui viendra accueillir vos impression : le plateau." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/9-b-prerequis.jpg", type: "image" }}
         content={[
@@ -42,7 +42,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/9-c-support-plateau", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -55,7 +55,7 @@ function Printer(props) {
           { text: "Vissez légèrement uniquement pour maintenir les pièces." },
           { text: "Répétez l'opération pour les deux autres pièces (écrous vers l’extérieur)." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/9-c-controle.jpg", type: "image" }}
         content={[
@@ -63,7 +63,7 @@ function Printer(props) {
           { text: "Vérifions tout ça", classes: "big-title" },
           { text: "Voilà le rendu final. Faites bien attention au sens des éléments." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/9-d-clips", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -79,7 +79,7 @@ function Printer(props) {
           { text: "Serrez les vis du plateau (sans forcer)." },
           { text: "Assurez-vous qu’il coulisse toujours après serrage. Si ce n’est pas le cas, desserrez légèrement les vis." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/9-e-control-base", type: "video" }}
         content={[
@@ -91,7 +91,7 @@ function Printer(props) {
           { text: "Faites pareil avec la face arrière." },
           { text: "Si ce n’est pas le cas, une barre doit être mal enfoncée (voir page 7)." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/9-f-courroie", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -112,14 +112,14 @@ function Printer(props) {
           { text: "Tirez sans forcer sur la courroie pour la tendre et pousser vers le bas pour la verrouiller." },
           { text: "Repliez le bout et faites-le passer dans le clips pour finir." },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/9-g-fin.jpg"
         content={[
           { text: "Assemblage du plateau : CHECK !", classes: "big-title" },
           { text: "On approche de la fin. Prochaine étape, le câblage." },
         ]}>
         <Validation step="/printer/de200/notice-cablage" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

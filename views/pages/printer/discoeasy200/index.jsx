@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,7 +12,7 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={0} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/2-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 1 - Préparation", classes: "title tleft", tag: "h1" },
@@ -20,7 +20,7 @@ function Printer(props) {
           { text: "Nous allons préparer tous les éléments nécessaires au montage du kit." },
           { text: "Temps approximatif de montage : 3 heures 30 minutes.", classes: "col-vspace bold" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/2-b-prerequis.jpg", type: "image" }}
         content={[
@@ -41,7 +41,7 @@ function Printer(props) {
           },
           { link: { href: "https://www.dagoma3d.com/shop/category/accessoires-3", target: "_blank", classes: "new-btn btn-valid btn-big btn-wide", text: "Les accessoires" } }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/2-d-contenu.jpg", type: "image" }}
         content={[
           { text: "Dans le carton du kit vous allez trouver...", classes: "big-title" },
@@ -62,13 +62,13 @@ function Printer(props) {
           { text: "Dans le carton, il vous reste 5 moteurs (2 avec poulie, 1 avec roue dentée, 2 plus petits), un ensemble de barres (dans le filet jaune : 5 courtes, 8 longues, 2 filetées), les pièces imprimées, un outil imprimé, un plateau, des éléments de finition et une alimentation. (2 avec poulie, 1 avec roue dentée, 2 plus petits), un ensemble de barres (dans le filet jaune : 5 courtes, 8 longues, 2 filetées), les pièces imprimées, un outil imprimé, un plateau, des éléments de finition et une alimentation.", classes: "col-vtspace" },
           { text: "Conseil : Sortez les vis et regroupez-les par type. Utilisez un récipient pour ne pas les perdre. Laissez les roulements dans leur sachet.", classes: "col-vtspace" },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/2-a-intro.jpg"
         content={[
           { text: "Je suis prêt : CHECK !", classes: "big-title" }
         ]}>
         <Validation step="/printer/de200/notice-montage-face-avant" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

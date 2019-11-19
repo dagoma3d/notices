@@ -1,27 +1,27 @@
 var React = require('react');
 var Layout = require('../../../../layouts/default');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 const Media = require('../../../../components/media');
 
 function Extruder(props) {
   return (
     <Layout>
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 15 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/ExtrudeurPlus/A-a-intro.jpg"
         content={[
           { text: "Notice - Montage", classes: "title tleft", tag: "h1" },
           { text: "ça y est, vous avez reçu votre Extrudeur+.", classes: "big-title tleft" },
           { text: "Nous allons vous accompagner dans le montage et l’utilisation de cette amélioration pour votre DiscoEasy200." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-c-contenu.jpg", type: "image" }}
         content={[
@@ -38,7 +38,7 @@ function Extruder(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-c-prerequis-extru-plus.jpg", type: "image" }}
         content={[
           { text: "Les pré-requis", classes: "big-title tleft", tag: "h2" },
@@ -53,11 +53,11 @@ function Extruder(props) {
             }
           }
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Place au montage", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-e-demontage-extrudeur", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -67,7 +67,7 @@ function Extruder(props) {
           { text: "Retirez ensuite l’ensemble." },
           { text: "Conservez le ressort et les vis, ils vont vite reprendre du service." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-f-montage-bras-extrudeur", type: "video" }}
         content={[
@@ -78,7 +78,7 @@ function Extruder(props) {
           { text: "Comprimez le ressort pour que le bras rentre dans l’encoche." },
           { text: "Déplacez le bras pour que le trou de vis soit aligné avec celui du corps." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-g-montage-extrudeur-plus", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -90,7 +90,7 @@ function Extruder(props) {
           { text: "Assurez-vous que le bras d’extrudeur bouge encore après serrage. (Voir vidéo)" },
           { text: "Rebranchez le tube blanc sur le nouvel extrudeur. Enfoncez-le d'environ 15mm." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-h-montage-cache", type: "video" }}
         content={[
@@ -101,7 +101,7 @@ function Extruder(props) {
           { text: "Glissez-le cache côté en appuyant sur la pièce centrale." },
           { text: "Clipsez-le ensuite sur la barre du bas." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-j-cablage", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -111,7 +111,7 @@ function Extruder(props) {
           { text: "Branchez le câble de l’extrudeur sur le plot Z+." },
           { text: "Branchez le câble du cache côté sur le plot Z-." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-k-finition", type: "video" }}
         content={[
@@ -120,13 +120,13 @@ function Extruder(props) {
           { text: "Utilisez les colliers pour fixer proprement les câbles sous la machine." },
           { text: "Vos anciennes pièces ne serviront plus, pensez au recyclage." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/ExtrudeurPlus/A-a-intro.jpg"
         content={[
           { text: "Montage de l'extrudeur+ : CHECK !", classes: "big-title" }
         ]}>
         <Validation step="/addon/extruder-plus/de200/utilisation" text="Je valide et je passe à la suite !" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

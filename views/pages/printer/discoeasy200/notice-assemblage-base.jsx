@@ -1,9 +1,9 @@
 var React = require('react');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -11,19 +11,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={5} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/7-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 6 - Assemblage de la base", classes: "title tleft", tag: "h1" },
           { text: "Assemblage de la base", classes: "big-title tleft" },
           { text: "Nous allons commencer à assembler l’imprimante 3D. Première étape la base." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-b-prerequis.jpg", type: "image" }}
         content={[
@@ -41,7 +41,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -52,7 +52,7 @@ function Printer(props) {
           { text: "Forcez bien pour que les barres soient au fond de chaque trou." },
           { text: "Astuce : Un petit coup de maillet en caoutchouc aidera bien.", classes: "italic bg-light-grey-blue" },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-d-fixe-cote", type: "video" }}
         content={[
@@ -61,7 +61,7 @@ function Printer(props) {
           { text: "Introduisez les fixations latérales sur les barres inférieures (les plus proches du logo Dagoma)" },
           { text: "Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo.", classes: "italic bg-light-grey-blue" },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/7-e-roulements-axe", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -71,7 +71,7 @@ function Printer(props) {
           { text: "Astuce : de légères rotations permettent de rentrer le roulement plus facilement.", classes: "italic bg-light-grey-blue" },
           { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-f-face-ar", type: "video" }}
         content={[
@@ -83,7 +83,7 @@ function Printer(props) {
           { text: "Une fois en place, enfoncez fermement l’ensemble." },
           { text: "Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/7-f-controle.jpg", type: "image" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -93,7 +93,7 @@ function Printer(props) {
           { text: "Les roulements sur les barres supérieures (2 à droite et 2 à gauche)." },
           { text: "Si ce n’est pas le cas, démontez et recommencez." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-g-serrage-base", type: "video" }}
         content={[
@@ -102,7 +102,7 @@ function Printer(props) {
           { text: "Posez la base à plat." },
           { text: "Serrez les 8 vis se trouvant sur les côtés des faces avant et arrière." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/7-h-cache-cote-av-gauche", type: "video" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
@@ -113,7 +113,7 @@ function Printer(props) {
           { text: "Vous devez avoir deux pièces longues et deux courtes. Pour chaque paire, une aura une géométrie particulière et l’autre sera simple." },
           { text: "Prenez la longue qui a une forme particulière (voir la vidéo). Elle vient se clipser sur la barre du bas. Rapprochez-la de la face avant. Sa forme s’adapte à celle de la face avant." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-i-cache-cote-av-droit", type: "video" }}
         content={[
@@ -123,7 +123,7 @@ function Printer(props) {
           { text: "Clipsez-le sur la barre du bas et rapprochez-le de la face avant." },
           { text: "Respectez bien le sens de la pièce." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/7-j-cache-cote-ar", type: "video" }}
         content={[
           { text: "Étape 9", classes: "title tleft", tag: "h2" },
@@ -131,7 +131,7 @@ function Printer(props) {
           { text: "Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés.", classes: "bold" },
           { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-k-serrage-fixe-cote", type: "video" }}
         content={[
@@ -139,7 +139,7 @@ function Printer(props) {
           { text: "Serrage des fixations latérales", classes: "big-title" },
           { text: "Serrez les 4 vis des fixations latérales fermement. Ces pièces vont maintenir toute l’arche de l’axe Z. Elles doivent être bien en place et bien maintenues." },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/7-l-fin.jpg"
         content={[
           { text: "Montage de la base : CHECK !", classes: "big-title" },
@@ -147,7 +147,7 @@ function Printer(props) {
           { text: "Gardez la, l’assemblage continue." }
         ]}>
         <Validation step="/printer/de200/notice-montage-axe-z" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

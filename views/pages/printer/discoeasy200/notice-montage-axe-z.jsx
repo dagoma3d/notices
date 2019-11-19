@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,19 +12,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={6} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 25 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/8-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 7 - Assemblage de l’axe Z", classes: "title tleft", tag: "h1" },
           { text: "Assemblage de l’axe Z", classes: "big-title tleft" },
           { text: "Nous allons maintenant assembler l’axe Z de l’imprimante 3D. Elle va commencer à ressembler de plus en plus au produit fini." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-b-prerequis.jpg", type: "image" }}
         content={[
@@ -46,7 +46,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/8-c-moteur-z", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -59,7 +59,7 @@ function Printer(props) {
           { text: "Il doit être à fleur de la fixation latérale. Utilisez la spatule pour le poser dessus puis serrez la vis inférieure fermement." },
           { text: "Répétez l’opération sur le second moteur." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-d-barres", type: "video" }}
         content={[
@@ -70,7 +70,7 @@ function Printer(props) {
           { text: "Forcez bien pour que les barres soient au fond de chaque trou." },
           { text: "Astuce : Un petit coup de maillet en caoutchouc aidera bien.", classes: "italic bg-light-grey-blue" },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/8-e-axe-x", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -80,7 +80,7 @@ function Printer(props) {
           { text: "Faites quelques allers-retours pour que l’ensemble s’ajuste bien." },
           { text: "Mettez ensuite les ressorts dans leur logement comme sur la vidéo." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-e-controle.jpg", type: "image" }}
         content={[
@@ -88,7 +88,7 @@ function Printer(props) {
           { text: "Petite vérification", classes: "big-title" },
           { text: "Normalement voici ce que vous avez obtenu. Vérifiez bien le sens des éléments." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/8-f-tiges", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -103,7 +103,7 @@ function Printer(props) {
           { text: "Arrêtez de visser lorsque le chariot commence à se lever." },
           { text: "Répétez l’opération sur le deuxième chariot." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/8-g-coupleurs", type: "video" }}
         content={[
@@ -115,14 +115,14 @@ function Printer(props) {
           { text: "En relâchant, vous verrez le chariot monter légèrement." },
           { text: "Répétez l’opération sur le second coupleur." },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/8-h-fin.jpg"
         content={[
           { text: "Assemblage de l’axe Z : CHECK !", classes: "big-title" },
           { text: "Vérifiez que les pièces sont orientées comme sur la photo." },
         ]}>
         <Validation step="/printer/de200/notice-assemblage-plateau" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

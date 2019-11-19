@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require("../../../../../content/nav/expert");
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 const Media = require('../../../../components/media');
 
@@ -12,19 +12,19 @@ function PackExpert(props) {
   return (
     <Layout>
       <NavBar active={0} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 15 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg"
         content={[
           { text: "Notice de montage pack expert - Préparation et démontage", classes: "title tleft", tag: "h1" },
           { text: "Ça y est, vous avez reçu votre pack expert.", classes: "big-title tleft" },
           { text: "Nous allons vous accompagner dans le montage et l’utilisation de cette amélioration pour votre DiscoEasy200." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-b-contenu.jpg", type: "image" }}
         content={[
@@ -50,7 +50,7 @@ function PackExpert(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-c-prerequis.jpg", type: "image" }}
         content={[
           { text: "Les prérequis", classes: "big-title" },
@@ -66,12 +66,12 @@ function PackExpert(props) {
             }
           }
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Place au démontage", classes: "big-title" },
           { text: "A chaque étape, conservez les vis." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-d-gaine", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -80,14 +80,14 @@ function PackExpert(props) {
           { text: "Libérez les câbles de moteur et de butée." },
           { text: "Déclipsez la gaine du chariot." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot", type: "video" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Débranchez le moteur de X", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-f-debrancher-butee", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -97,7 +97,7 @@ function PackExpert(props) {
           { text: "Retirez complètement le câble du dessous de la machine." },
           { text: "Débranchez les moteurs de Z." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-g-retirer-top", type: "video" }}
         content={[
@@ -108,7 +108,7 @@ function PackExpert(props) {
           { text: "Desserrez les 4 vis latérales." },
           { text: "Retirez la partie supérieure de l’imprimante." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -120,7 +120,7 @@ function PackExpert(props) {
           { text: "Attention, elles sont recouvertes d'huile.", classes: "italic" },
           { text: "Retenez les écrous supérieurs pour éviter qu’ils ne partent d’un coup." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-i-retirer-mot-z", type: "video" }}
         content={[
@@ -129,7 +129,7 @@ function PackExpert(props) {
           { text: "Dévissez les moteurs de Z." },
           { text: "Soulevez la base et retirez-les." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x", type: "video" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
@@ -138,13 +138,13 @@ function PackExpert(props) {
           { text: "Séparez tous les éléments." },
           { text: "Mettez les barres de côté." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Trapezoidales/1-k-fin.jpg"
         content={[
           { text: "Démontage de l’imprimante : CHECK !", classes: "big-title" }
         ]}>
         <Validation step="/addon/expert/de200/notice-2" text="Je valide et je passe à la suite !" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

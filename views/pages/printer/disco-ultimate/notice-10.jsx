@@ -2,16 +2,16 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={9} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/10-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - finitions", classes: "title tleft", tag: "h1" },
@@ -19,8 +19,8 @@ function Printer(props) {
           { text: "Les dernières finitions" },
           { text: "A la fin de cette page, le montage sera terminé." }
         ]} />
-      <SimpleTitle content={[]} />
-      <SimpleSection
+      <Title content={[]} />
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -47,7 +47,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-c-top-vis-serrage", type: "video" }}
         content={[
@@ -57,7 +57,7 @@ function Printer(props) {
           { text: "Faites de même pour la deuxième pièce." },
           { text: "Mettez ensuite deux barres dans les logements prévus à cet effet." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-d-top-installation", type: "video" }}
         content={[
           { text: "Finition du portique", classes: "big-title" },
@@ -65,7 +65,7 @@ function Printer(props) {
           { text: "Appuyez fort pour que les pièces soient bien enfoncées." },
           { text: "Serrez les 4 vis présentes sur les côtés." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-e-tension-courroie-tete", type: "video" }}
         content={[
@@ -76,13 +76,13 @@ function Printer(props) {
           { text: "Forcez pour ajouter 2 crans de tension et re-verrouiller la courroie." },
           { text: "Coupez le bout pour laisser 3 cm de mou." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-f-serrage-axe-z", type: "video" }}
         content={[
           { text: "Serrage de l’axe Z", classes: "big-title" },
           { text: "Serrez les 2 vis restantes en haut puis les 4 vis des fixations latérales." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-g-logo-face-avant", type: "video" }}
         content={[
@@ -90,7 +90,7 @@ function Printer(props) {
           { text: "Prenez le logo Dagoma imprimé en orange." },
           { text: "Clipsez-le dans la face avant pour faire correspondre les formes." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-h-gaine-chariot", type: "video" }}
         content={[
           { text: "Mise en place de la gaine", classes: "big-title" },
@@ -99,7 +99,7 @@ function Printer(props) {
           { text: "Installez-la sur les câbles du moteur et de la butée de X." },
           { text: "Fixez-la ensuite à l’aide d’un collier de serrage au chariot (il y a un passage prévu à cet effet)." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
         content={[
@@ -108,13 +108,13 @@ function Printer(props) {
           { text: "Ensuite, nous allons faire en sorte de bien maintenir les autres câbles." },
           { text: "Notre solution n’est pas unique." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-k-cable-management-controle.jpg", type: "image" }}
         content={[
           { text: "Vérification des câbles", classes: "big-title" },
           { text: "Aucun câble maintenu ne doit dépasser de la machine." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-l-plaque-fond", type: "video" }}
         content={[
@@ -124,7 +124,7 @@ function Printer(props) {
           { text: "Utilisez les 12 patins caoutchoucs pour maintenir la plaque." },
           { text: "Appuyez fermement dessus pour les bloquer." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-m-ptfe", type: "video" }}
         content={[
           { text: "Installation du tube PTFE", classes: "big-title" },
@@ -132,26 +132,26 @@ function Printer(props) {
           { text: "Il est maintenu par des raccords pneumatique. Poussez-le bien jusqu’au fond à chaque extrémité. Faites-le passer entre les deux barres du haut de l’imprimante pour le guider." },
           { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/10-n-bis-film-plateau.jpg", type: "image" }}
         content={[
           { text: "Retirez le film protecteur du plateau", classes: "big-title" },
           { text: "Si vous avez un film protecteur, pensez à le retirer." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/10-n-buildgrip.jpg", type: "image" }}
         content={[
           { text: "Installation de la surface d’accroche", classes: "big-title" },
           { text: "Vous trouverez un article complet pour vous expliquer l'installation de la surface d'accroche et sa maintenance.", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000070827-discoeasy200-changer-la-surface-d-accroche", target: "_blank", classes: "new-btn btn-valid btn-wide btn-big", text: "C’est par ici" } }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/10-o-fin.jpg"
         content={[
           { text: "Le montage de votre Disco Ultimate est terminé !", classes: "big-title" }
         ]}>
         <Validation step="/firmware/du" text="Je passe à l'étape suivante" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

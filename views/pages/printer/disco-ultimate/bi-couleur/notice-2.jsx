@@ -2,42 +2,42 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require('../../../../../content/nav/bicolor/du');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 
 function BiColor(props) {
   return (
     <Layout>
       <NavBar active={1} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps total de montage approximatif : 1h30min", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Addon/Bicouleur/1-j-fin.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur", classes: "title tleft", tag: "h1" },
           { text: "Installation du pack bi-couleur", classes: "big-title tleft" },
           { text: "Nous allons maintenant remonter votre Disco Ultimate avec les éléments du pack bi-couleur." }
         ]} />
-      <SimpleTitle content={[]} />
-      <SimpleSection
+      <Title content={[]} />
+      <Section
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-b-retirer-plaque-sup-ar", type: "video" }}
         content={[
           { text: "Retrait plaque arrière", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez les 4 vis CHC M3x10 qui tiennent la plaque supérieure arrière." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-c-emplacement-mot-e1", type: "video" }}
         content={[
           { text: "Ouverture de l’emplacement E1", classes: "big-title tleft", tag: "h2" },
           { text: "Soulevez la plaque et découpez l’emplacement du moteur E1 à l’aide d’une pince coupante." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/3-f-extrudeur-montage", type: "video" }}
         content={[
           { text: "Pré-montage de l’extrudeur", classes: "big-title tleft", tag: "h2" },
@@ -48,7 +48,7 @@ function BiColor(props) {
           { text: "Déplacez le bras pour que le trou de vis soit aligné avec celui du corps." },
           { text: "Mettez en place les 3 vis M3x25." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-e-extrudeur-installation", type: "video" }}
         content={[
@@ -62,7 +62,7 @@ function BiColor(props) {
           { text: "La tête de la vis M3x6 rentre dans un logement prévu dans le corps d’extrudeur." },
           { text: "Le bras doit pouvoir bouger après serrage." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-f-extrudeur-branchement", type: "video" }}
         content={[
           { text: "Branchement de l’extrudeur", classes: "big-title tleft", tag: "h2" },
@@ -71,7 +71,7 @@ function BiColor(props) {
           { text: "Branchez le capteur du nouvel extrudeur sur le connecteur 1." },
           { text: "Branchez le câble moteur sur le connecteur E1." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/7-f-barre-bicouleur", type: "video" }}
         content={[
@@ -79,13 +79,13 @@ function BiColor(props) {
           { text: "Prenez 2 barres courtes." },
           { text: "Introduisez-les avec délicatesse dans les roulements (faites quelques rotations pour faciliter leur entrée). Une fois en place, faites quelques allers-retours pour vérifier que tout va bien." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/7-g-courroie-tete", type: "video" }}
         content={[
           { text: "Installation de la courroie de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Nous vous conseillons de suivre la vidéo avec attention." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-i-installation-axe-x", type: "video" }}
         content={[
@@ -95,13 +95,13 @@ function BiColor(props) {
           { text: "Vissez les tiges trapézoïdales dans les écrous pour faire descendre l’axe." },
           { text: "Descendez les deux chariots en même temps." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/9-c-noeud-tete", type: "video" }}
         content={[
           { text: "Repérage du câble ventilateur arrière", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le câble du ventilateur arrière et faites un noeud à 2cm du bout." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-c-bis-gaine-tete", type: "video" }}
         content={[
@@ -109,7 +109,7 @@ function BiColor(props) {
           { text: "Prenez la gaine de tête et l’outil imprimé livré avec votre Disco Ultimate." },
           { text: "Nous vous invitons à suivre la vidéo avec attention et de refaire pareil." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/9-g-passage-gaine-tete", type: "video" }}
         content={[
           { text: "Passage des câbles de la tête", classes: "big-title tleft", tag: "h2" },
@@ -117,7 +117,7 @@ function BiColor(props) {
           { text: "Faites-les passer dans la fixation latérale." },
           { text: "Passez entre la barre arrière et la tige du moteur de Z." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-l-branchement-tete", type: "video" }}
         content={[
@@ -129,13 +129,13 @@ function BiColor(props) {
           { text: "Branchez les câbles du ventilateur repéré (ceux avec la boucle) sur le bornier FAN2." },
           { text: "Branchez les câbles du ventilateur restant sur le bornier FAN1." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Addon/Bicouleur/2-m-fin.jpg"
         content={[
           { text: "Montage du pack bi-couleur terminé", classes: "big-title" }
         ]}>
         <Validation step="/addon/bicolor/du/notice-3" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

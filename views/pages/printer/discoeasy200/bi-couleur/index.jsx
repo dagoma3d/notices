@@ -2,20 +2,20 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require('../../../../../content/nav/bicolor/de200');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 
 function BiColor(props) {
   return (
     <Layout>
       <NavBar active={0} nav={nav} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Avant de commencer", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-c-prerequis-impression.jpg", type: "image" }}
         content={[
           { text: "Votre attention s’il vous plaît !", classes: "big-title tleft", tag: "h2" },
@@ -33,12 +33,12 @@ function BiColor(props) {
           },
           { link: { classes: "condition-classic new-btn btn-classic btn-grey", href: "/medias/stl/stl_bicouleur.zip", download: "stl_couleur.zip", text: "Télécharger" } }
         ]} />
-      <BasicSection
+      <Block
         content={[
           { text: "Impression terminée", classes: "big-title" }
         ]}>
         <Validation step="/addon/bicolor/de200/notice-1" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

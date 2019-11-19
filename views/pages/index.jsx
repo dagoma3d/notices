@@ -1,21 +1,21 @@
 var React = require('react');
 var Layout = require('../layouts/default');
-var BasicSection = require('../components/basic-section');
-var SimpleTitle = require('../components/simple-title');
+var Block = require('../components/block');
+var Title = require('../components/title');
 var Section = require('../components/section');
 var NevaVersion = require('../components/neva-version');
 
 function Home(props) {
   return (
     <Layout title="Notices et de montage et d'utilisation">
-      <BasicSection
+      <Block
         img="FirstStep/premier-pas.jpg"
         content={[
           { text: "Premiers pas", classes: "title big tleft", tag: "h1" },
           { text: "C'est parti !", classes: "tleft big-title" },
           { text: "Félicitations ! Si vous êtes ici c'est que vous avez fait un (bon) choix : vous lancer dans l'aventure de l'impression 3D. Nous allons vous accompagner étape par étape, du montage à la première utilisation de votre machine ou de vos nouveaux composants. Vous êtes prêts ?", classes: "tleft light" },
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Choisissez votre imprimante 3D pour commencer", classes: "big-title" }
         ]} />

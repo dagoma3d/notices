@@ -1,22 +1,22 @@
 var React = require('react');
 var Layout = require('../../../../layouts/default');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 const Media = require('../../../../components/media');
 
 function Extruder(props) {
   return (
     <Layout>
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/ExtrudeurPlus/B-a-intro.JPG"
         content={[
           { text: "Notice - Utilisation", classes: "title tleft", tag: "h1" },
           { text: "Votre DiscoEasy200 est prête.", classes: "big-title tleft" },
           { text: "C’est le moment d’utiliser votre nouvelle installation. C’est parti !" }
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Commencez par mettre à jour l’imprimante 3D.", classes: "big-title" },
           { text: "Revenez sur cette page une fois la mise à jour terminée." },
@@ -27,10 +27,12 @@ function Extruder(props) {
           },
           { text: "Une fois votre imprimante 3d mise à jour, passez à la suite." }
         ]} />
-      <section className="col-xl-24 block-big-white-space bg-light-grey-blue row">
-        <p className="big-title">Comment utiliser ces nouveautés ?</p>
-      </section>
-      <SimpleSection
+      <Title
+        color={true}
+        content={[
+          { text: "Comment utiliser ces nouveautés ?", classes: "big-title" }
+        ]} />
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-c-detection-filament", type: "video" }}
         content={[
           { text: "La détection de fin de filament", classes: "big-title" },
@@ -40,7 +42,7 @@ function Extruder(props) {
           { text: "Appuyez sur le bouton une fois le filament inséré." },
           { text: "Si vous lancez votre imprimante 3D sans filament, aucun soucis, elle vous attendra avant de commencer." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-d-pause-plus", type: "video" }}
         content={[
@@ -51,7 +53,7 @@ function Extruder(props) {
           { text: "Fonction accessible depuis l'écran : \"Interrompre impr.\"", classes: "col-space bg-light-grey-blue italic" },
           { text: "Si vous appuyez sur le bouton pendant le palpage, cela interrompra totalement le lancement. Vous n'aurez qu'à relancer l'impression.", classes: "bg-orange text-white col-space" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-e-ejection-filament", type: "video" }}
         content={[
           { text: "Ejection du filament", classes: "big-title" },
@@ -61,7 +63,7 @@ function Extruder(props) {
           { text: "Nous avons ajouté un témoin de progression de chauffe. La tête se déplace par rapport à sa température. Quand elle arrive à droite, elle est prête." },
           { text: "Fonction accessible depuis l'écran : \"Changement de filament\"", classes: "col-space bg-light-grey-blue italic" }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-f-insertion-filament", type: "video" }}
         content={[
@@ -73,13 +75,13 @@ function Extruder(props) {
           { text: "Si la tête est froide, l’imprimante commencera par chauffer avant d'insérer le filament." },
           { text: "Retirez l'excédent de purge en sortie de la buse, attention c'est chaud." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-g-flexible.jpg", type: "image" }}
         content={[
           { text: "Le flexible", classes: "big-title" },
           { text: "L’extrudeur+ a spécialement été conçu pour l’impression du filament flexible. Sa forme permet d’imprimer ce filament avec des performances se rapprochant d’un filament classique." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/ExtrudeurPlus/B-a-intro.JPG"
         content={[
           { text: "Votre add-on est prêt. À vous de créer !", classes: "big-title tleft" }

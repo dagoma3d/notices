@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,19 +12,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={14} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 30 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 15 - Utilisation", classes: "title tleft", tag: "h1" },
           { text: "Lançons une première impression", classes: "big-title tleft" },
           { text: "Dernière étape avant le grand large. Nous allons vous montrer les bonnes pratiques et les rudiments de l’impression 3D sur la Discoeasy200." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/b-derouleur.jpg", type: "image" }}
         content={[
@@ -34,7 +34,7 @@ function Printer(props) {
           { text: "Téléchargez le fichier ci-dessous. Nous allons ensuite le préparer sur Cura." },
           { link: { href: "/medias/DiscoEasy/Notice/16-support-bobine-stl/support-bobine.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "support-bobine.zip", text: "Télécharger" } },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/16-c-slicer-cura.jpg", type: "image" }}
         content={[
           { text: "Étape 2", classes: "title tleft" },
@@ -43,7 +43,7 @@ function Printer(props) {
           { text: "Nous vous proposons les paramètres d’impression suivant : 33% en rapide." },
           { text: "Insérez la carte SD dans l’ordinateur et cliquez sur “préparer l’impression”." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Calibration/c-e5", type: "video" }}
         content={[
@@ -57,7 +57,7 @@ function Printer(props) {
           { text: "Poussez le filament jusqu’à la tête d’impression." },
           { text: "Avec l’extrudeur+, c’est automatique." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/16-e-lancement", type: "video" }}
         content={[
           { text: "Étape 4", classes: "title tleft" },
@@ -79,7 +79,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/16-f-premiere-couche", type: "video" }}
         content={[
@@ -92,7 +92,7 @@ function Printer(props) {
           { text: "En tournant dans l’autre sens, elle sera plus haute (trop haute sur la vidéo)." },
           { text: "Regardez à la fin de la vidéo pour voir les 3 niveaux d’appréciations de hauteur de première couche." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/16-g-arreter", type: "video" }}
         content={[
           { text: "Étape 6", classes: "title tleft" },
@@ -102,7 +102,7 @@ function Printer(props) {
           { text: "Rallumez la machine pour que la tête refroidisse convenablement." },
           { text: "Quand le ventilateur avant s’arrête, vous pouvez l’éteindre sans soucis." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/c-assemblage-derouleur.jpg", type: "image" }}
         content={[
@@ -110,7 +110,7 @@ function Printer(props) {
           { text: "Assemblage du dérouleur", classes: "big-title" },
           { text: "N'hésitez pas à le faire tourner un peu à la main si vous voyez que l'assemblage ne pivote pas bien." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/d-assemblage-derouleur.jpg", type: "image" }}
         content={[
           { text: "Étape 8", classes: "title tleft" },
@@ -118,7 +118,7 @@ function Printer(props) {
           { text: "Déposez la bobine sur votre dérouleur." },
           { text: "Nous proposons un modèle plus évolué", link: { href: "/medias/DiscoEasy/Notice/16-support-bobine-stl/support-bobine.zip", classes: "link-classic", text: "ici" } }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Votre Discoeasy est prête", classes: "big-title" },

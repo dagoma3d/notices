@@ -2,22 +2,22 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/magis');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={4} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps de préparation : 5 minutes", classes: "col-vtspace" },
           { text: "Temps d'impression : 45 minutes", classes: "col-vbspace" }
         ]} />
-      <BasicSection
+      <Block
         flip={true}
         img="NevaMagis/Notice/3-a-photophore-pp-3-1600x600.jpg"
         content={[
@@ -27,7 +27,7 @@ function Printer(props) {
           { text: "Vous êtes maintenant prêt pour notre petit secret." },
           { text: "Il est impératif d’avoir deux couleurs différentes pour aboutir au résultat attendu. Si vous n’en avez qu’une, continuez quand même pour maîtriser toutes les fonctionnalités." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/3-b-copie.jpg", type: "image" }}
         content={[
@@ -39,7 +39,7 @@ function Printer(props) {
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />
-      <SimpleTitle
+      <Title
         content={[
           { text: "Étape 2", classes: "title", tag: "h3" },
           { text: "Lancez l'impression", classes: "big-title" },
@@ -48,7 +48,7 @@ function Printer(props) {
           { text: "Lancez ensuite l’impression." },
           { text: "Pssst ! Rappellez-vous de la ", classes: "italic", link: { href: "/printer/magis/notice-1", title: "Retourner à la page 1", classes: "link-classic", text: "page 1" } },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/3-d-pause-auto", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
@@ -59,7 +59,7 @@ function Printer(props) {
           { text: "Si vous avez le moindre problème, commencez par ", classes: "italic", link: { href: "/firmware/magis", target: "_blank", title: "Mise à jour firmware", classes: "link-classic", text: "mettre à jour votre firmware" } },
           { text: "Si ce n'est pas résolu, nous sommes à votre disposition via ", classes: "italic", link: { href: "//support.dagoma.fr/support/home", target: "_blank", title: "Le support", classes: "link-classic", text: "le support" } },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/3-e-tap-tap-changement-filament", type: "video" }}
         content={[
@@ -73,34 +73,34 @@ function Printer(props) {
           { text: "Présentez le filament dans l’extrudeur. Poussez-le jusqu’à ce qu’il soit entraîné par la machine." },
           { text: "Pensez à retirer le PLA qui coule sous la tête." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/3-f-reprise-manuelle", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
           { text: "Relancez l'impression", classes: "big-title" },
           { text: "Appuyez sur le bouton pour relancer l'impression." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "NevaMagis/Notice/3-g-bi-colore", type: "video" }}
         content={[
           { text: "Plus que 10 minutes d’impression", classes: "big-title" }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "NevaMagis/Notice/3-i-photophore-pp-3-copie.jpg", type: "image" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h3" },
           { text: "Assemblage", classes: "big-title" },
           { text: "Reprenez le photophore, et assemblez-le avec le reste." }
         ]} />
-      <BasicSection
+      <Block
         flip={true}
         img="NevaMagis/Notice/3-a-photophore-pp-3-1600x600.jpg"
         content={[
           { text: "Je vois la vie en couleur !", classes: "big-title" }
         ]}>
         <Validation step="/cura-by-dagoma" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

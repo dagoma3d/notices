@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,19 +12,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={10} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 15 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 11 - Contrôle", classes: "title tleft", tag: "h1" },
           { text: "Contrôlons le bon fonctionnement des éléments de la machine", classes: "big-title tleft" },
           { text: "Nous allons procéder à des vérifications de l’ensemble des composants à l’aide de fichiers de test." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/12-b-g28", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
@@ -37,7 +37,7 @@ function Printer(props) {
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
           { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/12-c-deplacement", type: "video" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
@@ -50,7 +50,7 @@ function Printer(props) {
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
           { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/12-d-ventilateur", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -63,7 +63,7 @@ function Printer(props) {
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
           { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/12-e-chauffe", type: "video" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
@@ -81,7 +81,7 @@ function Printer(props) {
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
           { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/11-k-fin.jpg"
         content={[
           { text: "Contrôle : CHECK !", classes: "big-title" },
@@ -89,7 +89,7 @@ function Printer(props) {
           { text: "Nous touchons au but, il nous reste à mettre à jour la machine, à la calibrer et vous serez paré pour votre première impression." },
         ]}>
         <Validation step="/firmware/de200" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

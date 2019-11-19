@@ -1,7 +1,7 @@
 const React = require('react');
-const TextBlock = require('./text-block');
+const Text = require('./text');
 
-function BasicSection(props) {
+function Block(props) {
   const { img, flip, content } = props;
   if (img) {
     return (
@@ -12,7 +12,7 @@ function BasicSection(props) {
 
         <section className={"block-caption-classic block-caption-" + (flip ? "left" : "right")}>
           {content.map((p, k) => {
-            return <TextBlock key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} />
+            return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} />
           })}
           {props.children}
         </section>
@@ -24,7 +24,7 @@ function BasicSection(props) {
         <section className="col-xl-12 col-xl-offset-6 col-l-18 col-l-offset-3 col-m-24 col-m-offset-0 row">
           <div className="col-xl-24 block-caption row col-vspace">
             {content.map((p, k) => {
-              return <TextBlock key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} />
+              return <Text key={k} tag={p.tag} classes={p.classes} text={p.text} link={p.link} />
             })}
             {props.children}
           </div>
@@ -34,4 +34,4 @@ function BasicSection(props) {
   }
 }
 
-module.exports = BasicSection;
+module.exports = Block;

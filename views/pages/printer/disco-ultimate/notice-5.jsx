@@ -2,24 +2,24 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/du');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 
 function Printer(props) {
   return (
     <Layout>
       <NavBar active={5} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/5-a-intro.jpg"
         content={[
           { text: "Notice de montage DISCO ULTIMATE - assemblage de la base", classes: "title tleft", tag: "h1" },
           { text: "Assemblage de la base", classes: "big-title tleft", tag: "h2" },
           { text: "Nous allons commencer à assembler l’imprimante 3D. Première étape la base." }
         ]} />
-      <SimpleTitle content={[]} />
-      <SimpleSection
+      <Title content={[]} />
+      <Section
         media={{ src: "DiscoUltimate/Notice/5-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
@@ -47,7 +47,7 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
         content={[
@@ -55,7 +55,7 @@ function Printer(props) {
           { text: "Prenez la face avant et 4 barres." },
           { text: "Posez la face avant sur sa partie plate." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-d-fixe-cote", type: "video" }}
         content={[
@@ -63,7 +63,7 @@ function Printer(props) {
           { text: "Introduisez les fixations latérales sur les barres inférieures." },
           { text: "Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/5-e-roulements-axe", type: "video" }}
         content={[
           { text: "Mise en place des roulements", classes: "big-title" },
@@ -72,7 +72,7 @@ function Printer(props) {
           { text: "Astuce : de légères rotations permettent de rentrer le roulement plus facilement." },
           { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-f-face-ar", type: "video" }}
         content={[
@@ -83,7 +83,7 @@ function Printer(props) {
           { text: "Une fois en place, enfoncez fermement l’ensemble." },
           { text: "Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/5-g-controle.jpg", type: "image" }}
         content={[
           { text: "Petit contrôle surprise", classes: "big-title" },
@@ -92,7 +92,7 @@ function Printer(props) {
           { text: "Les roulements sur les barres supérieures (2 à droite et 2 à gauche)." },
           { text: "Si ce n’est pas le cas, démontez et recommencez." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-h-cache-cote-av-droit", type: "video" }}
         content={[
@@ -102,7 +102,7 @@ function Printer(props) {
           { text: "Clipsez-le sur la barre du bas et rapprochez-le de la face avant." },
           { text: "Respectez bien le sens de la pièce." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/5-i-cache-cote-av-gauche", type: "video" }}
         content={[
           { text: "Installation du cache côté avant gauche", classes: "big-title" },
@@ -110,7 +110,7 @@ function Printer(props) {
           { text: "Clipsez-le sur la barre du bas et rapprochez-le de la face avant." },
           { text: "Respectez bien le sens de la pièce." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-j-cache-cote-ar", type: "video" }}
         content={[
@@ -118,7 +118,7 @@ function Printer(props) {
           { text: "Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés." },
           { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoUltimate/Notice/5-k-installation-plaques-sup", type: "video" }}
         content={[
           { text: "Installation des plaques de protection noires", classes: "big-title" },
@@ -129,21 +129,21 @@ function Printer(props) {
           { text: "Prenez la partie avant, placez la comme la précédente et vissez les 4 vis M3x10." },
           { text: "Astuce : Bougez la structure pour alignez les trous de vis si nécessaire." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoUltimate/Notice/5-l-serrage-base", type: "video" }}
         content={[
           { text: "Serrage de la base", classes: "big-title" },
           { text: "Suivez la vidéo, vous avez 12 vis à serrer." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoUltimate/Notice/5-m-fin.jpg"
         content={[
           { text: "Assemblage de la base terminé.", classes: "big-title" },
           { text: "Mettez la base de côté, nous continuons le montage." }
         ]}>
         <Validation step="/printer/du/notice-6" text="Je passe à l'étape suivante" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

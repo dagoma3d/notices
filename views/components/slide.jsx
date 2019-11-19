@@ -1,6 +1,6 @@
 const React = require('react');
 
-function ArticleFigure(props) {
+function Item(props) {
   const { img, title, ok, text } = props;
   return (
     <article className="row">
@@ -18,4 +18,15 @@ function ArticleFigure(props) {
   );
 }
 
-module.exports = ArticleFigure;
+function Slide(props) {
+  const { content } = props;
+  return (
+    <section className="moving-banner-top row">
+      {content.map((i, k) => {
+        return <Item key={k} img={i.img} title={i.title} ok={i.ok} text={i.text} />
+      })}
+    </section>
+  );
+}
+
+module.exports = Slide;

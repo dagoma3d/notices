@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require('../../../../../content/nav/bicolor/de200');
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 const Media = require('../../../../components/media');
 
@@ -12,14 +12,14 @@ function BiColor(props) {
   return (
     <Layout>
       <NavBar active={7} nav={nav} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
           { text: "Notice de montage pack bi-couleur - première impression", classes: "title tleft", tag: "h1" },
           { text: "Imprimer en bicouleur", classes: "big-title tleft" },
           { text: "Ca y est, votre Discoeasy200 est prête pour imprimer en bi-couleur." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/7-b-chargement-filament", type: "video" }}
         content={[
@@ -33,7 +33,7 @@ function BiColor(props) {
           { text: "Si vous n’avez pas l’extrudeur+, chargez le filament manuellement comme à votre habitude." },
           { text: "Arrêtez le filament à l’extrémité du tube PTFE côté tête d’impression." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Bicouleur/7-c-fichier.jpg", type: "image" }}
         content={[
           { text: "Un gcode déjà tout prêt", classes: "big-title tleft", tag: "h2" },
@@ -42,14 +42,14 @@ function BiColor(props) {
           { text: "Si vous voulez lancer votre propre fichier, rendez-vous dans la prochaine page !" },
           { text: "Vous connaissez la chanson, c’est un lancement tout à fait normal : téléchargez le fichier, transférez-le sur la carte SD, insérez la carte dans l’imprimante 3D puis allumez-la." }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
           { text: "Première impression terminée", classes: "big-title" },
           { text: "Nous allons maintenant voir comment préparer vous même un gcode bi-couleur à l’aide de notre nouveau cura." }
         ]}>
         <Validation step="/addon/bicolor/de200/notice-8" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

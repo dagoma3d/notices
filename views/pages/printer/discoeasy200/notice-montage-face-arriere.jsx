@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../layouts/default');
 const NavBar = require('../../../components/navbar');
 const nav = require('../../../../content/nav/de200');
-const SimpleTitle = require('../../../components/simple-title');
-const BasicSection = require('../../../components/basic-section');
-const SimpleSection = require('../../../components/simple-section');
+const Title = require('../../../components/title');
+const Block = require('../../../components/block');
+const Section = require('../../../components/section');
 const Validation = require('../../../components/validation');
 const Media = require('../../../components/media');
 
@@ -12,19 +12,19 @@ function Printer(props) {
   return (
     <Layout>
       <NavBar active={2} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/4-a-intro.jpg"
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 3 - Montage de la face arrière", classes: "title tleft", tag: "h1" },
           { text: "Montage de la face arrière", classes: "big-title tleft" },
           { text: "Nous allons monter la deuxième partie de l’imprimante 3D." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-b-prerequis.jpg", type: "image" }}
         content={[
@@ -45,14 +45,14 @@ function Printer(props) {
             }
           }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/4-c-vis-serrage", type: "video" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des vis de serrage", classes: "big-title" },
           { text: "Comme tout à l’heure, prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-d-roulement-courroie", type: "video" }}
         content={[
@@ -61,7 +61,7 @@ function Printer(props) {
           { text: "Nous allons placer les roulements qui feront le renvoi de courroie du plateau de l’imprimante." },
           { text: "Prenez le petit outil imprimé. Il permet de placer et maintenir les roulements facilement. Prenez 1 vis M3x16, placez en une dans le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Notice/4-e-extrudeur", type: "video" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
@@ -75,7 +75,7 @@ function Printer(props) {
           { text: "Prenez le bras, placez le pour que le ressort soit pris dans la seconde empreinte." },
           { text: "Comprimez le ressort pour aligner les trous placez la dernière vis sans serrer." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage", type: "video" }}
         content={[
@@ -85,14 +85,14 @@ function Printer(props) {
           { text: "Serrez jusqu'à voir disparaître le jour entre les deux pièces orange." },
           { text: "Desserrez d’un quart de tour pour le faire réapparaître." },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Notice/4-f-fin.jpg"
         content={[
           { text: "Montage de la face arrière : CHECK !", classes: "big-title" },
           { text: "Mettez-la de côté, elle nous servira plus tard." }
         ]}>
         <Validation step="/printer/de200/notice-montage-fixations-laterales" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }

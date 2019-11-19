@@ -2,9 +2,9 @@ var React = require('react');
 var Layout = require('../../../../layouts/default');
 var NavBar = require('../../../../components/navbar');
 var nav = require("../../../../../content/nav/expert");
-const SimpleTitle = require('../../../../components/simple-title');
-const BasicSection = require('../../../../components/basic-section');
-const SimpleSection = require('../../../../components/simple-section');
+const Title = require('../../../../components/title');
+const Block = require('../../../../components/block');
+const Section = require('../../../../components/section');
 const Validation = require('../../../../components/validation');
 const Media = require('../../../../components/media');
 
@@ -12,19 +12,19 @@ function PackExpert(props) {
   return (
     <Layout>
       <NavBar active={2} nav={nav} />
-      <SimpleTitle
+      <Title
         small={true}
         content={[
           { text: "Temps approximatif : 20 minutes", classes: "col-vspace" }
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Trapezoidales/3-a-intro.jpg"
         content={[
           { text: "Notice de montage pack expert - Montage", classes: "title tleft", tag: "h1" },
           { text: "Montage du pack expert", classes: "big-title tleft" },
           { text: "Nous allons maintenant remonter la DiscoEasy200 avec les éléments du pack expert." }
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-b-assemblage-axe-x", type: "video" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
@@ -32,7 +32,7 @@ function PackExpert(props) {
           { text: "Introduisez-les avec délicatesse dans les roulements (faites quelques rotations pour faciliter leur entrée). Une fois en place, faites quelques allers-retours pour vérifier que tout va bien." },
           { text: "Maintenant faites attention au sens des pièces. Référez-vous à la vidéo pour orienter les pièces. La tête et les deux chariots sont plus haut d’un côté (en haut sur la vidéo). Alignez ce côté. Le chariot avec le moteur sera à gauche, l’autre à droite. Dans l’étape suivante vous pourrez vérifier tout ça." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-c-courroie-tete", type: "video" }}
         content={[
@@ -49,7 +49,7 @@ function PackExpert(props) {
           { text: "Dirigez le bout de la courroie vers la tête. Placez la courroie dans le logement (allez jusqu’au dernier cran)." },
           { text: "Reprenez l’autre bout et tirez dessus pour tendre la courroie. Tendez sans forcer, juste pour que tout tienne en place. Poussez la courroie pour la verrouiller dans les crans de la tête." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-d-mot-z", type: "video" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
@@ -59,7 +59,7 @@ function PackExpert(props) {
           { text: "Tournez-les pour aligner le connecteur du moteur vers l’extrudeur." },
           { text: "Vissez ensuite les moteurs (reprenez les vis utilisées pendant le démontage)." }
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-e-axe-x", type: "video" }}
         content={[
@@ -71,7 +71,7 @@ function PackExpert(props) {
           { text: "Faites quelques allers-retours pour que l’ensemble s’ajuste bien." },
           { text: "Placez une des anciennes pièces plastiques en dessous. Elle protègera votre plateau pour la prochaine étape." },
         ]} />
-      <SimpleSection
+      <Section
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-f-ecrou", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
@@ -85,7 +85,7 @@ function PackExpert(props) {
           { text: "Prenez ensuite les 6 vis M4x12 et vissez les écrous dans les chariots." },
           { text: "Faites ensuite descendre l’ensemble d’environ 5 cm." },
         ]} />
-      <SimpleSection
+      <Section
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-g-recablage", type: "video" }}
         content={[
@@ -96,13 +96,13 @@ function PackExpert(props) {
           { text: "Rebranchez la butée sur le connecteur X+." },
           { text: "Rebranchez ensuite les deux moteurs de Z en faisant passer le câble entre la barre inférieure et la pièce plastique." },
         ]} />
-      <BasicSection
+      <Block
         img="DiscoEasy/Add-on/Trapezoidales/3-h-fin.jpg"
         content={[
           { text: "Montage du pack expert : CHECK !", classes: "big-title" }
         ]}>
         <Validation step="/addon/expert/de200/notice-4" text="Je valide et je passe à la suite !" />
-      </BasicSection>
+      </Block>
     </Layout>
   );
 }
