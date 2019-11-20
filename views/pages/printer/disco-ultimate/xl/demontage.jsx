@@ -31,7 +31,6 @@ function Xl(props) {
         ]} />
       <Section
         t={t}
-        flip={true}
         media={{ id: "2TfW-dSIywo", type: "yt" }}
         content={[
           { text: "03 - démontage électronique", classes: "big-title tleft", tag: "h2" },
@@ -42,6 +41,7 @@ function Xl(props) {
         ]} />
       <Section
         t={t}
+        flip={true}
         media={{ id: "0HPpvWhwARk", type: "yt" }}
         content={[
           { text: "04 - démontage face avant", classes: "big-title tleft", tag: "h2" },
@@ -52,7 +52,6 @@ function Xl(props) {
         ]} />
       <Section
         t={t}
-        flip={true}
         media={{ id: "xHfAOKqOmBw", type: "yt" }}
         content={[
           { text: "05 - démontage fix cotés", classes: "big-title tleft", tag: "h2" },
@@ -62,6 +61,7 @@ function Xl(props) {
         ]} />
       <Section
         t={t}
+        flip={true}
         media={{ id: "4TLf-LeGA68", type: "yt" }}
         content={[
           { text: "06 - démontage axe X", classes: "big-title tleft", tag: "h2" },
@@ -69,7 +69,6 @@ function Xl(props) {
         ]} />
       <Section
         t={t}
-        flip={true}
         media={{ id: "jZRgQxPn4DY", type: "yt" }}
         content={[
           { text: "07 - démontage cache coté arrière", classes: "big-title tleft", tag: "h2" },
