@@ -12,6 +12,11 @@ function Xl(props) {
   return (
     <Layout t={t}>
       <NavBar t={t} active={3} nav={nav} />
+      <Title
+        t={t}
+        content={[
+          { text: "PARTIE 2.3 - Electronique et le plateau XL !", classes: "big-title" },
+        ]} />
       <Section
         t={t}
         media={{ id: "gL9pE1s4AKg", type: "yt" }}

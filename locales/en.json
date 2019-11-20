@@ -1566,5 +1566,11 @@
 	"3- coller le Buildgrip XL. Faire bien attention à ne pas créer de bulles sous le buildgrip.": "3- Paste you XL Buildgrip. Be careful not to create bubbles bellow it.",
 	"Ne pas oublier de remettre le ou les tubes PTFE dans le buse, et vous pouvez tester votre plateau : voici la démo en vidéo !": "Do not forget to put back your PTFE tubes into the nozzle, and you can test your tray: Here is a video demo!",
 	"Vous avez l'add-on 1 : l'écran. vous êtes au bon endroit : suivez le dernier guide.": "You have the add-on n°1: the screen : follow this last step:",
-	"Vous avez une vis supplémentaire afin de viser le nouveau bloc de déport de l'écran sur le cache coté.": "You have an extra screw to aim the new offset block of the screen on the side cover."
+	"Vous avez une vis supplémentaire afin de viser le nouveau bloc de déport de l'écran sur le cache coté.": "You have an extra screw to aim the new offset block of the screen on the side cover.",
+	"PARTIE 1 - démontage": "PART 1 - Unmounting",
+	"Commençons par démonter l'imprimante 3D": "Let's start by preparing your 3D printer.",
+	"PARTIE 2.1 - montage de la base": "PART 2.1 - Base mounting",
+	"Nous entamons maintenant le montage, étape par étape.": "We now begin the installation step by step.",
+	"PARTIE 2.2 - montage de Z": "PART 2.2 - Mounting Z axis",
+	"PARTIE 2.3 - Electronique et le plateau XL !": "PART 2.3 - Electronics and XL set!"
 }
