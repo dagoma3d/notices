@@ -2522,6 +2522,11 @@ p.underline.active-underline::after {
     font-size:1.800em;
 }
 
+.block-video-yt iframe{
+    min-height: 350px;
+    width: 100%;
+}
+
 .block-video-yt article figure{ padding:15px 20px; border-radius:5px; background:#fff; overflow:hidden; }
 .block-video-yt article figure img{ width:100%; }
 
@@ -3268,7 +3273,7 @@ a.lai-dl:hover { display:inline-block; background-position: 0px -133px; height:1
     max-width:50px;
     max-height:40px;
 }
-.clone-display.fixed .col-vspace { padding:5px; !important; }
+.clone-display.fixed .col-vspace { padding:5px !important; }
 
 /* ANIMATION */
 @keyframes disparition-catchphrase{

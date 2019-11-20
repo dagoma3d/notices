@@ -71,6 +71,7 @@ function Home(props) {
           { href: "/printer/du", picto: "disco-ultimate.svg", alt: "Disco Ultimate", title: "Notice de montage" },
           { href: "/addon/screen", picto: "accessoires-52.svg", alt: "Ecran" },
           { href: "/addon/bicolor/du", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
+          { href: "/addon/xl/du/demontage", picto: "accessoires-52.svg", alt: "Pack XL" },
           { href: "/addon/box/disco", picto: "accessoires-49.svg", alt: "Caisson de protection" },
           { href: "/cura-by-dagoma/du", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
         ]} />

@@ -41,6 +41,7 @@ app.get('/printer/de200/:step?/:addon?', require('./routes/discoeasy200').index)
 app.get('/addon/box/:serie/:step?', require('./routes/box').index);
 app.get('/addon/screen/:step?', require('./routes/screen').index);
 app.get('/addon/bicolor/:printer/:step?', require('./routes/bicolor').index);
+app.get('/addon/xl/:printer/:step', require('./routes/xl').index);
 app.get('/addon/evo/de200/:step?', require('./routes/evo').index);
 app.get('/addon/expert/de200/:step?', require('./routes/expert').index);
 app.get('/addon/extruder-plus/de200/:step?', require('./routes/extruder-plus').index);

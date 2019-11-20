@@ -44,27 +44,22 @@ exports.index = function (req, res) {
         firmware: "Ultimate",
         notice: "du"
       };
-      if (addon === "bicolor") {
-        props.active = 3;
-        props.nav = require('../content/nav/bicolor/du');
-        props.step = '/calibration/du/bicolor';
-      } else {
-        props.active = 10;
-        props.nav = require('../content/nav/du');
-        props.step = '/calibration/du';
+      switch (addon) {
+        case "bicolor":
+          props.active = 3;
+          props.nav = require('../content/nav/bicolor/du');
+          props.step = '/calibration/du/bicolor';
+          break;
+        case "xl":
+          props.active = 4;
+          props.nav = require('../content/nav/xl/du');
+          props.step = '/calibration/du/xl';
+          break;
+        default:
+          props.active = 10;
+          props.nav = require('../content/nav/du');
+          props.step = '/calibration/du';
       }
-      break;
-    case 'expert':
-      props.printerInfo = {
-        name: "DiscoEasy200",
-        abbr: "DE200",
-        img: "d-prerequis-maj-de200.jpg",
-        video: "c-e3",
-        firmware: "E200",
-        notice: "de200"
-      };
-      props.active = 4;
-      props.nav = require('../content/nav/expert');
       break;
     default:
       props.printerInfo = {};

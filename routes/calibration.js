@@ -40,14 +40,20 @@ exports.index = function (req, res) {
         firmware: "Ultimate",
         notice: "du"
       };
-      if (addon === "bicolor") {
-        props.active = 4;
-        props.nav = require('../content/nav/bicolor/du');
-        props.step = '/addon/bicolor/du/notice-7';
-      } else {
-        props.active = 11;
-        props.nav = require('../content/nav/du');
-        props.step = '/cura-by-dagoma/du'
+      switch (addon) {
+        case "bicolor":
+          props.active = 4;
+          props.nav = require('../content/nav/bicolor/du');
+          props.step = '/addon/bicolor/du/notice-7';
+          break;
+        case "xl":
+          props.active = 5;
+          props.nav = require('../content/nav/xl/du');
+          break;
+        default:
+          props.active = 11;
+          props.nav = require('../content/nav/du');
+          props.step = '/cura-by-dagoma/du'
       }
       break;
     default:
