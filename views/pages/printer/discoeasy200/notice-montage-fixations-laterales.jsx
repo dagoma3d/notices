@@ -24,7 +24,7 @@ function Printer(props) {
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 4 - Montage des fixations latérales", classes: "title tleft", tag: "h1" },
           { text: "Montage des fixations latérales", classes: "big-title tleft" },
-          { text: "Nous allons monter la troisième partie de l’imprimante 3D." }
+          { text: "Nous allons monter la troisième partie de l'imprimante 3D." }
         ]} />
       <Section
         t={t}
@@ -49,7 +49,7 @@ function Printer(props) {
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Préparation", classes: "big-title" },
-          { text: "Retirez la pièce que l’on appellera l’anti-wooble. Grattez votre pièce avec la spatule pour qu’elle soit propre. Répétez l’opération sur la seconde pièce." }
+          { text: "Retirez la pièce que l'on appellera l'anti-wooble. Grattez votre pièce avec la spatule pour qu'elle soit propre. Répétez l'opération sur la seconde pièce." }
         ]} />
       <Section
         t={t}
@@ -66,7 +66,7 @@ function Printer(props) {
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Montage de la barre", classes: "big-title" },
-          { text: "Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force. Prenez la seconde fixation et répétez l’opération. À la fin vous devez obtenir la même chose que sur la vidéo." }
+          { text: "Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force. Prenez la seconde fixation et répétez l'opération. À la fin vous devez obtenir la même chose que sur la vidéo." }
         ]} />
       <Block
         t={t}

@@ -24,7 +24,7 @@ function Printer(props) {
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 2 - Montage de la face avant", classes: "title tleft", tag: "h1" },
           { text: "Montage de la face avant", classes: "big-title tleft" },
-          { text: "Nous allons monter la première partie de l’imprimante 3D." }
+          { text: "Nous allons monter la première partie de l'imprimante 3D." }
         ]} />
       <Section
         t={t}
@@ -61,7 +61,7 @@ function Printer(props) {
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Installation des 2 roulements de courroie", classes: "big-title" },
-          { text: "Nous allons placer les roulements qui feront le renvoi de courroie du plateau de l’imprimante." },
+          { text: "Nous allons placer les roulements qui feront le renvoi de courroie du plateau de l'imprimante." },
           { text: "Prenez le petit outil imprimé pour vous aider à placer les roulements. Prenez 1 vis M3x16, placez la dans le trou correspondant et vissez à travers les 2 roulements. Vérifiez que les roulements tournent bien après serrage. Répétez l'opération pour le deuxième emplacement." }
         ]} />
       <Section
@@ -72,7 +72,7 @@ function Printer(props) {
           { text: "Mise en place de la butée de Y", classes: "big-title" },
           { text: "Prenez la butée avec le câble le plus court. Introduisez la dans le logement en commençant par faire passer la prise." },
           { text: "Orientez le comme sur la vidéo." },
-          { text: "Pliez les pattes en dessous puis enfoncez la butée. Elle dépasse d’un millimètre par rapport au plastique." }
+          { text: "Pliez les pattes en dessous puis enfoncez la butée. Elle dépasse d'un millimètre par rapport au plastique." }
         ]} />
       <Section
         t={t}

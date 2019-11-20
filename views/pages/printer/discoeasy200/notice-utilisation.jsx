@@ -23,7 +23,7 @@ function Printer(props) {
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 15 - Utilisation", classes: "title tleft", tag: "h1" },
           { text: "Lançons une première impression", classes: "big-title tleft" },
-          { text: "Dernière étape avant le grand large. Nous allons vous montrer les bonnes pratiques et les rudiments de l’impression 3D sur la Discoeasy200." }
+          { text: "Dernière étape avant le grand large. Nous allons vous montrer les bonnes pratiques et les rudiments de l'impression 3D sur la Discoeasy200." }
         ]} />
       <Section
         t={t}
@@ -43,8 +43,8 @@ function Printer(props) {
           { text: "Étape 2", classes: "title tleft" },
           { text: "Préparation du fichier sur Cura", classes: "big-title" },
           { text: "Ouvrez le fichier sur cura by dagoma." },
-          { text: "Nous vous proposons les paramètres d’impression suivant : 33% en rapide." },
-          { text: "Insérez la carte SD dans l’ordinateur et cliquez sur “préparer l’impression”." },
+          { text: "Nous vous proposons les paramètres d'impression suivant : 33% en rapide." },
+          { text: "Insérez la carte SD dans l'ordinateur et cliquez sur \"préparer l'impression\"." },
         ]} />
       <Section
         t={t}
@@ -58,28 +58,28 @@ function Printer(props) {
           { text: "Nous allons quand même vous remontrer la technique." },
           { text: "Sur un extrudeur standard, appuyez sur le bras pour le débrider." },
           { text: "Passez le filament à la main en poussant et en effectuant de légères torsions pour faciliter son entrée." },
-          { text: "Poussez le filament jusqu’à la tête d’impression." },
-          { text: "Avec l’extrudeur+, c’est automatique." },
+          { text: "Poussez le filament jusqu'à la tête d'impression." },
+          { text: "Avec l'extrudeur+, c'est automatique." },
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoEasy/Notice/16-e-lancement", type: "video" }}
         content={[
           { text: "Étape 4", classes: "title tleft" },
-          { text: "Lancement d’une impression", classes: "big-title" },
+          { text: "Lancement d'une impression", classes: "big-title" },
           { text: "Insérez la carte SD dans le lecteur." },
-          { text: "Elle doit avoir un fichier GCODE nommé “dagoma0.g” pour être reconnu." },
-          { text: "Mettez la machine sous tension en mettant l’interrupteur sur 1." },
-          { text: "Info : si l’interrupteur est sur 1, que vous débranchez puis rebranchez l’imprimante 3D, elle sera mise sous tension et le fonctionnement sera le même. L’impression se lancera.", classes: "italic bg-light-grey-blue" },
+          { text: "Elle doit avoir un fichier GCODE nommé \"dagoma0.g\" pour être reconnu." },
+          { text: "Mettez la machine sous tension en mettant l'interrupteur sur 1." },
+          { text: "Info : si l'interrupteur est sur 1, que vous débranchez puis rebranchez l'imprimante 3D, elle sera mise sous tension et le fonctionnement sera le même. L'impression se lancera.", classes: "italic bg-light-grey-blue" },
           { text: "Explication du rituel de démarrage :" },
           {
             list: {
               items: [
-                { text: "Prise d’origine des axes" },
+                { text: "Prise d'origine des axes" },
                 { text: "Temps de préchauffage" },
-                { text: "Repérage du plateau (si l’option “utilisation du palpeur” est activée)" },
+                { text: "Repérage du plateau (si l'option \"utilisation du palpeur\" est activée)" },
                 { text: "Dernier temps de chauffe" },
-                { text: "L’impression commence" },
+                { text: "L'impression commence" },
               ]
             }
           }
@@ -91,12 +91,12 @@ function Printer(props) {
         content={[
           { text: "Étape 5", classes: "title tleft" },
           { text: "Ajustement de la première couche", classes: "big-title" },
-          { text: "La qualité de la première couche dépend de votre calibration sur Dagom’App. Il se peut que ce réglage varie entre deux lancements." },
+          { text: "La qualité de la première couche dépend de votre calibration sur Dagom'App. Il se peut que ce réglage varie entre deux lancements." },
           { text: "Nous vous conseillons de refaire une calibration de temps en temps lorsque la première couche perd en précision." },
-          { text: "Il vous est possible d’agir sur les coupleurs pour ajuster la hauteur de la première couche." },
-          { text: "En tournant les deux en même temps dans le sens inverse des aiguilles d’une montre, la couche sera plus basse (trop basse sur lavidéo)." },
-          { text: "En tournant dans l’autre sens, elle sera plus haute (trop haute sur la vidéo)." },
-          { text: "Regardez à la fin de la vidéo pour voir les 3 niveaux d’appréciations de hauteur de première couche." },
+          { text: "Il vous est possible d'agir sur les coupleurs pour ajuster la hauteur de la première couche." },
+          { text: "En tournant les deux en même temps dans le sens inverse des aiguilles d'une montre, la couche sera plus basse (trop basse sur lavidéo)." },
+          { text: "En tournant dans l'autre sens, elle sera plus haute (trop haute sur la vidéo)." },
+          { text: "Regardez à la fin de la vidéo pour voir les 3 niveaux d'appréciations de hauteur de première couche." },
         ]} />
       <Section
         t={t}
@@ -104,10 +104,10 @@ function Printer(props) {
         content={[
           { text: "Étape 6", classes: "title tleft" },
           { text: "Arrêter proprement la Discoeasy200", classes: "big-title" },
-          { text: "Pendant une impression, passez l’interrupteur à 0." },
+          { text: "Pendant une impression, passez l'interrupteur à 0." },
           { text: "Retirez la carte SD." },
           { text: "Rallumez la machine pour que la tête refroidisse convenablement." },
-          { text: "Quand le ventilateur avant s’arrête, vous pouvez l’éteindre sans soucis." },
+          { text: "Quand le ventilateur avant s'arrête, vous pouvez l'éteindre sans soucis." },
         ]} />
       <Section
         t={t}

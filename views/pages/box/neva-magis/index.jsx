@@ -24,7 +24,7 @@ function Box(props) {
         content={[
           { text: "Notice de montage caisson Magis et Neva - préparation", classes: "title tleft", tag: "h1" },
           { text: "Vous avez reçu votre caisson pour Magis et Neva", classes: "big-title tleft" },
-          { text: "Nous allons vous accompagner pour le montage et l’installation de votre protection pour l’imprimante 3D Magis et Neva." }
+          { text: "Nous allons vous accompagner pour le montage et l'installation de votre protection pour l'imprimante 3D Magis et Neva." }
         ]} />
       <Section
         t={t}
@@ -67,7 +67,7 @@ function Box(props) {
         content={[
           { text: "Installation des pieds sur la Magis", classes: "big-title tleft", tag: "h2" },
           { text: "Reprenez les 3 pieds et installez les sur votre imprimante 3D." },
-          { text: "Rentrez l’ergo dans le trou prévu à cet effet." }
+          { text: "Rentrez l'ergo dans le trou prévu à cet effet." }
         ]} />
       <Section
         t={t}

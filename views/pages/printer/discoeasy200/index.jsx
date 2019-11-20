@@ -56,7 +56,7 @@ function Printer(props) {
                 { text: "1 sachet de vis (7 types de visserie)" },
                 { text: "1 sachet de câbles" },
                 { text: "1 sachet de composants électroniques" },
-                { text: "1 tête d’impression prémontée" },
+                { text: "1 tête d'impression prémontée" },
                 { text: "1 carte de contrôle" },
               ]
             }

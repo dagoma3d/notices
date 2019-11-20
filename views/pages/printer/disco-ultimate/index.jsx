@@ -46,7 +46,7 @@ function Printer(props) {
         t={t}
         img="DiscoUltimate/Notice/1-a-intro.jpg"
         content={[
-          { text: "A vos marques … Go !", classes: "big-title" }
+          { text: "A vos marques ... Go !", classes: "big-title" }
         ]}>
         <Validation t={t} step="/printer/du/notice-2" text="Je passe à l'étape suivante" />
       </Block>

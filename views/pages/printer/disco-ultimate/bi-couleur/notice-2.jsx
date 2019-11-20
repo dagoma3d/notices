@@ -39,18 +39,18 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-c-emplacement-mot-e1", type: "video" }}
         content={[
-          { text: "Ouverture de l’emplacement E1", classes: "big-title tleft", tag: "h2" },
-          { text: "Soulevez la plaque et découpez l’emplacement du moteur E1 à l’aide d’une pince coupante." }
+          { text: "Ouverture de l'emplacement E1", classes: "big-title tleft", tag: "h2" },
+          { text: "Soulevez la plaque et découpez l'emplacement du moteur E1 à l'aide d'une pince coupante." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Notice/3-f-extrudeur-montage", type: "video" }}
         content={[
-          { text: "Pré-montage de l’extrudeur", classes: "big-title tleft", tag: "h2" },
-          { text: "Montez le bras d’extrudeur." },
-          { text: "Placez le ressort dans l'empreinte sur le corps de l’extrudeur." },
+          { text: "Pré-montage de l'extrudeur", classes: "big-title tleft", tag: "h2" },
+          { text: "Montez le bras d'extrudeur." },
+          { text: "Placez le ressort dans l'empreinte sur le corps de l'extrudeur." },
           { text: "Prenez le bras, placez-le pour que le ressort soit pris dans la seconde empreinte." },
-          { text: "Comprimez le ressort pour que le bras rentre dans l’encoche." },
+          { text: "Comprimez le ressort pour que le bras rentre dans l'encoche." },
           { text: "Déplacez le bras pour que le trou de vis soit aligné avec celui du corps." },
           { text: "Mettez en place les 3 vis M3x25." }
         ]} />
@@ -59,21 +59,21 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-e-extrudeur-installation", type: "video" }}
         content={[
-          { text: "Installation de l’extrudeur", classes: "big-title tleft", tag: "h2" },
+          { text: "Installation de l'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Placez le moteur dans le logement repéré E1." },
-          { text: "Positionnez le connecteur vers l’intérieur." },
+          { text: "Positionnez le connecteur vers l'intérieur." },
           { text: "Prenez une vis M3x6, placez la dans le trou supérieur droit et serrez le moteur." },
-          { text: "Retirez le tube PTFE s’il vous gène." },
+          { text: "Retirez le tube PTFE s'il vous gène." },
           { text: "Passez le fil du capteur dans le trou comme sur la vidéo." },
-          { text: "Orientez l’extrudeur puis vissez les 3 vis M3x25." },
-          { text: "La tête de la vis M3x6 rentre dans un logement prévu dans le corps d’extrudeur." },
+          { text: "Orientez l'extrudeur puis vissez les 3 vis M3x25." },
+          { text: "La tête de la vis M3x6 rentre dans un logement prévu dans le corps d'extrudeur." },
           { text: "Le bras doit pouvoir bouger après serrage." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-f-extrudeur-branchement", type: "video" }}
         content={[
-          { text: "Branchement de l’extrudeur", classes: "big-title tleft", tag: "h2" },
+          { text: "Branchement de l'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Branchez le câble du moteur comme sur la vidéo." },
           { text: "Remettez la plaque en place et vissez la avec les 4 vis M3x10." },
           { text: "Branchez le capteur du nouvel extrudeur sur le connecteur 1." },
@@ -84,7 +84,7 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Notice/7-f-barre-bicouleur", type: "video" }}
         content={[
-          { text: "Montage des barres de l’axe X", classes: "big-title tleft", tag: "h2" },
+          { text: "Montage des barres de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez 2 barres courtes." },
           { text: "Introduisez-les avec délicatesse dans les roulements (faites quelques rotations pour faciliter leur entrée). Une fois en place, faites quelques allers-retours pour vérifier que tout va bien." }
         ]} />
@@ -100,10 +100,10 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-i-installation-axe-x", type: "video" }}
         content={[
-          { text: "Installation de l’axe X", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez l’axe X, orientez-le pour que le moteur de X soit à gauche de la machine lorsque la face avant est devant vous." },
+          { text: "Installation de l'axe X", classes: "big-title tleft", tag: "h2" },
+          { text: "Prenez l'axe X, orientez-le pour que le moteur de X soit à gauche de la machine lorsque la face avant est devant vous." },
           { text: "Insérez les barres dans les roulements sans forcer." },
-          { text: "Vissez les tiges trapézoïdales dans les écrous pour faire descendre l’axe." },
+          { text: "Vissez les tiges trapézoïdales dans les écrous pour faire descendre l'axe." },
           { text: "Descendez les deux chariots en même temps." }
         ]} />
       <Section
@@ -119,7 +119,7 @@ function BiColor(props) {
         media={{ src: "DiscoUltimate/Notice/9-c-bis-gaine-tete", type: "video" }}
         content={[
           { text: "Mise en place de la gaine de tête", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez la gaine de tête et l’outil imprimé livré avec votre Disco Ultimate." },
+          { text: "Prenez la gaine de tête et l'outil imprimé livré avec votre Disco Ultimate." },
           { text: "Nous vous invitons à suivre la vidéo avec attention et de refaire pareil." }
         ]} />
       <Section
@@ -127,7 +127,7 @@ function BiColor(props) {
         media={{ src: "DiscoUltimate/Notice/9-g-passage-gaine-tete", type: "video" }}
         content={[
           { text: "Passage des câbles de la tête", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez l’ensemble des câbles de la tête." },
+          { text: "Prenez l'ensemble des câbles de la tête." },
           { text: "Faites-les passer dans la fixation latérale." },
           { text: "Passez entre la barre arrière et la tige du moteur de Z." }
         ]} />
@@ -136,7 +136,7 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/2-l-branchement-tete", type: "video" }}
         content={[
-          { text: "Branchement de la nouvelle tête d’impression", classes: "big-title tleft", tag: "h2" },
+          { text: "Branchement de la nouvelle tête d'impression", classes: "big-title tleft", tag: "h2" },
           { text: "Dénudez tous les câbles avant de les brancher." },
           { text: "Branchez le palpeur (câble gris) sur le connecteur Z." },
           { text: "Branchez la sonde (deux câbles noires) sur le connecteur T0." },

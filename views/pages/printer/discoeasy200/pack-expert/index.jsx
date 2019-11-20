@@ -24,7 +24,7 @@ function PackExpert(props) {
         content={[
           { text: "Notice de montage pack expert - Préparation et démontage", classes: "title tleft", tag: "h1" },
           { text: "Ça y est, vous avez reçu votre pack expert.", classes: "big-title tleft" },
-          { text: "Nous allons vous accompagner dans le montage et l’utilisation de cette amélioration pour votre DiscoEasy200." }
+          { text: "Nous allons vous accompagner dans le montage et l'utilisation de cette amélioration pour votre DiscoEasy200." }
         ]} />
       <Section
         t={t}
@@ -82,7 +82,7 @@ function PackExpert(props) {
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Retrait de la gaine torsadée", classes: "big-title" },
-          { text: "Retirez la gaine de la fixation latérale jusqu’au chariot." },
+          { text: "Retirez la gaine de la fixation latérale jusqu'au chariot." },
           { text: "Libérez les câbles de moteur et de butée." },
           { text: "Déclipsez la gaine du chariot." }
         ]} />
@@ -115,20 +115,20 @@ function PackExpert(props) {
           { text: "S'il vous reste du filament dans la tête d'impression, retirez-le.", classes: "italic" },
           { text: "Débranchez le tube PTFE en appuyant sur le connecteur noir et retirez-le du top." },
           { text: "Desserrez les 4 vis latérales." },
-          { text: "Retirez la partie supérieure de l’imprimante." },
+          { text: "Retirez la partie supérieure de l'imprimante." },
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x", type: "video" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
-          { text: "Retrait de l’axe X", classes: "big-title" },
+          { text: "Retrait de l'axe X", classes: "big-title" },
           { text: "Dévissez les vis supérieures des coupleurs." },
           { text: "Retirez les tiges filetées des coupleurs." },
-          { text: "Tirez ensuite l’ensemble vers le haut pour le sortir de la machine." },
+          { text: "Tirez ensuite l'ensemble vers le haut pour le sortir de la machine." },
           { text: "Retirez ensuite les deux tiges filetées." },
           { text: "Attention, elles sont recouvertes d'huile.", classes: "italic" },
-          { text: "Retenez les écrous supérieurs pour éviter qu’ils ne partent d’un coup." },
+          { text: "Retenez les écrous supérieurs pour éviter qu'ils ne partent d'un coup." },
         ]} />
       <Section
         t={t}
@@ -145,7 +145,7 @@ function PackExpert(props) {
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x", type: "video" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
-          { text: "Démontage de l’axe X", classes: "big-title" },
+          { text: "Démontage de l'axe X", classes: "big-title" },
           { text: "Retirez la courroie de la tête." },
           { text: "Séparez tous les éléments." },
           { text: "Mettez les barres de côté." }
@@ -154,7 +154,7 @@ function PackExpert(props) {
         t={t}
         img="DiscoEasy/Add-on/Trapezoidales/1-k-fin.jpg"
         content={[
-          { text: "Démontage de l’imprimante : CHECK !", classes: "big-title" }
+          { text: "Démontage de l'imprimante : CHECK !", classes: "big-title" }
         ]}>
         <Validation t={t} step="/addon/expert/de200/notice-2" text="Je valide et je passe à la suite !" />
       </Block>

@@ -33,7 +33,7 @@ function BiColor(props) {
         content={[
           { text: "Remise en place du top", classes: "big-title tleft", tag: "h2" },
           { text: "Remettez le top en place. La partie la plus grande doit être vers la face avant." },
-          { text: "Assurez-vous qu’il soit bien enfoncé." },
+          { text: "Assurez-vous qu'il soit bien enfoncé." },
           { text: "Revissez les vis de serrage." }
         ]} />
       <Section
@@ -52,9 +52,9 @@ function BiColor(props) {
         media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
         content={[
           { text: "Gestion des câbles", classes: "big-title tleft", tag: "h2" },
-          { text: "Commencez par fixer les câbles de la tête à l’aide d’un collier de serrage." },
+          { text: "Commencez par fixer les câbles de la tête à l'aide d'un collier de serrage." },
           { text: "Ensuite, nous allons faire en sorte de bien maintenir les autres câbles." },
-          { text: "Notre solution n’est pas unique." }
+          { text: "Notre solution n'est pas unique." }
         ]} />
       <Section
         t={t}
@@ -62,17 +62,17 @@ function BiColor(props) {
         media={{ src: "DiscoUltimate/Notice/10-m-ptfe-bicouleur", type: "video" }}
         content={[
           { text: "Installation du tube PTFE", classes: "big-title tleft", tag: "h2" },
-          { text: "Ce tube va guider le filament de l’extrudeur jusqu’à la tête d’impression." },
+          { text: "Ce tube va guider le filament de l'extrudeur jusqu'à la tête d'impression." },
           { text: "Il est maintenu par des raccords pneumatique." },
-          { text: "Poussez-le bien jusqu’au fond à chaque extrémité." },
-          { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
+          { text: "Poussez-le bien jusqu'au fond à chaque extrémité." },
+          { text: "Attention, sur la tête d'impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
         ]} />
       <Block
         t={t}
         img="DiscoUltimate/Addon/Bicouleur/3-g-fin-bicouleur.jpg"
         content={[
           { text: "Finitions terminées", classes: "big-title" },
-          { text: "Nous allons maintenant mettre à jour la machine pour qu’elle intègre sa nouvelle installation." }
+          { text: "Nous allons maintenant mettre à jour la machine pour qu'elle intègre sa nouvelle installation." }
         ]}>
         <Validation t={t} step="/firmware/du/bicolor" />
       </Block>

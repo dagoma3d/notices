@@ -70,8 +70,8 @@ function Printer(props) {
         content={[
           { text: "Installation du plateau", classes: "big-title" },
           { text: "Alignez les trous du plateau avec ceux des supports." },
-          { text: "Mettez en place les écrous dans les pièces, côté caoutchouc de l’écrou vers les logements qui accueilleront les roulements." },
-          { text: "Serrez fermement à l’aide de 4 vis fraisée M3x12." }
+          { text: "Mettez en place les écrous dans les pièces, côté caoutchouc de l'écrou vers les logements qui accueilleront les roulements." },
+          { text: "Serrez fermement à l'aide de 4 vis fraisée M3x12." }
         ]} />
       <Block
         t={t}

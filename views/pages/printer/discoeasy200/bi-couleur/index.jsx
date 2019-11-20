@@ -21,8 +21,8 @@ function BiColor(props) {
         t={t}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/1-c-prerequis-impression.jpg", type: "image" }}
         content={[
-          { text: "Votre attention s’il vous plaît !", classes: "big-title tleft", tag: "h2" },
-          { text: "Avant de démonter votre imprimante 3D, assurez-vous d’avoir imprimé les pièces nécessaires." },
+          { text: "Votre attention s'il vous plaît !", classes: "big-title tleft", tag: "h2" },
+          { text: "Avant de démonter votre imprimante 3D, assurez-vous d'avoir imprimé les pièces nécessaires." },
           {
             list: {
               classes: "list-classic tnormal col-vbspace row tleft-child",

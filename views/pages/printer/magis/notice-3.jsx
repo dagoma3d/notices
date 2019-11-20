@@ -28,7 +28,7 @@ function Printer(props) {
           { text: "Utiliser la fonction Pause", classes: "title tleft", tag: "h2" },
           { text: "Accordez-vous une pause", classes: "big-title tleft" },
           { text: "Dans ce nouveau chapitre du grand livre de la Magis, vous apprenez à vous servir de la fonction Pause. Nous allons vous montrer une de ses utilisations." },
-          { text: "Attention ! Pour ce nouveau tour, vous avez besoin d’un paquet de gros sel, riz, quinoa, ..." }
+          { text: "Attention ! Pour ce nouveau tour, vous avez besoin d'un paquet de gros sel, riz, quinoa, ..." }
         ]} />
       <Section
         t={t}
@@ -37,8 +37,8 @@ function Printer(props) {
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h3" },
           { text: "J'imprime avec ma Magis", classes: "big-title" },
-          { text: "Tout d’abord, téléchargez le nouveau fichier que nous vous avons préparé." },
-          { text: "Ce fichier va compléter votre première création. C’est un socle pour le photophore." },
+          { text: "Tout d'abord, téléchargez le nouveau fichier que nous vous avons préparé." },
+          { text: "Ce fichier va compléter votre première création. C'est un socle pour le photophore." },
           { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/gcodes/chapitre-2/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici" } },
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
@@ -49,8 +49,8 @@ function Printer(props) {
           { text: "Étape 2", classes: "title", tag: "h3" },
           { text: "Lancez l'impression", classes: "big-title" },
           { text: "Placez le fichier dagoma0.g sur ta carte SD." },
-          { text: "Insérez la carte dans l’imprimante." },
-          { text: "Lancez ensuite l’impression." },
+          { text: "Insérez la carte dans l'imprimante." },
+          { text: "Lancez ensuite l'impression." },
           { text: "Pssst ! Rappellez-vous de la ", classes: "italic", link: { href: "/printer/magis/notice-1", title: "Retourner à la page 1", classes: "link-classic", text: "page 1" } },
         ]}>
       </Title>
@@ -60,7 +60,7 @@ function Printer(props) {
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
           { text: "Comment faire une pause ?", classes: "big-title", tag: "h4" },
-          { text: "Laissez l’impression tourner pendant 45 minutes environ." },
+          { text: "Laissez l'impression tourner pendant 45 minutes environ." },
           { text: "Appuyez ensuite sur le bouton pour la mettre en pause." },
           { text: "Vous n'avez pas de gros sel, riz, quinoa, ... ? Profitez de ces 45 minutes d'impression pour aller en acheter !", classes: "italic" }
         ]} />
@@ -72,7 +72,7 @@ function Printer(props) {
           { text: "Étape 4", classes: "title tleft", tag: "h3" },
           { text: "Mais pourquoi du sel ?", classes: "big-title" },
           { text: "Le but est d'alourdir votre pièce pour la rendre plus stable." },
-          { text: "Versez le gros sel dans les trous de l’impression." },
+          { text: "Versez le gros sel dans les trous de l'impression." },
           { text: "Attention ! Utilisez du gros sel et non du sel fin. La Magis utilise un ventilateur pour refroidir le PLA. Le sel fin est trop volatile, votre bureau risque de le regretter. Assurez-vous que rien ne dépasse de la surface de votre pièce avant de continuer.", classes: "bg-orange text-white col-space" }
         ]} />
       <Section
@@ -81,14 +81,14 @@ function Printer(props) {
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
           { text: "Et maintenant ?", classes: "big-title" },
-          { text: "Appuyez sur le bouton pour relancer l’impression." }
+          { text: "Appuyez sur le bouton pour relancer l'impression." }
         ]} />
       <Section
         t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/2-g-base", type: "video" }}
         content={[
-          { text: "Il reste une demie-heure d’impression", classes: "big-title" }
+          { text: "Il reste une demie-heure d'impression", classes: "big-title" }
         ]} />
       <Section
         t={t}
@@ -103,7 +103,7 @@ function Printer(props) {
         flip={true}
         img="NevaMagis/Notice/2-a-1600x600.jpg"
         content={[
-          { text: "J’ai réussi à assembler les deux premiers éléments !", classes: "big-title" }
+          { text: "J'ai réussi à assembler les deux premiers éléments !", classes: "big-title" }
         ]}>
         <Validation t={t} step="/printer/magis/notice-4" />
       </Block>

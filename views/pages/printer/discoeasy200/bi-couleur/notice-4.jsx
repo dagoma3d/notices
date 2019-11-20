@@ -26,7 +26,7 @@ function BiColor(props) {
         content={[
           { text: "Remise en place du top", classes: "big-title tleft", tag: "h2" },
           { text: "Remettez le top en place. La partie la plus grande doit être vers la face avant." },
-          { text: "Assurez-vous qu’il soit bien enfoncé." },
+          { text: "Assurez-vous qu'il soit bien enfoncé." },
           { text: "Revissez les vis de serrage." }
         ]} />
       <Section
@@ -53,7 +53,7 @@ function BiColor(props) {
         content={[
           { text: "Gestion des câbles", classes: "big-title tleft", tag: "h2" },
           { text: "Utilisez les colliers de serrage pour finir proprement votre montage." },
-          { text: "Il est important qu’aucun câble ne se balade au dessus de la carte pour éviter d’être abîmé par le plateau." }
+          { text: "Il est important qu'aucun câble ne se balade au dessus de la carte pour éviter d'être abîmé par le plateau." }
         ]} />
       <Section
         t={t}
@@ -70,7 +70,7 @@ function BiColor(props) {
         img="DiscoEasy/Add-on/Bicouleur/4-g-fin.jpg"
         content={[
           { text: "Finitions terminées", classes: "big-title" },
-          { text: "Nous allons maintenant mettre à jour la machine pour qu’elle intègre sa nouvelle installation." }
+          { text: "Nous allons maintenant mettre à jour la machine pour qu'elle intègre sa nouvelle installation." }
         ]}>
         <Validation t={t} step="/firmware/de200/bicolor" />
       </Block>

@@ -24,7 +24,7 @@ function Printer(props) {
         content={[
           { text: "Notice de montage DiscoEasy200 - Page 6 - Assemblage de la base", classes: "title tleft", tag: "h1" },
           { text: "Assemblage de la base", classes: "big-title tleft" },
-          { text: "Nous allons commencer à assembler l’imprimante 3D. Première étape la base." }
+          { text: "Nous allons commencer à assembler l'imprimante 3D. Première étape la base." }
         ]} />
       <Section
         t={t}
@@ -36,9 +36,9 @@ function Printer(props) {
             list: {
               items: [
                 { text: "4 barres longues" },
-                { text: "L’assemblage des fixations latérales" },
-                { text: "L’assemblage de la face avant" },
-                { text: "L’assemblage de la face arrière" },
+                { text: "L'assemblage des fixations latérales" },
+                { text: "L'assemblage de la face avant" },
+                { text: "L'assemblage de la face arrière" },
                 { text: "La grappe de caches côtés (au nombre de 4 tous différents)" },
                 { text: "4 roulements linéaires" },
               ]
@@ -65,7 +65,7 @@ function Printer(props) {
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Montage des fixations latérales", classes: "big-title" },
           { text: "Introduisez les fixations latérales sur les barres inférieures (les plus proches du logo Dagoma)" },
-          { text: "Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo.", classes: "italic bg-light-grey-blue" },
+          { text: "Attention à l'orientation des pièces, soyez attentif aux détails sur la vidéo.", classes: "italic bg-light-grey-blue" },
         ]} />
       <Section
         t={t}
@@ -73,10 +73,10 @@ function Printer(props) {
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des roulements", classes: "big-title" },
-          { text: "Ouvrez les sachets des roulements linéaires (encore couverts d’huile)." },
+          { text: "Ouvrez les sachets des roulements linéaires (encore couverts d'huile)." },
           { text: "Placez délicatement les roulements sur les barres supérieures, deux à droite et deux à gauche." },
           { text: "Astuce : de légères rotations permettent de rentrer le roulement plus facilement.", classes: "italic bg-light-grey-blue" },
-          { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." },
+          { text: "Une fois montés, faites quelques allers-retours pour qu'ils se fassent à la barre." },
         ]} />
       <Section
         t={t}
@@ -88,7 +88,7 @@ function Printer(props) {
           { text: "Récupérez la face arrière montée." },
           { text: "Présentez-la, extrudeur vers le haut, et à gauche de la machine." },
           { text: "Positionnez les barres en face des trous et enfoncez-les légèrement." },
-          { text: "Une fois en place, enfoncez fermement l’ensemble." },
+          { text: "Une fois en place, enfoncez fermement l'ensemble." },
           { text: "Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées." },
         ]} />
       <Section
@@ -100,7 +100,7 @@ function Printer(props) {
           { text: "Si vous avez bien suivi les vidéos, vous devez voir 8 petits ronds sur les pièces plastiques." },
           { text: "Les fixations latérales sont sur les barres inférieures." },
           { text: "Les roulements sur les barres supérieures (2 à droite et 2 à gauche)." },
-          { text: "Si ce n’est pas le cas, démontez et recommencez." },
+          { text: "Si ce n'est pas le cas, démontez et recommencez." },
         ]} />
       <Section
         t={t}
@@ -119,10 +119,10 @@ function Printer(props) {
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Installation du cache côté avant gauche", classes: "big-title" },
           { text: "A partir de maintenant, on désignera la face avec le logo comme l'avant et la face avec l'extrudeur comme l'arrière. La gauche sera votre gauche lorsque vous faites face à la machine.", classes: "italic bg-light-grey-blue" },
-          { text: "Commencez par pousser les fixations latérales vers l’arrière." },
+          { text: "Commencez par pousser les fixations latérales vers l'arrière." },
           { text: "Récupérez la grappe de caches côtés, séparez les pièces et nettoyez-les." },
-          { text: "Vous devez avoir deux pièces longues et deux courtes. Pour chaque paire, une aura une géométrie particulière et l’autre sera simple." },
-          { text: "Prenez la longue qui a une forme particulière (voir la vidéo). Elle vient se clipser sur la barre du bas. Rapprochez-la de la face avant. Sa forme s’adapte à celle de la face avant." },
+          { text: "Vous devez avoir deux pièces longues et deux courtes. Pour chaque paire, une aura une géométrie particulière et l'autre sera simple." },
+          { text: "Prenez la longue qui a une forme particulière (voir la vidéo). Elle vient se clipser sur la barre du bas. Rapprochez-la de la face avant. Sa forme s'adapte à celle de la face avant." },
         ]} />
       <Section
         t={t}
@@ -142,7 +142,7 @@ function Printer(props) {
           { text: "Étape 9", classes: "title tleft", tag: "h2" },
           { text: "Installation des caches côtés arrières", classes: "big-title" },
           { text: "Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés.", classes: "bold" },
-          { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche." },
+          { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L'autre avec le trou va à gauche." },
         ]} />
       <Section
         t={t}
@@ -151,7 +151,7 @@ function Printer(props) {
         content={[
           { text: "Étape 10", classes: "title tleft", tag: "h2" },
           { text: "Serrage des fixations latérales", classes: "big-title" },
-          { text: "Serrez les 4 vis des fixations latérales fermement. Ces pièces vont maintenir toute l’arche de l’axe Z. Elles doivent être bien en place et bien maintenues." },
+          { text: "Serrez les 4 vis des fixations latérales fermement. Ces pièces vont maintenir toute l'arche de l'axe Z. Elles doivent être bien en place et bien maintenues." },
         ]} />
       <Block
         t={t}
@@ -159,7 +159,7 @@ function Printer(props) {
         content={[
           { text: "Montage de la base : CHECK !", classes: "big-title" },
           { text: "Vérifiez que le sens des pièces correspond à la photo." },
-          { text: "Gardez la, l’assemblage continue." }
+          { text: "Gardez la, l'assemblage continue." }
         ]}>
         <Validation t={t} step="/printer/de200/notice-montage-axe-z" />
       </Block>

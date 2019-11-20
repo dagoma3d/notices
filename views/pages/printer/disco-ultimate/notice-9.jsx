@@ -57,7 +57,7 @@ function Printer(props) {
         media={{ src: "DiscoUltimate/Notice/9-c-bis-gaine-tete", type: "video" }}
         content={[
           { text: "Mise en place de la gaine de tête", classes: "big-title" },
-          { text: "Prenez la gaine de tête et l’outil imprimé." },
+          { text: "Prenez la gaine de tête et l'outil imprimé." },
           { text: "Nous vous invitons à suivre la vidéo avec attention et de refaire pareil." }
         ]} />
       <Section
@@ -68,8 +68,8 @@ function Printer(props) {
           { text: "Installation de la carte de contrôle", classes: "big-title" },
           { text: "Sortez-la carte du sachet." },
           { text: "Placez-la avec les connecteur face à vous, en diagonale, le lecteur USB vers la barre transversale." },
-          { text: "Serrez-la à l’aide de deux vis M3x6." },
-          { text: "Ne serrez pas trop fort pour éviter d’endommager la carte." }
+          { text: "Serrez-la à l'aide de deux vis M3x6." },
+          { text: "Ne serrez pas trop fort pour éviter d'endommager la carte." }
         ]} />
       <Section
         t={t}
@@ -96,7 +96,7 @@ function Printer(props) {
         media={{ src: "DiscoUltimate/Notice/9-g-passage-gaine-tete", type: "video" }}
         content={[
           { text: "Passage des câbles de la tête", classes: "big-title" },
-          { text: "Prenez l’ensemble des câbles de la tête." },
+          { text: "Prenez l'ensemble des câbles de la tête." },
           { text: "Faites les passer dans la fixation latérale." },
           { text: "Passez entre la barre arrière et la tige du moteur de Z." }
         ]} />
@@ -157,16 +157,16 @@ function Printer(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-n-mot-e", type: "video" }}
         content={[
-          { text: "Branchement du moteur d’extrudeur", classes: "big-title" },
+          { text: "Branchement du moteur d'extrudeur", classes: "big-title" },
           { text: "Récupérez le dernier câble moteur." },
-          { text: "Raccordez-le ensuite sur le moteur d’extrudeur (sur la face arrière) puis sur le connecteur E0." }
+          { text: "Raccordez-le ensuite sur le moteur d'extrudeur (sur la face arrière) puis sur le connecteur E0." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Notice/9-o-ep", type: "video" }}
         content={[
-          { text: "Branchement des capteurs de l’extrudeur+", classes: "big-title" },
-          { text: "Raccordez le câble rouge venant de l’extrudeur E0 sur le connecteur 2." },
+          { text: "Branchement des capteurs de l'extrudeur+", classes: "big-title" },
+          { text: "Raccordez le câble rouge venant de l'extrudeur E0 sur le connecteur 2." },
           { text: "Raccordez le câble rouge venant du bouton sur le connecteur 3." }
         ]} />
       <Section
@@ -174,16 +174,16 @@ function Printer(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-p-interrupteur", type: "video" }}
         content={[
-          { text: "Installation de l’interrupteur", classes: "big-title" },
-          { text: "Clipsez l’interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." }
+          { text: "Installation de l'interrupteur", classes: "big-title" },
+          { text: "Clipsez l'interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Notice/9-q-alim-positif", type: "video" }}
         content={[
-          { text: "Branchement de l’alimentation (positive)", classes: "big-title" },
-          { text: "Récupérez le câble d’alimentation simple." },
-          { text: "Branchez-le sur le connecteur de l’interrupteur (le plus bas). Recouvrez-le avec la protection en plastique." },
+          { text: "Branchement de l'alimentation (positive)", classes: "big-title" },
+          { text: "Récupérez le câble d'alimentation simple." },
+          { text: "Branchez-le sur le connecteur de l'interrupteur (le plus bas). Recouvrez-le avec la protection en plastique." },
           { text: "Raccordez-le sur le + du bornier PWR IN." }
         ]} />
       <Section
@@ -191,7 +191,7 @@ function Printer(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Notice/9-r-alim-negatif", type: "video" }}
         content={[
-          { text: "Branchement de l’alimentation (négative)", classes: "big-title" },
+          { text: "Branchement de l'alimentation (négative)", classes: "big-title" },
           { text: "Récupérez le câble d'alimentation double avec le connecteur d'alimentation." },
           { text: "Dénudez le fil seul." },
           { text: "Branchez l'autre bout sur le connecteur de l'interrupteur." },
@@ -208,7 +208,7 @@ function Printer(props) {
           { text: "Installation du lecteur SD", classes: "big-title" },
           { text: "Retirez le cache côté avant gauche." },
           { text: "Récupérez le lecteur SD." },
-          { text: "Installez-le comme sur la vidéo. Enfoncez-le bien jusqu’au bout." },
+          { text: "Installez-le comme sur la vidéo. Enfoncez-le bien jusqu'au bout." },
           { text: "Bloquez-le avec une vis M3x6." }
         ]} />
       <Block

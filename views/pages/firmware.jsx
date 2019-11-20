@@ -32,7 +32,7 @@ function Firmware(props) {
         media={{ src: "NevaMagis/Software/a-cura.jpg", type: "image" }}
         content={[
           { text: "Nécessaire pour fonctionner", classes: "big-title" },
-          { text: "Avant d’aller plus loin, téléchargez et installez Cura by Dagoma. Lors de l’installation, nous installons des éléments nécessaires au bon fonctionnement de Dagom’app." },
+          { text: "Avant d'aller plus loin, téléchargez et installez Cura by Dagoma. Lors de l'installation, nous installons des éléments nécessaires au bon fonctionnement de Dagom'app." },
           { classes: "tleft col-vspace", link: { href: "https://dist.dagoma3d.com/CuraByDagoma", target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger Cura by Dagoma" } }
         ]} />
       <Section
@@ -57,7 +57,7 @@ function Firmware(props) {
         t={t}
         content={[
           { text: "Commençons !", classes: "big-title" },
-          { text: "Lancez dagom’app et suivez les instructions" }
+          { text: "Lancez dagom'app et suivez les instructions" }
         ]} />
       <Section
         t={t}
@@ -100,7 +100,7 @@ function Firmware(props) {
         media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e5.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 5", classes: "big-title" },
-          { text: "Choisissez “Je donne de nouveaux pouvoirs” puis cliquez sur la flèche bleue." }
+          { text: "Choisissez \"Je donne de nouveaux pouvoirs\" puis cliquez sur la flèche bleue." }
         ]} />
       <Section
         t={t}
@@ -112,7 +112,7 @@ function Firmware(props) {
           { text: `Téléchargez le firmware HEX pour votre ${printerInfo.name} :` },
           { classes: "tleft col-vbspace", link: { href: `https://dist.dagoma3d.com/Marlin-Firmwares/${printerInfo.firmware}`, target: "_blank", classes: "new-btn btn-valid btn-wide", text: "Télécharger le firmware HEX" } },
           { text: "Choisissez les options dont votre machine est équipée uniquement !", classes: "bg-orange text-white col-space" },
-          { text: "Cliquez sur “sélectionnez un fichier .hex”", classes: "col-vtspace" }
+          { text: "Cliquez sur \"sélectionnez un fichier .hex\"", classes: "col-vtspace" }
         ]} />
       <Section
         t={t}
@@ -120,7 +120,7 @@ function Firmware(props) {
         media={{ src: "DiscoEasy/Calibration/dagomapp-maj-e7.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 8", classes: "big-title" },
-          { text: "Une fois upload, cliquez sur “Flasher”" },
+          { text: "Une fois upload, cliquez sur \"Flasher\"" },
           { text: "Cette action peut durer quelques minutes." }
         ]} />
       <Section
@@ -136,7 +136,7 @@ function Firmware(props) {
         t={t}
         content={[
           { text: `Etape ${props.active + 1}`, classes: "big-title" },
-          { text: "Après une mise à jour, il est nécessaire de recalibrer l’imprimante 3D." }
+          { text: "Après une mise à jour, il est nécessaire de recalibrer l'imprimante 3D." }
         ]}>
         <Validation t={t} step={step} />
       </Block>

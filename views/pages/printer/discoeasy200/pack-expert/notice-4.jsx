@@ -32,7 +32,7 @@ function PackExpert(props) {
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Remise en place du top", classes: "big-title" },
           { text: "Remettez le top en place. La partie la plus grande doit être vers la face avant." },
-          { text: "Assurez-vous qu’il soit bien enfoncé." },
+          { text: "Assurez-vous qu'il soit bien enfoncé." },
           { text: "Revissez les vis de serrage." },
           { text: "Remettez le tube PTFE en place en le passant entre les deux barres du top." },
         ]} />
@@ -64,14 +64,14 @@ function PackExpert(props) {
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Gestion des câbles", classes: "big-title" },
           { text: "Utilisez les colliers de serrage pour finir proprement votre montage." },
-          { text: "Il est important qu’aucun câble ne se balade au dessus de la carte pour éviter d’être abîmé par le plateau." }
+          { text: "Il est important qu'aucun câble ne se balade au dessus de la carte pour éviter d'être abîmé par le plateau." }
         ]} />
       <Block
         t={t}
         img="DiscoEasy/Add-on/Trapezoidales/1-a-intro.jpg"
         content={[
           { text: "Finitions : CHECK !", classes: "big-title" },
-          { text: "Nous allons maintenant mettre à jour la machine pour qu’elle intègre sa nouvelle installation." },
+          { text: "Nous allons maintenant mettre à jour la machine pour qu'elle intègre sa nouvelle installation." },
           { link: { classes: "new-btn btn-valid btn-big btn-wide", href: "/firmware/de200/expert", text: "Mettre à jour" } }
         ]}>
       </Block>

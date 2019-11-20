@@ -39,7 +39,7 @@ function Box(props) {
               items: [
                 { text: "Retirez partiellement les films protecteurs de chaque face sur les deux bouts." },
                 { text: "Repliez les deux bords, entrelacez les encoches pour qu'elles se prennent les unes dans les autres. Relâchez en vous assurant que chaque encoche est bien enclenchée." },
-                { text: "Tirez de part et d’autre de la couture pour verrouiller le tout." },
+                { text: "Tirez de part et d'autre de la couture pour verrouiller le tout." },
               ]
             }
           }
@@ -49,8 +49,8 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-b-bis-preparation-vitre", type: "video" }}
         content={[
           { text: "Serrage de la vitre", classes: "big-title tleft", tag: "h2" },
-          { text: "Tirez de part et d’autre de la couture pour la serrer." },
-          { text: "Recommencez de l’autre côté." }
+          { text: "Tirez de part et d'autre de la couture pour la serrer." },
+          { text: "Recommencez de l'autre côté." }
         ]} />
       <Section
         t={t}
@@ -58,14 +58,14 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-c-montage-guide-sup-ar-prepa.jpg", type: "image" }}
         content={[
           { text: "Préparation des cerclages supérieurs", classes: "big-title tleft", tag: "h2" },
-          { text: "Disposez les 3 premiers cerclages comme indiqué sur l’image." }
+          { text: "Disposez les 3 premiers cerclages comme indiqué sur l'image." }
         ]} />
       <Section
         t={t}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-c-montage-guide-sup-ar", type: "video" }}
         content={[
           { text: "Montage du cerclage arrière supérieur", classes: "big-title tleft", tag: "h2" },
-          { text: "L’arrière du caisson est représenté par la couture. Le bas du caisson présente des encoches comme sur la vidéo." },
+          { text: "L'arrière du caisson est représenté par la couture. Le bas du caisson présente des encoches comme sur la vidéo." },
           { text: "Placez vous du côté sans encoche. Récupérez le cerclage supérieur arrière." },
           { text: "Appuyez sur le caisson pour le plier, enclenchez le cerclage dans trous prévu à cet effet et relâchez pour le bloquer. Tous les ergots doivent entrer dans les trous sur la vitre." },
           { text: "Ensuite, prenez 2 élastiques et installez les autours des 2 ergots arrières." }
@@ -76,14 +76,14 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-c-montage-guide-sup-ar-control.jpg", type: "image" }}
         content={[
           { text: "Vérification", classes: "big-title tleft", tag: "h2" },
-          { text: "L’ergot doit être centré dans le trou de la vitre. Tirez sur la vitre pour l’aligner." }
+          { text: "L'ergot doit être centré dans le trou de la vitre. Tirez sur la vitre pour l'aligner." }
         ]} />
       <Section
         t={t}
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-d-montage-guide-sup-av", type: "video" }}
         content={[
           { text: "Montage des cerclages avant supérieur", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez 2 cerclages avant. Pincez la vitre pour la plier au milieu des deux trous comme sur la vidéo et installez le premier cerclage. Orientez le pour compléter l’encoche présente sur le cerclage arrière." },
+          { text: "Prenez 2 cerclages avant. Pincez la vitre pour la plier au milieu des deux trous comme sur la vidéo et installez le premier cerclage. Orientez le pour compléter l'encoche présente sur le cerclage arrière." },
           { text: "Prenez 3 élastique et verrouillez les 3 ergots disponibles." },
           { text: "Faites de même avec le second cerclage. Cette fois ci, il faudra 4 élastiques." }
         ]} />
@@ -93,7 +93,7 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-d-montage-guide-sup-av-control.jpg", type: "image" }}
         content={[
           { text: "Vérification", classes: "big-title tleft", tag: "h2" },
-          { text: "Assurez-vous d’obtenir la même chose que sur la photo. La vitre doit bien suivre le cerclage." }
+          { text: "Assurez-vous d'obtenir la même chose que sur la photo. La vitre doit bien suivre le cerclage." }
         ]} />
 
       <Section
@@ -101,7 +101,7 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-e-montage-guide-inf-ar-prepa.jpg", type: "image" }}
         content={[
           { text: "Préparation des cerclages inférieurs", classes: "big-title tleft", tag: "h2" },
-          { text: "Disposez les 3 premiers cerclages comme indiqué sur l’image." }
+          { text: "Disposez les 3 premiers cerclages comme indiqué sur l'image." }
         ]} />
       <Section
         t={t}
@@ -117,7 +117,7 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-f-montage-guide-inf-av", type: "video" }}
         content={[
           { text: "Montage des cerclages avant inférieur", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez les 2 derniers cerclages. Pincez la vitre pour la plier au milieu des deux trous comme sur la vidéo et installez le premier cerclage. Orientez le pour compléter l’encoche présente sur le cerclage arrière. Faites de même avec le second cerclage." },
+          { text: "Prenez les 2 derniers cerclages. Pincez la vitre pour la plier au milieu des deux trous comme sur la vidéo et installez le premier cerclage. Orientez le pour compléter l'encoche présente sur le cerclage arrière. Faites de même avec le second cerclage." },
           { text: "Prenez 7 élastique et verrouillez les 7 ergots disponibles." }
         ]} />
       <Section
@@ -126,7 +126,7 @@ function Box(props) {
         media={{ src: "NevaMagis/Notice/Addons/Caisson/2-f-montage-guide-inf-av-controle.jpg", type: "image" }}
         content={[
           { text: "Vérification", classes: "big-title tleft", tag: "h2" },
-          { text: "Assurez-vous d’obtenir la même chose que sur la photo. La vitre doit bien suivre le cerclage." }
+          { text: "Assurez-vous d'obtenir la même chose que sur la photo. La vitre doit bien suivre le cerclage." }
         ]} />
       <Section
         t={t}
@@ -146,10 +146,10 @@ function Box(props) {
           { text: "Insérez les vis dans les trous du cerclage." },
           { text: "Retirez la butée aimantée." },
           { text: "Présentez le chariot pour aligner les trous." },
-          { text: "Vissez le ensuite fermement à l’aide de la petite clef fournie." },
+          { text: "Vissez le ensuite fermement à l'aide de la petite clef fournie." },
           { text: "Prenez ensuite le verrou et 2 vis fraisées." },
-          { text: "Présentez le verrou en face des trou à l’extérieur du caisson pour pincer la vitre entre le chariot et le verrou." },
-          { text: "Vissez ensuite fermement à l’aide de la petite clef fournie." }
+          { text: "Présentez le verrou en face des trou à l'extérieur du caisson pour pincer la vitre entre le chariot et le verrou." },
+          { text: "Vissez ensuite fermement à l'aide de la petite clef fournie." }
         ]} />
       <Section
         t={t}
@@ -158,7 +158,7 @@ function Box(props) {
           { text: "Installation des guides câbles", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les deux guides câbles." },
           { text: "Orientez les pour les aligner aux différentes formes." },
-          { text: "Vissez les ensuite à l’aide des deux dernières vis fraisées." }
+          { text: "Vissez les ensuite à l'aide des deux dernières vis fraisées." }
         ]} />
       <Block
         t={t}

@@ -30,8 +30,8 @@ function Printer(props) {
           {
             list: {
               items: [
-                { text: "A. Surface d’accroche Buildgrip" },
-                { text: "B. Plaque de fond (blanche sur l’image)" },
+                { text: "A. Surface d'accroche Buildgrip" },
+                { text: "B. Plaque de fond (blanche sur l'image)" },
                 { text: "C. Gaine torsadée (350mm)" },
                 { text: "D. Logo imprimé" },
                 { text: "E. Couple de fixations hautes" },
@@ -66,7 +66,7 @@ function Printer(props) {
         media={{ src: "DiscoUltimate/Notice/10-d-top-installation", type: "video" }}
         content={[
           { text: "Finition du portique", classes: "big-title" },
-          { text: "Placez l’ensemble sur l’imprimante, la partie la plus haute vers l’avant." },
+          { text: "Placez l'ensemble sur l'imprimante, la partie la plus haute vers l'avant." },
           { text: "Appuyez fort pour que les pièces soient bien enfoncées." },
           { text: "Serrez les 4 vis présentes sur les côtés." }
         ]} />
@@ -86,7 +86,7 @@ function Printer(props) {
         t={t}
         media={{ src: "DiscoUltimate/Notice/10-f-serrage-axe-z", type: "video" }}
         content={[
-          { text: "Serrage de l’axe Z", classes: "big-title" },
+          { text: "Serrage de l'axe Z", classes: "big-title" },
           { text: "Serrez les 2 vis restantes en haut puis les 4 vis des fixations latérales." }
         ]} />
       <Section
@@ -104,9 +104,9 @@ function Printer(props) {
         content={[
           { text: "Mise en place de la gaine", classes: "big-title" },
           { text: "Prenez la gaine torsadée." },
-          { text: "Ajustez les longueurs de câble pour qu’elles soient identiques à l’extérieur de la machine." },
+          { text: "Ajustez les longueurs de câble pour qu'elles soient identiques à l'extérieur de la machine." },
           { text: "Installez-la sur les câbles du moteur et de la butée de X." },
-          { text: "Fixez-la ensuite à l’aide d’un collier de serrage au chariot (il y a un passage prévu à cet effet)." }
+          { text: "Fixez-la ensuite à l'aide d'un collier de serrage au chariot (il y a un passage prévu à cet effet)." }
         ]} />
       <Section
         t={t}
@@ -114,9 +114,9 @@ function Printer(props) {
         media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
         content={[
           { text: "Gestion des câbles", classes: "big-title" },
-          { text: "Commencez par fixer les câbles de la tête à l’aide d’un collier de serrage." },
+          { text: "Commencez par fixer les câbles de la tête à l'aide d'un collier de serrage." },
           { text: "Ensuite, nous allons faire en sorte de bien maintenir les autres câbles." },
-          { text: "Notre solution n’est pas unique." }
+          { text: "Notre solution n'est pas unique." }
         ]} />
       <Section
         t={t}
@@ -141,9 +141,9 @@ function Printer(props) {
         media={{ src: "DiscoUltimate/Notice/10-m-ptfe", type: "video" }}
         content={[
           { text: "Installation du tube PTFE", classes: "big-title" },
-          { text: "Ce tube va guider le filament de l’extrudeur jusqu’à la tête d’impression." },
-          { text: "Il est maintenu par des raccords pneumatique. Poussez-le bien jusqu’au fond à chaque extrémité. Faites-le passer entre les deux barres du haut de l’imprimante pour le guider." },
-          { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
+          { text: "Ce tube va guider le filament de l'extrudeur jusqu'à la tête d'impression." },
+          { text: "Il est maintenu par des raccords pneumatique. Poussez-le bien jusqu'au fond à chaque extrémité. Faites-le passer entre les deux barres du haut de l'imprimante pour le guider." },
+          { text: "Attention, sur la tête d'impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." }
         ]} />
       <Section
         t={t}
@@ -157,8 +157,8 @@ function Printer(props) {
         t={t}
         media={{ src: "DiscoUltimate/Notice/10-n-buildgrip.jpg", type: "image" }}
         content={[
-          { text: "Installation de la surface d’accroche", classes: "big-title" },
-          { text: "Vous trouverez un article complet pour vous expliquer l'installation de la surface d'accroche et sa maintenance.", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000070827-discoeasy200-changer-la-surface-d-accroche", target: "_blank", classes: "new-btn btn-valid btn-wide btn-big", text: "C’est par ici" } }
+          { text: "Installation de la surface d'accroche", classes: "big-title" },
+          { text: "Vous trouverez un article complet pour vous expliquer l'installation de la surface d'accroche et sa maintenance.", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000070827-discoeasy200-changer-la-surface-d-accroche", target: "_blank", classes: "new-btn btn-valid btn-wide btn-big", text: "C'est par ici" } }
         ]} />
       <Block
         t={t}

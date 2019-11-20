@@ -18,7 +18,7 @@ function Printer(props) {
         content={[
           { text: "Notice de montage DISCO ULTIMATE - montage des fixations latérales", classes: "title tleft", tag: "h1" },
           { text: "Montage des fixations latérales", classes: "big-title tleft" },
-          { text: "Nous allons monter la troisième partie de l’imprimante 3D." }
+          { text: "Nous allons monter la troisième partie de l'imprimante 3D." }
         ]} />
       <Title t={t} content={[]} />
       <Section
@@ -60,7 +60,7 @@ function Printer(props) {
         content={[
           { text: "Montage de la barre", classes: "big-title" },
           { text: "Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force." },
-          { text: "Prenez la seconde fixation et répétez l’opération. À la fin vous devez obtenir la même chose que sur la vidéo." }
+          { text: "Prenez la seconde fixation et répétez l'opération. À la fin vous devez obtenir la même chose que sur la vidéo." }
         ]} />
       <Block
         t={t}

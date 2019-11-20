@@ -97,7 +97,7 @@ function Printer(props) {
         t={t}
         media={{ src: "NevaMagis/Notice/1-g-piece-beige", type: "video" }}
         content={[
-          { text: "Cette pièce s’imprime en 2 heures environ", classes: "big-title" }
+          { text: "Cette pièce s'imprime en 2 heures environ", classes: "big-title" }
         ]} />
       <Section
         t={t}

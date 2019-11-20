@@ -25,7 +25,7 @@ function BiColor(props) {
         content={[
           { text: "Montage des roulements linéaires", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les 6 roulements LM8UU livrés avec votre pack. Insérez les roulements dans les chariots que vous avez imprimés. Faites bien attention et insérez les bien droit pour éviter de casser votre pièce." },
-          { text: "Astuce : Placez vous en bord de table et tapez à l’aide d’un maillet en caoutchouc.", classes: "italic" }
+          { text: "Astuce : Placez vous en bord de table et tapez à l'aide d'un maillet en caoutchouc.", classes: "italic" }
         ]} />
       <Section
         t={t}
@@ -33,9 +33,9 @@ function BiColor(props) {
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-b-roulements-xd", type: "video" }}
         content={[
           { text: "Récupération des roulements de courroie X", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez le chariot droit de l’axe X." },
+          { text: "Prenez le chariot droit de l'axe X." },
           { text: "Dévissez la vis qui maintient les 2 roulements de courroie." },
-          { text: "Mettez l’ancienne pièce de côté." },
+          { text: "Mettez l'ancienne pièce de côté." },
           { text: "Installez les roulements dans la nouvelle pièce." }
         ]} />
       <Section
@@ -43,21 +43,21 @@ function BiColor(props) {
         media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-c-mot-butee-x", type: "video" }}
         content={[
           { text: "Récupération du moteur de x et de la butée", classes: "big-title tleft", tag: "h2" },
-          { text: "Prenez le chariot gauche de l’axe X." },
+          { text: "Prenez le chariot gauche de l'axe X." },
           { text: "Retirez les vis qui tiennent le moteur." },
           { text: "Retirez le moteur." },
-          { text: "Retirez la butée et remontez-la dans la nouvelle pièce (attention à l’orientation de la languette)." },
+          { text: "Retirez la butée et remontez-la dans la nouvelle pièce (attention à l'orientation de la languette)." },
           { text: "Mettez le moteur en place dans la nouvelle pièce (respectez la même orientation)." },
-          { text: "Revissez-le (aidez-vous de l’outil imprimé pour placer la dernière vis)." }
+          { text: "Revissez-le (aidez-vous de l'outil imprimé pour placer la dernière vis)." }
         ]} />
       <Section
         t={t}
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-d-demontage-extrudeur", type: "video" }}
         content={[
-          { text: "Démontage de l’extrudeur", classes: "big-title tleft", tag: "h2" },
-          { text: "Retirez les 3 vis de l’extrudeur." },
-          { text: "Retirez l’extrudeur une fois libéré." },
+          { text: "Démontage de l'extrudeur", classes: "big-title tleft", tag: "h2" },
+          { text: "Retirez les 3 vis de l'extrudeur." },
+          { text: "Retirez l'extrudeur une fois libéré." },
           { text: "Retirez le moteur." }
         ]} />
       <Section
@@ -84,11 +84,11 @@ function BiColor(props) {
         media={{ src: "DiscoEasy/Add-on/Bicouleur/2-g-montage-extrudeur", type: "video" }}
         content={[
           { text: "Remontage des extrudeurs", classes: "big-title tleft", tag: "h2" },
-          { text: "Montez l’extrudeur livré avec votre pack en suivant la vidéo." },
-          { text: "Prenez vos moteurs d’extrudeur. Placez les dans le face arrière." },
+          { text: "Montez l'extrudeur livré avec votre pack en suivant la vidéo." },
+          { text: "Prenez vos moteurs d'extrudeur. Placez les dans le face arrière." },
           { text: "Les connecteurs doivent se faire face.", classes: "text-red" },
           { text: "Montez ensuite les extrudeur en suivant la vidéo." },
-          { text: "Suivez les marquages E0 et E1 pour l’emplacement.", classes: "text-red" },
+          { text: "Suivez les marquages E0 et E1 pour l'emplacement.", classes: "text-red" },
           { text: "Pour plus de détails,", link: { target: "_blank", href: "/addon/extruder-plus/de200", classes: "link-classic", text: "rendez-vous ici" } }
         ]} />
       <Section
@@ -96,10 +96,10 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage-2", type: "video" }}
         content={[
-          { text: "Serrage du bras d’extrudeur", classes: "big-title tleft", tag: "h2" },
+          { text: "Serrage du bras d'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Le bras ne doit pas être trop serré pour éviter de le bloquer." },
           { text: "Serrez jusqu'à voir disparaître le jour entre les deux pièces orange." },
-          { text: "Desserrez d’un quart de tour pour le faire réapparaître." }
+          { text: "Desserrez d'un quart de tour pour le faire réapparaître." }
         ]} />
       <Block
         t={t}

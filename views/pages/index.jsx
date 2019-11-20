@@ -8,7 +8,7 @@ const NevaVersion = require('../components/neva-version');
 function Home(props) {
   const t = props.__;
   return (
-    <Layout t={t} title="Notices et de montage et d'utilisation">
+    <Layout t={t} title="Notices de montage et d'utilisation">
       <Block
         t={t}
         img="FirstStep/premier-pas.jpg"

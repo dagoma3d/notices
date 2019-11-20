@@ -24,7 +24,7 @@ function BiColor(props) {
         content={[
           { text: "Notice de montage pack bi-couleur Disco Ultimate - préparation et démontage", classes: "title tleft", tag: "h1" },
           { text: "Vous avez reçu votre pack bi-couleur.", classes: "big-title tleft" },
-          { text: "Nous allons vous accompagner pour le montage et l’installation de ce 2ème add-on qui vous permettra d’imprimer avec deux couleurs différentes." }
+          { text: "Nous allons vous accompagner pour le montage et l'installation de ce 2ème add-on qui vous permettra d'imprimer avec deux couleurs différentes." }
         ]} />
       <Title t={t} content={[]} />
       <Section
@@ -35,15 +35,15 @@ function BiColor(props) {
           {
             list: {
               items: [
-                { text: "A - Une tête d’impression bi-couleur" },
-                { text: "B - Un bras d’extrudeur+" },
-                { text: "C - Un corps d’extrudeur+ E1" },
+                { text: "A - Une tête d'impression bi-couleur" },
+                { text: "B - Un bras d'extrudeur+" },
+                { text: "C - Un corps d'extrudeur+ E1" },
                 { text: "D - Un tube PTFE" },
-                { text: "E - Un moteur d’extrudeur" },
-                { text: "F - Un ressort d’extrudeur" },
+                { text: "E - Un moteur d'extrudeur" },
+                { text: "F - Un ressort d'extrudeur" },
                 { text: "G - 3x grandes vis (M3x25mm) et 1x petite vis (M3x6mm)" },
                 { text: "H - 6 roulements linéaire (inutiles si vous avez le pack expert)" },
-                { text: "I - Câble pour le moteur d’extrudeur E1" }
+                { text: "I - Câble pour le moteur d'extrudeur E1" }
               ]
             }
           }
@@ -84,14 +84,14 @@ function BiColor(props) {
         content={[
           { text: "Démontage de la partie supérieure", classes: "big-title tleft", tag: "h2" },
           { text: "Desserrez les 4 vis latérales." },
-          { text: "Retirez la partie supérieure de l’imprimante." }
+          { text: "Retirez la partie supérieure de l'imprimante." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-f-retrait-axe-x", type: "video" }}
         content={[
-          { text: "Retrait de l’axe X", classes: "big-title tleft", tag: "h2" },
-          { text: "Tournez les tiges pour faire monter l’axe X jusqu’en haut." },
+          { text: "Retrait de l'axe X", classes: "big-title tleft", tag: "h2" },
+          { text: "Tournez les tiges pour faire monter l'axe X jusqu'en haut." },
           { text: "Retirez-le une fois désengagé." }
         ]} />
       <Section
@@ -99,7 +99,7 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-g-demontage-axe-x", type: "video" }}
         content={[
-          { text: "Démontage de l’axe X", classes: "big-title tleft", tag: "h2" },
+          { text: "Démontage de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez la courroie de la tête." },
           { text: "Séparez tous les éléments." },
           { text: "Mettez les barres de côté." }
@@ -117,7 +117,7 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoUltimate/Addon/Bicouleur/1-i-debrancher-tete", type: "video" }}
         content={[
-          { text: "Débranchez la tête d’impression", classes: "big-title tleft", tag: "h2" },
+          { text: "Débranchez la tête d'impression", classes: "big-title tleft", tag: "h2" },
           { text: "Sous la machine, retirez les colliers de fixation." },
           { text: "Débranchez les fils connectés aux borniers Heater, FAN 1 et FAN 2." },
           { text: "Débranchez le palpeur connecté sur le connecteur Z." },
@@ -127,7 +127,7 @@ function BiColor(props) {
         t={t}
         img="DiscoUltimate/Addon/Bicouleur/1-j-fin.jpg"
         content={[
-          { text: "Démontage de l’imprimante terminé", classes: "big-title" }
+          { text: "Démontage de l'imprimante terminé", classes: "big-title" }
         ]}>
         <Validation t={t} step="/addon/bicolor/du/notice-2" />
       </Block>

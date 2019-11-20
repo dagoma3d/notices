@@ -25,7 +25,7 @@ function Printer(props) {
           { text: "Notice de première utilisation - Introduction", classes: "title tleft", tag: "h1" },
           { text: "Premiers pas", classes: "title tleft" },
           { text: "ça y est, vous avez reçu votre Magis.", classes: "big-title tleft" },
-          { text: "Ensemble, nous allons découvrir votre imprimante et vous accompagner dans une expérience : celle de l’impression 3D avec Dagoma." },
+          { text: "Ensemble, nous allons découvrir votre imprimante et vous accompagner dans une expérience : celle de l'impression 3D avec Dagoma." },
           { text: "Nous vous avons préparé 4 objets à imprimer." },
           { text: "Pour toute cette initiation, vous aurez besoin d'environ 75g de PLA Chromatik. Une bobine de 250g fera donc amplement l'affaire." }
         ]} />
@@ -60,7 +60,7 @@ function Printer(props) {
         media={{ src: "NevaMagis/Notice/0-c-b-gris-contenu.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les accessoires", classes: "big-title" },
-          { text: "Bien sûr, ce n’est pas tout, voilà un petit kit pour prendre soin de votre Magis." },
+          { text: "Bien sûr, ce n'est pas tout, voilà un petit kit pour prendre soin de votre Magis." },
           {
             list: {
               items: [
@@ -91,8 +91,8 @@ function Printer(props) {
           { text: "Étape 1", classes: "title tleft", tag: "h3" },
           { text: "Les bras", classes: "big-title" },
           { text: "Placez la Neva face à vous, le bouton vers l'avant." },
-          { text: "Déposez la tête au centre de l’imprimante." },
-          { text: "Orientez le ventilateur face à la pièce orange, située à l’arrière de l’imprimante." },
+          { text: "Déposez la tête au centre de l'imprimante." },
+          { text: "Orientez le ventilateur face à la pièce orange, située à l'arrière de l'imprimante." },
           { text: "Reliez la tête aux chariots à l'aide des bras aimantés." }
         ]} />
       <Section
@@ -102,7 +102,7 @@ function Printer(props) {
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h3" },
           { text: "La calibration", classes: "big-title" },
-          { text: "Calibrez la machine en suivant les instructions sur l'illustration (effectuez l’étape à chaque fois que vous déplacez l'imprimante)." },
+          { text: "Calibrez la machine en suivant les instructions sur l'illustration (effectuez l'étape à chaque fois que vous déplacez l'imprimante)." },
           { text: "Cette étape dure 5 minutes pendant lesquelles votre imprimante va palper le plateau à différents endroits." },
           { text: "Attendez qu'elle ait fini avant de passer à la suite." }
         ]} />
@@ -115,7 +115,7 @@ function Printer(props) {
           { text: "Prenez votre bobine et déroulez un peu de filament à la main." },
           { text: "N'utilisez pas l'échantillon fournis avec l'imprimante." },
           { text: "Avant chaque insertion, coupez le filament pour que le bout soit propre." },
-          { text: "Présentez le filament dans l’extrudeur. Poussez-le jusqu’à ce qu’il soit entraîné par la machine sur quelques centimètres." },
+          { text: "Présentez le filament dans l'extrudeur. Poussez-le jusqu'à ce qu'il soit entraîné par la machine sur quelques centimètres." },
           { text: "Ensuite attendez quelques secondes, elle chauffe." },
           { text: "Elle aspirera le reste du filament toute seule." },
           { text: "Assurez-vous que le filament soit bien arrivé jusqu'à la tête." }

@@ -15,9 +15,9 @@ function BiColor(props) {
         t={t}
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
-          { text: "Notice de montage pack bi-couleur - préparation d’un gcode bi-couleur", classes: "title tleft", tag: "h1" },
+          { text: "Notice de montage pack bi-couleur - préparation d'un gcode bi-couleur", classes: "title tleft", tag: "h1" },
           { text: "Préparer un gcode", classes: "big-title tleft" },
-          { text: "Nous avons ajouté dans notre dernier cura la possibilité de préparer des gcodes pour la double extrusion. Si vous n’êtes pas familiers de Cura, rendez-vous d’abord", link: { classes: "link-classic", href: "/cura-by-dagoma", text: "ici" } }
+          { text: "Nous avons ajouté dans notre dernier cura la possibilité de préparer des gcodes pour la double extrusion. Si vous n'êtes pas familiers de Cura, rendez-vous d'abord", link: { classes: "link-classic", href: "/cura-by-dagoma", text: "ici" } }
         ]} />
       <Section
         t={t}
@@ -34,9 +34,9 @@ function BiColor(props) {
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-c-choix", type: "video" }}
         content={[
           { text: "Installation de Cura pour la double extrusion", classes: "big-title tleft", tag: "h2" },
-          { text: "Si ce n’est pas déjà fait, téléchargez la dernière version de Cura.", classes: "text-red" },
+          { text: "Si ce n'est pas déjà fait, téléchargez la dernière version de Cura.", classes: "text-red" },
           { link: { href: "https://dist.dagoma3d.com/CuraByDagoma", target: "_blank", classes: "new-btn btn-classic btn-grey btn-wide", text: "Télécharger" } },
-          { text: "Une fois installé, sur l’écran de choix d’imprimante, cliquez sur discoeasy200, choisissez oui pour la double extrusion, et appuyez sur OK." },
+          { text: "Une fois installé, sur l'écran de choix d'imprimante, cliquez sur discoeasy200, choisissez oui pour la double extrusion, et appuyez sur OK." },
           { text: "Voilà ! Nous vous expliquons la nouvelle interface et son fonctionnement juste après." }
         ]} />
       <Section
@@ -44,9 +44,9 @@ function BiColor(props) {
         flip={true}
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-d-nouvelle-interface.jpg", type: "image" }}
         content={[
-          { text: "Les nouveautés de l’interface", classes: "big-title tleft", tag: "h2" },
-          { text: "A - Double extrusion signifie double réglage de filament. Chargez un filament dans l’extrudeur 1 (le numéro d’extrudeur est également repéré sur votre machine) puis choisissez son paramètre. Faites de même pour le second. Nous verrons ensuite comment affecter un filament à un STL." },
-          { text: "B - Le choix du filament pour le support. Si vous activez le support, vous pouvez choisir un des filaments pour le support uniquement. Nous allons vous montrer l’impact de ce paramètre." },
+          { text: "Les nouveautés de l'interface", classes: "big-title tleft", tag: "h2" },
+          { text: "A - Double extrusion signifie double réglage de filament. Chargez un filament dans l'extrudeur 1 (le numéro d'extrudeur est également repéré sur votre machine) puis choisissez son paramètre. Faites de même pour le second. Nous verrons ensuite comment affecter un filament à un STL." },
+          { text: "B - Le choix du filament pour le support. Si vous activez le support, vous pouvez choisir un des filaments pour le support uniquement. Nous allons vous montrer l'impact de ce paramètre." },
           { text: "C - Le choix du volume de purge. Ce paramètre est très important pour obtenir une pièce propre. Nous vous expliquons tout plus bas." }
         ]} />
       <Section
@@ -56,7 +56,7 @@ function BiColor(props) {
           { text: "Associer la couleur de filament", classes: "big-title tleft", tag: "h2" },
           { text: "Choisissez les paramètres des filaments chargés dans vos extrudeur 1 et 2." },
           { text: "Importez les STL." },
-          { text: "Faites un \"clic droit\" sur un des deux puis “Assemblage pour la double extrusion”." },
+          { text: "Faites un \"clic droit\" sur un des deux puis \"Assemblage pour la double extrusion\"." },
           { text: "Centrez le fichier." },
           { text: "Astuce: Vous pouvez intervertir les couleurs au besoin dans le menu du clic droit.", classes: "italic" }
         ]} />
@@ -66,7 +66,7 @@ function BiColor(props) {
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-f-type-support.jpg", type: "image" }}
         content={[
           { text: "Choisir le type de support", classes: "big-title tleft", tag: "h2" },
-          { text: "Pour notre exemple, nous avons mis du orange dans l’extrudeur 1 et du gris dans l’extrudeur 2." },
+          { text: "Pour notre exemple, nous avons mis du orange dans l'extrudeur 1 et du gris dans l'extrudeur 2." },
           { text: "La bi-extrusion offre la possibilité de gérer les supports de différentes façon (bien-sur il faut au préalable activer les supports) :" },
           {
             list: {
@@ -75,7 +75,7 @@ function BiColor(props) {
                 { text: "A. Les deux : Les deux filaments seront utilisés pour faire le support.", classes: "col-hlspace", tag: { name: "p" } },
                 { text: "B. Filament 1 : Seul le filament 1 sera utilisé pour le support, orange ici.", classes: "col-hlspace", tag: { name: "p" } },
                 { text: "C. Filament 2 : Seul le filament 2 sera utilisé pour le support, gris ici.", classes: "col-hlspace", tag: { name: "p" } },
-                { text: "D. Il est possible d’imprimer une pièce monochrome avec un support d’une autre matière. Ici, nous avons imprimé le “T” avec le filament 1 et le support avec le filament 2. Pour se faire, il faut choisir “Filament 2” dans type de support.", classes: "col-hlspace", tag: { name: "p" } },
+                { text: "D. Il est possible d'imprimer une pièce monochrome avec un support d'une autre matière. Ici, nous avons imprimé le \"T\" avec le filament 1 et le support avec le filament 2. Pour se faire, il faut choisir \"Filament 2\" dans type de support.", classes: "col-hlspace", tag: { name: "p" } },
               ]
             }
           }
@@ -85,24 +85,24 @@ function BiColor(props) {
         media={{ src: "DiscoEasy/Add-on/Bicouleur/8-g-volume-purge.jpg", type: "image" }}
         content={[
           { text: "Choisir le volume de purge", classes: "big-title tleft", tag: "h2" },
-          { text: "Pour passer d’un filament à l’autre il est nécessaire de purger le restant de couleur présent dans la buse. Ce volume est généralement réglé sur standard." },
-          { text: "Pour des couleurs proches tel que le blanc et le beige (A), passer sur “Petit (30 mm3)” permet de réduire les pertes sans perdre en qualité." },
-          { text: "Pour des couleurs très contrastées (C) tel que le beige et le noir, passer sur “Grand (125 mm3)” permet de conserver la qualité, dans ce cas les pertes sont plus importante." },
-          { text: "Pour la plupart des couleurs proches (B), “Standard (90 mm3)” suffira." },
-          { text: "N’hésitez pas à nous partager vos expériences de mélange de filaments." },
-          { text: "Remarque : Pour les mélanges de matière, préférez “Grand (125 mm3)”." }
+          { text: "Pour passer d'un filament à l'autre il est nécessaire de purger le restant de couleur présent dans la buse. Ce volume est généralement réglé sur standard." },
+          { text: "Pour des couleurs proches tel que le blanc et le beige (A), passer sur \"Petit (30 mm3)\" permet de réduire les pertes sans perdre en qualité." },
+          { text: "Pour des couleurs très contrastées (C) tel que le beige et le noir, passer sur \"Grand (125 mm3)\" permet de conserver la qualité, dans ce cas les pertes sont plus importante." },
+          { text: "Pour la plupart des couleurs proches (B), \"Standard (90 mm3)\" suffira." },
+          { text: "N'hésitez pas à nous partager vos expériences de mélange de filaments." },
+          { text: "Remarque : Pour les mélanges de matière, préférez \"Grand (125 mm3)\"." }
         ]} />
       <Title
         t={t}
         content={[
-          { text: "Il ne vous reste plus qu’à préparer votre fichier et lancer votre impression bi-couleur.", classes: "big-title" }
+          { text: "Il ne vous reste plus qu'à préparer votre fichier et lancer votre impression bi-couleur.", classes: "big-title" }
         ]} />
       <Block
         t={t}
         img="DiscoEasy/Add-on/Bicouleur/7-a-intro.jpg"
         content={[
-          { text: "Préparation d’un fichier bi-couleur terminée", classes: "big-title" },
-          { text: "Vous savez tout sur l’impression bi-couleur. Partagez nous vos créations sur le Club Dagoma." }
+          { text: "Préparation d'un fichier bi-couleur terminée", classes: "big-title" },
+          { text: "Vous savez tout sur l'impression bi-couleur. Partagez nous vos créations sur le Club Dagoma." }
         ]} />
     </Layout>
   );

@@ -65,7 +65,7 @@ function Printer(props) {
           { text: "Mise en place des barres", classes: "big-title" },
           { text: "Mettez les deux pièces à plat, en symétrie." },
           { text: "Introduisez les barres." },
-          { text: "Placez l’ensemble sur l’imprimante, la partie la plus haute vers l’avant." },
+          { text: "Placez l'ensemble sur l'imprimante, la partie la plus haute vers l'avant." },
           { text: "Appuyez fort pour que les pièces soient bien enfoncées." },
           { text: "Serrez les 8 vis du haut et les 4 vis présentes sur les côtés des fixations latérales." },
         ]} />
@@ -88,7 +88,7 @@ function Printer(props) {
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Ajustement de la tension de courroie du plateau", classes: "big-title" },
-          { text: "Mettez la machine à l’envers." },
+          { text: "Mettez la machine à l'envers." },
           { text: "Débloquez le bout replié de la courroie, puis déverouillez-la en la poussant vers la droite." },
           { text: "Faites-la passer entre la face avant et le plateau." },
           { text: "Tirez sur le bout libre sans effort." },
@@ -107,11 +107,11 @@ function Printer(props) {
           { text: "Faites passer la gaine dans la forme sur la tête." },
           { text: "Prenez un collier de serrage, placez-le dans le trou comme sur la vidéo." },
           { text: "Serrez-le puis coupez le surplus qui dépasse." },
-          { text: "Continuez de torsader la gaine jusqu’à atteindre l’angle supérieur opposé de l’imprimante." },
+          { text: "Continuez de torsader la gaine jusqu'à atteindre l'angle supérieur opposé de l'imprimante." },
           { text: "Clipsez la gaine sur le chariot de gauche." },
           { text: "Récupérez les câbles du moteur et de la butée de X et continuez la gaine." },
-          { text: "Egalisez la longueur des câbles en les tirants vers l’intérieur de l’imprimante." },
-          { text: "Continuez la gaine jusqu’à l’entrée de la fixation latérale (coupez le surplus si besoin)." },
+          { text: "Egalisez la longueur des câbles en les tirants vers l'intérieur de l'imprimante." },
+          { text: "Continuez la gaine jusqu'à l'entrée de la fixation latérale (coupez le surplus si besoin)." },
         ]} />
       <Section
         t={t}
@@ -120,8 +120,8 @@ function Printer(props) {
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Gestion des câbles", classes: "big-title" },
-          { text: "Dans cette étape, nous allons faire en sorte de bien maintenir les câbles. Notre solution n’est pas unique mais si vous ne vous sentez pas inspiré, suivez la vidéo." },
-          { text: "Il est important qu’aucun câble ne se balade au dessus de la carte pour éviter d’être abîmé par le plateau." },
+          { text: "Dans cette étape, nous allons faire en sorte de bien maintenir les câbles. Notre solution n'est pas unique mais si vous ne vous sentez pas inspiré, suivez la vidéo." },
+          { text: "Il est important qu'aucun câble ne se balade au dessus de la carte pour éviter d'être abîmé par le plateau." },
         ]} />
       <Section
         t={t}
@@ -138,9 +138,9 @@ function Printer(props) {
         content={[
           { text: "Étape 8", classes: "title tleft", tag: "h2" },
           { text: "Installation du tube PTFE", classes: "big-title" },
-          { text: "Ce tube va guider le filament de l’extrudeur jusqu’à la tête d’impression." },
-          { text: "Il est maintenu par des raccords pneumatique. Poussez-le bien jusqu’au fond à chaque extrémité. Faites-le passer entre les deux barres du haut de l’imprimante pour le guider." },
-          { text: "Attention, sur la tête d’impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." },
+          { text: "Ce tube va guider le filament de l'extrudeur jusqu'à la tête d'impression." },
+          { text: "Il est maintenu par des raccords pneumatique. Poussez-le bien jusqu'au fond à chaque extrémité. Faites-le passer entre les deux barres du haut de l'imprimante pour le guider." },
+          { text: "Attention, sur la tête d'impression, il est important que ce dernier soit bien enfoncé. Regardez sur la vidéo pour avoir une idée de la longueur. Appuyez sur la collerette noire pour retirer le tube." },
         ]} />
       <Block
         t={t}

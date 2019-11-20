@@ -18,7 +18,7 @@ function Printer(props) {
         content={[
           { text: "Notice de montage DISCO ULTIMATE - assemblage de la base", classes: "title tleft", tag: "h1" },
           { text: "Assemblage de la base", classes: "big-title tleft", tag: "h2" },
-          { text: "Nous allons commencer à assembler l’imprimante 3D. Première étape la base." }
+          { text: "Nous allons commencer à assembler l'imprimante 3D. Première étape la base." }
         ]} />
       <Title t={t} content={[]} />
       <Section
@@ -66,17 +66,17 @@ function Printer(props) {
         content={[
           { text: "Montage des fixations latérales", classes: "big-title" },
           { text: "Introduisez les fixations latérales sur les barres inférieures." },
-          { text: "Attention à l’orientation des pièces, soyez attentif aux détails sur la vidéo." }
+          { text: "Attention à l'orientation des pièces, soyez attentif aux détails sur la vidéo." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Notice/5-e-roulements-axe", type: "video" }}
         content={[
           { text: "Mise en place des roulements", classes: "big-title" },
-          { text: "Ouvrez les sachets des roulements linéaires (encore couverts d’huile)." },
+          { text: "Ouvrez les sachets des roulements linéaires (encore couverts d'huile)." },
           { text: "Placez délicatement les roulements sur les barres supérieures, deux à droite et deux à gauche." },
           { text: "Astuce : de légères rotations permettent de rentrer le roulement plus facilement." },
-          { text: "Une fois montés, faites quelques allers-retours pour qu’ils se fassent à la barre." }
+          { text: "Une fois montés, faites quelques allers-retours pour qu'ils se fassent à la barre." }
         ]} />
       <Section
         t={t}
@@ -87,7 +87,7 @@ function Printer(props) {
           { text: "Récupérez la face arrière montée." },
           { text: "Présentez-la, extrudeur vers le haut, et à gauche de la machine." },
           { text: "Positionnez les barres en face des trous et enfoncez-les légèrement." },
-          { text: "Une fois en place, enfoncez fermement l’ensemble." },
+          { text: "Une fois en place, enfoncez fermement l'ensemble." },
           { text: "Utilisez un maillet si possible pour être sûr que les pièces sont correctement enfoncées." }
         ]} />
       <Section
@@ -98,7 +98,7 @@ function Printer(props) {
           { text: "Si vous avez bien suivi les vidéos, vous devez voir 12 petits trous sur les pièces plastiques." },
           { text: "Les fixations latérales sont sur les barres inférieures." },
           { text: "Les roulements sur les barres supérieures (2 à droite et 2 à gauche)." },
-          { text: "Si ce n’est pas le cas, démontez et recommencez." }
+          { text: "Si ce n'est pas le cas, démontez et recommencez." }
         ]} />
       <Section
         t={t}
@@ -107,7 +107,7 @@ function Printer(props) {
         content={[
           { text: "Installation du cache côté avant droit", classes: "big-title" },
           { text: "A partir de maintenant, on désignera la face avec le logo comme l'avant et la face avec l'extrudeur comme l'arrière. La gauche sera votre gauche lorsque vous faites face à la machine." },
-          { text: "Récupérez le cache côté fournis avec l’extrudeur+." },
+          { text: "Récupérez le cache côté fournis avec l'extrudeur+." },
           { text: "Clipsez-le sur la barre du bas et rapprochez-le de la face avant." },
           { text: "Respectez bien le sens de la pièce." }
         ]} />
@@ -127,17 +127,17 @@ function Printer(props) {
         content={[
           { text: "Installation des caches côtés arrières", classes: "big-title" },
           { text: "Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés." },
-          { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L’autre avec le trou va à gauche." }
+          { text: "Clipsez les petits caches côtés. Le simple va à droite (côté extrudeur). L'autre avec le trou va à gauche." }
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoUltimate/Notice/5-k-installation-plaques-sup", type: "video" }}
         content={[
           { text: "Installation des plaques de protection noires", classes: "big-title" },
-          { text: "Prenez la partie arrière, elle a deux formes prévu pour entourer les moteurs d’extrudeurs (un seul dans votre cas)." },
+          { text: "Prenez la partie arrière, elle a deux formes prévu pour entourer les moteurs d'extrudeurs (un seul dans votre cas)." },
           { text: "Placez la face lisse / brillante vers le bas." },
           { text: "Prenez 3 vis M3x10 et vissez la dans les trous prévus dans la face arrière." },
-          { text: "Prenez le clips de bar (petite pièce imprimée orange). Clipsez la sur la barre et alignez la sur le trou dans la plaque. Vissez le à l’aide d’une autre vis M3x10." },
+          { text: "Prenez le clips de bar (petite pièce imprimée orange). Clipsez la sur la barre et alignez la sur le trou dans la plaque. Vissez le à l'aide d'une autre vis M3x10." },
           { text: "Prenez la partie avant, placez la comme la précédente et vissez les 4 vis M3x10." },
           { text: "Astuce : Bougez la structure pour alignez les trous de vis si nécessaire." }
         ]} />

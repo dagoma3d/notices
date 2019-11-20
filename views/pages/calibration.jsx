@@ -19,7 +19,7 @@ function Printer(props) {
         img="DiscoEasy/Software/a-intro-maj-disco.jpg"
         content={[
           { text: `Calibrez votre ${printerInfo.name}`, classes: "big-title tleft" },
-          { text: "Votre imprimante 3d a besoin de vous pour retrouver ses repères. Une bonne calibration permet d’obtenir une première couche propre." }
+          { text: "Votre imprimante 3d a besoin de vous pour retrouver ses repères. Une bonne calibration permet d'obtenir une première couche propre." }
         ]} />
       <Section
         t={t}
@@ -31,7 +31,7 @@ function Printer(props) {
               items: [
                 { text: "A. Il vous faut une imprimante 3d Dagoma", classes: "tleft" },
                 { text: "B. Un câble USB-B (fournis avec ton imprimante)", classes: "tleft" },
-                { text: "C. Un ordinateur et D. Dagom’app", classes: "tleft" },
+                { text: "C. Un ordinateur et D. Dagom'app", classes: "tleft" },
                 { text: "E. Du filament", classes: "tleft" },
                 { text: "F. La cible fournie avec le kit (une carte de visite fonctionne aussi)", classes: "tleft" }
               ]
@@ -45,8 +45,8 @@ function Printer(props) {
         media={{ src: "DiscoEasy/Calibration/b2-parallelisme", type: "video" }}
         content={[
           { text: "Dernier ajustement", classes: "big-title" },
-          { text: "Avant de commencer la calibration, vous avez un petit ajustement à faire. Il faut s’assurer que les barres sur lesquelles se déplace la tête soient bien parallèles au plateau." },
-          { text: "Placez l’imprimante 3D face à vous. Vous allez agir manuellement sur les coupleurs comme sur la vidéo pour faire monter ou descendre l’axe." },
+          { text: "Avant de commencer la calibration, vous avez un petit ajustement à faire. Il faut s'assurer que les barres sur lesquelles se déplace la tête soient bien parallèles au plateau." },
+          { text: "Placez l'imprimante 3D face à vous. Vous allez agir manuellement sur les coupleurs comme sur la vidéo pour faire monter ou descendre l'axe." },
           { text: "Pour un réglage précis, placez le plateau au centre de la machine et la tête à gauche. Faites descendre la tête pour que la buse effleure le plateau. Déplacez la tête manuellement à droite et faites-la effleurer à nouveau le plateau." },
           { text: "Lorsque la tête effleure le plateau de gauche à droite, votre réglage est bon. Vous pouvez passer à la calibration." }
         ]} />
@@ -54,7 +54,7 @@ function Printer(props) {
         t={t}
         content={[
           { text: "Commençons !", classes: "big-title" },
-          { text: "Lancez Dagom’app et suivez les instructions" }
+          { text: "Lancez Dagom'app et suivez les instructions" }
         ]} />
       <Section
         t={t}
@@ -92,7 +92,7 @@ function Printer(props) {
         media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e5.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 5", classes: "big-title" },
-          { text: "Choisissez “Une impression parfaite” puis cliquez sur la flèche bleue." }
+          { text: "Choisissez \"Une impression parfaite\" puis cliquez sur la flèche bleue." }
         ]} />
       <Section
         t={t}
@@ -106,7 +106,7 @@ function Printer(props) {
         media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e7.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 7", classes: "big-title" },
-          { text: "Pour l’insertion du filament vous avez une petite vidéo d’aide ici :" },
+          { text: "Pour l'insertion du filament vous avez une petite vidéo d'aide ici :" },
         ]}>
         <HiddenVideo
           t={t}
@@ -115,7 +115,7 @@ function Printer(props) {
             { text: "L'insertion est automatique avec l'add-on \"extrudeur+\"" },
             { text: "Cochez les étapes une fois vérifiées." },
             { text: "Si vous avez perdu la cible, une carte de visite fonctionnera tout aussi bien." },
-            { text: "Après cette étape, l’imprimante va commencer à bouger" },
+            { text: "Après cette étape, l'imprimante va commencer à bouger" },
           ]} />
       </Section>
       <Section
@@ -130,8 +130,8 @@ function Printer(props) {
         media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e9.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 9", classes: "big-title" },
-          { text: "Vous allez maintenant régler la hauteur de la tête d’impression." },
-          { text: "Faites descendre la tête petit à petit à l’aide de la flèche du bas dans Dagom’app." },
+          { text: "Vous allez maintenant régler la hauteur de la tête d'impression." },
+          { text: "Faites descendre la tête petit à petit à l'aide de la flèche du bas dans Dagom'app." },
           { text: "Faites bouger la cible d'avant en arrière. Lorsque vous sentez une résistance, arrêtez de la faire descendre." },
           { text: "Vous avez une petite vidéo des réactions de la machine ici :" },
         ]}>
@@ -148,9 +148,9 @@ function Printer(props) {
         media={{ src: "DiscoEasy/Calibration/dagomapp-calibration-e10.jpg", type: "image", classes: "notice-small" }}
         content={[
           { text: "Etape 10", classes: "big-title" },
-          { text: "C’est bientôt fini ! Après cette étape, votre imprimante 3d va se préparer à imprimer." },
+          { text: "C'est bientôt fini ! Après cette étape, votre imprimante 3d va se préparer à imprimer." },
           { text: "Elle va bouger un peu, chauffer et elle commencera à imprimer." },
-          { text: "Dans l’étape suivant vous allez ajuster avec précisions la hauteur de la première couche." }
+          { text: "Dans l'étape suivant vous allez ajuster avec précisions la hauteur de la première couche." }
         ]} />
       <Section
         t={t}
@@ -158,9 +158,9 @@ function Printer(props) {
         content={[
           { text: "Etape 11", classes: "big-title" },
           { text: "Dans cette interface, vous allez pouvoir monter ou descendre la hauteur de la première couche." },
-          { text: "Si elle est trop écrasé, l’extrudeur ne fera que forcer. Cliquez sur “plus haut”." },
-          { text: "Si elle est trop haute, elle ne tiendra pas sur le plateau. Cliquez sur “plus bas”." },
-          { text: "Elle va imprimer plusieurs petits cercles. Une fois que la hauteur de couche est bonne, cliquez sur “Je suis satisfait” puis sur “enregistrer”." },
+          { text: "Si elle est trop écrasé, l'extrudeur ne fera que forcer. Cliquez sur \"plus haut\"." },
+          { text: "Si elle est trop haute, elle ne tiendra pas sur le plateau. Cliquez sur \"plus bas\"." },
+          { text: "Elle va imprimer plusieurs petits cercles. Une fois que la hauteur de couche est bonne, cliquez sur \"Je suis satisfait\" puis sur \"enregistrer\"." },
           { text: "Vous avez une petite vidéo des réactions de la machine ici :" },
         ]}>
         <HiddenVideo t={t} src="DiscoEasy/Calibration/c-e8" />
@@ -178,7 +178,7 @@ function Printer(props) {
         t={t}
         content={[
           { text: "Vous pourrez intervenir manuellement sur votre imprimante pour ajuster la hauteur de la première couche." },
-          { text: "Vous pourrez refaire cette calibration de temps en temps si la première couche n’est plus bonne." }
+          { text: "Vous pourrez refaire cette calibration de temps en temps si la première couche n'est plus bonne." }
         ]}>
         <Validation t={t} step={step} />
       </Block>

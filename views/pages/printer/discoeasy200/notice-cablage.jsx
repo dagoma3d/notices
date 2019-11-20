@@ -50,7 +50,7 @@ function Printer(props) {
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Préparation", classes: "big-title" },
-          { text: "Faites monter l’axe X jusqu’à mi-hauteur (ça prend un peu de temps)." },
+          { text: "Faites monter l'axe X jusqu'à mi-hauteur (ça prend un peu de temps)." },
           { text: "Faites bien monter les 2 chariots en même temps." },
           { text: "Machine face à vous, placez la tête à droite et le plateau en arrière." },
           { text: "Retournez la machine pour avoir accès au dessous." },
@@ -63,10 +63,10 @@ function Printer(props) {
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Installation de la carte de contrôle", classes: "big-title" },
-          { text: "Sortez la carte du sachet et retirez l’adaptateur branché sur EXP1 et EXP2." },
+          { text: "Sortez la carte du sachet et retirez l'adaptateur branché sur EXP1 et EXP2." },
           { text: "Placez-la avec les connecteur face à vous, en diagonale, le lecteur USB vers la barre transversale regardant vers la face arrière." },
-          { text: "Serrez-la à l’aide de deux vis M3x6" },
-          { text: "Ne serrez pas trop fort pour éviter d’endommager la carte.", classes: "bold text-red" },
+          { text: "Serrez-la à l'aide de deux vis M3x6" },
+          { text: "Ne serrez pas trop fort pour éviter d'endommager la carte.", classes: "bold text-red" },
         ]} />
       <Section
         t={t}
@@ -74,7 +74,7 @@ function Printer(props) {
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Câblage du moteur de X", classes: "big-title" },
-          { text: "Nous allons commencer par brancher tous les éléments de l’axe X." },
+          { text: "Nous allons commencer par brancher tous les éléments de l'axe X." },
           { text: "Prenez le câble moteur le plus long dans le sachet." },
           { text: "Branchez-le au moteur (pas de soucis de sens, il y a des détrompeurs)." },
           { text: "Faites-le ensuite passer au niveau de la fixation latérale gauche, derrière la barre arrière." },
@@ -122,11 +122,11 @@ function Printer(props) {
           { text: "Branchement des câbles de la tête", classes: "big-title" },
           { text: "Dénudez tous les câbles avant de les brancher." },
           { text: "Récupérez les câbles du ventilateur arrière (celui qui parcourt la tête sur le côté)." },
-          { text: "Repérez-les (nous l’avons fait ici avec du scotch)." },
+          { text: "Repérez-les (nous l'avons fait ici avec du scotch)." },
           { text: "Prenez ensuite tous les fils restant et faites-les suivres les autres câbles." },
           { text: "Torsadez le bout pour faciliter leur insertion." },
           { text: "Commencez par les deux gros rouges." },
-          { text: "Munissez-vous d’un tournevis plat." },
+          { text: "Munissez-vous d'un tournevis plat." },
           { text: "Raccordez les deux fils rouge ou marron sur le bornier E0 (pas de sens entre + et -)." },
           { text: "Prenez ensuite les câbles du ventilateur non repéré (ventilateur avant)." },
           { text: "Raccordez les deux fils sur le bornier E1 (rouge sur + et noire sur -)." },
@@ -169,7 +169,7 @@ function Printer(props) {
           { text: "Étape 11", classes: "title tleft", tag: "h2" },
           { text: "Branchement du moteur d'extrudeur", classes: "big-title" },
           { text: "Récupérez le dernier câble moteur." },
-          { text: "Raccordez-le ensuite sur le moteur d’extrudeur (sur la face arrière) puis sur le connecteur E_MOT." },
+          { text: "Raccordez-le ensuite sur le moteur d'extrudeur (sur la face arrière) puis sur le connecteur E_MOT." },
         ]} />
       <Section
         t={t}
@@ -178,17 +178,17 @@ function Printer(props) {
         content={[
           { text: "Étape 12", classes: "title tleft", tag: "h2" },
           { text: "Installation de l'interrupteur", classes: "big-title" },
-          { text: "Clipsez l’interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." },
+          { text: "Clipsez l'interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." },
         ]} />
       <Section
         t={t}
         media={{ src: "DiscoEasy/Notice/10-n-alim-positif", type: "video" }}
         content={[
           { text: "Étape 13", classes: "title tleft", tag: "h2" },
-          { text: "Branchement de l’alimentation (positive)", classes: "big-title" },
-          { text: "Récupérez le câble d’alimentation simple." },
-          { text: "Raccordez-le sur le + du bornier d’alimentation de la carte." },
-          { text: "Branchez-le ensuite sur le connecteur de l’interrupteur (le plus bas)." },
+          { text: "Branchement de l'alimentation (positive)", classes: "big-title" },
+          { text: "Récupérez le câble d'alimentation simple." },
+          { text: "Raccordez-le sur le + du bornier d'alimentation de la carte." },
+          { text: "Branchez-le ensuite sur le connecteur de l'interrupteur (le plus bas)." },
           { text: "Recouvrez-le avec la protection en plastique." },
           { text: "Si vos câbles d''alimentation sont noirs : branchez le câble avec le liseré blanc sur le pôle + du bornier de la carte.", classes: "bold text-red" },
         ]} />
