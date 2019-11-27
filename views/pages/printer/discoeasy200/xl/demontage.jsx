@@ -12,6 +12,14 @@ function Xl(props) {
   return (
     <Layout t={t}>
       <NavBar t={t} active={0} nav={nav} />
+      <Block
+        t={t}
+        img="banniere-XL.jpg"
+        content={[
+          { text: "Bonjour ! Bienvenue sur cette notice de montage du plateau Flexible XL pour votre DiscoEASY200." },
+          { text: "Votre ADD-ON XL est compatible avec toutes nos imprimantes. Cela fait beaucoup de possiblités ! C'est pourquoi nous n'avons pas re-fait 100% de la notice, mais nous avons travaillé les étapes les plus importantes, afin de vous guider tout au long de ce parcours." },
+          { text: "N'hésitez pas à parcourir toutes les étapes avant de vous lancer, et surtout, ne jetez rien, nous allons ré-utilisez beaucoup de vos composants ! C'est parti, place au démontage !" }
+        ]} />
       <Title
         t={t}
         content={[
