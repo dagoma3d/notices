@@ -25,6 +25,10 @@ exports.index = function (req, res) {
           props.active = 5;
           props.nav = require('../content/nav/expert');
           break;
+        case "xl":
+          props.active = 5;
+          props.nav = require('../content/nav/xl/de200');
+          break;
         default:
           props.active = 12;
           props.nav = require('../content/nav/de200');

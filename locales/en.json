@@ -1274,8 +1274,8 @@
 	"Montage de la face arrière terminé": "Montage de la face arrière terminé",
 	"Notice de montage DISCO ULTIMATE - montage des fixations latérales": "Notice de montage DISCO ULTIMATE - montage des fixations latérales",
 	"Prenez 8 écrous et 8 vis (M3x16). Placez les écrous dans les logements comme sur la vidéo.": "Prenez 8 écrous et 8 vis (M3x16). Placez les écrous dans les logements comme sur la vidéo.",
-	"Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres.": "Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres.",
-	"Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force.": "Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force.",
+	"Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres.": "Put the screws loosely, just to keep the nuts and prevent screws from moving. We will shake later to keep the bars.",
+	"Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force.": "Tuck the bar in the transverse housing of the first fixation. Push it hard.",
 	"Prenez la seconde fixation et répétez l'opération. À la fin vous devez obtenir la même chose que sur la vidéo.": "Prenez la seconde fixation et répétez l'opération. À la fin vous devez obtenir la même chose que sur la vidéo.",
 	"Montage des fixations latérales terminé.": "Montage des fixations latérales terminé.",
 	"Notice de montage DISCO ULTIMATE - assemblage de la base": "Notice de montage DISCO ULTIMATE - assemblage de la base",
@@ -1512,9 +1512,7 @@
 	"Enfin, dernier détail du démontage, n'oublions pas d'enlever le cache coté arrière gauche, qui va lui aussi être changé.": "A final detail disassembly, do not forget to remove the rear left side cache, which will also be changed.",
 	"Nous commençons par le montage des fixations cotés :": "We start by mounting fasteners listed:",
 	"Prenez 8 écrous et 8 vis (M3x16). Placez les écrous dans les 4 logements comme sur la vidéo (sur les 2 fixations).": "Take 8 nuts and 8 screws (M3x16). Place 4 nuts into the housing as in the video (on the 2 parts - 8 total).",
-	"Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres.": "Put the screws loosely, just to keep the nuts and prevent screws from moving. We will shake later to keep the bars.",
 	"Utilisez pour fixer les moteurs les 2 x 2 vis de M3x6mm. Serrez 2 vis par moteur.": "Use to fix the engines 2 x 2 screws M3x6mm. 2 tighten screw motor.",
-	"Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force.": "Tuck the bar in the transverse housing of the first fixation. Push it hard.",
 	"Prenez la seconde fixation et répétez l’opération. À la fin vous devez obtenir la même chose que sur la vidéo.": "Take the second and repeat. At the end you have to get the same thing on video.",
 	"Nous allons changer le support des plaques noires, le nouveau a un des 2 trous qui est oblon (vers l'arrière).": "We will change the black plates holder, the new one has 2 holes which one is oblong (need to be place backward)",
 	"Ensuite, nous allons installer maintenant la nouvelle cache coté arrière gauche. Celle-ci comporte 2 trous : une sortie pour les câbles de la tête, et toujours l'entrée de l'alimentation 12V.": "Then we will now install the new rear left side cover. The new one got two holes: one for the head cable management, and one for the 12V power supply.",
@@ -1572,5 +1570,8 @@
 	"PARTIE 2.1 - montage de la base": "PART 2.1 - Base mounting",
 	"Nous entamons maintenant le montage, étape par étape.": "We now begin the installation step by step.",
 	"PARTIE 2.2 - montage de Z": "PART 2.2 - Mounting Z axis",
-	"PARTIE 2.3 - Electronique et le plateau XL !": "PART 2.3 - Electronics and XL set!"
+	"PARTIE 2.3 - Electronique et le plateau XL !": "PART 2.3 - Electronics and XL set!",
+	"Commençons par démonter l'imprimante 3D.": "Commençons par démonter l'imprimante 3D.",
+	"Prenez les 3 pièces du chariot de X, à savoir : support moteur X, tête et support roulement X. ": "Prenez les 3 pièces du chariot de X, à savoir : support moteur X, tête et support roulement X. ",
+	"Ensuite, passez au câblage. pour cela, suivez le guide par ": "Ensuite, passez au câblage. pour cela, suivez le guide par "
 }

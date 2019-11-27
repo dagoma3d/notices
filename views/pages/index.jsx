@@ -61,6 +61,7 @@ function Home(props) {
           { href: "/addon/bicolor/de200", picto: "accessoires-52.svg", alt: "Pack bi-couleur" },
           { href: "/addon/box/disco", picto: "caisson-disco.svg", alt: "Caisson de protection" },
           { href: "/addon/evo/de200", picto: "picto-pack-evo.svg", alt: "Pack évolution Ultimate" },
+          { href: "/addon/xl/de200/demontage", picto: "accessoires-52.svg", alt: "Pack XL" },
           { href: "/cura-by-dagoma/de200", picto: "a-logo-cura.svg", alt: "Cura by Dagoma" }
         ]} />
       <Section

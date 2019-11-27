@@ -28,6 +28,11 @@ exports.index = function (req, res) {
           props.nav = require('../content/nav/expert');
           props.step = '/calibration/de200/expert';
           break;
+        case "xl":
+          props.active = 4;
+          props.nav = require('../content/nav/xl/de200');
+          props.step = '/calibration/de200/xl';
+          break;
         default:
           props.active = 11;
           props.nav = require('../content/nav/de200');
