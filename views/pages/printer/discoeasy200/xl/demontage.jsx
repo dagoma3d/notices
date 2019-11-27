@@ -95,7 +95,7 @@ function Xl(props) {
         content={[
           { text: "Démontage terminé", classes: "big-title" }
         ]}>
-        <Validation t={t} step="/addon/xl/du/montage-base" />
+        <Validation t={t} step="/addon/xl/de200/montage-base" />
       </Block>
     </Layout>
   );
