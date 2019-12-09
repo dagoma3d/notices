@@ -23,7 +23,7 @@ function Xl(props) {
         content={[
           { text: "30 - branchements électronique", classes: "big-title tleft", tag: "h2" },
           { text: "La première étape consiste à re-positionner la carte électronique. Vissez les 2 vis de maintien (M3-6mm)." },
-          { text: "Ensuite, passez au câblage. pour cela, suivez le guide par ", link: { href: "/printer/du/notice-9", target: "_blank", text: "ici" } },
+          { text: "Ensuite, passez au câblage. Pour cela, suivez le guide par ", link: { href: "/printer/du/notice-9", target: "_blank", text: "ici" } },
           { text: "Enfin, vous pouvez ré-installer la plaque de protection transparente en positionnant les 12 patins antis dérapant." },
         ]} />
       <Section
