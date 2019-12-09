@@ -87,6 +87,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
+        id="du-courroie-x"
         media={{ src: "DiscoUltimate/Notice/7-g-courroie-tete", type: "video" }}
         content={[
           { text: "Installation de la courroie de la tête", classes: "big-title" },
