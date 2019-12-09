@@ -58,6 +58,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
+        id="du-courroie-y"
         media={{ src: "DiscoUltimate/Notice/6-d-courroie-y", type: "video" }}
         content={[
           { text: "Installation de la courroie de Y", classes: "big-title" },
