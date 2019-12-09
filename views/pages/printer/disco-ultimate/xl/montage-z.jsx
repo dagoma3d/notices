@@ -96,6 +96,7 @@ function Xl(props) {
           { text: "Utiliser pour cela la nouvelle courroie mise à votre disposition." },
           { text: "Suivez le guide vidéo pour son installation." },
           { text: "Lorsque votre courroie est installée, vous pouvez coupez le surplus. Afin de pouvoir la re-tendre dans le futur, nous vous conseillons de laisser 2-3 cm tout de même !" },
+          { text: "Pour plus d'info sur le sens, ", link: { href: "/printer/du/notice-7", target: "_blank", classes: "new-btn btn-valid btn-wide btn-big", text: "C'est par ici !" } }
         ]} />
       <Block
         t={t}

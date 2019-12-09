@@ -100,7 +100,8 @@ function Xl(props) {
         media={{ id: "vMlOiZ4p2VM", type: "yt" }}
         content={[
           { text: "19 - re-mise en place de la courroie de Y", classes: "big-title tleft", tag: "h2" },
-          { text: "Glissez la courroie de Y dans son logement puis tendez-là correctement." }
+          { text: "Glissez la courroie de Y dans son logement puis tendez-là correctement." },
+          { text: "Pour la mise en place de la courroie de Y, ", link: { href: "/printer/du/notice-6", target: "_blank", classes: "new-btn btn-valid btn-wide btn-big", text: "C'est par ici !" } }
         ]} />
       <Block
         t={t}
