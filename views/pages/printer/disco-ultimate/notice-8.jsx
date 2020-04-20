@@ -23,7 +23,7 @@ function Printer(props) {
       <Title t={t} content={[]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/7-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
+        media={{ src: "DiscoUltimate/Notice/8-b-prerequis.jpg", type: "image", classes: "notice-small-img" }}
         content={[
           { text: "Les pré-requis", classes: "big-title" },
           {
