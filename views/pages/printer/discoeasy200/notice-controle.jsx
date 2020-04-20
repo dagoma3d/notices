@@ -38,7 +38,8 @@ function Printer(props) {
           { link: { href: "/medias/DiscoEasy/Notice/12-gcode-controle/12-b-g28.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "12-b-g28.zip", text: "Télécharger" } },
           { text: "Mettez la carte SD dans la machine et mettez l'interrupteur sur 1 (elle démarre lorsque l'interrupteur passe de 0 à 1)." },
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
-          { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000096568-discoeasy200-la-carte-sd-n-est-pas-reconnue", target: "_blank", classes: "link-classic", text: "ici" } },
+          { text: "Si les moteurs de l'axe Z sont lents, passez à la mise à jour de l'imprimante et revenez sur ces contrôles ensuites", classes: "color-orange text-white col-space" }
         ]} />
       <Section
         t={t}
@@ -51,8 +52,7 @@ function Printer(props) {
           { link: { href: "/medias/DiscoEasy/Notice/12-gcode-controle/12-c-deplacement.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "12-c-deplacement.zip", text: "Télécharger" } },
           { text: "Mettez la carte SD dans la machine et mettez l'interrupteur sur 1." },
           { text: "Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0)." },
-          { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
-          { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } }
         ]} />
       <Section
         t={t}
@@ -66,7 +66,7 @@ function Printer(props) {
           { text: "Mettez la carte SD dans la machine et mettez l'interrupteur sur 1." },
           { text: "Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0)." },
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
-          { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          { text: "Ne perdons pas de temps pour comprendre l'utilité des ventilateurs et vérifions leur branchement, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000071235-discoeasy200-discoultimate-un-ventilateur-ne-tourne-pas-ou-les-deux-", target: "_blank", classes: "link-classic", text: "ici" } },
         ]} />
       <Section
         t={t}
@@ -85,7 +85,7 @@ function Printer(props) {
           { text: "Mettez la carte SD dans la machine et mettez l'interrupteur sur 1." },
           { text: "Lorsque les mouvements sont terminés, arrêtez la machine (interrupteur sur 0)." },
           { text: "Si le comportement est différent de celui observé, vérifiez votre câblage", classes: "color-orange text-white col-space", link: { href: "/printer/de200/notice-cablage", classes: "link-classic", text: "ici" } },
-          { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://dagoma.fr/heroes/jai-besoin-daide-pour-le-montage.html", target: "_blank", classes: "link-classic", text: "ici" } },
+          { text: "Si le câblage est bon mais que le problème persiste, rendez-vous", classes: "color-orange text-white col-space", link: { href: "https://support.dagoma.fr/support/solutions/articles/36000129400-discoeasy200-ultimate-test-d-extrusion", target: "_blank", classes: "link-classic", text: "ici" } },
         ]} />
       <Block
         t={t}
