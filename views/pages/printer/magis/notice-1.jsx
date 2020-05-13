@@ -42,7 +42,8 @@ function Printer(props) {
           { text: "Ceci est un... photophore." },
           { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/gcodes/chapitre-1/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Télécharger" } },
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
-          { text: "Si vous préférez télécharger le modèle 3D...", classes: "col-space italic" },
+          { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
+          { text: "Si vous préférez télécharger le modèle 3D...", classes: "italic" },
           { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/stl/Photophore_socle.STL", download: "Photophore_socle.STL", classes: "new-btn btn-classic btn-grey btn-wide", text: "Télécharger le stl" } },
         ]} />
       <Section
