@@ -84,6 +84,16 @@ function Printer(props) {
         content={[
           { text: "Place au montage", classes: "big-title" }
         ]} />
+        <Section
+        t={t}
+        flip={true}
+        media={{ src: "NevaMagis/Notice/0-d-a-maintien.jpg", type: "image" }}
+        content={[
+          { text: "Nouveauté", classes: "big-title" },
+          { text: "Depuis juin 2020, les imprimantes 3D Magis sont équipées d'une pièce supplémentaire sur la tête d'impression et sur l’extrudeur pour maintenir davantage le tube blanc PTFE." },
+          { text: "Si cet accessoire n'est pas présent sur votre imprimante 3D, nous vous invitons à l'imprimer en la téléchargeant", link: { href: "https://www.thingiverse.com/thing:4088130", target: "_blank", classes: "link-classic", text: "ici" } },
+          { text: "Pour la suite de la notice, cet accessoire n'est pas présent sur les visuels." }
+        ]} />
       <Section
         t={t}
         media={{ src: "NevaMagis/Notice/0-d-a-bras", type: "video" }}
