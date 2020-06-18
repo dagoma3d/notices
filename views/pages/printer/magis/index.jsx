@@ -106,6 +106,7 @@ function Printer(props) {
           { text: "Reliez la tête aux chariots à l'aide des bras aimantés." }
         ]} />
       <Section
+        id="calibration"
         t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/0-d-b-callibration", type: "video" }}

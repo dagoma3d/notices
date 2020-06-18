@@ -66,6 +66,20 @@ exports.index = function (req, res) {
           props.step = '/calibration/du';
       }
       break;
+    case 'magis':
+      props.printerInfo = {
+        name: "Magis",
+        abbr: "Magis",
+        date: "15/11/2019",
+        img: "d-prerequis-du.jpg",
+        video: "c-e3-du",
+        firmware: "Magis",
+        notice: "magis"
+      };
+      props.active = 4;
+      props.nav = require('../content/nav/magis');
+      props.step = '/printer/magis#calibration';
+      break;
     default:
       props.printerInfo = {};
   }
