@@ -62,7 +62,7 @@ function Printer(props) {
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
           { text: "Surprise !", classes: "big-title", tag: "h4" },
           { text: "Votre Magis s'est arrêtée toute seule. Pas de panique, nous avons programmé une pause dans le fichier." },
-          { text: "Vous allez découvrir la fonction Tap-Tap." },
+          { text: "Vous allez découvrir la fonction \"Éjection du filament.\"" },
           { text: "Vous n'avez pas de gros sel, riz, quinoa, ... ? Profitez de ces 45 minutes d'impression pour aller en acheter !", classes: "italic" },
           { text: "Si vous avez le moindre problème, commencez par ", classes: "italic", link: { href: "/firmware/magis", target: "_blank", title: "Mise à jour firmware", classes: "link-classic", text: "mettre à jour votre firmware" } },
           { text: "Si ce n'est pas résolu, nous sommes à votre disposition via ", classes: "italic", link: { href: "//support.dagoma.fr/support/home", target: "_blank", title: "Le support", classes: "link-classic", text: "le support" } },
@@ -70,11 +70,11 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/3-e-tap-tap-changement-filament", type: "video" }}
+        media={{ src: "NevaMagis/Notice/3-e-changement-filament", type: "video" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h3" },
-          { text: "Le Tap-Tap", classes: "big-title" },
-          { text: "Tapotez 2 fois sur votre plateau." },
+          { text: "Éjection du filament", classes: "big-title" },
+          { text: "Pressez trois secondes le bouton en façade." },
           { text: "Le filament est éjecté de l'imprimante. Vous n'avez plus qu'à le saisir et à tirer pour l'enlever." },
           { text: "Vérifiez que l'extrémité du filament est bien propre. N'hésitez pas à casser le bout du filament pour que l'insertion se fasse bien." },
           { text: "Prenez votre autre bobine." },
