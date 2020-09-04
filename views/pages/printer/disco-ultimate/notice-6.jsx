@@ -48,7 +48,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/6-c-support-plateau", type: "video" }}
+        media={{ id: "PiLo3g9H1cY", type: "yt" }}
         content={[
           { text: "Installation des supports plateau", classes: "big-title" },
           { text: "Prenez le grand support plateau." },
@@ -59,7 +59,7 @@ function Printer(props) {
       <Section
         t={t}
         id="du-courroie-y"
-        media={{ src: "DiscoUltimate/Notice/6-d-courroie-y", type: "video" }}
+        media={{ id: "FzEq9P_YXcM", type: "yt" }}
         content={[
           { text: "Installation de la courroie de Y", classes: "big-title" },
           { text: "Nous vous conseillons de suivre la vidéo avec attention." }
@@ -67,7 +67,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/6-e-installation-plateau", type: "video" }}
+        media={{ id: "siw6DgPf74g", type: "yt" }}
         content={[
           { text: "Installation du plateau", classes: "big-title" },
           { text: "Alignez les trous du plateau avec ceux des supports." },

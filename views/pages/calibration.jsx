@@ -42,7 +42,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Calibration/b2-parallelisme", type: "video" }}
+        media={{ id: "WsxWdFExp9E", type: "yt" }}
         content={[
           { text: "Dernier ajustement", classes: "big-title" },
           { text: "Avant de commencer la calibration, vous avez un petit ajustement à faire. Il faut s'assurer que les barres sur lesquelles se déplace la tête soient bien parallèles au plateau." },

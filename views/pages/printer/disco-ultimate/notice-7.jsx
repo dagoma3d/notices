@@ -52,7 +52,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/7-c-roulement-courroie", type: "video" }}
+        media={{ id: "eaDJkaDu0IY", type: "yt" }}
         content={[
           { text: "Installation de la poulie de X", classes: "big-title" },
           { text: "Nous allons placer la poulie qui fera le renvoi de courroie du plateau de l'imprimante." },
@@ -61,7 +61,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/7-d-butee", type: "video" }}
+        media={{ id: "eXNYW_kxytA", type: "yt" }}
         content={[
           { text: "Installation de la butée de X", classes: "big-title" },
           { text: "Dans l'autre chariot, installez la butée comme sur le vidéo." }
@@ -69,7 +69,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/7-e-moteur-x", type: "video" }}
+        media={{ id: "ZLK7vxYRKTs", type: "yt" }}
         content={[
           { text: "Installation du moteur de X", classes: "big-title" },
           { text: "Rentrez le moteur dans son support avec le connecteur vers la pièce (comme sur la vidéo)." },
@@ -78,7 +78,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/7-f-barre", type: "video" }}
+        media={{ id: "RVAl-4UoPyg", type: "yt" }}
         content={[
           { text: "Montage des barres de l'axe X", classes: "big-title" },
           { text: "Prenez 2 barres courtes." },
@@ -88,7 +88,7 @@ function Printer(props) {
         t={t}
         flip={true}
         id="du-courroie-x"
-        media={{ src: "DiscoUltimate/Notice/7-g-courroie-tete", type: "video" }}
+        media={{ id: "EyjtEGkGawg", type: "yt" }}
         content={[
           { text: "Installation de la courroie de la tête", classes: "big-title" },
           { text: "Nous vous conseillons de suivre la vidéo avec attention." }

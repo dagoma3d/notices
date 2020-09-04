@@ -48,7 +48,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/4-c-vis-serrage", type: "video" }}
+        media={{ id: "pQIPEQ2bsT0", type: "yt" }}
         content={[
           { text: "Mise en place des vis de serrage", classes: "big-title" },
           { text: "Prenez 8 écrous et 8 vis (M3x16). Placez les écrous dans les logements comme sur la vidéo." },
@@ -56,7 +56,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/4-d-montage-barre", type: "video" }}
+        media={{ id: "4zeaFUT-y2g", type: "yt" }}
         content={[
           { text: "Montage de la barre", classes: "big-title" },
           { text: "Rentrez la barre dans le logement transversal de la première fixation. Enfoncez-la avec force." },

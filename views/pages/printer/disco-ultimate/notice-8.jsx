@@ -48,7 +48,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/8-c-moteur-z", type: "video" }}
+        media={{ id: "aG_vpe3A7pw", type: "yt" }}
         content={[
           { text: "Montage des moteurs de Z", classes: "big-title" },
           { text: "Retirez les écrous anti-backslash (ça peut être un peu long)." },
@@ -58,7 +58,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/8-d-barres", type: "video" }}
+        media={{ id: "jk-LfNvIg8s", type: "yt" }}
         content={[
           { text: "Montage des barres de l'axe Z", classes: "big-title" },
           { text: "Prenez les 4 barres longues." },
@@ -69,7 +69,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/8-e-axe-x", type: "video" }}
+        media={{ id: "w6QMes1YAks", type: "yt" }}
         content={[
           { text: "Installation de l'axe X", classes: "big-title" },
           { text: "Prenez l'axe X, orientez-le pour que le moteur de X soit à gauche de la machine lorsque la face avant est devant vous." },
@@ -86,7 +86,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/8-g-ecrous", type: "video" }}
+        media={{ id: "iECxDaGQSLI", type: "yt" }}
         content={[
           { text: "Installation des écrous", classes: "big-title" },
           { text: "Si votre écrou s'est désassemblé, voici comment le remonter." },

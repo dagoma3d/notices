@@ -67,7 +67,7 @@ function CuraByDagoma(props) {
       <Section
         t={t}
         id="cura-2"
-        media={{ id: "my-video-communaute", src: "NevaMagis/Notice/4-f-Cura-pause", type: "video" }}
+        media={{ id: "WuJM4WPaNmk", type: "yt" }}
         content={[
           { text: "Programmer une pause", classes: "big-title" },
           { text: "Cura vous permet de programmer à l'avance des pauses durant l'impression." },

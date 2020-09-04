@@ -53,7 +53,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-c-top-vis-serrage", type: "video" }}
+        media={{ id: "6rPy5mCtTCE", type: "yt" }}
         content={[
           { text: "Mise en place des vis de serrage", classes: "big-title" },
           { text: "Normalement vous êtes rodé. Prenez 6 écrous et 6 vis M3x16. Placez les écrous dans les logements comme sur la vidéo." },
@@ -63,7 +63,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/10-d-top-installation", type: "video" }}
+        media={{ id: "RMQ6gxwAdKs", type: "yt" }}
         content={[
           { text: "Finition du portique", classes: "big-title" },
           { text: "Placez l'ensemble sur l'imprimante, la partie la plus haute vers l'avant." },
@@ -73,7 +73,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-e-tension-courroie-tete", type: "video" }}
+        media={{ id: "abMPzUF0R04", type: "yt" }}
         content={[
           { text: "Ajustement de la tension de la courroie de la tête", classes: "big-title" },
           { text: "Placez la tête à gauche." },
@@ -84,7 +84,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/10-f-serrage-axe-z", type: "video" }}
+        media={{ id: "x6cI4AT0AjI", type: "yt" }}
         content={[
           { text: "Serrage de l'axe Z", classes: "big-title" },
           { text: "Serrez les 2 vis restantes en haut puis les 4 vis des fixations latérales." }
@@ -92,7 +92,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-g-logo-face-avant", type: "video" }}
+        media={{ id: "OftcXC-WJgs", type: "yt" }}
         content={[
           { text: "Insertion du logo", classes: "big-title" },
           { text: "Prenez le logo Dagoma imprimé en orange." },
@@ -100,7 +100,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/10-h-gaine-chariot", type: "video" }}
+        media={{ id: "uf4ckCovk-0", type: "yt" }}
         content={[
           { text: "Mise en place de la gaine", classes: "big-title" },
           { text: "Prenez la gaine torsadée." },
@@ -111,7 +111,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
+        media={{ id: "3d4ci1Fne-s", type: "yt" }}
         content={[
           { text: "Gestion des câbles", classes: "big-title" },
           { text: "Commencez par fixer les câbles de la tête à l'aide d'un collier de serrage." },
@@ -128,7 +128,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-l-plaque-fond", type: "video" }}
+        media={{ id: "wZfl8R_WCaw", type: "yt" }}
         content={[
           { text: "Installation de la plaque protectrice de fond", classes: "big-title" },
           { text: "Prenez la plaque de fond et retirez les films protecteurs." },
@@ -138,7 +138,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/10-m-ptfe", type: "video" }}
+        media={{ id: "bOdpeYqQqaE", type: "yt" }}
         content={[
           { text: "Installation du tube PTFE", classes: "big-title" },
           { text: "Ce tube va guider le filament de l'extrudeur jusqu'à la tête d'impression." },

@@ -53,14 +53,14 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/3-c-vis-serrage", type: "video" }}
+        media={{ id: "VcLIic94jkk", type: "yt" }}
         content={[
           { text: "Mise en place des vis de serrage", classes: "big-title" },
           { text: "Comme tout à l'heure, prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/3-d-poulie-courroie-y", type: "video" }}
+        media={{ id: "3WS5rHREMFc", type: "yt" }}
         content={[
           { text: "Installation de la poulie de Y", classes: "big-title" },
           { text: "Nous allons placer la poulie qui fera le renvoi de courroie du plateau de l'imprimante." },
@@ -70,7 +70,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/3-e-extrudeur", type: "video" }}
+        media={{ id: "qk1dzkg9u2s", type: "yt" }}
         content={[
           { text: "Installation du moteur d'extrudeur", classes: "big-title" },
           { text: "Placez le moteur dans le logement repéré E0." },
@@ -79,7 +79,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/3-f-extrudeur-montage", type: "video" }}
+        media={{ id: "5wUaRbwQdZM", type: "yt" }}
         content={[
           { text: "Pré-montage de l'extrudeur", classes: "big-title" },
           { text: "Montez le bras d'extrudeur." },
@@ -89,7 +89,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/3-g-extrudeur-installation", type: "video" }}
+        media={{ id: "N9D9hVvK1Jo", type: "yt" }}
         content={[
           { text: "Installation du corps d'extrudeur", classes: "big-title" },
           { text: "Passez le fil du capteur dans le trou comme sur la vidéo." },

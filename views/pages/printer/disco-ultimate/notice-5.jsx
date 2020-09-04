@@ -53,7 +53,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
+        media={{ id: "zOxMh6xRj6w", type: "yt" }}
         content={[
           { text: "Montage des barres", classes: "big-title" },
           { text: "Prenez la face avant et 4 barres." },
@@ -62,7 +62,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/5-d-fixe-cote", type: "video" }}
+        media={{ id: "okXiBXzyGnA", type: "yt" }}
         content={[
           { text: "Montage des fixations latérales", classes: "big-title" },
           { text: "Introduisez les fixations latérales sur les barres inférieures." },
@@ -70,7 +70,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/5-e-roulements-axe", type: "video" }}
+        media={{ id: "KXwrq5J3JnQ", type: "yt" }}
         content={[
           { text: "Mise en place des roulements", classes: "big-title" },
           { text: "Ouvrez les sachets des roulements linéaires (encore couverts d'huile)." },
@@ -81,7 +81,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/5-f-face-ar", type: "video" }}
+        media={{ id: "N8GwY_UIcn4", type: "yt" }}
         content={[
           { text: "Montage de la face arrière", classes: "big-title" },
           { text: "Récupérez la face arrière montée." },
@@ -103,7 +103,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/5-h-cache-cote-av-droit", type: "video" }}
+        media={{ id: "h1TfAzOB22U", type: "yt" }}
         content={[
           { text: "Installation du cache côté avant droit", classes: "big-title" },
           { text: "A partir de maintenant, on désignera la face avec le logo comme l'avant et la face avec l'extrudeur comme l'arrière. La gauche sera votre gauche lorsque vous faites face à la machine." },
@@ -113,7 +113,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/5-i-cache-cote-av-gauche", type: "video" }}
+        media={{ id: "Pb4xFtM7z-w", type: "yt" }} Pb4xFtM7z-w
         content={[
           { text: "Installation du cache côté avant gauche", classes: "big-title" },
           { text: "Prenez le dernier cache côté long." },
@@ -123,7 +123,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/5-j-cache-cote-ar", type: "video" }}
+        media={{ id: "7FG6c7dSgCE", type: "yt" }}
         content={[
           { text: "Installation des caches côtés arrières", classes: "big-title" },
           { text: "Rapprochez les fixations latérales de la face avant pour bien serrer les caches côtés." },
@@ -131,7 +131,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/5-k-installation-plaques-sup", type: "video" }}
+        media={{ id: "i5hEwuoYb9c", type: "yt" }}
         content={[
           { text: "Installation des plaques de protection noires", classes: "big-title" },
           { text: "Prenez la partie arrière, elle a deux formes prévu pour entourer les moteurs d'extrudeurs (un seul dans votre cas)." },
@@ -144,7 +144,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/5-l-serrage-base", type: "video" }}
+        media={{ id: "YlDYXXPeNwg", type: "yt" }}
         content={[
           { text: "Serrage de la base", classes: "big-title" },
           { text: "Suivez la vidéo, vous avez 12 vis à serrer." }

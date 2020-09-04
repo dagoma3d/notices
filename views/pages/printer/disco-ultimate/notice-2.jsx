@@ -50,14 +50,14 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/2-c-vis-serrage", type: "video" }}
+        media={{ id: "8EtcssCRZE0", type: "yt" }}
         content={[
           { text: "Mise en place des vis de serrage", classes: "big-title" },
           { text: "Prenez 4 écrous et 4 vis moyennes (M3x16). Placez les écrous dans les logements comme sur la vidéo. Mettez en place les vis sans trop serrer, juste pour maintenir les écrous et éviter que les vis ne bougent. Nous les serrerons plus tard pour maintenir les barres." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/2-d-roulement", type: "video" }}
+        media={{ id: "KEMoSfwTW5M", type: "yt" }}
         content={[
           { text: "Installation des 2 roulements de courroie", classes: "big-title" },
           { text: "Nous allons placer les roulements qui feront le renvoi de courroie du plateau de l'imprimante." },
@@ -66,7 +66,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/2-e-butee", type: "video" }}
+        media={{ id: "8H-AvMm-PaQ", type: "yt" }}
         content={[
           { text: "Mise en place de la butée de Y", classes: "big-title" },
           { text: "Prenez la butée avec le câble le plus court. Introduisez la dans le logement en commençant par faire passer la prise." },
@@ -75,7 +75,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/2-f-moteur", type: "video" }}
+        media={{ id: "1nd98ce2bnI", type: "yt" }}
         content={[
           { text: "Installation du moteur de Y", classes: "big-title" },
           { text: "Posez-la face avant à plat." },

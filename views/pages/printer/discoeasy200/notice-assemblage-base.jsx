@@ -47,7 +47,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/7-c-barre", type: "video" }}
+        media={{ id: "zOxMh6xRj6w", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Montage des barres", classes: "big-title" },

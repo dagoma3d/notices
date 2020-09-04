@@ -47,14 +47,14 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-c-noeud-tete", type: "video" }}
+        media={{ id: "QYGzMbwyWIA", type: "yt" }}
         content={[
           { text: "Repérage du câble ventilateur arrière", classes: "big-title" },
           { text: "Prenez le câble du ventilateur arrière et faites un noeud à 2cm du bout." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-c-bis-gaine-tete", type: "video" }}
+        media={{ id: "50a1FM7_5sw", type: "yt" }}
         content={[
           { text: "Mise en place de la gaine de tête", classes: "big-title" },
           { text: "Prenez la gaine de tête et l'outil imprimé." },
@@ -63,7 +63,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-d-carte", type: "video" }}
+        media={{ id: "md_qbmMm7rc", type: "yt" }}
         content={[
           { text: "Installation de la carte de contrôle", classes: "big-title" },
           { text: "Sortez-la carte du sachet." },
@@ -73,7 +73,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-e-mot-x", type: "video" }}
+        media={{ id: "nsVMYjsB44Q", type: "yt" }}
         content={[
           { text: "Câblage du moteur de X", classes: "big-title" },
           { text: "Prenez le câble moteur le plus long dans le sachet." },
@@ -84,7 +84,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-f-butee-x", type: "video" }}
+        media={{ id: "rVgAaNeTDmA", type: "yt" }}
         content={[
           { text: "Câblage de la butée de X", classes: "big-title" },
           { text: "Récupérez le câble de la butée de X." },
@@ -93,7 +93,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-g-passage-gaine-tete", type: "video" }}
+        media={{ id: "wJoQ2XgS2BU", type: "yt" }}
         content={[
           { text: "Passage des câbles de la tête", classes: "big-title" },
           { text: "Prenez l'ensemble des câbles de la tête." },
@@ -103,14 +103,14 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-h-palpeur", type: "video" }}
+        media={{ id: "JdfAnVkq19E", type: "yt" }}
         content={[
           { text: "Branchement du palpeur", classes: "big-title" },
           { text: "Branchez le câble du palpeur (câble gris) sur le connecteur Z." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-i-sonde", type: "video" }}
+        media={{ id: "qGup4l14zkU", type: "yt" }}
         content={[
           { text: "Branchement de la sonde", classes: "big-title" },
           { text: "Branchez la sonde (câbles noires avec connecteur blanc) sur le connecteur T0." }
@@ -118,7 +118,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-j-cable-tete", type: "video" }}
+        media={{ id: "v-JsMGu6HQE", type: "yt" }}
         content={[
           { text: "Branchement des câbles restants", classes: "big-title" },
           { text: "Dénudez tous les câbles avant de les brancher." },
@@ -128,7 +128,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-k-butee-y", type: "video" }}
+        media={{ id: "ILxua5HxRsk", type: "yt" }}
         content={[
           { text: "Câblage de la butée de Y", classes: "big-title" },
           { text: "Récupérez le câble de la butée de Y (celui qui vient de la face avant)." },
@@ -137,7 +137,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-l-mot-y", type: "video" }}
+        media={{ id: "iXJM7TA8Tf4", type: "yt" }}
         content={[
           { text: "Câblage du moteur de Y", classes: "big-title" },
           { text: "Récupérez le câble moteur le plus court." },
@@ -145,7 +145,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-m-mot-z", type: "video" }}
+        media={{ id: "xIVoaCOR8wQ", type: "yt" }}
         content={[
           { text: "Branchement des moteurs de Z", classes: "big-title" },
           { text: "Récupérez le câble moteur double." },
@@ -155,7 +155,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-n-mot-e", type: "video" }}
+        media={{ id: "yI-7p9plZhI", type: "yt" }}
         content={[
           { text: "Branchement du moteur d'extrudeur", classes: "big-title" },
           { text: "Récupérez le dernier câble moteur." },
@@ -163,7 +163,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-o-ep", type: "video" }}
+        media={{ id: "DProRp7sjDY", type: "yt" }}
         content={[
           { text: "Branchement des capteurs de l'extrudeur+", classes: "big-title" },
           { text: "Raccordez le câble rouge venant de l'extrudeur E0 sur le connecteur 2." },
@@ -172,14 +172,14 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-p-interrupteur", type: "video" }}
+        media={{ id: "Sl4kKxnIUv0", type: "yt" }}
         content={[
           { text: "Installation de l'interrupteur", classes: "big-title" },
           { text: "Clipsez l'interrupteur sur la face avant (le bouton 1 vers le haut de la face avant)." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-q-alim-positif", type: "video" }}
+        media={{ id: "LzLgUxfijVA", type: "yt" }}
         content={[
           { text: "Branchement de l'alimentation (positive)", classes: "big-title" },
           { text: "Récupérez le câble d'alimentation simple." },
@@ -189,7 +189,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-r-alim-negatif", type: "video" }}
+        media={{ id: "neajSepsKoI", type: "yt" }}
         content={[
           { text: "Branchement de l'alimentation (négative)", classes: "big-title" },
           { text: "Récupérez le câble d'alimentation double avec le connecteur d'alimentation." },
@@ -203,7 +203,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-s-lecteur-sd", type: "video" }}
+        media={{ id: "vS4anebn7ZA", type: "yt" }}
         content={[
           { text: "Installation du lecteur SD", classes: "big-title" },
           { text: "Retirez le cache côté avant gauche." },
