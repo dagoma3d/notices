@@ -74,7 +74,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/0-c-c-cales", type: "video" }}
+        media={{ id: "XQffsa3x-Z4", type: "yt" }}
         content={[
           { text: "Préparation", classes: "big-title" },
           { text: "Avant de commencer, retirez les 3 cales oranges qui se trouvent sous le plateau." }
@@ -84,7 +84,7 @@ function Printer(props) {
         content={[
           { text: "Place au montage", classes: "big-title" }
         ]} />
-        <Section
+      <Section
         t={t}
         flip={true}
         media={{ src: "NevaMagis/Notice/0-d-a-maintien.jpg", type: "image" }}
@@ -96,7 +96,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/0-d-a-bras", type: "video" }}
+        media={{ id: "XP9uQXxCgoY", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h3" },
           { text: "Les bras", classes: "big-title" },
@@ -109,7 +109,7 @@ function Printer(props) {
         id="calibration"
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/0-d-b-callibration", type: "video" }}
+        media={{ id: "sr70uUg7MM8", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h3" },
           { text: "La calibration", classes: "big-title" },
@@ -119,7 +119,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/0-d-c-filament", type: "video" }}
+        media={{ id: "l4K7ZllXZ1k", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
           { text: "Chaaargez !", classes: "big-title" },
