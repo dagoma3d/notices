@@ -58,7 +58,7 @@ function Printer(props) {
       </Title>
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/2-d-pause-manuelle", type: "video" }}
+        media={{ id: "mszJtHNF6EE", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
           { text: "Comment faire une pause ?", classes: "big-title", tag: "h4" },
@@ -69,7 +69,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/2-e-video-remplissage", type: "video" }}
+        media={{ id: "jE22QQ5yxOQ", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h3" },
           { text: "Mais pourquoi du sel ?", classes: "big-title" },
@@ -79,7 +79,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/2-f-video-relance", type: "video" }}
+        media={{ id: "0f8_B-f3x-g", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
           { text: "Et maintenant ?", classes: "big-title" },
@@ -88,7 +88,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/2-g-base", type: "video" }}
+        media={{ id: "OzYBHb_jtnM", type: "yt" }}
         content={[
           { text: "Il reste une demie-heure d'impression", classes: "big-title" }
         ]} />

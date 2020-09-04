@@ -78,7 +78,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/1-f-sd-machine", type: "video" }}
+        media={{ id: "TaOm_8mrTH0", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
           { text: "Lancement de l'impression", classes: "big-title" },
@@ -98,14 +98,14 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/1-g-piece-beige", type: "video" }}
+        media={{ id: "VDuhngeIydk", type: "yt" }}
         content={[
           { text: "Cette pièce s'imprime en 2 heures environ", classes: "big-title" }
         ]} />
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/1-h-plateau", type: "video" }}
+        media={{ id: "IhcGqLIXxHI", type: "yt" }}
         content={[
           { text: "Après chaque impression", classes: "big-title" },
           { text: "Retirez tout ce qu'il reste sur le plateau à l'aide de votre spatule." },

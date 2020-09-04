@@ -57,7 +57,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/3-d-pause-auto", type: "video" }}
+        media={{ id: "asF6cmYR6mo", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h3" },
           { text: "Surprise !", classes: "big-title", tag: "h4" },
@@ -70,7 +70,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/3-e-changement-filament", type: "video" }}
+        media={{ id: "L6dqWNBu6W0", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h3" },
           { text: "Éjection du filament", classes: "big-title" },
@@ -84,7 +84,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/3-f-reprise-manuelle", type: "video" }}
+        media={{ id: "y6_fnaPlbWk", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h3" },
           { text: "Relancez l'impression", classes: "big-title" },
@@ -93,7 +93,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/3-g-bi-colore", type: "video" }}
+        media={{ id: "6BDuY4sffrg", type: "yt" }}
         content={[
           { text: "Plus que 10 minutes d'impression", classes: "big-title" }
         ]} />
