@@ -36,7 +36,7 @@ function Extruder(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-c-detection-filament", type: "video" }}
+        media={{ id: "a3YhXjDsips", type: "yt" }}
         content={[
           { text: "La détection de fin de filament", classes: "big-title" },
           { text: "Désormais pendant une impression, si l'imprimante 3D est à court de filament, elle se mettra en pause toute seule et éjectera le restant de filament." },
@@ -48,7 +48,7 @@ function Extruder(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-d-pause-plus", type: "video" }}
+        media={{ id: "DXtqwqNnw-g", type: "yt" }}
         content={[
           { text: "La pause", classes: "big-title" },
           { text: "Pendant une impression, vous êtes capable de mettre l'imprimante en pause en appuyant sur le bouton. Elle continuera d'imprimer pendant quelques secondes avant de s'arrêter." },
@@ -59,7 +59,7 @@ function Extruder(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-e-ejection-filament", type: "video" }}
+        media={{ id: "bTaBU_9ca3M", type: "yt" }}
         content={[
           { text: "Ejection du filament", classes: "big-title" },
           { text: "Vous êtes en mesure de retirer automatiquement le filament en restant appuyer sur le bouton de la pause. Vous pouvez relâcher lorsque l'imprimante réagit." },
@@ -71,7 +71,7 @@ function Extruder(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-f-insertion-filament", type: "video" }}
+        media={{ id: "2vbEgZNEk04", type: "yt" }}
         content={[
           { text: "Insertion du filament", classes: "big-title" },
           { text: "Avant chaque insertion, coupez le filament pour que le bout soit propre." },

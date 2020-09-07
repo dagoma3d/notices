@@ -45,7 +45,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/5-c-preparation", type: "video" }}
+        media={{ id: "k7hvwWYU-XY", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Préparation", classes: "big-title" },
@@ -54,7 +54,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/5-d-vis-serrage", type: "video" }}
+        media={{ id: "Xjtu-za9T38", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -62,7 +62,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/5-e-montage-barre", type: "video" }}
+        media={{ id: "28n4f0pgdsQ", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Montage de la barre", classes: "big-title" },

@@ -113,7 +113,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ id: "Pb4xFtM7z-w", type: "yt" }} Pb4xFtM7z-w
+        media={{ id: "Pb4xFtM7z-w", type: "yt" }}
         content={[
           { text: "Installation du cache côté avant gauche", classes: "big-title" },
           { text: "Prenez le dernier cache côté long." },

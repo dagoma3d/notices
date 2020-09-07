@@ -46,7 +46,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-b-preparation", type: "video" }}
+        media={{ id: "6_54V2tDzqA", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Préparation", classes: "big-title" },
@@ -59,7 +59,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-c-carte", type: "video" }}
+        media={{ id: "LP0QRquzPxs", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Installation de la carte de contrôle", classes: "big-title" },
@@ -70,7 +70,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-d-mot-x", type: "video" }}
+        media={{ id: "JuyV38yBjKg", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Câblage du moteur de X", classes: "big-title" },
@@ -85,7 +85,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-e-butee-x", type: "video" }}
+        media={{ id: "XNnjrG1TkaU", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Branchement de la butée de X", classes: "big-title" },
@@ -95,7 +95,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-f-palpeur", type: "video" }}
+        media={{ id: "BSPtSNDmBF8", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Branchement du palpeur de la tête", classes: "big-title" },
@@ -106,7 +106,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-g-sonde", type: "video" }}
+        media={{ id: "LGpuJxsdzOs", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Branchement de la sonde de température", classes: "big-title" },
@@ -116,7 +116,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-h-cable-tete", type: "video" }}
+        media={{ id: "Vgfs62IN9N8", type: "yt" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Branchement des câbles de la tête", classes: "big-title" },
@@ -135,7 +135,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-i-butee-y", type: "video" }}
+        media={{ id: "GC9rGqj5lxw", type: "yt" }}
         content={[
           { text: "Étape 8", classes: "title tleft", tag: "h2" },
           { text: "Branchement de la butée de Y", classes: "big-title" },
@@ -144,7 +144,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-j-mot-y", type: "video" }}
+        media={{ id: "wBhLf-DBc4c", type: "yt" }}
         content={[
           { text: "Étape 9", classes: "title tleft", tag: "h2" },
           { text: "Branchement du moteur de Y", classes: "big-title" },
@@ -154,7 +154,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-k-mot-z", type: "video" }}
+        media={{ id: "IEwqLaSnaEo", type: "yt" }}
         content={[
           { text: "Étape 10", classes: "title tleft", tag: "h2" },
           { text: "Branchement des moteurs de Z", classes: "big-title" },
@@ -164,7 +164,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-l-mot-e", type: "video" }}
+        media={{ id: "jRI1UFi6fRs", type: "yt" }}
         content={[
           { text: "Étape 11", classes: "title tleft", tag: "h2" },
           { text: "Branchement du moteur d'extrudeur", classes: "big-title" },
@@ -174,7 +174,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-m-interrupteur", type: "video" }}
+        media={{ id: "1iW4JTIP9II", type: "yt" }}
         content={[
           { text: "Étape 12", classes: "title tleft", tag: "h2" },
           { text: "Installation de l'interrupteur", classes: "big-title" },
@@ -182,7 +182,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-n-alim-positif", type: "video" }}
+        media={{ id: "-RtqIJ6oKas", type: "yt" }}
         content={[
           { text: "Étape 13", classes: "title tleft", tag: "h2" },
           { text: "Branchement de l'alimentation (positive)", classes: "big-title" },
@@ -195,7 +195,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-o-alim-negatif", type: "video" }}
+        media={{ id: "CqYl8vPz3ao", type: "yt" }}
         content={[
           { text: "Étape 14", classes: "title tleft", tag: "h2" },
           { text: "Branchement de l'alimentation (négative)", classes: "big-title" },
@@ -209,7 +209,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/10-p-lecteur-sd", type: "video" }}
+        media={{ id: "c2_19dQXl60", type: "yt" }}
         content={[
           { text: "Étape 15", classes: "title tleft", tag: "h2" },
           { text: "Installation du lecteur SD", classes: "big-title" },
@@ -220,7 +220,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/10-q-nappe-sd", type: "video" }}
+        media={{ id: "ViSpzdidUuE", type: "yt" }}
         content={[
           { text: "Étape 16", classes: "title tleft", tag: "h2" },
           { text: "Branchement de la nappe SD", classes: "big-title" },

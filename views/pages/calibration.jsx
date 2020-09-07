@@ -110,7 +110,7 @@ function Printer(props) {
         ]}>
         <HiddenVideo
           t={t}
-          src="DiscoEasy/Calibration/c-e5"
+          id="OkfM4_sDQ00"
           content={[
             { text: "L'insertion est automatique avec l'add-on \"extrudeur+\"" },
             { text: "Cochez les étapes une fois vérifiées." },

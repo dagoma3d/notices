@@ -48,7 +48,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Calibration/c-e5", type: "video" }}
+        media={{ id: "OkfM4_sDQ00", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft" },
           { text: "Insertion du filament", classes: "big-title", tag: "h2" },
@@ -62,7 +62,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/16-e-lancement", type: "video" }}
+        media={{ id: "V4tu5wQuJn4", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft" },
           { text: "Lancement d'une impression", classes: "big-title", tag: "h2" },
@@ -86,7 +86,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/16-f-premiere-couche", type: "video" }}
+        media={{ id: "cdmfZ8FZ2I8", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft" },
           { text: "Ajustement de la première couche", classes: "big-title", tag: "h2" },
@@ -99,7 +99,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-c-detection-filament", type: "video" }}
+        media={{ id: "a3YhXjDsips", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft" },
           { text: "La détection de fin de filament", classes: "big-title" },
@@ -112,7 +112,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-d-pause-plus", type: "video" }}
+        media={{ id: "DXtqwqNnw-g", type: "yt" }}
         content={[
           { text: "Étape 7", classes: "title tleft" },
           { text: "La pause", classes: "big-title" },
@@ -124,7 +124,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-e-ejection-filament", type: "video" }}
+        media={{ id: "bTaBU_9ca3M", type: "yt" }}
         content={[
           { text: "Étape 8", classes: "title tleft" },
           { text: "Ejection du filament", classes: "big-title" },
@@ -137,7 +137,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/B-f-insertion-filament", type: "video" }}
+        media={{ id: "2vbEgZNEk04", type: "yt" }}
         content={[
           { text: "Étape 9", classes: "title tleft" },
           { text: "Insertion du filament", classes: "big-title" },
@@ -150,7 +150,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/16-g-arreter", type: "video" }}
+        media={{ id: "A6-EyRaKC0g", type: "yt" }}
         content={[
           { text: "Étape 10", classes: "title tleft" },
           { text: "Arrêter proprement la Disco Ultimate", classes: "big-title" },

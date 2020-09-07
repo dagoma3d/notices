@@ -28,7 +28,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/7-b-chargement-filament", type: "video" }}
+        media={{ id: "7voM9UhFRek", type: "yt" }}
         content={[
           { text: "Installation du filament", classes: "big-title tleft", tag: "h2" },
           { text: "Avant chaque insertion, coupez le filament pour que le bout soit propre." },

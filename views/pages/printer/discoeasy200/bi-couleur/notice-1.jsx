@@ -76,7 +76,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-d-gaine", type: "video" }}
+        media={{ id: "mrA0RmPybS8", type: "yt" }}
         content={[
           { text: "Retrait de la gaine torsadée", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez la gaine de la fixation latérale jusqu'au chariot." },
@@ -86,14 +86,14 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot", type: "video" }}
+        media={{ id: "NEL9QAZYD7U", type: "yt" }}
         content={[
           { text: "Débranchez le moteur de X", classes: "big-title tleft", tag: "h2" }
         ]} />
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-f-butee", type: "video" }}
+        media={{ id: "Nz4377yFvD0", type: "yt" }}
         content={[
           { text: "Débranchez la butée de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Retournez la machine." },
@@ -102,7 +102,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-g-debrancher-tete", type: "video" }}
+        media={{ id: "RfhmRKd_AQ0", type: "yt" }}
         content={[
           { text: "Débranchez la tête d'impression", classes: "big-title tleft", tag: "h2" },
           { text: "Sous la machine, débranchez le palpeur connecté sur la borne Y+." },
@@ -112,7 +112,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-g-debrancher-tete", type: "video" }}
+        media={{ id: "RfhmRKd_AQ0", type: "yt" }}
         content={[
           { text: "Démontage de la partie supérieure", classes: "big-title tleft", tag: "h2" },
           { text: "S'il vous reste du filament dans la tête d'impression, retirez-le." },
@@ -122,7 +122,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x", type: "video" }}
+        media={{ id: "GBHMcmeivSA", type: "yt" }}
         content={[
           { text: "Retrait de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Dévissez les vis supérieures des coupleurs." },
@@ -135,7 +135,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x", type: "video" }}
+        media={{ id: "gRgkJ2cegXs", type: "yt" }}
         content={[
           { text: "Démontage de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez la courroie de la tête." },
@@ -144,7 +144,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-k-debrancher-mot-e", type: "video" }}
+        media={{ id: "LVf6CotYz-4", type: "yt" }}
         content={[
           { text: "Débranchez le moteur d'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Retournez la machine pour accéder au câblage." },
@@ -154,7 +154,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-l-retirer-courroie-plateau", type: "video" }}
+        media={{ id: "Q5v3I_cXVkI", type: "yt" }}
         content={[
           { text: "Retrait de la courroie du plateau", classes: "big-title tleft", tag: "h2" },
           { text: "Toujours sous la machine, débloquez le premier brin de la courroie." },
@@ -163,7 +163,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/1-m-retirer-face-ar", type: "video" }}
+        media={{ id: "2ig2x5VGUow", type: "yt" }}
         content={[
           { text: "Retrait de la face arrière", classes: "big-title tleft", tag: "h2" },
           { text: "Desserez les vis sur les côtés de la face arrière (il y en a 4)." },

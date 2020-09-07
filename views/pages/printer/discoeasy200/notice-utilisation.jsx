@@ -49,7 +49,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Calibration/c-e5", type: "video" }}
+        media={{ id: "OkfM4_sDQ00", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft" },
           { text: "Insertion du filament", classes: "big-title" },
@@ -63,7 +63,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/16-e-lancement", type: "video" }}
+        media={{ id: "V4tu5wQuJn4", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft" },
           { text: "Lancement d'une impression", classes: "big-title" },
@@ -87,7 +87,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/16-f-premiere-couche", type: "video" }}
+        media={{ id: "cdmfZ8FZ2I8", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft" },
           { text: "Ajustement de la première couche", classes: "big-title" },
@@ -100,7 +100,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/16-g-arreter", type: "video" }}
+        media={{ id: "A6-EyRaKC0g", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft" },
           { text: "Arrêter proprement la Discoeasy200", classes: "big-title" },

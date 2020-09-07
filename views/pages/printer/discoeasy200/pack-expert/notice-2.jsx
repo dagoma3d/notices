@@ -28,7 +28,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-b-roulements-xd", type: "video" }}
+        media={{ id: "r2QiciuZN6U", type: "yt" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Récupération des roulements de courroie", classes: "big-title" },
@@ -40,7 +40,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-c-mot-butee-x", type: "video" }}
+        media={{ id: "QpEgkxH984c", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Récupération du moteur de X et de la butée", classes: "big-title" },

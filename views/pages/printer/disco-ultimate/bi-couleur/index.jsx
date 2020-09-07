@@ -71,7 +71,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/1-d-ptfe", type: "video" }}
+        media={{ id: "TlygdqeUFpI", type: "yt" }}
         content={[
           { text: "Retrait du tube ptfe", classes: "big-title tleft", tag: "h2" },
           { text: "S'il vous reste du filament dans la tête d'impression, retirez-le." },
@@ -80,7 +80,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/1-e-top", type: "video" }}
+        media={{ id: "NYqUiCr_8n4", type: "yt" }}
         content={[
           { text: "Démontage de la partie supérieure", classes: "big-title tleft", tag: "h2" },
           { text: "Desserrez les 4 vis latérales." },
@@ -88,7 +88,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/1-f-retrait-axe-x", type: "video" }}
+        media={{ id: "kdw6GuqZ6Bo", type: "yt" }}
         content={[
           { text: "Retrait de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Tournez les tiges pour faire monter l'axe X jusqu'en haut." },
@@ -97,7 +97,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/1-g-demontage-axe-x", type: "video" }}
+        media={{ id: "0if7P6y-JEU", type: "yt" }}
         content={[
           { text: "Démontage de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez la courroie de la tête." },
@@ -106,7 +106,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/1-h-plaque-fond", type: "video" }}
+        media={{ id: "EPB7hwdkFTI", type: "yt" }}
         content={[
           { text: "Retrait de la plaque de fond", classes: "big-title tleft", tag: "h2" },
           { text: "Déclipsez la plaque de fond en retirant les patins." },
@@ -115,7 +115,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/1-i-debrancher-tete", type: "video" }}
+        media={{ id: "uGZcVd6WlkM", type: "yt" }}
         content={[
           { text: "Débranchez la tête d'impression", classes: "big-title tleft", tag: "h2" },
           { text: "Sous la machine, retirez les colliers de fixation." },

@@ -31,7 +31,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/11-e-tension-courroie-tete", type: "video" }}
+        media={{ id: "fG_7xwTHC0E", type: "yt" }}
         content={[
           { text: "Ajustement de la tension de la courroie de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Placez la tête à gauche.", classes: "text-red" },

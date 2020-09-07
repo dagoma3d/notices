@@ -21,7 +21,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/2-b-bis-roulement-lineaires", type: "video" }}
+        media={{ id: "NrCEmVkD-IU", type: "yt" }}
         content={[
           { text: "Montage des roulements linéaires", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les 6 roulements LM8UU livrés avec votre pack. Insérez les roulements dans les chariots que vous avez imprimés. Faites bien attention et insérez les bien droit pour éviter de casser votre pièce." },
@@ -30,7 +30,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-b-roulements-xd", type: "video" }}
+        media={{ id: "r2QiciuZN6U", type: "yt" }}
         content={[
           { text: "Récupération des roulements de courroie X", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le chariot droit de l'axe X." },
@@ -40,7 +40,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-c-mot-butee-x", type: "video" }}
+        media={{ id: "QpEgkxH984c", type: "yt" }}
         content={[
           { text: "Récupération du moteur de x et de la butée", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le chariot gauche de l'axe X." },
@@ -53,7 +53,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/2-d-demontage-extrudeur", type: "video" }}
+        media={{ id: "GbbNgkJ-m90", type: "yt" }}
         content={[
           { text: "Démontage de l'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez les 3 vis de l'extrudeur." },

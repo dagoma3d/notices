@@ -29,7 +29,7 @@ function BiColor(props) {
       <Title t={t} content={[]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/10-d-top-installation", type: "video" }}
+        media={{ id: "RMQ6gxwAdKs", type: "yt" }}
         content={[
           { text: "Remise en place du top", classes: "big-title tleft", tag: "h2" },
           { text: "Remettez le top en place. La partie la plus grande doit être vers la face avant." },
@@ -39,7 +39,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-e-tension-courroie-tete", type: "video" }}
+        media={{ id: "abMPzUF0R04", type: "yt" }}
         content={[
           { text: "Ajustement de la tension de la courroie de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Placez la tête à gauche." },
@@ -49,7 +49,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/10-j-cable-management", type: "video" }}
+        media={{ id: "3d4ci1Fne-s", type: "yt" }}
         content={[
           { text: "Gestion des câbles", classes: "big-title tleft", tag: "h2" },
           { text: "Commencez par fixer les câbles de la tête à l'aide d'un collier de serrage." },
@@ -59,7 +59,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/10-m-ptfe-bicouleur", type: "video" }}
+        media={{ id: "Z6FIeW6HVqY", type: "yt" }}
         content={[
           { text: "Installation du tube PTFE", classes: "big-title tleft", tag: "h2" },
           { text: "Ce tube va guider le filament de l'extrudeur jusqu'à la tête d'impression." },

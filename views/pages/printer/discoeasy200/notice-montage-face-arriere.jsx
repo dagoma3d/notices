@@ -50,7 +50,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/4-c-vis-serrage", type: "video" }}
+        media={{ id: "RG8MdKj24jQ", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -59,7 +59,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/4-d-roulement-courroie", type: "video" }}
+        media={{ id: "Xixx6dvNiso", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Installation des roulements de courroie", classes: "big-title" },
@@ -68,7 +68,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/4-e-extrudeur", type: "video" }}
+        media={{ id: "kVB-jwSwbSo", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Montage de l'extrudeur", classes: "big-title" },
@@ -84,7 +84,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage", type: "video" }}
+        media={{ id: "8FBdNXbVacQ", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Serrage du bras d'extrudeur", classes: "big-title" },

@@ -13,7 +13,7 @@ function AdditionalInfo(props) {
   }
 }
 function HiddenVideo(props) {
-  const { src, content, t } = props;
+  const { id, src, content, t } = props;
   return (
     <section>
       <p className="tleft col-vbspace">
@@ -21,7 +21,7 @@ function HiddenVideo(props) {
       </p>
       <AdditionalInfo content={content} />
       <section className="col-xl-24 row block-video block-video-hidden" style={{ border: "none" }}>
-        <Media info={{ src: src, type: "video" }}>
+        <Media info={id ? { id: id, type: "yt" } : { src: src, type: "video" }}>
           <div className="close-video">
             <i className="fa fa-close"></i>
           </div>

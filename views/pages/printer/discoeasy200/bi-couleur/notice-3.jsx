@@ -33,11 +33,11 @@ function BiColor(props) {
           { text: "Un fois bien en place, serrez les vis latérale." },
           { text: "Astuce : Utilisez le plateau pour vérifier l'équerrage.", classes: "italic" }
         ]}>
-        <HiddenVideo t={t} src="DiscoEasy/Notice/9-e-control-base" />
+        <HiddenVideo t={t} id="H0yMALquw8A" />
       </Section>
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/9-f-courroie", type: "video" }}
+        media={{ id: "Nf-nci005Ao", type: "yt" }}
         content={[
           { text: "Installation de la courroie du plateau", classes: "big-title tleft", tag: "h2" },
           { text: "Attention, le plateau est encore mobile, faites attention à vos doigts !", classes: "text-red" },

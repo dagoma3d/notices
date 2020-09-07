@@ -39,7 +39,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/8-c-choix-du", type: "video" }}
+        media={{ id: "bOnaB2h9F-k", type: "yt" }}
         content={[
           { text: "Installation de Cura pour la double extrusion", classes: "big-title tleft", tag: "h2" },
           { text: "Si ce n'est pas déjà fait, téléchargez la dernière version de Cura.", classes: "text-red" },
@@ -59,7 +59,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/8-e-filament", type: "video" }}
+        media={{ id: "BvU3MfvSPuA", type: "yt" }}
         content={[
           { text: "Associer la couleur de filament", classes: "big-title tleft", tag: "h2" },
           { text: "Choisissez les paramètres des filaments chargés dans vos extrudeur 1 et 2." },

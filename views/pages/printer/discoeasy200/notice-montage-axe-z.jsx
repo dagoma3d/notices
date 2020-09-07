@@ -51,7 +51,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/8-c-moteur-z", type: "video" }}
+        media={{ id: "_WPxOo7abg4", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Installation des moteurs de Z", classes: "big-title" },
@@ -66,7 +66,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/8-d-barres", type: "video" }}
+        media={{ id: "CiJjhhGbTnE", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Montage des barres de l'axe Z", classes: "big-title" },
@@ -77,7 +77,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/8-e-axe-x", type: "video" }}
+        media={{ id: "6acmTjy3fxw", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Installation de l'axe X", classes: "big-title" },
@@ -97,7 +97,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/8-f-tiges", type: "video" }}
+        media={{ id: "k2asdPSAomM", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Montage des tiges filetées", classes: "big-title" },
@@ -114,7 +114,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/8-g-coupleurs", type: "video" }}
+        media={{ id: "nHGdXm3ABrc", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Serrage des coupleurs", classes: "big-title" },

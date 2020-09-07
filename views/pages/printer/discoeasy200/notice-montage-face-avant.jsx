@@ -48,7 +48,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/3-c-vis-serrage", type: "video" }}
+        media={{ id: "XWGzA1HvZnc", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -57,7 +57,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/3-d-roulement", type: "video" }}
+        media={{ id: "1lBJU6nMfg4", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Installation des 2 roulements de courroie", classes: "big-title" },
@@ -66,7 +66,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/3-e-butee", type: "video" }}
+        media={{ id: "nnsbsWUvgmk", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Mise en place de la butée de Y", classes: "big-title" },
@@ -77,7 +77,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/3-f-moteur", type: "video" }}
+        media={{ id: "zFQDMFbY8yk", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Installation du moteur de Y", classes: "big-title" },

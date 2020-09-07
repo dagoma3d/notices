@@ -47,7 +47,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/9-c-support-plateau", type: "video" }}
+        media={{ id: "58eId8oO5qc", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Montage des supports plateau", classes: "big-title" },
@@ -70,7 +70,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/9-d-clips", type: "video" }}
+        media={{ id: "K8kYzaHjzzw", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Installation sur l'imprimante", classes: "big-title" },
@@ -88,7 +88,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/9-e-control-base", type: "video" }}
+        media={{ id: "H0yMALquw8A", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Contrôle de la perpendicularité de la base", classes: "big-title" },
@@ -100,7 +100,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/9-f-courroie", type: "video" }}
+        media={{ id: "Nf-nci005Ao", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Installation de la courroie du plateau", classes: "big-title" },

@@ -29,7 +29,7 @@ function BiColor(props) {
       <Title t={t} content={[]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/2-b-retirer-plaque-sup-ar", type: "video" }}
+        media={{ id: "AcqJKAH2guw", type: "yt" }}
         content={[
           { text: "Retrait plaque arrière", classes: "big-title tleft", tag: "h2" },
           { text: "Retirez les 4 vis CHC M3x10 qui tiennent la plaque supérieure arrière." }
@@ -37,14 +37,14 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/2-c-emplacement-mot-e1", type: "video" }}
+        media={{ id: "crLJFBdJMxU", type: "yt" }}
         content={[
           { text: "Ouverture de l'emplacement E1", classes: "big-title tleft", tag: "h2" },
           { text: "Soulevez la plaque et découpez l'emplacement du moteur E1 à l'aide d'une pince coupante." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/3-f-extrudeur-montage", type: "video" }}
+        media={{ id: "5wUaRbwQdZM", type: "yt" }}
         content={[
           { text: "Pré-montage de l'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Montez le bras d'extrudeur." },
@@ -57,7 +57,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/2-e-extrudeur-installation", type: "video" }}
+        media={{ id: "TPPm76A1qNQ", type: "yt" }}
         content={[
           { text: "Installation de l'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Placez le moteur dans le logement repéré E1." },
@@ -71,7 +71,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/2-f-extrudeur-branchement", type: "video" }}
+        media={{ id: "UarcMOEOouA", type: "yt" }}
         content={[
           { text: "Branchement de l'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Branchez le câble du moteur comme sur la vidéo." },
@@ -82,7 +82,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/7-f-barre-bicouleur", type: "video" }}
+        media={{ id: "mahkE1oUPX0", type: "yt" }}
         content={[
           { text: "Montage des barres de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez 2 barres courtes." },
@@ -90,7 +90,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/7-g-courroie-tete", type: "video" }}
+        media={{ id: "EyjtEGkGawg", type: "yt" }}
         content={[
           { text: "Installation de la courroie de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Nous vous conseillons de suivre la vidéo avec attention." }
@@ -98,7 +98,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/2-i-installation-axe-x", type: "video" }}
+        media={{ id: "WSnrP3lVfgM", type: "yt" }}
         content={[
           { text: "Installation de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez l'axe X, orientez-le pour que le moteur de X soit à gauche de la machine lorsque la face avant est devant vous." },
@@ -108,7 +108,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-c-noeud-tete", type: "video" }}
+        media={{ id: "QYGzMbwyWIA", type: "yt" }}
         content={[
           { text: "Repérage du câble ventilateur arrière", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le câble du ventilateur arrière et faites un noeud à 2cm du bout." }
@@ -116,7 +116,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Notice/9-c-bis-gaine-tete", type: "video" }}
+        media={{ id: "50a1FM7_5sw", type: "yt" }}
         content={[
           { text: "Mise en place de la gaine de tête", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez la gaine de tête et l'outil imprimé livré avec votre Disco Ultimate." },
@@ -124,7 +124,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoUltimate/Notice/9-g-passage-gaine-tete", type: "video" }}
+        media={{ id: "wJoQ2XgS2BU", type: "yt" }}
         content={[
           { text: "Passage des câbles de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez l'ensemble des câbles de la tête." },
@@ -134,7 +134,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoUltimate/Addon/Bicouleur/2-l-branchement-tete", type: "video" }}
+        media={{ id: "SoUGAu42pb0", type: "yt" }}
         content={[
           { text: "Branchement de la nouvelle tête d'impression", classes: "big-title tleft", tag: "h2" },
           { text: "Dénudez tous les câbles avant de les brancher." },

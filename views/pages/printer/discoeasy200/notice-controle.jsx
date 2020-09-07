@@ -28,7 +28,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/12-b-g28", type: "video" }}
+        media={{ id: "pNz1Mxoew2U", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Contrôle des butées et des moteurs", classes: "big-title" },
@@ -43,7 +43,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/12-c-deplacement", type: "video" }}
+        media={{ id: "BxevsEk5mjI", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Contrôle des déplacements des axes", classes: "big-title" },
@@ -56,7 +56,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/12-d-ventilateur", type: "video" }}
+        media={{ id: "GG5ZndsEbZo", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Contrôle des ventilateurs", classes: "big-title" },
@@ -70,7 +70,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/12-e-chauffe", type: "video" }}
+        media={{ id: "2RWUvub2woo", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Contrôle de la chauffe et de l'extrusion", classes: "big-title" },

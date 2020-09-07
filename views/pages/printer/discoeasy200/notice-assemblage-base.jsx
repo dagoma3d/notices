@@ -60,7 +60,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/7-d-fixe-cote", type: "video" }}
+        media={{ id: "y4yium1kIb0", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Montage des fixations latérales", classes: "big-title" },
@@ -69,7 +69,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/7-e-roulements-axe", type: "video" }}
+        media={{ id: "gP0THD_dqy8", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des roulements", classes: "big-title" },
@@ -81,7 +81,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/7-f-face-ar", type: "video" }}
+        media={{ id: "eJCRXpFsJ3w", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Montage de la face arrière", classes: "big-title" },
@@ -105,7 +105,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/7-g-serrage-base", type: "video" }}
+        media={{ id: "bPAU-ftM2vM", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Verrouillage des barres de la base", classes: "big-title" },
@@ -114,7 +114,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/7-h-cache-cote-av-gauche", type: "video" }}
+        media={{ id: "hRzrHtlGXAs", type: "yt" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Installation du cache côté avant gauche", classes: "big-title" },
@@ -127,7 +127,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/7-i-cache-cote-av-droit", type: "video" }}
+        media={{ id: "vee_w-ZsLHc", type: "yt" }}
         content={[
           { text: "Étape 8", classes: "title tleft", tag: "h2" },
           { text: "Installation du cache côté avant droit", classes: "big-title" },
@@ -137,7 +137,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/7-j-cache-cote-ar", type: "video" }}
+        media={{ id: "pvtKL2K7oVc", type: "yt" }}
         content={[
           { text: "Étape 9", classes: "title tleft", tag: "h2" },
           { text: "Installation des caches côtés arrières", classes: "big-title" },
@@ -147,7 +147,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/7-k-serrage-fixe-cote", type: "video" }}
+        media={{ id: "dIYRBjOiA8w", type: "yt" }}
         content={[
           { text: "Étape 10", classes: "title tleft", tag: "h2" },
           { text: "Serrage des fixations latérales", classes: "big-title" },

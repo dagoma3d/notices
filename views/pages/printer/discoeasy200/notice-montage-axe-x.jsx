@@ -52,7 +52,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/6-c-roulement-courroie", type: "video" }}
+        media={{ id: "zIAedVAVu2c", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Installation des roulements de courroie", classes: "big-title" },
@@ -62,7 +62,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/6-d-bute", type: "video" }}
+        media={{ id: "0zpbqmQxS9c", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Mise en place de la butée de X", classes: "big-title" },
@@ -73,7 +73,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/6-e-moteur-x", type: "video" }}
+        media={{ id: "QMQYIsNsYNw", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Installation du moteur de X", classes: "big-title" },
@@ -84,7 +84,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/6-g-tete", type: "video" }}
+        media={{ id: "VmWe8jPwtyI", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Installation des roulements de la tête", classes: "big-title" },
@@ -93,7 +93,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/6-f-barre", type: "video" }}
+        media={{ id: "B4XaJI9l2dY", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Montage des barres de l'axe X", classes: "big-title" },
@@ -104,7 +104,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/6-h-courroie-tete", type: "video" }}
+        media={{ id: "RGABPMBcaKE", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Installation de la courroie de la tête", classes: "big-title" },

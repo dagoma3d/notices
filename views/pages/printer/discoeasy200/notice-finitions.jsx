@@ -49,7 +49,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/11-c-top-vis-serrage", type: "video" }}
+        media={{ id: "y3MpRMjUmyQ", type: "yt" }}
         content={[
           { text: "Étape 1", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des vis de serrage", classes: "big-title" },
@@ -59,7 +59,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/11-d-top-barres", type: "video" }}
+        media={{ id: "UrbF3gU6H24", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des barres", classes: "big-title" },
@@ -71,7 +71,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/11-e-tension-courroie-tete", type: "video" }}
+        media={{ id: "fG_7xwTHC0E", type: "yt" }}
         content={[
           { text: "Étape 3", classes: "title tleft", tag: "h2" },
           { text: "Ajustement de la tension de courroie de la tête", classes: "big-title" },
@@ -84,7 +84,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/11-f-tension-courroie-plateau", type: "video" }}
+        media={{ id: "d8nT5L8Z9Zg", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Ajustement de la tension de courroie du plateau", classes: "big-title" },
@@ -97,7 +97,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/11-g-gaine", type: "video" }}
+        media={{ id: "CO99gtptxz8", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Mise en place de la gaine", classes: "big-title" },
@@ -116,7 +116,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/11-h-cable-management", type: "video" }}
+        media={{ id: "HBTfuzBZo9A", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Gestion des câbles", classes: "big-title" },
@@ -125,7 +125,7 @@ function Printer(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/11-i-patin", type: "video" }}
+        media={{ id: "gUpfMXQvzCo", type: "yt" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Mise en place des patins antidérapant", classes: "big-title" },
@@ -134,7 +134,7 @@ function Printer(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/11-j-ptfe", type: "video" }}
+        media={{ id: "fjdKJRYabq4", type: "yt" }}
         content={[
           { text: "Étape 8", classes: "title tleft", tag: "h2" },
           { text: "Installation du tube PTFE", classes: "big-title" },

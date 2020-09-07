@@ -89,7 +89,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-e-debrancher-mot", type: "video" }}
+        media={{ id: "NEL9QAZYD7U", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Débranchez le moteur de X", classes: "big-title" }
@@ -119,7 +119,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-h-retirer-axe-x", type: "video" }}
+        media={{ id: "GBHMcmeivSA", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Retrait de l'axe X", classes: "big-title" },
@@ -142,7 +142,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-j-demontage-axe-x", type: "video" }}
+        media={{ id: "gRgkJ2cegXs", type: "yt" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Démontage de l'axe X", classes: "big-title" },
