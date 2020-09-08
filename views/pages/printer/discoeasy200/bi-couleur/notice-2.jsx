@@ -62,7 +62,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/2-e-roulement-ar", type: "video" }}
+        media={{ id: "Vqim7MYfgDg", type: "yt" }}
         content={[
           { text: "Récupération des roulements de courroie Y", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez la face arrière." },
@@ -72,7 +72,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/2-f-ecrou-serrage", type: "video" }}
+        media={{ id: "kCJ-efn9Yes", type: "yt" }}
         content={[
           { text: "Retirez les vis de serrage", classes: "big-title tleft", tag: "h2" },
           { text: "Toujours sur la face arrière, retirez les 4 vis de serrage." },
@@ -81,7 +81,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/2-g-montage-extrudeur", type: "video" }}
+        media={{ id: "hLLLwNQb0GQ", type: "yt" }}
         content={[
           { text: "Remontage des extrudeurs", classes: "big-title tleft", tag: "h2" },
           { text: "Montez l'extrudeur livré avec votre pack en suivant la vidéo." },
@@ -94,7 +94,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/4-e-extrudeur-serrage-2", type: "video" }}
+        media={{ id: "kw9A0y43vqE", type: "yt" }}
         content={[
           { text: "Serrage du bras d'extrudeur", classes: "big-title tleft", tag: "h2" },
           { text: "Le bras ne doit pas être trop serré pour éviter de le bloquer." },

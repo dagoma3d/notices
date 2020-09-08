@@ -23,7 +23,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-b-montage-face-ar", type: "video" }}
+        media={{ id: "hhJ-ITH0Ybw", type: "yt" }}
         content={[
           { text: "Installation de la face arrière", classes: "big-title tleft", tag: "h2" },
           { text: "Présentez la face arrière comme sur la vidéo." },
@@ -59,7 +59,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-d-montage-axe-x", type: "video" }}
+        media={{ id: "ZxKyORfWNnU", type: "yt" }}
         content={[
           { text: "Remontage de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Introduisez les barres avec délicatesse dans les roulements (faites quelques rotations pour faciliter leur entrée). Une fois en place, faites quelques allers-retours pour vérifier que tout va bien." },
@@ -67,7 +67,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-e-courroie-x", type: "video" }}
+        media={{ id: "3Yvpvgz-ckE", type: "yt" }}
         content={[
           { text: "Installation de la courroie de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Retournez l'ensemble pour voir le dessous de la tête." },
@@ -84,7 +84,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-f-installation-axe-x", type: "video" }}
+        media={{ id: "o_HlS5ri1NM", type: "yt" }}
         content={[
           { text: "Installation de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez l'axe X, orientez-le comme sur la vidéo." },
@@ -105,7 +105,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-g-cablage-chariot-x", type: "video" }}
+        media={{ id: "ehYSZztI3Zk", type: "yt" }}
         content={[
           { text: "Câblage de l'axe X", classes: "big-title tleft", tag: "h2" },
           { text: "Rebranchez ensuite le moteur de X." },
@@ -115,7 +115,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-h-cablage-tete", type: "video" }}
+        media={{ id: "Hb01HZXPGlw", type: "yt" }}
         content={[
           { text: "Câblage de la tête", classes: "big-title tleft", tag: "h2" },
           { text: "Dénudez tous les câbles avant de les brancher." },
@@ -129,11 +129,11 @@ function BiColor(props) {
           { text: "Raccordez les deux derniers fils repérés sur le bornier FAN (rouge sur + et noire sur -)." },
           { text: "NB: Votre connecteur A13 est différent ?", classes: "col-vtspace text-red italic" }
         ]}>
-        <HiddenVideo t={t} src="DiscoEasy/Add-on/Bicouleur/3-h-cablage-tete-6-pin" />
+        <HiddenVideo t={t} id="JInMwtu_4n4" />
       </Section>
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/3-j-cablage-extrudeur", type: "video" }}
+        media={{ id: "bRjaMLajTKU", type: "yt" }}
         content={[
           { text: "Câblage des extrudeurs", classes: "big-title tleft", tag: "h2" },
           { text: "Rebranchez le câble raccordé sur la borne E0_MOT à l'extrudeur E0." },

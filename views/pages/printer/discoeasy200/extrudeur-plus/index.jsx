@@ -64,7 +64,7 @@ function Extruder(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-e-demontage-extrudeur", type: "video" }}
+        media={{ id: "FTDxVs_7Ftw", type: "yt" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Démontage de l'extrudeur", classes: "big-title" },
@@ -76,7 +76,7 @@ function Extruder(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-f-montage-bras-extrudeur", type: "video" }}
+        media={{ id: "Uv5jl_fAe2A", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Montage du bras d'extrudeur", classes: "big-title" },
@@ -87,7 +87,7 @@ function Extruder(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-g-montage-extrudeur-plus", type: "video" }}
+        media={{ id: "A9TxRSN6GOc", type: "yt" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
           { text: "Montage de l'extrudeur+", classes: "big-title" },
@@ -101,7 +101,7 @@ function Extruder(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-h-montage-cache", type: "video" }}
+        media={{ id: "lBPJc91AZ5w", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Montage du cache côté", classes: "big-title" },
@@ -112,7 +112,7 @@ function Extruder(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-j-cablage", type: "video" }}
+        media={{ id: "MahJtpdnp0I", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Câblage", classes: "big-title" },
@@ -124,7 +124,7 @@ function Extruder(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/ExtrudeurPlus/A-k-finition", type: "video" }}
+        media={{ id: "HZmzzUSpcH8", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Finition", classes: "big-title" },

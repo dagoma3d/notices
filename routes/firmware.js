@@ -13,7 +13,7 @@ exports.index = function (req, res) {
         abbr: "DE200",
         date: "15/11/2019",
         img: "d-prerequis-maj-de200.jpg",
-        video: "c-e3",
+        video: "TEQbka4ouhc",
         firmware: "E200",
         notice: "de200"
       };
@@ -45,7 +45,7 @@ exports.index = function (req, res) {
         abbr: "DU",
         date: "15/11/2019",
         img: "d-prerequis-du.jpg",
-        video: "c-e3-du",
+        video: "7xCQ0SH4ONg",
         firmware: "Ultimate",
         notice: "du"
       };
@@ -72,7 +72,7 @@ exports.index = function (req, res) {
         abbr: "Magis",
         date: "15/11/2019",
         img: "d-prerequis-du.jpg",
-        video: "c-e3-du",
+        video: "7xCQ0SH4ONg",
         firmware: "Magis",
         notice: "magis"
       };

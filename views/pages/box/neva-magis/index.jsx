@@ -52,7 +52,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/1-e-installation-patin", type: "video" }}
+        media={{ id: "UV6Ou05TRn0", type: "yt" }}
         content={[
           { text: "Installation des patins", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les 6 patins dans le petit sachet de vis." },
@@ -63,7 +63,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/1-f-installation-pieds", type: "video" }}
+        media={{ id: "SNk-jH1j_dM", type: "yt" }}
         content={[
           { text: "Installation des pieds sur la Magis", classes: "big-title tleft", tag: "h2" },
           { text: "Reprenez les 3 pieds et installez les sur votre imprimante 3D." },

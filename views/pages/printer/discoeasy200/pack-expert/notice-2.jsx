@@ -53,7 +53,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-d-deverrouillage-tete", type: "video" }}
+        media={{ id: "SlSSmMk12Bw", type: "yt" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
           { text: "Déverrouillage de la tête d'impression", classes: "big-title" },
@@ -65,7 +65,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-e-composant-tete", type: "video" }}
+        media={{ id: "fPe-5PsKyKQ", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Démontage de la tête d'impression", classes: "big-title" },
@@ -77,7 +77,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-f-palpeur", type: "video" }}
+        media={{ id: "fRHl42YvCpM", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Remontage du palpeur", classes: "big-title" },
@@ -89,7 +89,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-g-buse", type: "video" }}
+        media={{ id: "bNspO4B3vZE", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Remontage de la buse", classes: "big-title" },
@@ -100,7 +100,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-h-ventilo", type: "video" }}
+        media={{ id: "59thweJ84Us", type: "yt" }}
         content={[
           { text: "Étape 7", classes: "title tleft", tag: "h2" },
           { text: "Remontage des ventilateurs", classes: "big-title" },
@@ -112,7 +112,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/2-i-verrouillage-tete", type: "video" }}
+        media={{ id: "LarqFhjIoEo", type: "yt" }}
         content={[
           { text: "Étape 8", classes: "title tleft", tag: "h2" },
           { text: "Reverrouillage de la tête", classes: "big-title" },

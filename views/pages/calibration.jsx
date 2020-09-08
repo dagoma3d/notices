@@ -85,7 +85,7 @@ function Printer(props) {
           { text: "Reliez votre imprimante 3d à l'ordinateur via le cable USB fournis." },
           { text: "Pour le passage du câble regarde la vidéo suivante :" }
         ]}>
-        <HiddenVideo t={t} src={`DiscoEasy/Calibration/${printerInfo.video}`} />
+        <HiddenVideo t={t} id={printerInfo.video} />
       </Section>
       <Section
         t={t}
@@ -137,7 +137,7 @@ function Printer(props) {
         ]}>
         <HiddenVideo
           t={t}
-          src="DiscoEasy/Calibration/c-e6"
+          id="NBlnfQz_0to"
           content={[
             { text: "Si la carte ne bouge plus, remontez d'un cran." },
             { text: "Une fois réglé, cliquez sur la flèche bleue." }
@@ -163,7 +163,7 @@ function Printer(props) {
           { text: "Elle va imprimer plusieurs petits cercles. Une fois que la hauteur de couche est bonne, cliquez sur \"Je suis satisfait\" puis sur \"enregistrer\"." },
           { text: "Vous avez une petite vidéo des réactions de la machine ici :" },
         ]}>
-        <HiddenVideo t={t} src="DiscoEasy/Calibration/c-e8" />
+        <HiddenVideo t={t} id="btvoyGhrG7Q" />
       </Section>
       <Section
         t={t}

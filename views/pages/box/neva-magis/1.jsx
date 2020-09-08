@@ -29,7 +29,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-b-preparation-vitre", type: "video" }}
+        media={{ id: "7asohpm9Y_A", type: "yt" }}
         content={[
           { text: "Préparation de la vitre", classes: "big-title tleft", tag: "h2" },
           { text: "La vitre vous a été livrée à plat. Nous allons fixer les bouts pour former un tube." },
@@ -46,7 +46,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-b-bis-preparation-vitre", type: "video" }}
+        media={{ id: "k8Zf0oeg_f0", type: "yt" }}
         content={[
           { text: "Serrage de la vitre", classes: "big-title tleft", tag: "h2" },
           { text: "Tirez de part et d'autre de la couture pour la serrer." },
@@ -62,7 +62,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-c-montage-guide-sup-ar", type: "video" }}
+        media={{ id: "09mqSkudGZ8", type: "yt" }}
         content={[
           { text: "Montage du cerclage arrière supérieur", classes: "big-title tleft", tag: "h2" },
           { text: "L'arrière du caisson est représenté par la couture. Le bas du caisson présente des encoches comme sur la vidéo." },
@@ -80,7 +80,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-d-montage-guide-sup-av", type: "video" }}
+        media={{ id: "KnO79In9AL4", type: "yt" }}
         content={[
           { text: "Montage des cerclages avant supérieur", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez 2 cerclages avant. Pincez la vitre pour la plier au milieu des deux trous comme sur la vidéo et installez le premier cerclage. Orientez le pour compléter l'encoche présente sur le cerclage arrière." },
@@ -106,7 +106,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-e-montage-guide-inf-ar", type: "video" }}
+        media={{ id: "WMMHlas7r30", type: "yt" }}
         content={[
           { text: "Montage du cerclage arrière inférieur", classes: "big-title tleft", tag: "h2" },
           { text: "Retournez le caisson pour installer le prochain cerclage. Prenez le cerclage inférieur arrière. Pliez le caisson au niveau de la couture et placez les ergots dans les trous." },
@@ -114,7 +114,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-f-montage-guide-inf-av", type: "video" }}
+        media={{ id: "36G_2rFRBiM", type: "yt" }}
         content={[
           { text: "Montage des cerclages avant inférieur", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les 2 derniers cerclages. Pincez la vitre pour la plier au milieu des deux trous comme sur la vidéo et installez le premier cerclage. Orientez le pour compléter l'encoche présente sur le cerclage arrière. Faites de même avec le second cerclage." },
@@ -139,7 +139,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-h-montage-chariot", type: "video" }}
+        media={{ id: "O3PW5eITQcY", type: "yt" }}
         content={[
           { text: "Installation du chariot", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le chariot et 2 vis bombées." },
@@ -153,7 +153,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/2-i-montage-guide-cable", type: "video" }}
+        media={{ id: "mYBrmVXwDsI", type: "yt" }}
         content={[
           { text: "Installation des guides câbles", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez les deux guides câbles." },

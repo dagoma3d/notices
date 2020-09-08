@@ -92,7 +92,7 @@ function Firmware(props) {
           { text: `Reliez la ${printerInfo.name} à l'ordinateur via le cable USB fournis.` },
           { text: "Pour le passage du câble regarde la vidéo suivante :" }
         ]}>
-        <HiddenVideo t={t} src={`DiscoEasy/Calibration/${printerInfo.video}`} />
+        <HiddenVideo t={t} id={printerInfo.video} />
       </Section>
       <Section
         t={t}

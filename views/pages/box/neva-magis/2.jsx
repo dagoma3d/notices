@@ -28,7 +28,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/3-b-fixation-rail", type: "video" }}
+        media={{ id: "DC87kaw55Bo", type: "yt" }}
         content={[
           { text: "Fixation du rail de guidage", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le socle en bois, une grosse vis et le rail." },
@@ -38,7 +38,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/3-c-installation-imprimante", type: "video" }}
+        media={{ id: "FynHWAKxUU4", type: "yt" }}
         content={[
           { text: "Installation de l'imprimante", classes: "big-title tleft", tag: "h2" },
           { text: "Posez l'imprimante sur le socle. Des empreintes permettent de positionner les pieds. L'arrière de la machine s'aligne sur le rail." },
@@ -51,7 +51,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/3-d-installation-filament", type: "video" }}
+        media={{ id: "vwjIPQjnQwU", type: "yt" }}
         content={[
           { text: "Installation du filament", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le dernier clips et installez le dans la fente à l'avant droit du socle." },
@@ -60,7 +60,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/3-e-cloche-serrage", type: "video" }}
+        media={{ id: "lezRz7emJV8", type: "yt" }}
         content={[
           { text: "Installation du caisson", classes: "big-title tleft", tag: "h2" },
           { text: "Prenez le caisson avec le chariot vers le bas." },
@@ -72,7 +72,7 @@ function Box(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/3-f-butee", type: "video" }}
+        media={{ id: "Rtkpkz99xzY", type: "yt" }}
         content={[
           { text: "Montage de la butée", classes: "big-title tleft", tag: "h2" },
           { text: "Récupérez la butée magnétique." },
@@ -81,7 +81,7 @@ function Box(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "NevaMagis/Notice/Addons/Caisson/3-g-utilisation", type: "video" }}
+        media={{ id: "zvqDrmodG3Q", type: "yt" }}
         content={[
           { text: "Utilisation", classes: "big-title tleft", tag: "h2" },
           { text: "La simplicité même." },

@@ -78,7 +78,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-d-gaine", type: "video" }}
+        media={{ id: "JfXcz6X6Q-I", type: "yt" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Retrait de la gaine torsadée", classes: "big-title" },
@@ -96,7 +96,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-f-debrancher-butee", type: "video" }}
+        media={{ id: "gUff07C2Cs0", type: "yt" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
           { text: "Débranchement de la butée et des moteurs de Z", classes: "big-title" },
@@ -108,7 +108,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-g-retirer-top", type: "video" }}
+        media={{ id: "6vOO6vM12Yk", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Démontage de la partie supérieure de la machine", classes: "big-title" },
@@ -133,7 +133,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/1-i-retirer-mot-z", type: "video" }}
+        media={{ id: "b7WDTcIH9W4", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Démontage des moteurs de Z", classes: "big-title" },

@@ -28,7 +28,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-b-assemblage-axe-x", type: "video" }}
+        media={{ id: "CISm6FZRhUc", type: "yt" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Montage des barres de l'axe X", classes: "big-title" },
@@ -38,7 +38,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-c-courroie-tete", type: "video" }}
+        media={{ id: "ub4tP4PD5WA", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Installation de la courroie de la tête", classes: "big-title" },
@@ -55,7 +55,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-d-mot-z", type: "video" }}
+        media={{ id: "YtQKtS8uoz0", type: "yt" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
           { text: "Montage des moteur de Z avec tiges trapézoïdales", classes: "big-title" },
@@ -67,7 +67,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-e-axe-x", type: "video" }}
+        media={{ id: "kLCBGsPSp-4", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Remontage de l'axe X", classes: "big-title" },
@@ -79,7 +79,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-f-ecrou", type: "video" }}
+        media={{ id: "p0ynSmL_jic", type: "yt" }}
         content={[
           { text: "Étape 5", classes: "title tleft", tag: "h2" },
           { text: "Installation des écrous", classes: "big-title" },
@@ -95,7 +95,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/3-g-recablage", type: "video" }}
+        media={{ id: "Jde-mMoUodw", type: "yt" }}
         content={[
           { text: "Étape 6", classes: "title tleft", tag: "h2" },
           { text: "Câblage", classes: "big-title" },

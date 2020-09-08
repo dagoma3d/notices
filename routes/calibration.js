@@ -11,7 +11,7 @@ exports.index = function (req, res) {
         name: "DiscoEasy200",
         abbr: "DE200",
         img: "b1-prerequis-de200.jpg",
-        video: "c-e3",
+        video: "TEQbka4ouhc",
         firmware: "E200",
         notice: "de200"
       };
@@ -40,7 +40,7 @@ exports.index = function (req, res) {
         name: "Disco Ultimate",
         abbr: "DU",
         img: "b1-prerequis-du.jpg",
-        video: "c-e3-du",
+        video: "7xCQ0SH4ONg",
         firmware: "Ultimate",
         notice: "du"
       };

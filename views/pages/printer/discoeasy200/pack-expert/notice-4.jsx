@@ -27,7 +27,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-b-top", type: "video" }}
+        media={{ id: "D4NcNYZmo80", type: "yt" }}
         content={[
           { text: "Etape 1", classes: "title tleft", tag: "h2" },
           { text: "Remise en place du top", classes: "big-title" },
@@ -39,7 +39,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-c-tension-courroie-tete", type: "video" }}
+        media={{ id: "xzA-ybx6EIo", type: "yt" }}
         content={[
           { text: "Étape 2", classes: "title tleft", tag: "h2" },
           { text: "Ajustement de la tension de la courroie de la tête", classes: "big-title" },
@@ -50,7 +50,7 @@ function PackExpert(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-d-gaine", type: "video" }}
+        media={{ id: "MFE3TLxliL4", type: "yt" }}
         content={[
           { text: "Etape 3", classes: "title tleft", tag: "h2" },
           { text: "Remise en place de la gaine", classes: "big-title" },
@@ -59,7 +59,7 @@ function PackExpert(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Trapezoidales/4-e-cable-management", type: "video" }}
+        media={{ id: "jk9I2lX-V2s", type: "yt" }}
         content={[
           { text: "Étape 4", classes: "title tleft", tag: "h2" },
           { text: "Gestion des câbles", classes: "big-title" },

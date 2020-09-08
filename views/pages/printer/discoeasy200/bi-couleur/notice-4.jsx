@@ -22,7 +22,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/4-b-top", type: "video" }}
+        media={{ id: "1uFVfI9Uogc", type: "yt" }}
         content={[
           { text: "Remise en place du top", classes: "big-title tleft", tag: "h2" },
           { text: "Remettez le top en place. La partie la plus grande doit être vers la face avant." },
@@ -42,14 +42,14 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Notice/11-g-gaine", type: "video" }}
+        media={{ id: "CO99gtptxz8", type: "yt" }}
         content={[
           { text: "Remise en place de la gaine", classes: "big-title tleft", tag: "h2" },
           { text: "Remettez la gaine en place en récupérant les câbles de la butée et du moteur." }
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Notice/11-h-cable-management", type: "video" }}
+        media={{ id: "HBTfuzBZo9A", type: "yt" }}
         content={[
           { text: "Gestion des câbles", classes: "big-title tleft", tag: "h2" },
           { text: "Utilisez les colliers de serrage pour finir proprement votre montage." },
@@ -58,7 +58,7 @@ function BiColor(props) {
       <Section
         t={t}
         flip={true}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/4-f-ptfe", type: "video" }}
+        media={{ id: "7xdkl6ExGzI", type: "yt" }}
         content={[
           { text: "Installation des tubes PTFE", classes: "big-title tleft", tag: "h2" },
           { text: "Branchez-les deux tubes PTFE dans les extrudeurs." },

@@ -31,7 +31,7 @@ function BiColor(props) {
         ]} />
       <Section
         t={t}
-        media={{ src: "DiscoEasy/Add-on/Bicouleur/8-c-choix", type: "video" }}
+        media={{ id: "7liH4gWMmJY", type: "yt" }}
         content={[
           { text: "Installation de Cura pour la double extrusion", classes: "big-title tleft", tag: "h2" },
           { text: "Si ce n'est pas déjà fait, téléchargez la dernière version de Cura.", classes: "text-red" },
