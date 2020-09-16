@@ -7,7 +7,7 @@ function Box(props) {
   const title = "Notice de Montage du Caisson de Protection";
   return (
     <Layout t={t} title={title}>
-      <GoogleDocument t={t} title={title} id="1q8Raod1ZWvwtKMbVTOcrO2Z9OxAs5-4HPZvWPsVyeJ0" />
+      <GoogleDocument t={t} title={title} id="1pb9p8DiMA_kkWuYlGFwrBIG6jwXSgbNV0l0ArSrqM90" />
     </Layout>
   );
 }

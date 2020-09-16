@@ -34,7 +34,7 @@ function BiColor(props) {
               ]
             }
           },
-          { link: { classes: "condition-classic new-btn btn-classic btn-grey", href: "/medias/stl/stl_bicouleur.zip", download: "stl_couleur.zip", text: "Télécharger" } }
+          { link: { classes: "condition-classic new-btn btn-classic btn-grey", href: "https://drive.google.com/file/d/15LPW7V7j40MBBrP8z23Rky9Fb-bYz5Up/view?usp=sharing", download: "stl_bicouleur.zip", text: "Télécharger", target: "_blank" } }
         ]} />
       <Block
         t={t}

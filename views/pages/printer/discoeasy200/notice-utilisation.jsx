@@ -34,7 +34,7 @@ function Printer(props) {
           { text: "Choisir un fichier", classes: "big-title" },
           { text: "Nous vous proposons ici un dérouleur de bobine. Il vous sera bien utile lors de chacune de vos impressions." },
           { text: "Téléchargez le fichier ci-dessous. Nous allons ensuite le préparer sur Cura." },
-          { link: { href: "/medias/DiscoEasy/Notice/16-support-bobine-stl/support-bobine.zip", classes: "new-btn btn-valid btn-big btn-wide", download: "support-bobine.zip", text: "Télécharger" } },
+          { link: { href: "https://drive.google.com/file/d/1_1N0OnGBdfcMY00hV2dENDK4LJA5IRyw/view?usp=sharing", classes: "new-btn btn-valid btn-big btn-wide", download: "support-bobine.zip", target: "_blank", text: "Télécharger" } },
         ]} />
       <Section
         t={t}
@@ -125,7 +125,7 @@ function Printer(props) {
           { text: "Étape 8", classes: "title tleft" },
           { text: "Assemblage du dérouleur", classes: "big-title" },
           { text: "Déposez la bobine sur votre dérouleur." },
-          { text: "Nous proposons un modèle plus évolué", link: { href: "/medias/DiscoEasy/Notice/16-support-bobine-stl/support-bobine.zip", classes: "link-classic", text: "ici" } }
+          { text: "Nous proposons un modèle plus évolué", link: { href: "https://drive.google.com/file/d/1_1N0OnGBdfcMY00hV2dENDK4LJA5IRyw/view?usp=sharing", classes: "link-classic", text: "ici", download: "support-bobine.zip", target: "_blank" } }
         ]} />
       <Block
         t={t}

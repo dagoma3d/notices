@@ -8,7 +8,7 @@ function Screen(props) {
   const subtitle = "Premiers pas";
   return (
     <Layout t={t} title={title}>
-      <GoogleDocument t={t} title={subtitle + " - " + title} id="1D9PiUPmOgiQVTnK-sEzR3mkpcpyyLFintxThjpuJIzg">
+      <GoogleDocument t={t} title={subtitle + " - " + title} id="1774LbOgxeGoOOIEKn5HgIWyJ-b739MpIEtiEWcbsrFY">
         <p className="tcenter">{t("La suite de la notice ")}<a href="/addon/screen/utilisation-de-l-ecran">{t("ici")}</a>.</p>
       </GoogleDocument>
     </Layout>

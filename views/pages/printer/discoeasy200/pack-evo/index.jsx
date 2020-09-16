@@ -7,7 +7,7 @@ function PackEvo(props) {
   const title = "Notice";
   return (
     <Layout t={t} title={title}>
-      <GoogleDocument t={t} title={title} id="1KLkN2rAL5I5WhkXsaeU6IOZ8eZChpFW8odcKbjdmZDQ" />
+      <GoogleDocument t={t} title={title} id="1lE4srM8vIYxkKgGEAYcFeu9diLxNf1NF6PBiBOxNcSo" />
     </Layout>
   );
 }

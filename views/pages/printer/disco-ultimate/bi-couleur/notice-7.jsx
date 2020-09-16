@@ -46,7 +46,7 @@ function BiColor(props) {
         content={[
           { text: "Un gcode déjà tout prêt", classes: "big-title tleft", tag: "h2" },
           { text: "Si vous êtes impatient de lancer votre première impression bicouleur, nous vous avons préparer un gcode. Téléchargez le et mettez le sur votre carte SD. Il doit s'appeler dagoma0.g." },
-          { link: { text: "Télécharger", href: "/medias/DiscoEasy/Add-on/Bicouleur/fichiers/dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", download: "dagoma0.g" } },
+          { link: { text: "Télécharger", href: "https://drive.google.com/file/d/15NlVlYH7SCRBE2rW9YwX9w9JVSuAn9dK/view?usp=sharing", classes: "new-btn btn-classic btn-grey btn-wide", download: "dagoma0.g", target: "_blank" } },
           { text: "Si vous voulez lancer votre propre fichier, rendez-vous dans la prochaine page !" },
           { text: "Vous connaissez la chanson, c'est un lancement tout à fait normal : téléchargez le fichier, transférez-le sur la carte SD, insérez la carte dans l'imprimante 3D puis allumez-la." }
         ]} />

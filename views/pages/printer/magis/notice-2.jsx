@@ -38,7 +38,7 @@ function Printer(props) {
           { text: "J'imprime avec ma Magis", classes: "big-title" },
           { text: "Téléchargez le fichier que nous vous avons sélectionné avec soin." },
           { text: "Ceci est un dérouleur de bobine." },
-          { classes: "tleft col-vspace", link: { href: "/medias/NevaMagis/Notice/gcodes/derouleur/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici" } },
+          { classes: "tleft col-vspace", link: { href: "https://drive.google.com/file/d/1T4Us98J_LlpYJGXPSwYyiJf0_97aAwtQ/view?usp=sharing", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici", target: "_blank" } },
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
         ]} />

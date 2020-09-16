@@ -7,7 +7,7 @@ function Printer(props) {
   const title = "Notice première utilisation";
   return (
     <Layout t={t} title={title}>
-      <GoogleDocument t={t} title={title} id="1fOs7uHSiLsyRWO7CqBD_T2zFc1euJbUjEWQF60E0joM">
+      <GoogleDocument t={t} title={title} id="1QPEbmE2F604CEGzvQjbHRF3qNiB6OI1p5-GPUAfnMWM">
         <div className="col-xl-20 col-s-24 margin-bottom-shop tcenter">
           <p>{t("Cette notice de première utilisation vous permettra :")}</p>
           <ul>

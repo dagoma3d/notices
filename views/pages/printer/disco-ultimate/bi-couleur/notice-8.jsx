@@ -35,7 +35,7 @@ function BiColor(props) {
             text: "Les fichiers pour imprimer en bi-couleurs sont spécifique, ils doivent être au préalable séparés en deux avec la même origine. Cura peut ensuite les rassembler et les slicers en un seul et même gcode."
           },
           { text: "Nous vous avons préparé un pack de 15 objets pour la bi-couleur." },
-          { link: { text: "Télécharger les 15 objets", href: "/medias/stl/15STL.zip", classes: "new-btn btn-classic btn-grey btn-wide", download: "15STL.zip" } }
+          { link: { text: "Télécharger les 15 objets", href: "https://drive.google.com/file/d/1DO3tJqri0-K5MLbB-M7Z752b1t8uDD5r/view?usp=sharing", classes: "new-btn btn-classic btn-grey btn-wide", download: "15STL.zip", target: "_blank" } }
         ]} />
       <Section
         t={t}

@@ -39,11 +39,11 @@ function Printer(props) {
           { text: "J'imprime avec ma Magis", classes: "big-title" },
           { text: "Tout d'abord, téléchargez le nouveau fichier que nous vous avons préparé." },
           { text: "Ce fichier va compléter votre première création. C'est un socle pour le photophore." },
-          { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/gcodes/chapitre-2/dagoma0.g", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici" } },
+          { classes: "tleft", link: { href: "https://drive.google.com/file/d/1kEgMoxSZ6quqAH6kdjlNej8R8pzL6OtG/view?usp=sharing", download: "dagoma0.g", classes: "new-btn btn-classic btn-grey btn-wide", text: "Téléchargez le fichier ici", target: "_blank" } },
           { text: "Attention, ce fichier a été préparé pour être imprimé avec du filament Chromatik.", classes: "bg-orange text-white col-space" },
           { text: "Assurez-vous que le fichier s'appelle bien dagoma0.g une fois copié sur la carte.", classes: "bg-orange text-white col-space" },
           { text: "Si vous préférez télécharger le modèle 3D...", classes: "italic" },
-          { classes: "tleft", link: { href: "/medias/NevaMagis/Notice/stl/Photophore_base.STL", download: "Photophore_base.STL", classes: "new-btn btn-classic btn-grey btn-wide", text: "Télécharger le stl" } },
+          { classes: "tleft", link: { href: "https://drive.google.com/file/d/1Ns0nOL6O9EGOKU0QPRPbzUHsTI3eaczu/view?usp=sharing", download: "Photophore_base.stl", classes: "new-btn btn-classic btn-grey btn-wide", text: "Télécharger le stl", target: "_blank" } },
         ]} />
       <Title
         t={t}
